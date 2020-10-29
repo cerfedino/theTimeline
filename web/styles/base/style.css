@@ -1,0 +1,338 @@
+:root{
+  /* background */
+  --background-image-left: url( "./media/background_left.jpg" ); /* given to the user */
+  --background-image-right: url( "./media/background_right.jpg" ); /* given to the user */
+  --background-fade-color: #00f; /* given to the user */
+
+  /* banner */
+  --banner-image: url( "../../styles/base/media/banner.png" ); /* given to the user */
+  --banner-color: #0ff; /* given to the user */
+
+  /* audio */
+  --audio-file: url( "../../styles/base/media/sound.mp3" ); /* given to the user */
+
+  /* container */
+  --container-background-color: #fff; /* given to the user */
+  --container-text-color: #f0f; /* given to the user */
+  --container-border-color: #000; /* given to the user */
+
+  /* index */
+  --index-background-color: #ff0; /* given to the user */
+  --index-text-color: #00f; /* given to the user */
+  --index-border-color: #0ff;
+
+  /* image for the back button */
+  --backbutton-image: url( "./media/back.png" );
+  --backbutton-image-hover: url( "./media/back_hover.png" );
+  /* fallback color for the back button */
+  --backbutton-color: #000;
+
+  /* image for the sound button */
+  --soundbutton-image: url( "./media/sound.png" );
+  --soundbutton-image-hover: url( "./media/sound_hover.png" );
+  /* image for the cross on the sound button */
+  --soundbutton-cross: url( "./media/cross.png" );
+  --soundbutton-cross-hover: url( "./media/cross_hover.png" );
+  /* fallback color for the sound button */
+  --soundbutton-color: #000;
+
+  /* font */
+  --page-font: page-font;
+
+  /* text styles */
+  --link-color-hover: #f00;  /* given to the user */
+
+  /* info */
+  --milestone: "base";
+  --product: "base"; /* given to the user */
+}
+
+/* all the elements */
+*{
+  /* sizing */
+  box-sizing: border-box;
+
+  /* font */
+  font-family: var( --page-font );
+
+  /* images */
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated;                 /* Chrome                         */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+/* page */
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}
+
+/* base class for the sound and back buttons */
+.button {
+  /* background */
+  background-size: cover;
+
+  /* positioning */
+  position: fixed;
+  left: calc( 15% - 10px );
+
+  /* sizing */
+  width: 5vw;
+  height: 5vw;
+
+  /* cursor */
+  cursor: pointer;
+}
+
+/* back button */
+#back-button{
+  /* background */
+  background-color: var( --backbutton-color );
+  background-image: var( --backbutton-image );
+
+  /* positioning */
+  top: 5vh;
+}
+#back-button:hover{
+  /* background */
+  background-image: var( --backbutton-image-hover );
+}
+
+/* sound button */
+#sound-button{
+  /* background */
+  background-color: var( --soundbutton-color );
+  background-image: var( --soundbutton-image );
+
+  /* positioning */
+  bottom: 5vh;
+}
+#sound-button:hover{
+  /* background */
+  background-image: var( --soundbutton-image-hover );
+}
+#sound-button[muted]{
+  /* background */
+  background-image: var( --soundbutton-cross ), var( --soundbutton-image );
+}
+#sound-button[muted]:hover{
+  /* background */
+  background-image: var( --soundbutton-cross-hover ), var( --soundbutton-image-hover );
+}
+
+/* container : the content (#content) will be in it */
+#container{
+  /* positioning */
+  position: fixed;
+  top: 5vh;
+  left: 20vw;
+  padding: 10px;
+
+  /* sizing */
+  width: 60%;
+  height: 90%;
+
+  /* background */
+  background-color: var( --container-background-color );
+
+  /* text */
+  color: var( --container-text-color );
+
+  /* Border */
+  border: 2px solid var( --container-border-color );
+}
+
+#container #banner{
+  /* content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  /* sizing */
+  height: 150px;
+  width: 100%;
+
+  /* positioning */
+  padding: 0;
+
+  /* backgroud */
+  background-color: var( --banner-color );
+}
+
+#container #banner img{
+  /* sizing */
+  height: 100%;
+
+  /* positioning */
+  margin: 0;
+}
+
+/* content inside the container */
+#content {
+  /* scrollbar */
+  overflow-y: auto;
+
+  /* sizing */
+  height: calc( 100% - 155px);
+
+  /* position */
+  margin-top: 10px;
+}
+/* content elements */
+#content h2, #content h3, #content p{
+  /* sizing */
+  margin: 4px 0;
+}
+
+/* index of the page */
+#index{
+  /* positioning */
+  position: fixed;
+  right: calc( 5% - 10px );
+  top: 5vh;
+  padding: 5px;
+
+  /* sizing */
+  width: 15%;
+  min-height: 5vw;
+
+  /* background */
+  background-color: var( --index-background-color );
+
+  /* border */
+  border: 2px solid var( --index-border-color );
+
+  /* text */
+  color: var( --index-text-color );
+}
+/* index list elements */
+#index ol, #index li{
+  /* sizing */
+  margin: 0;
+  padding: 0 0 0 10px;
+
+  /* content */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#index ol {
+  padding: 0;
+  counter-reset: item;
+}
+#index li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+/* index 'a' elements */
+#index a{
+  /* text */
+  text-decoration: none;
+  color: var( --index-color );
+}
+#index a:hover{
+  /* text */
+  color: var( --link-color-hover );
+}
+
+/* background base for the bg divs */
+.bg{
+  /* positioning */
+  position: fixed;
+
+  /* sizing */
+  height: 100%;
+  width: 50%;
+
+  /* background */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* left background */
+#bg-left{
+  /* positioning */
+  left: 0;
+
+  /* background */
+  background-image: linear-gradient( 90deg, #fff0 1%, #fff0 80%, var( --background-fade-color ) 100%), var( --background-image-left );
+}
+/* right background */
+#bg-right{
+  /* positioning */
+  right: 0;
+
+  /* background */
+  background-image: linear-gradient( -90deg, #fff0 1%, #fff0 80%, var( --background-fade-color ) 100%), var( --background-image-right );
+}
+
+/* NOTE: CHANGE IN THE WINDOW SIZE  */
+
+@media only screen and (max-width: 800px) {
+  #container{
+    /* sizing */
+    width: 80%;
+
+    /* position */
+    left: 15vw;
+  }
+
+  #index{
+    /* content */
+    display: none;
+  }
+
+  #back-button{
+    /* positioning */
+    left: calc( 5% - 10px );
+
+    /* sizing */
+    width: 10vw;
+    height: 10vw;
+  }
+
+  #sound-button{
+    /* positioning */
+    left: calc( 5% - 10px );
+
+    /* sizing */
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+/* NOTE: CHANGE IN THE WINDOW SIZE  */
+
+@media only screen and (max-width: 600px) {
+  #container{
+    /* sizing */
+    width: 90%;
+
+    /* positioning */
+    position: relative;
+    left: 5vw;
+  }
+
+  #index{
+    /* content */
+    display: none;
+  }
+
+  #back-button{
+    /* content */
+    display: none;
+  }
+
+  #sound-button{
+    /* positioning */
+    display: none;
+  }
+}

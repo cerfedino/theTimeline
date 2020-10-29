@@ -1,0 +1,41 @@
+:root{
+  /* background */
+  --background-image-left: url( "https://cdn.themis-media.com/media/global/images/galleries/display/54/54561.jpg" ); /*url( "../media/images/base_background_left.img" ); /* given to the user */
+  --background-image-right: url( "https://cdn.themis-media.com/media/global/images/galleries/display/54/54561.jpg" );/*url( "../media/images/base_background_right.img" ); /* given to the user */
+  --background-fade-color: #000; /* given to the user */
+
+  /* banner */
+  --banner-image: url( "../styles/gen0/media/base_banner.png" ); /* given to the user */
+
+  /* audio */
+  --audio-file: url( "../styles/gen0/media/sound.mp3" ); /* given to the user */
+
+  /* container */
+  --container-background-color: #000; /* given to the user */
+  --container-text-color: #fff;  /* given to the user */
+
+
+  /* index */
+  --index-background-color: #000; /* given to the user */
+  --index-text-color: #fff;  /* given to the user */
+  --index-border-color: #d3d3d3;
+
+  /* image for the back button */
+  --backbutton-image: url( "./media/back.jpg" );
+  --backbutton-image-hover: url( "./media/back_hover.jpg" );
+
+  /* image for the sound button */
+  --soundbutton-image: url( "./media/sound.png" );
+  --soundbutton-image-hover: url( "/media/sound_hover.png" );
+  /* image for the cross on the sound button */
+  --soundbutton-cross: url( "./media/cross.png" );
+  --soundbutton-cross-hover: url( "./media/cross_hover.png" );
+
+  /* info */
+  --milestone: "gen0";
+}
+
+@font-face {
+  font-family: page-font;
+  src: url( "./media/font.ttf");
+}
