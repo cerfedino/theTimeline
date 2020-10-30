@@ -22,6 +22,7 @@ let css_variables = [
   "--audio-file",
   "--container-background-color",
   "--container-text-color",
+  "--container-border-color",
   "--index-background-color",
   "--index-text-color",
   "--index-border-color",
@@ -56,6 +57,7 @@ function setup_variables(){
   }
   // replace the array with the newly constructed object
   css_variables = new_css_variables;
+  console.log(css_variables);
 }
 
 
