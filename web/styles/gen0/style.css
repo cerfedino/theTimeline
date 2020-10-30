@@ -5,31 +5,35 @@
   --background-fade-color: #000; /* given to the user */
 
   /* banner */
-  --banner-image: url( "../styles/gen0/media/base_banner.png" ); /* given to the user */
+  --banner-image: url( "../../styles/gen0/media/base_banner.png" ); /* given to the user */
+  --banner-color: #fff; /* given to the user */
 
   /* audio */
-  --audio-file: url( "../styles/gen0/media/sound.mp3" ); /* given to the user */
+  --audio-file: url( "../../styles/gen0/media/sound.mp3" ); /* given to the user */
 
   /* container */
   --container-background-color: #000; /* given to the user */
   --container-text-color: #fff;  /* given to the user */
-
+  --container-border-color: #000; /* given to the user */
 
   /* index */
   --index-background-color: #000; /* given to the user */
   --index-text-color: #fff;  /* given to the user */
-  --index-border-color: #d3d3d3;
+  --index-border-color: #fff;
 
   /* image for the back button */
-  --backbutton-image: url( "./media/back.jpg" );
-  --backbutton-image-hover: url( "./media/back_hover.jpg" );
+  --backbutton-image: url( "../../styles/gen0/media/back.jpg" );
+  --backbutton-image-hover: url( "../../styles/gen0/media/back_hover.jpg" );
 
   /* image for the sound button */
-  --soundbutton-image: url( "./media/sound.png" );
-  --soundbutton-image-hover: url( "/media/sound_hover.png" );
+  --soundbutton-image: url( "../../styles/gen0/media/sound.png" );
+  --soundbutton-image-hover: url( "../../styles/gen0/media/sound_hover.png" );
   /* image for the cross on the sound button */
-  --soundbutton-cross: url( "./media/cross.png" );
-  --soundbutton-cross-hover: url( "./media/cross_hover.png" );
+  --soundbutton-cross: url( "../../styles/gen0/media/cross.png" );
+  --soundbutton-cross-hover: url( "../../styles/gen0/media/cross_hover.png" );
+
+  /* text styles */
+  --link-color-hover: #f80;  /* given to the user */
 
   /* info */
   --milestone: "gen0";
@@ -37,5 +41,5 @@
 
 @font-face {
   font-family: page-font;
-  src: url( "./media/font.ttf");
+  src: url( "../../styles/gen0/media/font.ttf");
 }
