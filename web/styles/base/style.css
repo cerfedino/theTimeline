@@ -1,15 +1,15 @@
 :root{
   /* background */
-  --background-image-left: url( "./media/background_left.jpg" ); /* given to the user */
-  --background-image-right: url( "./media/background_right.jpg" ); /* given to the user */
+  --background-image-left: url( "styles/base/media/background_left.jpg" ); /* given to the user */
+  --background-image-right: url( "styles/base/media/background_right.jpg" ); /* given to the user */
   --background-fade-color: #00f; /* given to the user */
 
   /* banner */
-  --banner-image: url( "../../styles/base/media/banner.png" ); /* given to the user */
+  --banner-image: url( "styles/base/media/banner.png" ); /* given to the user */
   --banner-color: #0ff; /* given to the user */
 
   /* audio */
-  --audio-file: url( "../../styles/base/media/sound.mp3" ); /* given to the user */
+  --audio-file: url( "styles/base/media/sound.mp3" ); /* given to the user */
 
   /* container */
   --container-background-color: #fff; /* given to the user */
@@ -22,17 +22,17 @@
   --index-border-color: #0ff;
 
   /* image for the back button */
-  --backbutton-image: url( "./media/back.png" );
-  --backbutton-image-hover: url( "./media/back_hover.png" );
+  --backbutton-image: url( "styles/base/media/back.png" );
+  --backbutton-image-hover: url( "styles/base/media/back_hover.png" );
   /* fallback color for the back button */
   --backbutton-color: #000;
 
   /* image for the sound button */
-  --soundbutton-image: url( "./media/sound.png" );
-  --soundbutton-image-hover: url( "./media/sound_hover.png" );
+  --soundbutton-image: url( "styles/base/media/sound.png" );
+  --soundbutton-image-hover: url( "styles/base/media/sound_hover.png" );
   /* image for the cross on the sound button */
-  --soundbutton-cross: url( "./media/cross.png" );
-  --soundbutton-cross-hover: url( "./media/cross_hover.png" );
+  --soundbutton-cross: url( "styles/base/media/cross.png" );
+  --soundbutton-cross-hover: url( "styles/base/media/cross_hover.png" );
   /* fallback color for the sound button */
   --soundbutton-color: #000;
 
