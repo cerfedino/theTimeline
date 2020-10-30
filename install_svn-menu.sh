@@ -34,7 +34,8 @@ $(tput setaf 3)chmod +x $(pwd)/web/script/svn-menu/svn-control.sh
 "$(tput setaf 7)
 
 #creates the command at bashrc
- echo "alias svn-menu='bash $menu $username'" >> ~/.bashrc && source ~/.bashrc && echo "The installation SUCCEEDED, try the new command, by pressing svn-menu in terminal"
+ echo "alias svn-menu='bash $menu $username'" >> ~/.bashrc && echo "The installation SUCCEEDED, try the new command, by entering 'svn-menu' in terminal"
+ source ~/.bashrc
 }
 
 

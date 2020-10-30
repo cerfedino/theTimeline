@@ -42,7 +42,7 @@ $(tput setaf 3)
 + Input [8] to ignore folders from commiting                              +
 + Input [9] to view the status of the files in your local repository      +  
 + Input [q] to end                                                        +  
-+ Enter what operation you want to perform: [1/2/3/4/5/6/7/q] ?           +
++ Enter what operation you want to perform: [1/2/3/4/5/6/7/8/9/q] ?       +
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 " 
 read -p "Your choice: $(tput setaf 7)" user_choice
@@ -88,8 +88,9 @@ add_file(){
 commit_repo() {
  	echo "You are about to commit, please check the remote logs first!"
  	echo "Please enter your message for the commit:"
- 	read -r commit_message
- 	svn commit -m  "$commit_message"
+ 	read -r commit_message 
+ 	read -p "Enter the folder you want to commit (relative path) : " folder
+ 	svn commit -m  "$commit_message" $folder
  }
 
  # deletes files from active repo, changes take effect when commiting
