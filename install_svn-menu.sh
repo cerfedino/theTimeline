@@ -34,7 +34,7 @@ $(tput setaf 3)chmod +x $(pwd)/web/script/svn-menu/svn-control.sh
 "$(tput setaf 7)
 
 #creates the command at bashrc
- echo "alias svn-menu='bash $menu $username'" >> ~/.bashrc && echo "The installation SUCCEEDED, try the new command, by entering 'svn-menu' in terminal"
+ echo "alias svn-menu='bash "$menu"'" >> ~/.bashrc && echo "The installation SUCCEEDED, try the new command, by entering 'svn-menu' in terminal"
  source ~/.bashrc
 }
 
@@ -42,16 +42,8 @@ $(tput setaf 3)chmod +x $(pwd)/web/script/svn-menu/svn-control.sh
 #case handler
 
 case $answer in
-        'y')   install_menu ;;
-        "Y")   install_menu ;;
-        'yes') install_menu ;;
-        "Yes") install_menu ;; 
-        "YES") install_menu ;;
-        "n")   terminate ;;
-        "no")  terminate ;;
-        "N")   terminate ;; 
-        "No")  terminate ;;
-        "NO")  terminate ;;
+        'y'|"Y"|'yes'|"Yes"|"YES")   install_menu ;;
+        "n"|"N"| "no"|"No" | "NO")   terminate ;;
         *) echo "Not a valid Option";;
     esac
         
