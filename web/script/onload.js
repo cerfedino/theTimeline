@@ -32,7 +32,7 @@ function html_encode( s ){
   dummy_element.innerText = dummy_element.textContent = s;
   // get the string from the element
   s = dummy_element.innerHTML;
-  console.log(dummy_element.innerText, dummy_element.innerHTML);
+  // console.log(dummy_element.innerText, dummy_element.innerHTML);
   return s;
 }
 
@@ -165,9 +165,9 @@ function set_index_link( el ){
     el.setAttribute( 'href', link );
     // fix the target
     el.setAttribute( 'target', '_parent' );
-    console.log( "yes", link );
+    // console.log( "yes", link );
   }else{
-    console.log( "no", el );
+    // console.log( "no", el );
     // get all the children
     let children = el.children;
     // cycle for every children
