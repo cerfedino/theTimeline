@@ -1,65 +1,40 @@
 let root = null;
+let dummy_element = null;
 
 function onload(){
   root = document.documentElement;
-
-  setup_variables();
+  dummy_element = document.createElement( 'div' );
 
   setup_audio();
 
   setup_back();
 
   setup_banner();
+
+  setup_index();
 }
 
-// ============================================================================= :root VARIABLES
-let css_variables = [
-  "--background-image-left",
-  "--background-image-right",
-  "--background-fade-color",
-  "--banner-image",
-  "--banner-color",
-  "--audio-file",
-  "--container-background-color",
-  "--container-text-color",
-  "--container-border-color",
-  "--index-background-color",
-  "--index-text-color",
-  "--index-border-color",
-  "--backbutton-image",
-  "--backbutton-color",
-  "--soundbutton-image",
-  "--soundbutton-cross",
-  "--soundbutton-color",
-  "--page-font",
-  "--link-color-hover",
-  "--milestone",
-  "--product"
-]
+// ============================================================================= UTILITIES
 
-function setup_variables(){
-  // initialize the new object
-  let new_css_variables = {}
-  // cycle through every variable
-  for(let i=0; i<css_variables.length; ++i){
-    // get the ith variable
-    let name = css_variables[i];
-    // get the value of the css variable
-    let value = getComputedStyle(root).getPropertyValue( name );
-    // remove the first two '-' from the name
-    name = name.substring(2);
-    // replace the '-' with '_' in the name
-    name = name.replaceAll('-', '_');
-    // trim the spaces before and after the value
-    value = value.trim();
-    // add the stuff to the new css variables
-    new_css_variables[name] = value;
-  }
-  // replace the array with the newly constructed object
-  css_variables = new_css_variables;
-  console.log(css_variables);
+// get the element with the specified id
+function get_element( id ){
+  return document.getElementById( id );
 }
 
+// get the value of the css variable with the specified name
+function get_css_variable( name ){
+  return getComputedStyle(root).getPropertyValue( name ).trim();
+}
+
+// escape special characters in string
+function html_encode( s ){
+  // put the string in the element
+  dummy_element.innerText = dummy_element.textContent = s;
+  // get the string from the element
+  s = dummy_element.innerHTML;
+  console.log(dummy_element.innerText, dummy_element.innerHTML);
+  return s;
+}
 
 // ============================================================================= AUDIO
 let audio = null;
@@ -74,12 +49,12 @@ let first_played = false;
 
 function setup_audio(){
   // get the audio button element
-  audio_button = document.getElementById('sound-button');
+  audio_button = get_element( 'sound-button' );
   // get the audio images
-  audio_image = css_variables.soundbutton_image;
-  audio_cross = css_variables.soundbutton_cross;
+  audio_image = get_css_variable( '--soundbutton-image' );
+  audio_cross = get_css_variable( '--soundbutton_cross' );
   // we get the raw audio variable from css { url("dir/file") }
-  let raw_audio_file = css_variables.audio_file;
+  let raw_audio_file = get_css_variable( '--audio-file' );
   // we extract only the path
   raw_audio_file = raw_audio_file.split('"')[1];
   // we create the audio object from that file
@@ -120,7 +95,7 @@ function setup_audio(){
       }
       // set the volume of the object to our volume
       audio.volume = audio_volume;
-      console.log(audio_volume);
+      // console.log(audio_volume);
     }
   }
 
@@ -135,16 +110,16 @@ let back_button = null;
 
 function setup_back(){
   // get the back button element
-  back_button = document.getElementById('back-button');
+  back_button = get_element( 'back-button' );
   // get the info
-  milestone = css_variables.milestone;
+  milestone = get_css_variable( '--milestone');
   milestone = milestone.split('"')[1];
-  product = css_variables.product;
+  product = get_css_variable( '--product');
   product = product.split('"')[1];
 
   // link the click to the button
   back_button.onclick = () => {
-    document.location.href = "../index.html#" + product;
+    document.location.href = "index.html#" + product;
   }
 }
 
@@ -154,11 +129,51 @@ let banner_image = null;
 
 function setup_banner(){
   // get the banner image element
-  banner_element = document.getElementById('banner').firstElementChild;
+  banner_element = get_element( 'banner' ).firstElementChild;
   // get the banner image
-  banner_image = css_variables.banner_image;
+  banner_image = get_css_variable( '--banner-image' );
   banner_image = banner_image.split('"')[1];
 
   // set element src attribute
   banner_element.setAttribute("src", banner_image)
+}
+
+// ============================================================================= INDEX
+let index_element = null;
+
+function setup_index(){
+  // get the index element
+  index_element = get_element( 'index' );
+
+  // recursively fix all the links
+  set_index_link( index_element );
+
+}
+
+// this is the recursive function that fix the links in every child of the index element
+// if the element is an 'a' element, fix it
+// if not, call the function for each of its children
+function set_index_link( el ){
+  // if 'a' elements
+  if( el.nodeName == 'A') {
+    // get the old link
+    let link = el.getAttribute('href');
+    // fix the link
+    link = 'html/' + encodeURIComponent( milestone + '_' + product ) +
+            '/' + encodeURIComponent( product ) + '.html' + link;
+    // put the link back
+    el.setAttribute( 'href', link );
+    // fix the target
+    el.setAttribute( 'target', '_parent' );
+    console.log( "yes", link );
+  }else{
+    console.log( "no", el );
+    // get all the children
+    let children = el.children;
+    // cycle for every children
+    for (let i = 0; i < children.length; i++) {
+      // call the function for the children in ith position
+      set_index_link( children[i] );
+    }
+  }
 }
