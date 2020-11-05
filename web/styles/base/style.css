@@ -43,7 +43,7 @@
   --link-color-hover: #f00;  /* given to the user */
 
   /* info */
-  --milestone: "base";
+  --generation: "base";
   --product: "base"; /* given to the user */
 }
 
