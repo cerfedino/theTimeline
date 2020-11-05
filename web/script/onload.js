@@ -1,3 +1,5 @@
+// // TODO: nothing for now
+
 let root = null;
 let dummy_element = null;
 
@@ -5,13 +7,17 @@ function onload(){
   root = document.documentElement;
   dummy_element = document.createElement( 'div' );
 
+  setup_meta();
+
   setup_audio();
 
   setup_back();
 
   setup_banner();
 
-  setup_index();
+  // setup_index();
+
+  setup_variables();
 }
 
 // ============================================================================= UTILITIES
@@ -26,15 +32,63 @@ function get_css_variable( name ){
   return getComputedStyle(root).getPropertyValue( name ).trim();
 }
 
-// escape special characters in string
-function html_encode( s ){
-  // put the string in the element
-  dummy_element.innerText = dummy_element.textContent = s;
-  // get the string from the element
-  s = dummy_element.innerHTML;
-  // console.log(dummy_element.innerText, dummy_element.innerHTML);
-  return s;
+// return an array containing the string before the first occurrence of 'start,
+//                            the string between 'start and 'end,
+//                            the string after the first occurrence of 'end following 'start
+// example extract_content("aaa:bbb:ccc;ddd;eee:fff;", ":", ";") -> ["aaa:", "bbb:ccc", ";ddd;eee:fff"]
+function extract_content( str, start, end ){
+  // split the string at 'start
+  str = str.split( start );
+  // takes out the first element (which is before the first 'start)
+  let first = str.shift();
+  // merge the remaining strings and put 'start back if it was removed
+  str = str.join( start );
+  // split the string at 'end
+  str = str.split( ';' );
+  // takes out the middle element
+  let middle = str.shift();
+  // merge everything after 'end' and put 'end back if it was removed
+  let last = str.join( end )
+  // create the resulting array
+  let res = [ (first + start), middle, (end + last) ];
+  return res;
 }
+
+// escape special characters in string
+// function html_encode( s ){
+//   // put the string in the element
+//   dummy_element.innerText = dummy_element.textContent = s;
+//   // get the string from the element
+//   s = dummy_element.innerHTML;
+//   // console.log(dummy_element.innerText, dummy_element.innerHTML);
+//   return s;
+// }
+
+// ============================================================================= META
+let generation = null;
+let product = null;
+let author = null;
+
+function setup_meta(){
+  // get all meta elements
+  let els = document.getElementsByTagName("META");
+  // cycle through every element
+  for (let i = 0; i < els.length; i++) {
+    // get the wanted meta(s) value
+    switch (els[i].name) {
+      case "author":
+        author = els[i].content;
+        break;
+      case "generation":
+        generation = els[i].content;
+        break
+      case "product":
+        product = els[i].content;
+        break;
+    }
+  }
+}
+
 
 // ============================================================================= AUDIO
 let audio = null;
@@ -57,6 +111,7 @@ function setup_audio(){
   let raw_audio_file = get_css_variable( '--audio-file' );
   // we extract only the path
   raw_audio_file = raw_audio_file.split('"')[1];
+  console.log("raw_audio_file", raw_audio_file);
   // we create the audio object from that file
   audio = new Audio( raw_audio_file );
 
@@ -104,22 +159,15 @@ function setup_audio(){
 }
 
 // ============================================================================= BACK BUTTON
-let milestone = null;
-let product = null;
 let back_button = null;
 
 function setup_back(){
   // get the back button element
   back_button = get_element( 'back-button' );
-  // get the info
-  milestone = get_css_variable( '--milestone');
-  milestone = milestone.split('"')[1];
-  product = get_css_variable( '--product');
-  product = product.split('"')[1];
 
   // link the click to the button
   back_button.onclick = () => {
-    document.location.href = "index.html#" + product;
+    document.location.href = "../../index.html#" + product;
   }
 }
 
@@ -139,41 +187,72 @@ function setup_banner(){
 }
 
 // ============================================================================= INDEX
-let index_element = null;
+// let index_element = null;
+//
+// function setup_index(){
+//   // get the index element
+//   index_element = get_element( 'index' );
+//
+//   // recursively fix all the links
+//   set_index_link( index_element );
+// }
+//
+// // this is the recursive function that fix the links in every child of the index element
+// // if the element is an 'a' element, fix it
+// // if not, call the function for each of its children
+// function set_index_link( el ){
+//   // if 'a' elements
+//   if( el.nodeName == 'A') {
+//     // get the old link
+//     let link = el.getAttribute('href');
+//     // fix the link
+//     link = 'html/' + encodeURIComponent( generation + '_' + product ) +
+//             '/' + encodeURIComponent( product ) + '.html' + link;
+//     // put the link back
+//     el.setAttribute( 'href', link );
+//     // fix the target
+//     el.setAttribute( 'target', '_parent' );
+//     // console.log( "yes", link );
+//   }else{
+//     // console.log( "no", el );
+//     // get all the children
+//     let children = el.children;
+//     // cycle for every children
+//     for (let i = 0; i < children.length; i++) {
+//       // call the function for the children in ith position
+//       set_index_link( children[i] );
+//     }
+//   }
+// }
 
-function setup_index(){
-  // get the index element
-  index_element = get_element( 'index' );
+// ============================================================================= CSS VARIABLES
+let variables_to_fix = [
+  '--background-image-left',
+  '--background-image-right',
+  '--banner-image'
+]
+let user_style = null;
 
-  // recursively fix all the links
-  set_index_link( index_element );
-
-}
-
-// this is the recursive function that fix the links in every child of the index element
-// if the element is an 'a' element, fix it
-// if not, call the function for each of its children
-function set_index_link( el ){
-  // if 'a' elements
-  if( el.nodeName == 'A') {
-    // get the old link
-    let link = el.getAttribute('href');
-    // fix the link
-    link = 'html/' + encodeURIComponent( milestone + '_' + product ) +
-            '/' + encodeURIComponent( product ) + '.html' + link;
-    // put the link back
-    el.setAttribute( 'href', link );
-    // fix the target
-    el.setAttribute( 'target', '_parent' );
-    // console.log( "yes", link );
-  }else{
-    // console.log( "no", el );
-    // get all the children
-    let children = el.children;
-    // cycle for every children
-    for (let i = 0; i < children.length; i++) {
-      // call the function for the children in ith position
-      set_index_link( children[i] );
-    }
+function setup_variables(){
+  // get the user-style
+  user_style = get_element( 'user-style' );
+  // get the text (content) of the style
+  let tx_cont = user_style.innerText;
+  // cycle through every variable that need to be fixed
+  for (var i = 0; i < variables_to_fix.length; i++) {
+    // split the text in three part, before the variable, the variable, after the variable
+    let arr = extract_content(tx_cont, variables_to_fix[i], ';');
+    // get the url from the variable
+    let url = arr[1].split('"')[1];
+    // fix the url to be relative to base/style.css and not the page
+    url = '../../html/' + encodeURIComponent( generation + '_' + product ) + '/' + url;
+    // reconstruct the url syntax
+    url = ': url("' + url + '");';
+    // put the url back in the array
+    arr[1] = url;
+    // merge the array to form a string and replace the style text variable with the new string
+    tx_cont = arr.join('');
   }
+  // replace the style text with the tx_cont
+  user_style.innerHTML = tx_cont;
 }
