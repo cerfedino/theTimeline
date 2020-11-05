@@ -42,9 +42,8 @@
   /* text styles */
   --link-color-hover: #f00;  /* given to the user */
 
-  /* info */
-  --generation: "base";
-  --product: "base"; /* given to the user */
+  /* content scrollbar */
+  --scrollbar-thumb: #88f;
 }
 
 /* all the elements */
@@ -201,7 +200,7 @@ html, body{
 /* #content::-webkit-scrollbar-button{ } */
 /* scrollbar handle */
 #content::-webkit-scrollbar-thumb {
-  background: white;
+  background: var( --scrollbar-thumb );
 }
 
 

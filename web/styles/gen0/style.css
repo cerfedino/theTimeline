@@ -35,8 +35,8 @@
   /* text styles */
   --link-color-hover: #f80;  /* given to the user */
 
-  /* info */
-  --generation: "gen0";
+  /* content scrollbar */
+  --scrollbar-thumb: #000;
 }
 
 @font-face {
