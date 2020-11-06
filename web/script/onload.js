@@ -111,9 +111,17 @@ function setup_audio(){
   let raw_audio_file = get_css_variable( '--audio-file' );
   // we extract only the path
   raw_audio_file = raw_audio_file.split('"')[1];
-  console.log("raw_audio_file", raw_audio_file);
   // we create the audio object from that file
   audio = new Audio( raw_audio_file );
+
+  // set the on error function to audio
+  audio.onerror = () => {
+    // if an error happened
+    // remove the audio button
+    audio_button.style.display = "none";
+    // print a message to the console
+    console.error("There was an error loading the audio file.\nAudio button hidden to prevent further errors.");
+  }
 
   // link the start/stop of the music to the sound-button
   audio_button.onclick = () => {
@@ -150,7 +158,6 @@ function setup_audio(){
       }
       // set the volume of the object to our volume
       audio.volume = audio_volume;
-      // console.log(audio_volume);
     }
   }
 
