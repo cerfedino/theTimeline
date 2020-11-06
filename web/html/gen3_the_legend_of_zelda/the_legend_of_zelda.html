@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generation 1 - The Legend of Zelda</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Arnaud Fauconnet">
+    <!-- put page info here -->
+    <meta name="date" content="1986-02-21"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen3">
+    <meta name="product" content="The Legend of Zelda">
+    <meta name="description" content="The first episode of a huge video game series"> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.jpg"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left:  url( "media/background_left.jpg" );
+        --background-image-right: url( "media/background_right.jpg" );
+        /* this is the fading color between the images */
+        /* --background-fade-color: #00f; */
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/banner.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #27ADE2;
+
+        /* the audio file that will be played  */
+        --audio-file: url( "media/sound.m4a" );
+      }
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+        <ol>
+            <li><a href="#s1">Introduction</a></li>
+            <li><a href="#s2">Story</a></li>
+            <li><a href="#s3">Gameplay</a>
+                <ol>
+                    <li><a href="#s3.1">Dungeon Exploration</a></li>
+                    <li><a href="#s3.2">Overworld Exploration</a></li>
+                    <li><a href="#s3.3">Second Quest</a></li>
+                </ol>
+            </li>
+            <li><a href="#s4">Gameplay</a>
+                <ol>
+                    <li><a href="#s4.1">Development</a></li>
+                    <li><a href="#s4.2">Graphics and Audio</a></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+          <h1>The Hyrule Fantasy: The Legend of Zelda</h1>
+          <h2 id="s1">Introduction</h2>
+
+          <p>
+          The Legend of Zelda is the first installment of the Zelda series. 
+          The plot revolves around a boy named <b>Link</b>, who becomes the main protagonist of the series.
+          The game came out in 1986 for the Famicom in Japan, and in 1987 in Europe and the US.
+          It has since then been re-released for other consoles, such as the Nintendo GameCube and the Game Boy Advanced.
+          The Japanese version of the game on the Famicom is known as the <b>The Hyrule Fantasy: The Legend of Zelda</b>.
+          </p>
+
+          <h2 id="s2">Story</h2>
+          <p>
+          <b>Ganon</b>, the Prince of Darkness, has plunged a small kingdom in the 
+          land of <b>Hyrule</b> into chaos. He lead his army into the land for one 
+          objective, to steal the <b>Triforce of Power</b>, one part of a magical
+          artifact which allows bestows great strength. <b>Princess Zelda</b>, who 
+          doesn't want Ganon to continue on his path of destruction, decides to 
+          split his next objective, the <b>Triforce of Wisdom</b> into eight fragments
+          and hides then in secret underground dungeons. Before eventually being 
+          kidnapped by Ganon, she asks Impa, her nursemaid, to find someone strong 
+          and courageous enough to save the kingdom. While walking around the land,
+          trying to complete her task, she gets surrounded by Ganon's henchmen, when 
+          a young man called Link appears and rescues her. Upon hearing Impa's plea,
+          he decides to save Princess Zelda. To do so, he goes out to collect the fragments
+          of the Triforce of Wisdom, to have a chance to defeat Ganon.
+          </p>
+
+          <h2 id="s3">Gameplay</h2>
+          <p>The game itself introduces a new level of gaming, on that
+          includes role-playing, action, adventure and puzzle/logic.</p>
+          <h3 id="s3.1">Dungeon Exploration</h3>
+          <p>
+          In order for Link to enter the dungeons he must battle creatures.
+          The dungeons in <i>The Legend of Zelda</i> are filled with enemies that block
+          Link from going forward, which are different from the ones found in the
+          <b>Overworld</b>. The objective of Link is to navigate successfully across the
+          maze-like collection of rooms that are connected by doors and secret entrances
+          in order to find a fragment of the Triforce of Wisdom. Each dungeon contain
+          items that are useful to fight enemies, collect items or to enter other
+          dungeons, so the order of completion of the dungeons becomes natural throughout
+          the gameplay.
+          </p>
+          <h3 id="s3.2">Overworld Exploration</h3>
+          <p>
+          The ability to complete a task in different ways or with different paths, also 
+          known today as a <i>non-linear gameplay</i> is what differentiates <i>The Legend
+          of Zelda</i> from its contemporaries. Link can freely walk around the Overworld, 
+          finding NPCs (non-player characters), finding or buying items, discover unseen
+          places at any point. Nintendo US thought this freedom of wondering around could be
+          frustrating or overwhelming so they decided to fill the game's manual with many
+          tips and hints to help the player know where to go.
+          </p>
+          <h3 id="s3.3">Second Quest</h3>
+          <p>
+          Second Quest, or also known today as <i>New Game +</i>, is the possibility, once
+          finished the game, to replay it with either items you possessed upon completed
+          the first run, or simply replaying the game with harder difficulty. Although
+          this feature wasn't new at the time, <i>The Legend of Zelda</i>
+          proposed it with entirely new levels, changing items locations and
+          stronger enemies.  The Second Quest is available even if the player
+          didn't finished the game, he only had to enter "ZELDA" as the his
+          name.
+          </p>
+          <h2 id="s4">Game information</h2>
+          <h3 id="s4.1">Development</h3>
+          <p>
+          Shigeru Miyamoto, who developed <i>The Legend of Zelda</i> but also
+          the <i>Super Mario</i> franchise, created the game as a launch title
+          for the Famicom. The intention behind <i>The Legend of Zelda</i> was
+          to bring a sense of adventure, as he has seen in the <i>Indiana Jones</i>
+          to a video game, so he started to explore the countryside and the
+          hillsides neighbouring his home to get inspiration for the new
+          fictional world he was about to create.
+          </p>
+          <h3 id="s4.2">Graphics and Audio</h3>
+          <p>
+          Due to the technical limitations of the hardware at the time, the
+          development team tried to use simple tricks to make the world look
+          larger than what it actually was. One of these was to apply a
+          different color palette for enemies, according to the region Link was.
+          </p>
+          <p>
+          The main theme of the franchise was designed for this one, it's name
+          is <i>The Overworld Tune</i>, although it has been re-orchestrated to
+          fit the capabilities of the new generations of consoles. The game also
+          possesses two other background themes: the <i>Standard Dungeon</i>
+          tune and the <i>Final Dungeon</i> tune, both of which were re-used in
+          other games of the franchise. Iconic sound samples, such as when Link
+          opens a chest, finds a new item or unveils a new path were often used
+          later games of the franchise.
+          </p>
+      </div>
+    </div>
+  </body>
+</html>
