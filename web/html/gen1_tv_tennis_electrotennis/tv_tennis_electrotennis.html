@@ -6,6 +6,11 @@
 
     <!-- Put your name here -->
     <meta name="author" content="Enrico Benedettini">
+    <meta name="date" content="1975-12-12"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen1">
+    <meta name="product" content="TV Tennis Electrotennis">
+    <meta name="description" content="The first japanese home console ever."> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product -->
 
     <!-- <base href="../../" target="_blank"> -->
     <style id="dummy-style"></style>
@@ -13,6 +18,8 @@
     <link rel="stylesheet" href="../../styles/base/style.css">
     <!-- this is the generation style, must be set to the appropriate generation -->
     <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the Benedettini file,  which applicates to all my pages or maybe others if needed-->
+    <link rel="stylesheet" href="../../styles/gen1/general.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
       :root{
@@ -42,10 +49,6 @@
 
         /* text styles parameters */
         /* --link-color-hover: #f00; */
-
-        /* informations */
-        --milestone: "gen#";
-        --product: "TEMPLATE";
       }
     </style>
     <!-- this is the script file for all the onload operations -->
@@ -68,10 +71,11 @@
     </div>
     <div id="container">
       <div id="banner">
-        <img src="media/TV_Tennis_Electrotennis.jpg" alt="Banner Image">
+        <h1>TV TENNIS ELECTROTENNIS</h1>
       </div>
       <div id="content">
         <h2 id="history">History</h2>
+        <img src="media/TV_Tennis_Electrotennis.jpg" alt="Original TV Tennis Electrotennis">
         <p>
           The <strong>Tv Tennis Electrotennis</strong> is a home dedicate console appartaining to the first generation.
           It was released by <strong>Epoch Co.</strong> together with <strong>Magnavox</strong> on  September 12<sup>th</sup>
@@ -81,11 +85,19 @@
         </p>
         <hr>
         <h2 id="console">Console</h2>
-        <p>This console implemented the Pong game but adding a unique feature which was the <b>UHF antenna</b>, that
+        <img src="media/electrotennis-silver.jpg" alt="Grey Electrotennis Model" width="300">
+        <p>
+          This console implemented the Pong game but adding a unique feature which was the <b>UHF antenna</b>, that
           allowed it to connect wirelessly to the TV.
           There also exist a model not famous at all with a silver grey cover as shown in the figure.
         </p>
-        <img src="media/electrotennis-silver.jpg" alt="Grey Electrotennis Model" width="300">
+        <hr>
+        <footer>
+          <h4 id="References">References</h4>
+          <ol>
+            <li><a href="https://it.wikipedia.org/wiki/TV_Tennis_Electrotennis">TV Tennis Content and Pic</a></li>
+          </ol>
+        </footer>
       </div>
     </div>
   </body>
