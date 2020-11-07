@@ -1,0 +1,54 @@
+{
+    "generations":[
+        {
+            "generation_name": "gen0",
+            "fromTo": ["2015","2020"],
+            "pages": [
+                {
+                    "product": "Game1",
+                    "date": "1975",
+                    "description" : "A game about balls",
+                    "href": "/html/gen0_game1/game1.html",
+                    "picture" : "/html/gen-pong/media/pic.png",
+                    "author": "Albert Cerfeda"
+                },
+                {
+                    "product": "Game2",
+                    "date": "1975",
+                    "description" : "A game about balls",
+                    "href": "/html/gen0_game2/game2.html",
+                    "picture" : "/html/gen-pong/media/pic.png",
+                    "author": "Albert Cerfeda"
+                }
+            ]
+        },
+        {
+            "generation_name": "gen1",
+            "fromTo": ["2015","2020"],
+            "pages": [
+                {
+                    "product": "Game3",
+                    "date": "1975",
+                    "description" : "A game about balls",
+                    "href": "/html/gen1_game3/game3.html",
+                    "picture" : "/html/gen-pong/media/pic.png",
+                    "author": "Albert Cerfeda"
+                }
+            ]
+        },
+        {
+            "generation_name": "gen2",
+            "fromTo": ["2015","2020"],
+            "pages": [
+                {
+                    "product": "Game4",
+                    "date": "1975",
+                    "description" : "A game about balls",
+                    "href": "/html/gen2_game4/game4.html",
+                    "picture" : "/html/gen-pong/media/pic.png",
+                    "author": "Albert Cerfeda"
+                }
+            ]
+        }
+    ]
+}
