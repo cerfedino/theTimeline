@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GENERATION 2 - FAIRCHILD CHANNEL F</title>
+
+  <!-- put your name here -->
+  <meta name="author" content="ALESSANDRO CRAVIOGLIO">
+  <!-- put page info here -->
+  <meta name="date" content="1976-08-08"> <!-- the date the product was launched -->
+  <meta name="generation" content="gen2">
+  <meta name="product" content="FAIRCHILD CHANNEL F">
+  <meta name="description" content="the page of the console Fairchild channel F"> <!-- a short description of the product -->
+  <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+  <!-- this is the base style, necessary in every product page -->
+  <link rel="stylesheet" href="../../styles/base/style.css">
+  <!-- this is the generation style, must be set to the appropriate generation -->
+  <link rel="stylesheet" id="generation-style" href="../../styles/gen2/style.css">
+  <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+       <style id="user-style">
+      :root{
+         /* these are the background images (left and right) */
+        /* --background-image-left: url( "./media/background_left.jpg" );
+        --background-image-right: url( "./media/background_right.jpg" );
+         this is the fading color between the images */
+        --background-fade-color: rgb(255, 255, 255);
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/Fairchil_Background.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        /* --banner-color: #0ff; */
+
+        /* the audio file that will be played
+        --audio-file: url( "../styles/base/media/sound.mp3" ); */
+
+        /* the container parameters */
+        --container-background-color: #fff;
+        --container-text-color: #000;
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #fff;
+        --index-text-color: #000;
+        --index-border-color: #000;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* informations */
+        --milestone: "gen2";
+        --product: "Fairchild_Channel_F";
+      }
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+        <ol>
+          <li><a href="#s1">The Console</a>
+            <ol>
+              <li><a href="#s1.0">A bit of History</a></li>
+              <li><a href="#s1.1">The Hardware</a></li>
+            </ol>
+          </li>
+          <li><a href="#s2">Games Supported</a>
+          </li>
+          <li><a href="#s3">History and Reception</a>
+          </li>
+        </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img src="media/Fairchild_Background.png" alt="Banner Image" width="100%">
+      </div>
+      <div id="content">
+        <h2 id="s1">The Console</h2>
+        <h3 id="s1.0">A bit of History</h3>
+        <table>
+        <tr>
+          <td><p>
+          The Fairchild Channel F was the first programmable console based on ROM cartridges and started the second generation of consoles.
+          It was put on sale by Fairchild Semiconductor ( a division of the parent company) in August 1976 at a cost of 169.95 US dollars.
+          Initially called Video Entertainment System or VES, it took the name Channel F in 1977 after Atari presented its VCS console.
+        </p></td>
+          <td width="40%"><img src="media/fairchild_true_console.jpeg" alt="game cartridges" width="100%" height="250px"></td>
+        </tr>
+        </table>
+        <h3 id="s1.1">The Hardware</h3>
+        <p>
+          The Channel F electronics was designed using the Fairchild F8 microprocessor as CPU.
+          The F8 CPU was very complex and offered many more input and output lines than other chips.
+          The CPU was powerful enough to write games with artificial intelligence to allow you to play
+          "against the computer", when other consoles only allowed you to play against another human player.
+          The graphics of the console was rudimentary: the screen had a resolution of 128×64 pixels;
+          for the background it could display only 1 color chosen among 4 for each line of the image, while for the
+          main graphics you could choose only between 3 main colors, red, green and blue, or white in case the background was black.
+          The RAM memory was 64 bytes.
+          <ul>
+        <li>CPU: Fairchild F8 (8-bit)</li>
+        <li>RAM: 2KB, plus 64 bytes of scratchpad memory</li>
+        <li>Input: two controllers</li>
+        <li>Output: wired video signal</li>
+      </ul>
+        </p>
+        <h2 id="s2">Games Supported</h2>
+
+          <table>
+            <tr>
+              <td width="40%"><img src="media/game_cartridges.jpeg" alt="game cartridges" width="100%" height="250px">
+              </td>
+              <td><p>The amonunt of games releasd with this console is not huge: only twenty-seven games cartridges were released
+          for the Fairchild Channel F. It has be to be said that several of these cartridges were capable of playing
+          more games (example: Videocart 1 has Tic-Tac-Toe, Shooting Gallery, Doodle and Quadra Doodle)
+          In addition to these, two standard games were sold together with the console: Tennis and Hockey. An unusual
+          feature of this console are the incredibly colorful artwork of the games cartridges. Fun fact: the Pac-Man cartridge,
+              aka Game Cartridge 27, was released for the Channel F in year 2009.
+          </p></td>
+            </tr>
+
+          </table>
+        <h2 id="s3">Impact on the Market and Reception</h2>
+        <p>
+          The Channel F was launched in November 1976, nearly a year before Atari’s VCS console.
+           It's renown to be the first console with <b>REMOVABLE GAME CARRTRIDGES</b>, we could call it the first console with "removable software".
+           Its Fairchild F8 microprocessor, low resolution color graphics, and 2K RAM were outclassed by its rival despite its
+           far superior joysticks, and its lack of the Atari’s much larger software catalog saw it steadily lose ground into the
+           1980s despite a hardware revamp. Surprisingly it continued production until 1983,with 250'000 units sold, by which time it must have
+           appeared an anachronism when compared to the crop of 8-bit microcomputers.</p>
+      </div>
+    </div>
+  </body>
+</html>
