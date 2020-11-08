@@ -14,7 +14,7 @@
   /* container */
   --container-background-color: #000; /* given to the user */
   --container-text-color: #fff;  /* given to the user */
-  --container-border-color: #000; /* given to the user */
+  --container-border-color: #fff; /* given to the user */
 
   /* index */
   --index-background-color: #000; /* given to the user */
@@ -37,6 +37,10 @@
 
   /* content scrollbar */
   --scrollbar-thumb: #000;
+}
+
+html {
+  font-size: 120%;
 }
 
 @font-face {
