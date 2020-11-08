@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="970a38f1-c7b6-4493-8158-15f7001ec19d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k1bYxaubOSEmf2IKNq4QqcMLzt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/find-broken-links.py" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="970a38f1-c7b6-4493-8158-15f7001ec19d" name="Default Changelist" comment="" />
+      <created>1604871095370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604871095370</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="695" width="1076" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604871867637">
+      <screen x="0" y="0" width="1920" height="1620" />
+    </state>
+    <state x="424" y="695" width="1076" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1620@0.0.1920.1620" timestamp="1604871867637" />
+    <state x="1145" y="296" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604871148007">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1145" y="296" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604871148007" />
+    <state x="743" y="758" key="FileChooserDialogImpl" timestamp="1604871862798">
+      <screen x="0" y="0" width="1920" height="1620" />
+    </state>
+    <state x="743" y="758" key="FileChooserDialogImpl/0.0.1920.1620@0.0.1920.1620" timestamp="1604871862798" />
+    <state width="935" height="289" key="GridCell.Tab.0.bottom" timestamp="1604872241329">
+      <screen x="0" y="0" width="1920" height="1620" />
+    </state>
+    <state width="935" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1620@0.0.1920.1620" timestamp="1604872241329" />
+    <state width="935" height="289" key="GridCell.Tab.0.center" timestamp="1604872241329">
+      <screen x="0" y="0" width="1920" height="1620" />
+    </state>
+    <state width="935" height="289" key="GridCell.Tab.0.center/0.0.1920.1620@0.0.1920.1620" timestamp="1604872241329" />
+    <state width="935" height="289" key="GridCell.Tab.0.left" timestamp="1604872241328">
+      <screen x="0" y="0" width="1920" height="1620" />
+    </state>
+    <state width="935" height="289" key="GridCell.Tab.0.left/0.0.1920.1620@0.0.1920.1620" timestamp="1604872241328" />
+    <state width="935" height="289" key="GridCell.Tab.0.right" timestamp="1604872241329">
+      <screen x="0" y="0" width="1920" height="1620" />
+    </state>
+    <state width="935" height="289" key="GridCell.Tab.0.right/0.0.1920.1620@0.0.1920.1620" timestamp="1604872241329" />
+  </component>
+</project>

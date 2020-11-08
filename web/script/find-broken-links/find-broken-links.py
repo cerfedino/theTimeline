@@ -26,7 +26,7 @@ def getLinksHTML(html):
 # Finds all broken links and takes as arguments the domain, URL and parent URL
 def find_links_broken(searchDomain, URL, pURL):
     # Excludes the links containing mail references, javascript files and pictures
-    if (not (URL in links_searched)) and (not URL.startswith("mailto:")) and (not ("javascript:" in URL)) and (not URL.endswith(".jpg")) and (not URL.endswith(".jpeg")) and (not URL.endswith(".png") and (not URL.endswith(".gif")):
+    if (not (URL in links_searched)) and (not URL.startswith("mailto:")) and (not ("javascript:" in URL)) and (not URL.endswith(".jpg")) and (not URL.endswith(".jpeg")) and (not URL.endswith(".png")) and (not URL.endswith(".gif")):
         # Tries to make a HTTP request to the provided URL
         try:
             # Object that take an URL request
