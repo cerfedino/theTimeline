@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import os
+import os, sys
 import json
 import operator
 import datetime
@@ -69,7 +69,7 @@ def main():
     metaToExtract = ["author", "date", "generation", "product", "description", "picture"]
 
     # Folder to scan for his subdirectories and html files
-    folderToScan = '../../html/'
+    folderToScan = os.path.normpath(os.path.dirname(__file__)  +'/../../html/')
 
     # Folders to ignore
     foldersToIgnore = ["gen#_TEMPLATE", "timeline"]
@@ -98,12 +98,11 @@ def main():
     generations['-1'] = {'gen#' : generations['gen#'], 'invalid':generations['invalid']}
     generations.pop('gen#')
     generations.pop('invalid')
-    generations = dict(sorted(generations.items(), key=operator.itemgetter(0)))
+    generations = json.dumps(generations, sort_keys=True, indent=2)
 
-    print(json.dumps(generations, indent=2))
+    #print(json.dumps(generations, indent=2))
 
-    with open('out.json', 'w') as f:
-        f.writelines(json.dumps(generations, indent=2))
+    sys.stdout.write(generations)
 
 if __name__ == '__main__':
     main()
