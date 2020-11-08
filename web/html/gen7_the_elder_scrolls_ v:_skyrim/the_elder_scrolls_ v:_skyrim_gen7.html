@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>the_elder_scrolls_ v:_skyrim_</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Ntwali Muhizi">
+    <!-- put page info here -->
+    <meta name="date" content="2020-11-05"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen7">
+    <meta name="product" content="the elder scrolls v: skyrim">
+    <meta name="description" content="Best template ever, long live the CSS LEADERS!!"> <!-- a short description of the product -->
+    <meta name="picture" content="skyrim.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.jpg" );
+        --background-image-right: url( "media/TES:background.png" );
+
+        /* this is the fading color between the images 
+        --background-fade-color: #00f; */
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/The_Elder_Scrolls_V_-_Skyrim_logo.png"  );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #424949;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/Standing Stones.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #000;
+        --container-text-color: rgb(255, 255, 255);
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #000;
+        --index-text-color: rgb(255, 255, 255);
+        --index-border-color: #000;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: rgb(255, 255, 255);
+      }
+
+      /* your style here */
+      .responsiveimg{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        height: auto;
+      } 
+
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Brief Summary</a></li>
+        <li><a href="#s2">Story</a> 
+          <ol>
+            <li><a href="#s2.1">Plot</a></li>
+          </ol>
+        </li>
+        <li><a href="#s3"> Gameplay</a>
+          <ol>
+            <li><a href="#s3.1">Travel</a></li>
+            <li><a href="#s3.2">Player interactions</a></li>
+          </ol>
+        </li>
+        <li><a href="#s4"> Development</a>
+          <ol>
+            <li><a href="#s4.1">Development team</a></li>
+            <li><a href="#s4.2">Design</a></li>
+            <li><a href="#s4.3">Engine</a></li>
+          </ol>
+        </li>
+        <li><a href="#s5"> Impact</a>
+          <ol>
+            <li><a href="#s5.1">Reception</a></li>
+            <li><a href="#s5.2">Importance</a></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner">
+      </div>
+      <div id="content">
+        <h1>The Elder Scrolls V: Skyrim</h1>
+        <h2 id="s1">Brief summary</h2>
+        <p>
+          The Elder Scrolls V: Skyrim, named the 2011 Game of the Year, was a highly anticipated chapter of the Elder Scrolls saga. Developed by Bethesda Game Studios,
+          the studio that brought us Oblivion and Fallout 3. Skyrim reimagined and revolutionized the open-world 
+          fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose. 
+        </p>
+        <h2 id="s2"> Story</h2>
+        <br>
+        <h3 id="s2.1">plot</h3>
+        <p>
+          Even though TES V: Skyrim succeeds Oblivion it is not a direct sequel as 200 years have passed since the events of The Elder Scrolls IV: Oblivion, and it is now 4E 201. The High King of Skyrim has been killed, and the threat of Civil War looms over the land of Skyrim;
+           One side wishes to secede from the weakened Third Empire, while the other wishes to remain a part of it. To make matters worse, this schism is the final event in a prophecy foretold by the Elder Scrolls that will lead to the return of the dragons under Alduin,
+           the Nordic god of destruction.
+        </p> 
+          <br>
+        <p>
+          The player starts the game as a prisoner being led to an execution overseen by General Tullius, which includes Ulfric Stormcloak, who is leading a rebellion against the Imperials, among the prisoners to be executed there.
+           The dragon Alduin unexpectedly interrupts the procession, destroying the town of Helgen before the player can be executed.  In the midst of the chaos, Hadvar, several Stormcloaks, along with their leader and fellow prisoner, Ulfric Stormcloak, assist in the player's escape.
+            After assisting and gaining the favor of Jarl Balgruuf the Greater, The player later learns that they are Dovahkiin, or Dragonborn, a person charged with the duty of defeating Alduin and the dragons.
+             Eventually, the player meets Delphine, and Esbern, two of the last remaining Blades, and becomes the pupil of the esteemed Greybeards of High Hrothgar.
+        </p>
+        <img src="media/Skyrim_map.jpg" alt=" Map of skyrim" class="responsiveimg">
+        <br>
+        <h2 id="s3">Gameplay</h2>
+        <br>
+        <h3 id="s3.1">Travel</h3>
+        <p>
+          The Elder Scrolls V: Skyrim is an action role-playing game, playable from either a first or third-person perspective. Skyrim retains the traditional open-world gameplay found in the Elder Scrolls series where the player may freely roam over the land of Skyrim. Skyrim's environment consists of wilderness expanses, dungeons, caves, cities, towns, fortresses, and villages.
+           Players may navigate the game world more quickly by riding horses, paying for a ride from a city's stable. 
+        </p>
+        <br>
+        <img src="media/Travel_skyrim.jpg" alt=" travel skyrim" class="responsiveimg"> <br>
+        <p> or by utilizing a fast-travel system which allows them to warp to previously discovered locations. The game's main quest can be completed or ignored at the player's preference after the first stage of the quest is finished. However, some quests rely on the main storyline being at least partially completed
+        </p>
+        <img src="media/Fast_Travel_TESV.jpg" alt=" Fast travel" class="responsiveimg" style="padding-top: 5px;">   
+        <br>
+        <h3 id="s3.2">Player Interactions</h3>
+        <p>
+          Since TES V is an open world game their are many ways a player can interact with the world i.e NPCs and the enviroment. Like any other open world game,
+           Non-player characters populate the world and can be interacted with in a number of ways: the player may engage them in conversation, marry certain NPCs, kill them or engage them in a nonlethal "Brawl".
+          If witnessed, crimes like murder and theft accrue the player a bounty which is tracked independently in each of Skyrim's nine holds.
+          Should the player be stopped by a guard, they may wipe their bounty with gold or jail time or may resist arrest which will trigger an aggressive pursuit.
+          NPCs may offer the player additional side-quests and some side-quests have parameters adjusted based on nearby dungeons which the player has yet to explore.
+          Some NPCs who are befriended or hired by the player may act as companions who will accompany the player and aid them in combat.
+          The player may choose to join factions which are organized groups of NPCs - for example, the Dark Brotherhood, a band of assassins.
+        </p>
+        <br>
+        <p>
+          The player can also engage with the enviroment. When exploring the game world the player may encounter wildlife. Many creatures in the wilderness are immediately hostile towards the player. However, game animals such as elk and deer will simply run away. 
+           Like other creatures, dragons are generated randomly in the world and will engage in combat with NPCs, other creatures and the player. Some dragons may attack cities and towns when in their proximity.
+           The player character can absorb the souls of dragons in order to use powerful spells called «dragon shouts» or «Thu'um». The words to shouts can be learned by visiting «word walls» in dungeons or around the wilderness.
+          The words to each shouts are unlocked for use by spending the absorbed souls of slain dragons. 
+        </p>
+        <br>
+        <h2 id="s4">Development</h2> 
+        <p>
+          After the completion of the elder scrolls IV: Oblivion, Bethesda started working on <em>Fallout 3</em> and it was at this time the team began planning their next The Elder Scrolls game.
+           From the outset, they had decided to set the new entry in the land of Skyrim, incorporating dragons into the main theme of the game. Full development began following the release of Fallout 3 in 2008
+        </p>
+        <br>
+        <h3 id="s4.1"> Design</h3>
+        <p>
+          The team set the game in the province of Skyrim, designing it by hand. While similar in size to Oblivion's game world of Cyrodiil, the mountainous topography of the world inflates the game space and makes it more difficult to traverse than Cyrodiil, which was relatively flat.
+          In designing Skyrim's world, the team opted for a different approach to what was taken with Oblivion; art director Matt Carofano considered the "epic-realism" of Skyrim's world design as a departure from Oblivion's generic representation of classic European fantasy lore.
+          Todd Howard &#40;Game director&#41; expressed the team's desire to re-encapsulate the "wonder of discovery" of Morrowind's game world in Skyrim, as the return to the classic fantasy of Arena and The Elder Scrolls II: Daggerfall in Oblivion meant sacrificing a world with a unique culture.
+          As a way of creating diversity in the world, the team divided the world into nine sectors, known as holds, and attempted to make each hold feel topographically unique from one another;
+           in addition, the team wanted to reflect the socioeconomic background of the NPCs by making some locations elaborate and wealthy while others are poorer and lower-tech
+        </p>
+        <br>
+        <p>
+          The team sought to make each of the game's ten races feel unique; Howard considered the player's choice of race at the beginning of the game a more important decision than it had been in previous The Elder Scrolls games because the culture of Skyrim's world contains more racism.
+           However, he reiterated that the player's choice of race does not have major game-affecting consequences as it simply adds "flavor" in different NPCs' dispositions towards the player, and is not meant as a way of locking players out of particular quests.
+            Efforts to make Skyrim's world feel hand-crafted extended to the team abandoning the use of generated landscapes as they had done in Oblivion. While just one team member was charged with designing dungeons in Oblivion, Skyrim's 150 dungeons were designed by a group of eight people.
+             Skyrim features 244 quests, over 300 points of interest with a map marker and numerous unmarked locations.
+        </p>
+        <br>
+        <h3 id="s4.2"> Engine</h3>
+        <p>
+          Skyrim uses a new engine developed in-house by Bethesda, called the Creation Engine. 
+          The CE was designed with advanced graphics, long draw distances, and variable environments in mind,
+           and is capable of implementing features such as uneven weather effects, more realistic weather simulation based upon altitude and geographic region,
+            more realistically flowing water, and environmental effects like rain and snow having realistic interaction with obstacles.
+        </p>
+        <br>
+        <p>
+          The CE allows the use of a new and improved version of <em>Oblivion</em>'s Radiant A.I. 
+          system to govern character throughout the game world. With the new system, developers may assign characters a wide variety of tasks and characteristics,
+           giving each of them actions that complement his or her unique personality and thus deepening player interaction with the characters of Skyrim. 
+           Characters now come in much more interesting varieties, from heavy drinkers to hard workers, layabouts to vigilant adventurers, and serve as a much greater part of the game than in Oblivion.
+        </p>
+        <br>
+        <p>
+          
+           Skyrim  also introduced the Radiant Story system, which governs quests and how they function. Radiant Story dynamically alters side quests based on the player's actions, and tailors them to the player's abilities and progress within the game.
+          As an example, the player might be sent off to a dungeon that has not been previously explored and face enemies that are defeated most effectively with the player's preferred combat style. It also randomly generates unique events and encounters,
+           taking influence from Bethesda's previous game Fallout 3; this includes character interaction such as a courier delivering quest missives or letters from significant figures, or hired thugs seeking out and attacking the player.
+        </p>
+        <br>
+        <h2 id="s5">Impact</h2> 
+        <h3 id="s5.1">recetion</h3> 
+        <p>
+          Skyrim received awards from numerous gaming sites and publications, and has been considered to be among the best video games of all time. IGN and GameSpot named Skyrim "PC Game of the Year".
+           It also received GameSpot's "Readers' Choice" award. The game received the "RPG of the Year" award from Spike TV, IGN, X-Play,GameSpot and GameSpy. It received "Overall Game of the Year" wins from Spike TV, Giant Bomb, X-Play,
+           Machinima.com, GameSpot, 1UP.com, Game Revolution, GameSpy Joystiq and the Interactive Achievement Awards. to name a few
+        </p>
+        <br>
+        <h3 id="s5.2">Importance</h3>
+        <p>
+          Hailed by many as the pinnacle of gaming—with its enormous open world, countless quests and storylines, and extensive character building. 
+          The Elder Scrolls V: Skyrim stands as a defining open world RPG for the fantasy genre. Utilizing a combination of in innovative design techniques for weather and environment, coupled with a full re-imagining of how the Elder Scrolls series could work mechanically,
+          Skyrim was unquestionably one of the most important games of the decade. even after finishing the story The game is filled with densely written lore and character arcs, with only one REAL objective for the player: <strong>EXPLORE</strong>, 
+          . You can go wherever you want, fight whatever you want, and obtain power and responsibility through the world via the outcomes of your actions. TESV was revolutionary for it's time and as said before 
+          will be forever known as one of the pioneers of Video games, especially open world role playing games
+
+        </p>
+
+      </div>
+    </div>
+  </body>
+</html>
