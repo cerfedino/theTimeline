@@ -1,0 +1,259 @@
+{
+  "gen8": {
+    "pages": [
+      {
+        "picture": "media/placeholder.png", 
+        "product": "Half Life: Alyx", 
+        "description": "A web page about the 2020 VR game, Half Life: Alyx", 
+        "author": "Arthur Morgan", 
+        "href": "../../html/gen8_half_life_alyx/half_life_alyx.html", 
+        "date": "2020-03-23"
+      }
+    ]
+  }, 
+  "gen6": {
+    "pages": [
+      {
+        "picture": "media/placeholder.gif", 
+        "product": "Super Smash Bros Melee", 
+        "description": "One of the best Super Mario Games", 
+        "author": "Ludovica Savoia", 
+        "href": "../../html/gen6_super_smash_bros/Super_smash_bros_melee.html", 
+        "date": "2001-11-21"
+      }, 
+      {
+        "picture": "media/placeholder.gif", 
+        "product": "Super Smash Bros Melee", 
+        "description": "One of the best Super Mario Games", 
+        "author": "Ludovica Savoia", 
+        "href": "../../html/gen6_Super_smash_bros/Super_smash_bros_melee.html", 
+        "date": "2001-11-21"
+      }
+    ]
+  }, 
+  "gen7": {
+    "pages": [
+      {
+        "picture": "skyrim.gif", 
+        "product": "the elder scrolls v: skyrim", 
+        "description": "Best template ever, long live the CSS LEADERS!!", 
+        "author": "Ntwali Muhizi", 
+        "href": "../../html/gen7_the_elder_scrolls_ v:_skyrim/the_elder_scrolls_ v:_skyrim_gen7.html", 
+        "date": "2020-11-05"
+      }
+    ]
+  }, 
+  "gen4": {
+    "pages": [
+      {
+        "picture": "media/ff.gif", 
+        "product": "Final Fantasy", 
+        "description": "The first installment of the Final Fantasy series", 
+        "author": "Francesco Costa", 
+        "href": "../../html/gen4_final_fantasy/final_fantasy.html", 
+        "date": "1987-12-18"
+      }
+    ]
+  }, 
+  "gen5": {
+    "pages": [
+      {
+        "picture": "media/game_boy.gif", 
+        "product": "Game Boy", 
+        "description": "First console of the Game Boy series, developed by Nintendo", 
+        "author": "Francesco Costa", 
+        "href": "../../html/gen5_game_boy/game_boy.html", 
+        "date": "1989-04-21"
+      }, 
+      {
+        "picture": "media/pokemon_red_blue.gif", 
+        "product": "Pok\u00e9mon Red and Blue", 
+        "description": "The first installments of the world famous series of video games: Pok\u00e9mon", 
+        "author": "Francesco Costa", 
+        "href": "../../html/gen5_pokemon_red_blue/pokemon_red_blue.html", 
+        "date": "1996-02-27"
+      }, 
+      {
+        "picture": "media/placeholder.gif", 
+        "product": "MAjora's Mask", 
+        "description": "A webpage about Majora's Mask", 
+        "author": "MARCO VESCIO", 
+        "href": "../../html/gen5_majora_s_mask/majoras_mask.html", 
+        "date": "2001-01-12"
+      }
+    ]
+  }, 
+  "gen2": {
+    "pages": [
+      {
+        "picture": "media/fairchild_channel_f_square.jpg", 
+        "product": "FAIRCHILD CHANNEL F", 
+        "description": "the page of the console Fairchild channel F", 
+        "author": "ALESSANDRO CRAVIOGLIO", 
+        "href": "../../html/gen2_fairchild_channel_f/fairchild_channel_f.html", 
+        "date": "1976-08-08"
+      }, 
+      {
+        "picture": "media/Intelli_Logo.jpg", 
+        "product": "Intellivision", 
+        "description": "The console Mattel Intellivision", 
+        "author": "ALESSANDRO CRAVIOGLIO", 
+        "href": "../../html/gen2_intellivision/intellivision.html", 
+        "date": "1979-05-01"
+      }
+    ]
+  }, 
+  "gen3": {
+    "pages": [
+      {
+        "picture": "media/placeholder.jpg", 
+        "product": "The Legend of Zelda", 
+        "description": "The first episode of a huge video game series", 
+        "author": "Arnaud Fauconnet", 
+        "href": "../../html/gen3_the_legend_of_zelda/the_legend_of_zelda.html", 
+        "date": "1986-02-21"
+      }
+    ]
+  }, 
+  "gen1": {
+    "pages": [
+      {
+        "picture": "media/placeholder.gif", 
+        "product": "Genres", 
+        "description": "A briefly recap about the various first generation genres.", 
+        "author": "Enrico Benedettini", 
+        "href": "../../html/gen1_genres/genres.html", 
+        "date": "1972-05-24"
+      }, 
+      {
+        "picture": "media/magnavox.gif", 
+        "product": "Magnavox Odyssey", 
+        "description": "The first home console ever", 
+        "author": "Enrico Benedettini", 
+        "href": "../../html/gen1_magnavox_odyssey/magnavox_odyssey.html", 
+        "date": "1972-05-24"
+      }, 
+      {
+        "picture": "media/magnavox.gif", 
+        "product": "Odyssey Series", 
+        "description": "The main first generation console series.", 
+        "author": "Enrico Benedettini", 
+        "href": "../../html/gen1_odyssey_series/odyssey_series.html", 
+        "date": "1972-05-24"
+      }, 
+      {
+        "picture": "media/placeholder.gif", 
+        "product": "TV Tennis Electrotennis", 
+        "description": "The first japanese home console ever.", 
+        "author": "Enrico Benedettini", 
+        "href": "../../html/gen1_tv_tennis_electrotennis/tv_tennis_electrotennis.html", 
+        "date": "1975-12-12"
+      }, 
+      {
+        "picture": "media/placeholder.gif", 
+        "product": "Handheld Systems", 
+        "description": "The first handheld consoles ever.", 
+        "author": "Enrico Benedettini", 
+        "href": "../../html/gen1_handheld_systems/handheld_systems.html", 
+        "date": "1976-01-01"
+      }
+    ]
+  }, 
+  "-1": {
+    "gen#": {
+      "pages": [
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen2_adventure/adventure.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen5_majora_s_mask/TEMPLATE.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen7_battlefield_bad_company/battlefield_bad_company.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen2_utopia/utopia.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen5_nintendo_64/TEMPLATE.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen4_super_metroid/TEMPLATE.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen2_missile_command/missile_command.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen2_space_invaders/space_invaders.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen5_grand_theft_auto/TEMPLATE.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen2_pac_man/pac_man.html", 
+          "date": "2001-01-12"
+        }, 
+        {
+          "picture": "media/placeholder.gif", 
+          "product": "TEMPLATE", 
+          "description": "Best template ever, long live the CSS LEADERS!!", 
+          "author": "NOME COGNOME", 
+          "href": "../../html/gen4_sonic_the_hedgehog/TEMPLATE.html", 
+          "date": "2001-01-12"
+        }
+      ]
+    }, 
+    "invalid": [
+      "../../html/gen5_nintendo_64/nintendo_64.html"
+    ]
+  }
+}

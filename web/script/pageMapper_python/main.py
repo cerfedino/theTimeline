@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
-import requests
-import os, sys
+import os
 import json
 import operator
 import datetime
@@ -36,8 +35,21 @@ def extractMeta(href,metaToExtract):
         if 'name' in tag.attrs.keys() and tag.attrs['name'] in metaToExtract:
             currPage[tag.attrs['name']] = tag.attrs['content']
 
-    if all(key in currPage for key in metaToExtract):
+    if isPageValid(currPage,metaToExtract):
         return currPage
+    else:
+        return False
+
+# Check if the page is valid
+def isPageValid(page, metaToExtract):
+    valid = True
+    try:
+        datetime.datetime.strptime(page['date'], '%Y-%m-%d')
+    except ValueError:
+        valid = False
+
+    if all(key in page for key in metaToExtract) and valid:
+        return True
     else:
         return False
 
@@ -92,7 +104,6 @@ def main():
 
     with open('out.json', 'w') as f:
         f.writelines(json.dumps(generations, indent=2))
-
 
 if __name__ == '__main__':
     main()
