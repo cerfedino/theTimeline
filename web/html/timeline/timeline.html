@@ -30,6 +30,7 @@
             if (xobj.readyState == 4 && xobj.status == "200") {
                 //console.log(xobj.responseText);
                 JSONobj = JSON.parse(xobj.responseText);
+                delete JSONobj['-1'];
             }
         };
         xobj.send(null);
@@ -47,8 +48,8 @@
             var leftPane = '<td id="leftpane"> <ul>';
 
             // For every generation a navmenu generation label is generated
-            JSONobj.generations.forEach(function (el,index){
-                var genName = el.generation_name;
+            Object.keys(JSONobj).forEach(function (el,index){
+                var genName = el;
 
                 leftPane+=`<li class="navmenu-entry gen" href="${genName}">${genName}</li>`;
 
@@ -63,12 +64,12 @@
             var rightPane = '<td id="rightpane">';
 
             // For every generation, an unordered list is generated
-            JSONobj.generations.forEach(function (el,index){
-                var genName = el.generation_name;
+            Object.keys(JSONobj).forEach(function (el,index){
+                var genName = el;
                 rightPane+=`<ul class="${genName}">`;
 
                 // For every page in the generation, a list item is generated
-                el.pages.forEach(function (page){
+                JSONobj[el].pages.forEach(function (page){
                     rightPane+=`<li class="navmenu-entry page" href="${page.href}">${page.product}</li>`;
                 });
 
@@ -122,15 +123,15 @@
     }
 
     // Generates a timeline of a specific generation
-    function generateTimeline(generation_jsonobj){
+    function generateTimeline(generation_key){
         var timeline=`
         <div class="generationLabel">
-            ${generation_jsonobj.generation_name}
+            ${generation_key}
         </div>`;
 
-        timeline+=`<div class="timeline" id="${generation_jsonobj.generation_name}">`;
+        timeline+=`<div class="timeline" id="${generation_key}">`;
         var placedLeft = true;
-        generation_jsonobj.pages.forEach(function (page,index){
+        JSONobj[generation_key].pages.forEach(function (page,index){
             console.log(page);
             timeline+=generateEventContainer(page, placedLeft);
             placedLeft=!placedLeft;
@@ -143,7 +144,7 @@
     // Generates the full timeline, composed of the timelines of every generation
     function generateFullTimeline(){
         var fulltimeline="";
-        JSONobj.generations.forEach(function (gen,index){
+        Object.keys(JSONobj).forEach(function (gen,index){
             fulltimeline+=generateTimeline(gen);
         });
         return fulltimeline;
