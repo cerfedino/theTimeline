@@ -29,6 +29,12 @@
   color: #fff;
 }
 
+/* the line */
+#gen2.timeline::after{
+  /* background */
+  background-color: #FFFF00;
+}
+
 /* the rectangle */
 #gen2 .content{
   /* border */
@@ -60,12 +66,12 @@
 /* the dot on the line */
 #gen2 .container::after{
   /* position */
-  top: 22px;
+  top: 17px;
   margin: 0;
 
   /* size */
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 
   /* border */
   border: none;
@@ -76,9 +82,9 @@
 }
 #gen2 .right::after{
   /* position */
-  left: -10px;
+  left: -15px;
 }
 #gen2 .left::after{
   /* position */
-  right: -10px;
+  right: -15px;
 }
