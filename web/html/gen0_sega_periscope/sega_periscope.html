@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sega Periscope</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Anton Tanev">
+    <!-- put page info here -->
+    <meta name="date" content="1966-01-01"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen0">
+    <meta name="product" content="Sega Periscope">
+    <meta name="description" content="A shooting gallery game, simutlating a submarine attacking warships"> <!-- a short description of the product -->
+    <meta name="picture" content="pic1.jpg"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        /* --background-image-left: url( "media/background.jpg" ); */
+        /* --background-image-right: url( "media/background.jpg" ); */
+        /* this is the fading color between the images */
+        --background-fade-color: #d11919;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/pic-banner.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: black;
+
+        /* the audio file that will be played */
+        /* --audio-file: url( "media/sound.mp3" ); */
+
+        /* the container parameters */
+        /* --container-background-color: grey;  */
+        /* --container-text-color: white; */
+        /* --container-border-color: black; */
+
+        /* the index parameters */
+        /* --index-background-color: grey; */
+        /* --index-text-color: white; */
+        /* --index-border-color: black; */
+
+        /* text styles parameters */
+        --link-color-hover: red;
+
+        /* content scrollbar */
+         --scrollbar-thumb: #d11919;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Development</a>
+        </li>
+        <li><a href="#s2">Gameplay</a>
+        </li>
+        <li><a href="#s3">Legacy</a>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Development</h2>
+        <p>
+        The Persicope is an electromechanical shooting gallery arcade game developed by two different companies:
+        <ul>
+          <li>Sega Enterprices</li>
+          <li>Nakamura Manufacturing Co (Namco)</li>
+        </ul>
+        Nakamura claims the Persicope as their first arcade game, launching as early as 1965 in Japan, while Sega's version launched
+        in 1966. The arcade machine popularized the 25 cents cost per play in the USA and lead to development of 8 to 10 new arcade
+        games by Sega each year, for the next few years. The original release by Sega consisted of a three-player cabinet with a cost
+        per play of 30 Japanese Yen. It was later demonstrated alongside slot machines, slot racing games, and pinball games at the
+        23rd London Amusement Trades Exhibition show in December 1966.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic2.jpg" alt="The arcade machine" width="300px">
+        <figcaption>The arcade machine</figcaption>
+        </center>
+        <br>
+        A smaller single-player cabinet was distributed internationally, though it was still larger in dimensions than most games of the
+        time. Japan's high export tax made the machine very expensive, costing around 1295$ per unit.
+        <h2 id="s2">Gameplay</h2>
+        <p>
+        The arcade machine contains a shooting gallery game, which simulates a battle between a submarine and warships, the background of the game
+        is an ocean, and the ships are represented by cardboards cutouts. Players have to use a periscope to direct and fire a total of 5 torpedoes, represented
+        by lines of colored lights and sound effects, at the horizontally moving ships.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic3.jpg" alt="Gameplay" width="300px">
+        <figcaption>Gameplay</figcaption>
+        </center>
+        <br>
+        <h2 id="s3">Legacy</h2>
+        <p>
+        Persicope was an unexpected success for Sega, as it did well in malls and department stores, locations which ususally don't host such machines. The game
+        was succesful both in Japan and abroad. It created the standart for all future arcade games in the US and is described by some people as a <i>turning point</i>
+        in the industry. Some pioneering features were the addition of sound and special effects. All in all, Periscope played a big part both in Sega's history, as well
+        as in the market of electronic arcade gaming.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic4.jpg" alt="the three cabinet version" width="300px">
+        <figcaption>The three cabinet version</figcaption>
+        </center>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
