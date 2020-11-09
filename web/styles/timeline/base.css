@@ -10,7 +10,7 @@ body {
 }
 
 /* STYLING THAT THE TIMELINE AND THE GENERATION BANNER HAVE IN COMMON */
-.generationLabel,.timeline,#fulltimeline{
+.generationLabel, .timeline, #fulltimeline{
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -196,7 +196,11 @@ li.navmenu-entry.gen.active{
   }
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  .left .right{
+    transform: translateX(100%);
+  }
+
   /* Place the timelime to the left */
   .timeline::after {
       left: 31px;
