@@ -3,7 +3,17 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/timeline/base.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen0.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen1.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen2.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen3.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen4.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen5.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen6.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen7.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen8.css">
+    <link rel="stylesheet" href="../../styles/timeline/gen9.css">
     <link id="gen_style" rel="stylesheet" href="../../styles/timeline/base/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -105,7 +115,7 @@
     /////////////////////
     /// TIMELINE GENERATION
     // Generates an event container placed either lef or right, depending on the boolean placedLeft input
-    function generateEventContainer(page_jsonobj, generation, placedLeft){
+    function generateEventContainer(page_jsonobj, placedLeft){
         //TODO: This is utterly terrible. My naked grandma looks more attractive than this design.
 
         var placement;
@@ -118,8 +128,8 @@
                 break;
         }
 
-        var eventcontainer = `<div class="container ${placement}" id="${page_jsonobj.product}">
-            <div class="content ${generation}">
+        var eventcontainer = `<div class="container ${placement}"" id="${page_jsonobj.product}">
+            <div class="content">
                 <h2>${page_jsonobj.date}</h2>
                 <h4>${page_jsonobj.product}</h4>
                 <p>${page_jsonobj.description}</p>
@@ -132,15 +142,15 @@
     // Generates a timeline of a specific generation
     function generateTimeline(generation_key){
         var timeline=`
-        <div class="generationLabel">
-            ${generation_key}
+        <div class="generationLabel ${generation_key}">
+            <h1>${generation_key}</h1>
         </div>`;
 
         timeline+=`<div class="timeline" id="${generation_key}">`;
         var placedLeft = true;
         JSONobj[generation_key].pages.forEach(function (page,index){
             console.log(page);
-            timeline+=generateEventContainer(page, generation_key, placedLeft);
+            timeline+=generateEventContainer(page, placedLeft);
             placedLeft=!placedLeft;
         });
 
