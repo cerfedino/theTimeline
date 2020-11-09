@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GENERATION 7 - Starcraft 2</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Albi Geldenhuys">
+    <!-- put page info here -->
+    <meta name="date" content="2010-07-27"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen7">
+    <meta name="product" content="Starcraft 2">
+    <meta name="description" content="The RTS game that popularized esports"> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen7/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.jpg" );
+        --background-image-right: url( "media/background_right.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #000000;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/sc2_logo.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #000;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/sound.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #0a1c4a;
+        --container-text-color: #fff;
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #0a1c4a;
+        --index-text-color: #fff;
+        --index-border-color: #fff;
+
+        /* text styles parameters */
+        --link-color-hover: #699fb8;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #88f;
+      }
+
+      /* your style here */
+      .shrink{
+        width: 90%;
+        margin: auto;
+      }
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Introduction</a></li>
+        <li><a href="#s2">Gameplay</a></li>
+        <li><a href="#s3">Background</a></li>
+        <li><a href="#s4">Release</a></li>
+        <li><a href="#s5">Esports</a></li>
+        <li><a href="#s6">Legacy</a></li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img src="media/sc2_logo.jpg"alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Introduction</h2>
+          Starcraft 2 is a real-time strategy (RTS) game made by the game industry giant Blizzard
+          Entertainment which released on July 27, 2010. Games are usually played in a 1v1 format
+          where the objective is to destroy all the other player's (he can however concede before this)
+          in typical RTS fashion.
+
+        <h2 id="s2">Gameplay</h2>
+         Starcraft 2 is an RTS that is played from a top-down view. As is common in the genre the gameplay
+         loop consists of gathering resources to be able to build an army to destroy the enemy.
+         To do this the player has a choice of three races to play: Terran (human), Protoss, and Zerg;
+         each has a unique playstyle that distinguishes them from the others. The Terran play very defensively,
+         the Protoss have very cost-efficient units, while the Zerg prefer to overrun the enemy with sheer numbers.
+
+         <img class="shrink" src="media/sc2_gameplay.jpg" alt="sc2 gameplay">
+
+        <h2 id="s3">Background</h2>
+          Starcraft 2 is the sequel to <i>Starcraft</i> which released in 1998. Starcraft 1 could be said to be a
+          monumental game because it effectively started the esports scene; it had major success in south
+          korea where <i>Starcraft</i> became a household name, and where matches were broadcast on live TV.
+          Notoriety was not limited to Asia however, and it also became a favourite of the burgeoning esports
+          community at home in the west.
+
+        <h2 id="s4">Release</h2>
+          Starcraft 2 released a full 12 years after its predecessor and the anticipation for its release was
+          immense, and for the most part if lived up to it. As usual veterans of the previous instalment were
+          sceptical at first, but after having tested out the improvements that had been made most of the
+          players switched to the sequel. Starcraft 2 however, never really had the same success in Korea as
+          the first one, which still to this day has a following in the Korean esports scene. It attracted a much
+          larger player base in the west because it was much more accessible to newer players than the
+          original and it had many quality of life improvements which made made the gameplay more engaging.
+
+        <h2 id="s5">Esports</h2>
+          Following its release Starcraft 2 attracted the competitive RTS community thanks to its affinity to
+          esports. In fact, it was the game which spearheaded the esports movement being the most viewed
+          game on Twitch when the streaming platform was still in its beginnings. Player counts were highest
+          at the start of its life, the hype surrounding the game spurring on people to try it out, but because of
+          the difficulty surrounding RTS games in general it was only natural that the number of players would
+          decrease over time. After its initial release, the game received two expansions which were both wellreceived, but which did not increase the player base substantially. It got revitalized in 2017 when it
+          went free-to-play attracting many people who might have been on the fence about getting the
+          game. The game has been refined over the years and is currently in a very healthy state in terms of
+          gameplay.
+
+          <img class="shrink" src="media/sc2_tournament.jpg" alt="a sc2 tournament">
+
+        <h2 id="s6">Legacy</h2>
+          Starcraft 2 played a vital role in establishing the esports scene and for that gamers owe it a huge
+          debt. It has also been the golden standard for modern RTS games to which all others will be
+          compared. From now until a hopeful release of Starcraft 3 it will most certainly be a mainstay of the
+          strategy landscape.
+
+      </div>
+    </div>
+  </body>
+</html>
