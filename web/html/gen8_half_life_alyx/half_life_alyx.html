@@ -16,15 +16,15 @@
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
     <!-- this is the generation style, must be set to the appropriate generation -->
-    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen8/style.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
       :root{
         /* these are the background images (left and right) */
-        --background-image-left: url( "media/background_left.jpg" );
-        --background-image-right: url( "media/background_right.jpg" );
+        --background-image-left: url( "media/bg-left.jpg" );
+        --background-image-right: url( "media/bg-right.jpg" );
         /* this is the fading color between the images */
-        --background-fade-color: #000;
+         --background-fade-color: #000;
 
         /* this is the title image that will be shown at the top of the page */
         --banner-image: url( "media/Alyx_logo.png" );
@@ -49,28 +49,38 @@
 
         /* content scrollbar */
         --scrollbar-thumb: #FF8C00;
-
-        /* informations */
-        --milestone: "gen8";
-        --product: "Half Life: Alyx";
-        --author: "Arthur Morgan";
       }
 
       /* your style here */
       /* .best-div-ever{
         display: none;
       } */
-    </style>
-    <!-- this is the script file for all the onload operations -->
-    <script src="../../script/onload.js"></script>
-  </head>
-  <body onload="onload();">
-    <!-- the backgrounds -->
-    <div class="bg" id="bg-left"></div>
-    <div class="bg" id="bg-right"></div>
-    <!-- the back and the music button -->
-    <div class="button" id="back-button"></div>
-    <div class="button" id="sound-button"></div>
+     .tablez{
+     margin-left: auto;
+     margin-right: auto;
+     border: 1px solid #FF8C00;
+     background-color: #DCDCDC;
+     }
+     .captionz {
+       text-align: center;
+       font-style: italic;
+       font-size: 11pt;
+     }
+     .imagez{
+       position: relative;
+       left: -21px;
+     }
+      </style>
+      <!-- this is the script file for all the onload operations -->
+      <script src="../../script/onload.js"></script>
+    </head>
+    <body onload="onload();">
+      <!-- the backgrounds -->
+      <div class="bg" id="bg-left"></div>
+      <div class="bg" id="bg-right"></div>
+      <!-- the back and the music button -->
+      <div class="button" id="back-button"></div>
+      <div class="button" id="sound-button"></div>
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
       <ol>
@@ -97,9 +107,16 @@
           The VR elements allow the player to interact with the environment and fight enemies.
           The players will also be able to use "gravity gloves" to manipulate objects (these work like the gravity gun from Half-Life 2).
           Other traditional Half-Life elements return, such as physics puzzles, combat, exploration and survival horror elements.<br>
-          The game is named after it's protagonist, <b>Alyx Vance</b>. <br>
-          <img src="media/Alyx.jpeg" alt="Alyx Vance, the protagonist" height="250">
+          The game is named after it's protagonist, <b>Alyx Vance</b>.
         </p>
+          <table class="tablez">
+          <tr>
+          <td><img class="imagez" src="media/Alyx.jpeg" alt="Alyx Vance, the protagonist" height="250"></td>
+        </tr>
+        <tr>
+          <td class="captionz">Alyx Vance with some pigeons.</td>
+        </tr>
+        </table>
         <p>
           Alyx was released for Windows on March 23, 2020, and supported for most PC-compatible VR headsets.
           It was praised for its graphics, voice acting, narrative, and atmosphere, and has often been described as VR's first killer app.
@@ -110,21 +127,36 @@
         <p>
           The game has the player controlling Alyx, a member of a resistance against the Combine, a viscious alien race of imperialists.
           After she rescues her father from the Combine, she is told that the Combine are storing a super-weapon in a "Vault" and that she has to go steal it's contents.
-          <br>
-          <img src="media/Alyx_Vault.jpg" alt="The Vault" height="300">
-          <br>
+        </p>
+          <table class="tablez">
+          <tr>
+          <td><img class="imagez" src="media/combine.jpg" alt="The Combine" height="250"></td>
+          <td><img class="imagez" src="media/Alyx_Vault.jpg" alt="The Vault" height="250"></td>
+        </tr>
+        <tr>
+          <td class="captionz">Interdimensional bad guys know as the Combine.</td>
+          <td class="captionz">The Vault.</td>
+        </tr>
+        </table>
+        <p>
           Alyx will have to venture through the Quarantine Zone, contending with various species of Xen aliens and Combine soldiers on her way to the Vault, before penetrating it and discovering it's contents.
         </p>
         <h2 id="gmp">Gameplay</h2>
         <p>
           Players use VR to get supplies, use interfaces, throw objects, and engage in combat.
-          <br>
-          <img src="media/Alyx.gif" alt="Alyx with a gun" height="250">
-          <br>
           The player is also equipped with gravity gloves, that allow players to manipulate gravity. A similar weapon was also present Half-Life 2.
-          <br>
-          <img src="media/Gloves.gif" alt="gravity gloves in action" height="250">
-          <br>
+        </p>
+        <table class="tablez">
+        <tr>
+        <td><img class="imagez" src="media/Alyx.gif" alt="Alyx with a gun" height="250"></td>
+        <td><img class="imagez" src="media/Gloves.gif" alt="gravity gloves in action" height="250"></td>
+      </tr>
+      <tr>
+        <td class="captionz">The wonders of VR.</td>
+        <td class="captionz">Grabbity Gloves in action.</td>
+      </tr>
+      </table>
+        <p>
           Other traditional Half-Life elements like exploration, puzzles, combat, and a central story arc are also present within the game.
           Valve intentionally made it so that every weapon can be used with one hand,
           as they wanted players to always have a spare hand so that the player could interact with the surrounding world as much as possible.
@@ -172,19 +204,24 @@
         </blockquote>
         <p>
           Basically, many consider Half LIfe: Alyx to be so good it's worth investing in all the necessary tech.
-          Before Alyx, VR hadn't done much to prove it's worth. Games like Job Simulator (2016) or Beat Saber (2018), while fun, are quite limited in their use
+          Before Alyx, VR hadn't done much to prove it's worth.
+          <br>
+          Games like Job Simulator (2016) or Beat Saber (2018), while fun, are quite limited in their use
           of VR and tend to be rather short.
         </p>
-          <table>
+        <table class="tablez">
         <tr>
-            <th><img src="media/VR_game_example1.jpg" alt="Job Simulator" height="250"></th>
-            <th><img src="media/VR_game_example2.jpg" alt="Beat Saber" height="250"></th>
-        </tr>
-        </table>
+        <td><img class="imagez" src="media/VR_game_example1.jpg" alt="Job Simulator" height="250"></td>
+        <td><img class="imagez" src="media/VR_game_example2.jpg" alt="Beat Saber" height="250"></td>
+      </tr>
+      <tr>
+        <td class="captionz">Job Simulator, in case you hadn't experienced it in real life.</td>
+        <td class="captionz">Beat Saber, the game that allows you to play music with lightsabers.</td>
+      </tr>
+    </table>
         <p>
           Valve managed to bring the quality of a AAA game to VR and even before the game was released, it's announcement helped boost the sales of VR headsets, including the Valve Index.
-        </p>
-        <p>
+        <br>
           Hopefully, the success of Half Life: Alyx will show other software houses the potential of the technology and lead to the developement of even more high quality VR games.
         </p>
         <address>
@@ -192,5 +229,18 @@
       </address>
       </div>
     </div>
+    <!-- Picture sources
+    https://wall.alphacoders.com/big.php?i=1053011&lang=Polish
+    https://www.overclockers.co.uk/news/half-life-alyx-everything-you-need-to-know-to-get-the-best-gaming-experience-possible-427.html
+    https://wall.alphacoders.com/big.php?i=1053011&lang=Polish
+    https://search.bilibili.com/all?keyword=Half-Life%3A%20Alyx&from_source=video_tag
+    https://www.gamestar.de/artikel/half-life-alyx-release-faq-preload-unlock-time,3355569.html
+    https://www.usgamer.net/articles/half-life-alyx-is-really-truly-coming-out-in-just-over-a-month
+    https://twitter.com/gordonforsmash/status/1276397436890689536
+    https://www.gamesavepoint.com/half-life-alyx-is-the-best-that-vr-and-valve-have-to-offer/
+    https://lab.io/articles/2020/03/30/half-life-alyx/
+    https://twitter.com/TwinGalaxies/status/968990299363127296
+    https://medium.com/the-cube/the-cube-news-update-3-4-19-7ebc39b6b4ba
+    -->
   </body>
 </html>
