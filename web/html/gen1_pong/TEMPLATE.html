@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GENERATION 1 - PONG</title>
+
+    <!--  info della mia pagina -->
+    <meta name="author" content="Samuel Corecco">
+    <meta name="generation" content="gen1">
+    <meta name="description" content="A page about Pong game"> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- stile pagina -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <style id="user-style">
+      :root{
+        /* immagini di sfondo */
+        --background-image-left: url( "media/background_left.jpg" );
+        --background-image-right: url( "media/background_right.jpg" );
+        /* colore che sfuma */
+        --background-fade-color: #ffffff;
+
+        /* BANNER */
+        --banner-image: url( "media/banner.png" );
+        /* Colore dietro all'immagine se trasparente */
+        --banner-color: #ffffff;
+        /* Musica*/
+        --audio-file: url( "media/sound.mp3" );
+
+        /* CONTEINER */
+        --container-background-color: #F7F7F7;
+        --container-text-color: ##1D1412;
+        --container-border-color: #000;
+
+        /* Piccolo menu*/
+        --index-background-color: #F7F7F7;
+        --index-text-color: #181818;
+        --index-border-color: #000;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #181818;
+      }
+
+    </style>
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();" background='media/background_left.jpg' >
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Section 1</a>
+          <ol>
+            <li><a href="#s1.1">Sub section 1</a></li>
+            <li><a href="#s1.2">Sub section 2</a></li>
+          </ol>
+        </li>
+        <li><a href="#s2">Section 2</a>
+          <ol>
+            <li><a href="#s2.1">Sub section 1</a></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Section 1</h2>
+        <h3 id="s1.1">Sub section 1</h3>
+        <p>paragraph <b>bold</b> <i>italic</i></p>
+        <p style = "font-family:Chalkboard,garamond,serif;">
+          È un videogioco che simula il ping pong. Le racchette sono rappresentate da barre che possono muoversi verticalmente lungo il lato e la palla è un quadratino che si muoverà in modo rettilineo uniforme e può rimbalzare, oltre che sulle racchette, anche sul lato superiore e sul lato inferiore.
+Le regole sono semplici: se commetti un errore e non riesci a respingere la palla con la racchetta allora l’avversario otterrà un punto. Il primo ad arrivare a 10 punti vincerà la partita
+ <br>
+          paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.
+        </p>
+        <h3 id="s1.2">Sub section 2</h3>
+        <p>paragraph <b>bold</b> <i>italic</i></p>
+        <p>
+          paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph. <br>
+          paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.
+        </p>
+        <p>parahraph</p>
+        <h2 id="s2">Section 2</h2>
+        <h3 id="s2.1">Sub section 1</h3>
+        <p>paragraph <b>bold</b> <i>italic</i></p>
+        <p>
+          paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph. <br>
+          paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.
+        </p>
+        <p>
+          paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph. <br>
+          paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.
+        </p>
+        <p>paragraph <b>bold</b> <i>italic</i></p>
+      </div>
+    </div>
+  </body>
+</html>
