@@ -29,6 +29,9 @@
       <module name="pageMapper_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -69,10 +72,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="695" y="297" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604852608760" />
-    <state x="741" y="170" width="428" height="504" key="FileChooserDialogImpl" timestamp="1604858939752">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="738" y="638" width="428" height="504" key="FileChooserDialogImpl" timestamp="1604908625131">
+      <screen x="0" y="540" width="1920" height="1080" />
     </state>
-    <state x="741" y="170" width="428" height="504" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604858939752" />
+    <state x="739" y="122" width="428" height="504" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604871011555" />
+    <state x="738" y="638" key="FileChooserDialogImpl/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604908625131" />
     <state width="935" height="356" key="GridCell.Tab.0.bottom" timestamp="1604865120680">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

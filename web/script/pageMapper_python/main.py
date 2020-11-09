@@ -45,8 +45,10 @@ def isPageValid(page, metaToExtract):
     valid = True
     try:
         datetime.datetime.strptime(page['date'], '%Y-%m-%d')
-    except ValueError:
+    except Exception as e:
+        print("[-] " + str(page) + " Is invalid")
         valid = False
+
 
     if all(key in page for key in metaToExtract) and valid:
         return True
@@ -69,7 +71,7 @@ def main():
     metaToExtract = ["author", "date", "generation", "product", "description", "picture"]
 
     # Folder to scan for his subdirectories and html files
-    folderToScan = os.path.normpath(os.path.dirname(__file__)  +'/../../html/')
+    folderToScan = os.path.normpath(os.path.dirname(os.path.abspath(__file__))  +'/../../html/')
 
     # Folders to ignore
     foldersToIgnore = ["gen#_TEMPLATE", "timeline"]
