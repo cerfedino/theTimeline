@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GENERATION 1 - PONG</title>
+
+    <!--  info della mia pagina -->
+    <meta name="author" content="Samuel Corecco">
+    <meta name="generation" content="gen1">
+    <meta name="description" content="A page about Pong game"> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- stile pagina -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <style id="user-style">
+      :root{
+        /* immagini di sfondo */
+        --background-image-left: url( "media/background_left.jpg" );
+        --background-image-right: url( "media/background_right.jpg" );
+        /* colore che sfuma */
+        --background-fade-color: #ffffff;
+
+        /* BANNER */
+        --banner-image: url( "media/banner.png" );
+        /* Colore dietro all'immagine se trasparente */
+        --banner-color: #ffffff;
+        /* Musica*/
+        --audio-file: url( "media/sound.mp3" );
+
+        /* CONTEINER */
+        --container-background-color: #ffffff;
+        --container-text-color: ##1D1412;
+        --container-border-color: #000;
+
+        /* Piccolo menu*/
+        --index-background-color: #ffffff;
+        --index-text-color: #181818;
+        --index-border-color: #000;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #181818;
+      }
+
+    </style>
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();" background='media/background_left.jpg' >
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Home Pong</a>
+        </li>
+        <li><a href="#s2">History</a>
+        </li>
+        <li><a href="#s3">Features</a>
+        </li>
+        <li><a href="#s4">sources</a>
+        </li>
+      </ol>
+    </div>
+
+
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+
+
+        <h2 id="s1">Home Pong</h2>
+        <p> <br> <a href="media/PONGINFO.png" target="_blank">
+          <img width=60% src="media/IMG1.png"/ style="display: block; margin-left: auto;margin-right: auto;">
+        </a></p>
+        <br>
+
+
+        <h2 id="s2">History</h2>
+        <p>After the success of Pong, Atari decided to develop new products. So it was that in 1974, Harold Lee, Atari's engineer, proposed to produce a homemade version of "PONG". Lee worked with Alan Alcorn on the first projects, basing them on the digital technology used in their games. Lee worked on logic and design and Alcorn worked on debugging in the evenings. Later the team was joined by engineer Bob Brown who assisted them in the construction of the prototype. The prototype was a device attached to a pedestal full of wires, which was eventually replaced by a chip created in 1974 by Alcorn and Lee.
+          <br><br>
+          <img width=50% src="media/IMG2.jpg"/ width="60%" cite="http://www.pong-story.com/atpong2.htm" >
+          <figcaption style="font-size: 12px;">An early PONG chip made in October 1975 </figcaption>
+          <br>
+          On August 3, 1975, Atari launched Home Pong, which consisted of a small console that could be connected to the TV and two knob controllers included in the console's shell. Atari presented its console to several toy retailers and electronics shops,
+<img width=50% src="media/IMG4.png"/ width="60%" cite="http://www.pong-story.com/atpong2.htm" style="float: left;">
+           but no one was interested in the product because it was considered too expensive and of little interest. The asking price was about $100 (equivalent to over $400 nowadays). Atari set up a Home Pong stand at the American Toy Fair (a trade show) in New York again without success. Fortunately, the company was able to reach an agreement with Sears. For the Christmas period 1975, Sars 150'000 units and to satisfy this order Atari bought a new factory. The model was manufactured under the name "Tele-Games" by Sears. The console proved to be a great success: during the Christmas period of 1975 as many as 150,000 units were sold in the United States and it was the most commercialised item in the Sears catalogue that had requested exclusivity for the sale. In 1976 Atari released a version with its own brand.
+          <br><br>
+          <img width=50% src="media/IMG3.jpg"/ width="60%" cite="https://www.metv.com/stories/the-atari-home-pong-console-is-40-years-old" >
+          <figcaption style="font-size: 12px;">An early PONG chip made in October 1975 </figcaption>
+         </p>
+        <br><br><br>
+
+<h2 id="s3">Features</h2>
+        <p>The console had one important feature: Alcorn and Lee made a single chip that calculated the score and provided an attractive sound. It was the highest performing chip used in a consumer product.
+<br><br>
+          <img width=50% src="media/IMG5.jpg"/ width="60%" cite="http://www.pong-story.com/atpong2.htm" style="display: block; margin-left: auto;margin-right: auto;">
+          <figcaption style="font-size: 12px; text-align: center">Atari PONG circuit board with a chip made by AMI</figcaption>
+          The image was obtained by interpolating the scanning lines of the electronic signal coming from the cathode ray tube of the TV. The contacts between the ball and racket and between the ball and the edges of the field were made with logical components. The game was in black and white like most televisions at that time.
+
+          In 1978 the American General Instruments managed to produce at low cost and in large quantities microchips specifically dedicated to this game, the most famous of which was the AY-3-8500 model able to offer 6 different games and more setting options. This allowed many companies to enter the video game market which created a huge amount of Atari "Home Pong" clones. This increased the mass production of the video game and its popularity at home. The large number of "PONG" clone consoles started a real video game market. The console was the videgame itself, so in this generation there were more versions of the same, one for each type of game.
+          <br><br>
+                    <img width=50% src="media/IMG6.jpg"/ width="60%" cite="https://2warpstoneptune.com/2014/12/09/christmas-morning-1975-and-1976-pong/" style="display: block; margin-left: auto;margin-right: auto;">
+                    <figcaption style="font-size: 12px; text-align: center">Christmas Morning, 1975</figcaption>
+<br><br>
+</p>
+
+
+<h2 id="s4">sources</h2>
+<ul  style="font-size: 12px;">
+  <li><a href="http://www.atarimuseum.com/videogames/dedicated/homepong.html">http://www.atarimuseum.com/videogames/dedicated/homepong.html</a></li>
+  <li><a href="https://spectrum.ieee.org/view-from-the-valley/tech-history/cyberspace/atari-alumni-talk-about-the-tall-tales-the-told">https://spectrum.ieee.org/view-from-the-valley/tech-history/cyberspace/atari-alumni-talk-about-the-tall-tales-the-told</a></li>
+  <li><a href="https://www.metv.com/stories/the-atari-home-pong-console-is-40-years-old">https://www.metv.com/stories/the-atari-home-pong-console-is-40-years-old</a></li>
+  <li><a href="https://breakingtech.it/atari-pong-la-storia-dei-videogiochi/">https://breakingtech.it/atari-pong-la-storia-dei-videogiochi/</a></li>
+  <li><a href="http://www.pong-story.com/atpong2.htm">http://www.pong-story.com/atpong2.htm</a></li>
+  <li><a href="https://www.wikiwand.com/it/Storia_dei_videogiochi#/1972:_la_nascita_della_Atari">https://www.wikiwand.com/it/Storia_dei_videogiochi#/1972:_la_nascita_della_Atari</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Pong">https://en.wikipedia.org/wiki/Pong</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/AY-3-8500">https://en.wikipedia.org/wiki/AY-3-8500</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ted_Dabney">https://en.wikipedia.org/wiki/Ted_Dabney</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Atari">https://en.wikipedia.org/wiki/Atari</a></li>
+
+</html>
