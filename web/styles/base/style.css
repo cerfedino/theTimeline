@@ -190,6 +190,31 @@ html, body{
   /* sizing */
   margin: 4px 0;
 }
+/* content images */
+#content img{
+  border: 2px solid black;
+  /* positon */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#content img.center{
+  /* size */
+  width: 90%;
+}
+#content img.left{
+  /* size */
+  width: 40%;
+
+  /* position */
+  float: left;
+}
+#content img.right{
+  /* size */
+  width: 40%;
+
+  /* position */
+  float: right;
+}
 /* scrollbar width */
 #content::-webkit-scrollbar {
   width: 10px;
