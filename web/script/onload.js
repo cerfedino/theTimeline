@@ -126,22 +126,28 @@ function setup_audio(){
   // link the start/stop of the music to the sound-button
   audio_button.onclick = () => {
     audio_on = !audio_on;
+
+    // turn the music on
     if(audio_on) {
       audio.play();
       audio_button.removeAttribute("muted");
 
+      // if first time playing, fade in
       if( !first_played ){
         audio_volume = 0;
+        // use the function defined after this to fade in in 8000 milliseconds
         fade_in(8000);
         first_played = true;
       }
+
+    // turn the music off
     } else {
       audio.pause();
       audio_button.setAttribute("muted", true);
     }
   }
 
-  // animation of the fade in
+  // this function will make the music fade in
   // it takes 'millis' milliseconds to finish
   function fade_in( millis ){
     let interval = millis * 0.01;
