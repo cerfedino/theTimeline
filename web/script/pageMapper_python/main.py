@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import os, sys
 import json
-import operator
 import datetime
 
 
