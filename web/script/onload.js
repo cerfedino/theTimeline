@@ -80,10 +80,10 @@ function setup_meta(){
         author = els[i].content;
         break;
       case "generation":
-        generation = els[i].content.toLowerCase().replace( ' ', '_' );
+        generation = els[i].content.toLowerCase().replaceAll( ' ', '_' );
         break
       case "product":
-        product = els[i].content.toLowerCase().replace( ' ', '_' );
+        product = els[i].content.toLowerCase().replaceAll( ' ', '_' );
         break;
     }
   }
