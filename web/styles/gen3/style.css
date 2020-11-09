@@ -48,11 +48,10 @@ html {
 }
 
 .button{
-  /* border */
-  border-width: 2px;
+/*  border-width: 2px;
   border-radius: 5px;
   border-color: #5eb850;
-  border-style: solid;
+  border-style: solid; */
 }
 
 @font-face {
