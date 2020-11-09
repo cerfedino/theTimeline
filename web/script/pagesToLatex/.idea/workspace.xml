@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08228bfd-028f-455b-8125-923cfb698cb5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k2peI9GFFhFh8ZAtqn17aVmLx5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08228bfd-028f-455b-8125-923cfb698cb5" name="Default Changelist" comment="" />
+      <created>1604908633451</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604908633451</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1" y="692" width="1076" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604908693336">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state x="-1" y="692" width="1076" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604908693336" />
+    <state x="215" y="836" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604914063052">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state x="215" y="836" key="#com.intellij.fileTypes.FileTypeChooser/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914063052" />
+    <state x="215" y="783" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604918540399">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state x="215" y="783" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604918540399" />
+    <state x="322" y="781" key="FileChooserDialogImpl" timestamp="1604908678915">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state x="322" y="781" key="FileChooserDialogImpl/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604908678915" />
+    <state width="935" height="288" key="GridCell.Tab.0.bottom" timestamp="1604914818132">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state width="935" height="288" key="GridCell.Tab.0.bottom/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818132" />
+    <state width="935" height="288" key="GridCell.Tab.0.center" timestamp="1604914818132">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state width="935" height="288" key="GridCell.Tab.0.center/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818132" />
+    <state width="935" height="288" key="GridCell.Tab.0.left" timestamp="1604914818132">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state width="935" height="288" key="GridCell.Tab.0.left/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818131" />
+    <state width="935" height="288" key="GridCell.Tab.0.right" timestamp="1604914818132">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state width="935" height="288" key="GridCell.Tab.0.right/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818132" />
+    <state x="96" y="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604911915178">
+      <screen x="0" y="540" width="1920" height="1080" />
+    </state>
+    <state x="96" y="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604911915178" />
+  </component>
+</project>
