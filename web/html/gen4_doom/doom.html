@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GENERATION 4 - DOOM</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="ENRICO DI PIETRO">
+    <!-- put page info here -->
+    <meta name="date" content="1993-12-10"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen4">
+    <meta name="product" content="Doom">
+    <meta name="description" content="Page of the videogame Doom"> <!-- a short description of the product -->
+    <meta name="picture" content="media/doom.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen4/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/doom_left.jpg" );
+        --background-image-right: url( "media/doom_right.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #ff0000;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/doom_banner.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #000000;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/doom.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #000000;
+        --container-text-color: #e8e4c9;
+        --container-border-color: #ff0000;
+
+        /* the index parameters */
+        --index-background-color: #000000;
+        --index-text-color: #e8e4c9;
+        --index-border-color: #ff0000;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #88f;
+      }
+
+      /* your style here */
+      .centerimg{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+        height: auto;
+      }
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">The game</a>
+          <ol>
+            <li><a href="#s1.1">Doom</a></li>
+            <li><a href="#s1.2">Description</a></li>
+            <li><a href="#s1.3">Why is Doom so well known?</a></li>
+          </ol>
+        </li>
+        <li><a href="#s2">Innovations</a>
+          <ol>
+            <li><a href="#s2.1">Introduction</a></li>
+            <li><a href="#s2.2">Multiplayer</a></li>
+            <li><a href="#s2.3">Graphic</a></li>
+            <li><a href="#s2.4">Mods</a></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">The game</h2>
+      </br>
+        <h3 id="s1.1">Doom</h3>
+        <p>
+          Doom is a <i>first-person shooter</i> game developed by id Software for MS-DOS in
+          1993. The player takes the role of an unnamed space marine that fight hordes
+          of demons from Hell, in a science fiction and horror scenario.
+        </p>
+        </br>
+        <h3 id="s1.2">Description</h3>
+        <p>
+          The player has to go through a series of levels set in military
+          bases on the moons of Mars and in Hell. To finish a level the player must
+          explore the area to find a marked exit room, while walking a map is
+          filled with the location you went through. The levels are grouped into episodes
+          and the last level features a <i>boss fight</i> where the player has to face
+          an enemy stronger than the others encountered before. </br>
+          The enemies are demons and possessed undead humans that the
+          player fights using different weapons. During the game the player must
+          manage ammunition, health and armor. There are 5 difficulty levels:
+          those manage the amount of damage done by enemies, the speed of
+          their movements and if they respawn. </p>
+        </br>
+        </br>
+          <img src="media/screen_0.jpg" alt="Doom game screen" class="centerimg">
+          <blockquote cite="https://apkpure.com/it/pro-doom-1-1993-guide/com.doma.modaa"></blockquote>
+        </br>
+        <h3 id="s1.3">Why is Doom so well known?</h3>
+        <p>
+          It was one of the first videogames rated M for Mature due
+          to his violence and explicit content. It was also criticized by groups
+          for the content of satanic imagery. Doom introduced the fear that the new
+          technology used in videogames led to more realistic simulations that could
+          influence people making them more confident using violence. </br>
+          It's a challenging game that requires the player to be concentrate to
+          complete a level but is also nice to play just for having fun, so a lot
+          of people loved it. It was also one of the first FPS genre games. </p>
+        </br>
+        </br>
+        <h2 id="s2">Innovations</h2>
+        </br>
+        <h3 id="s2.1">Introduction</h3>
+        <p>
+          The fact that Doom was played by millions of people promoted the emerging
+          FPS genre. However, the term FPS was lately introduced and the firsts videogames
+          that followed this structure were called "Doom clones".
+          This game pioneered online distribution, 3D graphics, networked
+          multiplayer gaming and custom modifications via packaged files (WADs). </p>
+        </br>
+        <h3 id="s2.2">Multiplayer</h3>
+        <p>
+          Deathmatching between players became attractive due to the
+          large distribution of PC systems and the violence of this game, so players
+          started playing one against the other in different ways: over phone line
+          using a modem or by linking two PCs with a null-modem cable. </p>
+        </br>
+        </br>
+          <img src="media/multiplayer.png" alt="Doom multiplayer" class="centerimg">
+          <blockquote cite="https://piecebypixel.wordpress.com/2016/04/01/a-doomed-classic/"></blockquote>
+        </br>
+          <h3 id="s2.3">Graphic</h3>
+        <p>
+          The levels are presented in 3D perspective but the enemies and the objects are
+          2D sprites presented from several angles. This technique is called
+          2.5D graphics. For this generation this kind of new graphic was a huge
+          innovation and had a big impact on the games that were afterwards developed. </p>
+        </br>
+        </br>
+          <img src="media/sprites.png" alt="Doom sprites" class="centerimg">
+          <blockquote cite="https://forum.zdoom.org/viewtopic.php?f=45&t=30879&start=255"></blockquote>
+        </br>
+
+          <h3 id="s2.4">Mods</h3>
+        <p>
+          It is possible to modify the game creating custom levels using WAD files. This
+          feature generated a large community that started making mods. The mod files
+          also allows to create and modify creatures, weapons and even the sounds. </p>
+          </br>
+          </br>
+          <img src="media/mods.jpg" alt="Doom mods" class="centerimg">
+          <blockquote cite="https://www.gamepressure.com/download.asp?ID=64210"></blockquote>
+
+        </div>
+      </div>
+    </body>
+  </html>
