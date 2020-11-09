@@ -1,0 +1,60 @@
+:root{
+  /* background */
+  --background-image-left: url( "../../styles/gen4/media/background_left.png" ); /* given to the user */
+  --background-image-right: url( "../../styles/gen4/media/background_right.png" ); /* given to the user */
+  --background-fade-color: #4f100c; /* given to the user */
+
+  /* banner */
+  --banner-image: url( "styles/gen4/media/base_banner.png" );/* absolute path */ /* given to the user */
+  --banner-color: #f8b058; /* given to the user */
+
+  /* audio */
+  --audio-file: url( "styles/gen4/media/sound.mp3" ); /* absolute path */ /* given to the user */
+
+  /* container */
+  --container-background-color: #2f100c; /* given to the user */
+  --container-text-color: #f8b058;  /* given to the user */
+  --container-border-color: #000; /* given to the user */
+
+  /* index */
+  --index-background-color: #f8b058; /* given to the user */
+  --index-text-color: #f8b058;  /* given to the user */
+  --index-border-color: #d878c8;
+
+  /* image for the back button */
+  --backbutton-image: url( "../../styles/gen4/media/back.jpg" ); /* relative path */
+  --backbutton-image-hover: url( "../../styles/gen4/media/back_hover.jpg" ); /* relative path */
+
+  /* image for the sound button */
+  --soundbutton-image: url( "../../styles/gen4/media/sound.png" ); /* relative path */
+  --soundbutton-image-hover: url( "../../styles/gen4/media/sound_hover.png" ); /* relative path */
+  /* image for the cross on the sound button */
+  --soundbutton-cross: url( "../../styles/gen4/media/cross.png" ); /* relative path */
+  --soundbutton-cross-hover: url( "../../styles/gen4/media/cross_hover.png" ); /* relative path */
+
+  /* text styles */
+  --link-color-hover: #d878c8;  /* given to the user */
+
+  /* content scrollbar */
+  --scrollbar-thumb: #f8b058;
+}
+
+#index, #container{
+  border-radius: 5px;
+}
+
+html {
+  font-size: 120%;
+}
+
+.button{
+/*  border-width: 2px;
+  border-radius: 5px;
+  border-color: #d878c8;
+  border-style: solid;*/
+}
+
+@font-face {
+  font-family: page-font;
+  src: url( "../../styles/gen3/media/font.ttf"); /* relative path */
+}
