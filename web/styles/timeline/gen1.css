@@ -1,0 +1,71 @@
+/* use external font */
+@font-face {
+  font-family: gen1-font;
+  src: url( "../gen1/media/font.ttf"); /* relative path */
+}
+
+/* the label (start of the timeline) */
+.gen1{
+  /* font */
+  font-family: gen1-font;
+  font-size: 120%;
+  color: #fff;
+
+  /* background */
+  background-color: #000;
+}
+/* the title in the label */
+.gen1 h1{
+}
+
+/* the timeline */
+#gen1.timeline{
+  /* background */
+  background-color: #000;
+
+  /* font */
+  font-family: gen1-font;
+  font-size: 120%;
+  color: #fff;
+}
+
+/* the rectangle */
+#gen1 .content{
+  /* border */
+  border-radius: 0;
+  border: 10px solid #fff;
+
+  /* background */
+  background-color: #000;
+}
+
+/* the set of elements for one product */
+#gen1 .container{
+}
+
+/* the extrusion (arrow) */
+#gen1 .container::before{
+  /* border */
+  border-color: #fff;
+}
+
+/* the dot on the line */
+#gen1 .container::after{
+  /* position */
+  top: 22px;
+  margin: 0;
+
+  /* size */
+  height: 20px;
+  width: 20px;
+
+  /* border */
+  border: none;
+  border-radius: 0;
+}
+#gen1 .right::after{
+  left: -10px;
+}
+#gen1 .left::after{
+  right: -10px;
+}
