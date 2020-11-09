@@ -1,0 +1,21 @@
+\documentclass[a4paper,10pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\pageHeader}[4]{
+    \section{#1}
+    \vspace{-0.3cm}
+    \begin{table}[h!]
+     \begin{tabular}{ll}
+        \hline
+        \textit{date} & #2 \\
+        \textit{author: } & #3\\
+        \hline
+     \end{tabular}
+    \end{table}
+    \vspace{-0.3cm}
+}
+
+\begin{document}
+\tableofcontents
