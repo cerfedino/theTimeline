@@ -1,0 +1,84 @@
+/* use external font */
+@font-face {
+  font-family: gen2-font;
+  src: url( "../gen2/media/font.ttf"); /* relative path */
+}
+
+/* the label (start of the timeline) */
+.gen2{
+  /* font */
+  font-family: gen2-font;
+  font-size: 120%;
+  color: #fff;
+
+  /* background */
+  background-color: #000;
+}
+/* the title in the label */
+.gen2 h1{
+}
+
+/* the timeline */
+#gen2.timeline{
+  /* background */
+  background-color: #000;
+
+  /* font */
+  font-family: gen2-font;
+  font-size: 120%;
+  color: #fff;
+}
+
+/* the rectangle */
+#gen2 .content{
+  /* border */
+  border-radius: 5px;
+  border: 3px solid #2121DE;
+
+  /* background */
+  background-color: #000;
+}
+
+/* the set of elements for one product */
+#gen2 .container{
+}
+
+/* the extrusion (arrow) */
+#gen2 .container::before{
+}
+#gen2 .right::before{
+  /* border */
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #2121DE transparent transparent;
+}
+#gen2 .left::before{
+  /* border */
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #2121DE;
+}
+
+/* the dot on the line */
+#gen2 .container::after{
+  /* position */
+  top: 22px;
+  margin: 0;
+
+  /* size */
+  height: 20px;
+  width: 20px;
+
+  /* border */
+  border: none;
+  border-radius: 50%;
+
+  /* background */
+  background-color: #FFFF00;
+}
+#gen2 .right::after{
+  /* position */
+  left: -10px;
+}
+#gen2 .left::after{
+  /* position */
+  right: -10px;
+}
