@@ -3,39 +3,45 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="../../styles/timeline/base.css">
     <link id="gen_style" rel="stylesheet" href="../../styles/timeline/base/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../script/jquery.visible.js"></script>
     <script type="text/javascript" src="../../script/sticky-kit.js"></script>
 
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
+    <script type="text/javascript"  src="pageMapping.js"></script>
+
     <meta http-equiv='pragma' content='no-cache'>
 </head>
 <body>
 <script>
     /*PAGE MAPPING USING JSON*/
 
-    // Contains the parsed 'pageMapping.json' file
-    var JSONobj;
+    // // Contains the parsed 'pageMapping.json' file
+    // var JSONobj;
+    // //JSON file 'pageMapping.json' gets loaded into variable 'JSONobj'
+    // function loadJSON() {
+    //     var xobj = new XMLHttpRequest();
+    //     xobj.overrideMimeType("application/json");
+    //     xobj.open('GET', 'pageMapping.json', true);
+    //     xobj.onreadystatechange = function () {
+    //         if (xobj.readyState == 4 && xobj.status == "200") {
+    //             //console.log(xobj.responseText);
+    //             JSONobj = JSON.parse(xobj.responseText);
+    //             delete JSONobj['-1'];
+    //         }
+    //     };
+    //     xobj.send(null);
+    // }
+    // loadJSON();
 
-    //JSON file 'pageMapping.json' gets loaded into variable 'JSONobj'
-    function loadJSON() {
-        var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-        xobj.open('GET', 'pageMapping.json', true);
-        xobj.onreadystatechange = function () {
-            if (xobj.readyState == 4 && xobj.status == "200") {
-                //console.log(xobj.responseText);
-                JSONobj = JSON.parse(xobj.responseText);
-                delete JSONobj['-1'];
-            }
-        };
-        xobj.send(null);
-    }
-    loadJSON();
+    // Get the content from pageMapping.js
+    var JSONobj = pages;
+    // remove bad content
+    delete JSONobj['-1'];
+    // debug print the JSONobj
+    console.debug(JSONobj);
 
     //CONTENT GENERATION FUNCTIONS
     /// NAVMENU GENERATION
@@ -200,7 +206,6 @@ theTimeline
 
     </table>
 </div>
-
 <div id="fulltimeline">
 
     <!--EXAMPLE CONTENT. THIS IS LATER OVERWRITTEN BY JAVASCRIPT BASED ON THE JSON FILE-->
