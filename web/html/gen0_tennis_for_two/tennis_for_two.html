@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tennis for Two</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Anton Tanev">
+    <!-- put page info here -->
+    <meta name="date" content="1958-10-18"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen0">
+    <meta name="product" content="Tennis for Two">
+    <meta name="description" content="A sports video game simulating a game of Tennis"> <!-- a short description of the product -->
+    <meta name="picture" content="pic1.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        /* --background-image-left: url( "media/background.jpg" ); */
+        /* --background-image-right: url( "media/background.jpg" ); */
+        /* this is the fading color between the images */
+        --background-fade-color: #464747;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/pic-banner.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #464747;
+
+        /* the audio file that will be played */
+        /* --audio-file: url( "media/sound.mp3" ); */
+
+        /* the container parameters */
+        /* --container-background-color: grey;  */
+        /* --container-text-color: white; */
+        /* --container-border-color: black; */
+
+        /* the index parameters */
+        /* --index-background-color: grey; */
+        /* --index-text-color: white; */
+        /* --index-border-color: black; */
+
+        /* text styles parameters */
+        --link-color-hover: red;
+
+        /* content scrollbar */
+         --scrollbar-thumb: #464747;
+      }
+      #container #banner img
+      {
+        max-width: 500px;
+        width: 100%;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">summary</a>
+        </li>
+        <li><a href="#s2">How it Works</a>
+        </li>
+        <li><a href="#s3">Legacy</a>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Summary</h2>
+        <p>
+          <b>Tennis for Two</b>, also called <b>Computer Tennis<b>, is on of the first games developed in the early history
+          of video games. It was designed by american physicist Willian Higinbotham in 1958 and displayed at the
+          Brookhaven National Laboratory's annual public exhibition. It simulates a vitual game of tennis, using
+          the Donner Model 30 analog computer's ability  to simulate trajectories with wind resistance.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic2.jpg" alt="this is how the game looks" width="300px">
+        <figcaption>This is how the game looks</figcaption>
+        </center>
+        <br>
+        <h2 id="s2">How it works</h2>
+        <p>
+        The game was displayed on a oscilloscope and controlled with two custom aluminum controllers. The visuals
+        represent a tennis court as if its viewed from the side and the knobs on the controlers are used to adjust
+        the angle of the shots so players can hit the ball over net by pressing the button. The ball is represented
+        as a point of light, the tennis court as a horrizontal line, and the net as a short vertical line. The ball
+        can either hit the net, the other side of the court or fly out of bounds, as well as bounce on the ground.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic4.jpg" alt="the setup" width="300px">
+        <figcaption>The setup</figcaption>
+        </center>
+        <br>
+        <p>
+        Further versions of the game were developed due to how popular it became. Some of them were a bigger screen,
+        as well as different levels of simulated gravity. It enabled players to play tennis as if they were on the
+        Moon or Jupiter.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic3.jpg" alt="the oscilloscope" width="300px">
+        <figcaption>The oscilloscope</figcaption>
+        </center>
+        <br>
+        <h2 id="s3">Legacy</h2>
+        <p>
+        After its disassembly in 1959, the game Tennis for Two was largely forgotten, other than being mentioned in a
+        court case and some articles in 1982 and 1983 where its potential status as the first video game was highligthed.
+        Higinbotham himself declined that claim, saying that the game was an extension of the bouncing ball program for
+        the Donner Model 30 and not worthy of patenting. The 50th anniversary of Brookhaven featured a recreation of the
+        game, which took 3 months to construct, due to the unavailability of the parts. It was displayed in 1997 and 2008
+        for the anniversary of the actual game, but implemented an analog computerusing solid-state operational amplifier
+         devices instead of vacuum tubes as the original Donner Model 30 did.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic5.png" alt="1997 recreation" width="300px">
+        <figcaption>1997 recreation</figcaption>
+        </center>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
