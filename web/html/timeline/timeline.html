@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../styles/timeline/base.css">
+    <link rel="stylesheet" href="../../styles/base.css">
     <link id="gen_style" rel="stylesheet" href="../../styles/timeline/base/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -101,10 +101,11 @@
         // Then puts the generated navmenu content inside of it
         $("#navmenu").append(generateNavmenuContent());
     }
+
     /////////////////////
     /// TIMELINE GENERATION
     // Generates an event container placed either lef or right, depending on the boolean placedLeft input
-    function generateEventContainer(page_jsonobj, placedLeft){
+    function generateEventContainer(page_jsonobj, generation, placedLeft){
         //TODO: This is utterly terrible. My naked grandma looks more attractive than this design.
 
         var placement;
@@ -118,7 +119,7 @@
         }
 
         var eventcontainer = `<div class="container ${placement}" id="${page_jsonobj.product}">
-            <div class="content">
+            <div class="content ${generation}">
                 <h2>${page_jsonobj.date}</h2>
                 <h4>${page_jsonobj.product}</h4>
                 <p>${page_jsonobj.description}</p>
@@ -139,11 +140,11 @@
         var placedLeft = true;
         JSONobj[generation_key].pages.forEach(function (page,index){
             console.log(page);
-            timeline+=generateEventContainer(page, placedLeft);
+            timeline+=generateEventContainer(page, generation_key, placedLeft);
             placedLeft=!placedLeft;
         });
 
-        timeline+=`</div> <!-- Porcoddio-->`;
+        timeline+=`</div> <!-- P*******o-->`;
         return timeline;
     }
 
