@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SpaceWar</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Anton Tanev">
+    <!-- put page info here -->
+    <meta name="date" content="1962-04-01"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen0">
+    <meta name="product" content="SpaceWar">
+    <meta name="description" content="A space combat video game developed for the PDP-1 minicomputer"> <!-- a short description of the product -->
+    <meta name="picture" content="media/pic1.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        /* --background-image-left: url( "media/background.jpg" ); */
+        /* --background-image-right: url( "media/background.jpg" ); */
+        /* this is the fading color between the images */
+        --background-fade-color: #336699;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/pic-banner.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: black;
+
+        /* the audio file that will be played */
+        /* --audio-file: url( "media/sound.mp3" ); */
+
+        /* the container parameters */
+        /* --container-background-color: grey;  */
+        /* --container-text-color: white; */
+        /* --container-border-color: black; */
+
+        /* the index parameters */
+        /* --index-background-color: grey; */
+        /* --index-text-color: white; */
+        /* --index-border-color: black; */
+
+        /* text styles parameters */
+        --link-color-hover: red;
+
+        /* content scrollbar */
+         --scrollbar-thumb: #336699;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Summary</a>
+        </li>
+        <li><a href="#s2">Gameplay</a>
+        </li>
+        <li><a href="#s3">Development</a>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Summary</h2>
+        <p>
+        Spacewar! is a space war combat video game developed in 1962 by Stevel Russel, Martin Graetz, Wayne Wiitanen,
+        Bob Saunders, Steve Piner and others. It was created to be played on the new PDP-1 computer at MIT and later
+        expanded to other variations of the machine.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic2.jpg" alt="the PDP-1 computer" width="300px">
+        <figcaption>The PDP-1 computer</figcaption>
+        </center>
+        <br>
+        <p>
+        This game has been extremely influential in the history of video games, as it became incredibly popular for its
+        time and was widely distributed because its public domain code was ported across different systems. It it still
+        being recreated modern programming languages to this day, and has insired many other games like <b>Galaxy Game (1971)</b>,
+        <b>Compute Space (1971)</b> and <b>Asteroids! (1979)</b>. It even has a place on the list of the ten most important video games of
+        all time.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic3.jpg" alt="the Asteroids! game" width="300px">
+        <figcaption>The Asteroids! game</figcaption>
+        </center>
+        <br>
+        <h2 id="s2">Gameplay</h2>
+        <p>
+        The game involves two monochrome spaceships. One is named <i>the wedge</i> and the other <i>the needle</i>. They area
+        both controlled by individual players, who have to manuever on the two-dimensional space in the gravity well of a star,
+        in a starfield. The ships can fire torpedoes one at a time by pressing a button on the control pad, after which they have
+        to wait for the cooldown until launching a new one.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic6.jpg" alt="the game being played on the PDP-1" width="300px">
+        <figcaption>The game being played on the PDP-1</figcaption>
+        </center>
+        <br>
+        <p>
+        The ships also have a supply of fuel, which they can use to fire their trusters and move around the map, though they remain
+        in motion even when not accelerating. The players have to shoot down the others' ship and avoid colliding with the star or
+        the enemy ship. The star can also be used for gravity assist, though the player has to be careful not to fall in it. The game
+        also features a wraparound effect, where any ship which moves past the edge of the screen, comes out of the other side. Lastly,
+        the ships are equipped with a hyperspace feature, which enables them to teleport to another location of the screen, after
+        disappearing for a few seconds if they can't evade an enemy torpedoe.
+        </p>
+        <br>
+        <center>
+        <img src="media/pic5.png" alt="gameplay of SpaceWar!" width="300px">
+        <figcaption>Gameplay of SpaceWar!</figcaption>
+        </center>
+        <br>
+        <h2 id="s3">Development</h2>
+        <p>
+        The basic concept for <b>Spacewar!</b> was developed back in 1961 by Russel, Graetz and Wiitanen with the knowledge of the upcoming PDP-1.
+        The science fiction novel Lensman Series was an insipiration for the game which had descriptions of the spaceship encounters and
+        space fleet maneuvers. While at the beggining only simple programs were developed for the PDP-1 at MIT, Russel described the
+        Spacewar! concept to the programming community with the hope that someone else would implement and not he himself. After being
+        pressured from fellow members of the community, he started explaning the reasons why he cannot do it. This prompted his colleagues
+        to help him with some parts of the game. At the end Russel, with the assistance from the other programmers, managed to finish the game
+        in a total of 200 hours or around 6 weeks
+        </p>
+        <br>
+        <center>
+        <img src="media/pic7.jpg" alt="front panel of PDP-1" width="300px">
+        <figcaption>Front panel of PDP-1</figcaption>
+        </center>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
