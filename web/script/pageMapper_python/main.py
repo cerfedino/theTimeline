@@ -45,7 +45,6 @@ def isPageValid(page, metaToExtract):
     try:
         datetime.datetime.strptime(page['date'], '%Y-%m-%d')
     except Exception as e:
-        print("[-] " + str(page) + " Is invalid")
         valid = False
 
 

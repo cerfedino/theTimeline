@@ -1,5 +1,5 @@
 import os, sys
-import io
+import io, ast
 import json
 
 # Takes latex code in input, compiles it, outputs it to 'out.pdf' and opens it
@@ -46,15 +46,15 @@ def getJSONfromStdin():
         exit()
     else:
         print("[+] There is an input")
-        try:
-            json.loads(stdin)
-        except:
-            print("[-] Input can't be decoded as a valid JSON")
-            exit()
+        #try:
+        jsonobj = json.loads(stdin)
+        #except Exception as e:
+        #    print("[-] Input can't be decoded as a valid JSON")
+        #    print(e)
+        #    exit()
 
         print("[+] Input is a valid JSON")
 
-        jsonobj = json.loads(stdin)
         jsonobj.pop('-1')
         return jsonobj
 
@@ -79,7 +79,7 @@ def main():
         finalExport+=r"\chapter{"+gen+r"}\newpage"
 
         # Iterates through every page of the generation
-        for page in json_obj[gen]['pages']:
+        for page in json_obj[gen]["pages"]:
             finalExport+=pageToLatex(page)
 
         ##############

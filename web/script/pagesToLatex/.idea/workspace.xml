@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
@@ -21,7 +22,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../find-broken-links" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,10 +48,10 @@
       <screen x="0" y="540" width="1920" height="1080" />
     </state>
     <state x="213" y="735" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604922103354" />
-    <state x="322" y="781" key="FileChooserDialogImpl" timestamp="1604908678915">
+    <state x="321" y="757" key="FileChooserDialogImpl" timestamp="1604925711687">
       <screen x="0" y="540" width="1920" height="1080" />
     </state>
-    <state x="322" y="781" key="FileChooserDialogImpl/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604908678915" />
+    <state x="321" y="757" key="FileChooserDialogImpl/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604925711687" />
     <state width="935" height="288" key="GridCell.Tab.0.bottom" timestamp="1604914818132">
       <screen x="0" y="540" width="1920" height="1080" />
     </state>
