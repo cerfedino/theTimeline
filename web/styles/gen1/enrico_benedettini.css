@@ -1,0 +1,38 @@
+/* Enrico Benedettini - Team Member Group 1*/
+h1{
+  color: black;
+  font-size: 80px;
+}
+
+body
+{
+  font-size: 25px;
+}
+a
+{
+  color: white;
+}
+
+img
+{
+  float: right;
+  margin: 10px;
+}
+
+hr
+{
+  width: 100%;
+}
+
+.left-img
+{
+  float: left;
+}
+
+p
+{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
