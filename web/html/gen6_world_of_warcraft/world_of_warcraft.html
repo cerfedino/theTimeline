@@ -11,7 +11,7 @@
     <meta name="generation" content="gen6">
     <meta name="product" content="World of Warcraft">
     <meta name="description" content="The first big MMORPG"> <!-- a short description of the product -->
-    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="picture" content="media/wow_lich.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
@@ -21,8 +21,8 @@
     <style id="user-style">
       :root{
         /* these are the background images (left and right) */
-        --background-image-left: url( "media/background_left.jpg" );
-        --background-image-right: url( "media/background_right.jpg" );
+        --background-image-left: url( "media/wow_back_left.jpg" );
+        --background-image-right: url( "media/wow_back_right.jpg" );
         /* this is the fading color between the images */
         --background-fade-color: #000000;
 
@@ -32,10 +32,10 @@
         --banner-color: #000;
 
         /* the audio file that will be played */
-        --audio-file: url( "media/sound.mp3" );
+        --audio-file: url( "media/wow_theme.mp3" );
 
         /* the container parameters */
-        --container-background-color: #f7e399;
+        --container-background-color: #edc272;
         --container-text-color: #000;
         --container-border-color: #000;
 
@@ -54,6 +54,15 @@
       /* your style here */
       .shrink{
         width: 90%;
+        margin: auto;
+      }
+
+      .caption{
+        text-align: center;
+        font-size: 12pt;
+      }
+
+      table{
         margin: auto;
       }
     </style>
@@ -80,13 +89,13 @@
     </div>
     <div id="container">
       <div id="banner">
-        <img src="media/wow_logo.jpg" alt="Banner Image">
+        <img alt="Banner Image">
       </div>
       <div id="content">
         <h2 id="s1">Introduction</h2>
         <p>
-          World of Warcraft (WOW) is a MMORPG (Massively Multiplayer Online + Role Playing Game) made
-          by Blizzard Entertainment and released on November 23, 2004. It immerses in you in a fictional
+          World of Warcraft (WOW) is a MMORPG (Massively Multiplayer Online + Role-Playing Game) made
+          by Blizzard Entertainment and released on November 23, 2004. It immerses you in a fictional
           world called Azeroth in which you can do quests, kill monsters, adventure, all while cooperating and
           sometimes fighting with other people. It is also the game that popularized subscription-based payment
           models.
@@ -100,17 +109,32 @@
           be able to attain new skills, thereby increasing their strength. This strength can be put to use by
           doing large-scale PVE (player versus environment) content or PVP (player versus player). The mechanics of
           the combat are quite static as opposed to other newer MMO's: the spells and attacks require only a press of
-          a button to activate and there is not much room for countering the attacks of the enemy. Nonetheless the combat
+          a button to activate and there is not much room for countering the attacks of the enemy. Nonetheless, the combat
           is still rewarding and satisfying.
         </p>
-
-          <img class="shrink" src="media/wow_gameplay.jpeg" alt="An image of gameplay">
         <br>
+          <table>
+            <tr>
+              <td><img class="shrink" src="media/wow_gameplay.jpg" alt="An image of gameplay"></td> <!-- souce: https://www.youtube.com/watch?v=6qmGfPzL3N8 -->
+            </tr>
+            <tr>
+              <td class="caption">A deaht knight chracter in PVE</td>
+            </tr>
+          </table>
+        <br>
+        <table>
+          <tr>
+            <td><img class="shrink" src="media/wow_play.gif" alt="gif of gameplay"></td> <!-- source: https://www.kotaku.com.au/2014/07/one-of-world-of-warcrafts-newest-dungeons-is-a-moving-train/  -->
+          </tr>
+          <tr>
+            <td class="caption">Gameplay from a dungeon</td>
+          </tr>
+        </table>
 
         <h2 id="s3">Background</h2>
         <p>
           World of Warcraft has its origins in the Warcraft RTS series by Blizzard. Following the success of the
-          series blizzard wished to have more creative freedom to be able to explore the Warcraft universe,
+          series, blizzard wished to have more creative freedom to be able to explore the Warcraft universe,
           finding the RTS genre not very suited to such endeavours. They then got inspired by the newly
           released EverQuest (another MMORPG) and decided that the MMO genre would be best suited for
           players to delve into the lore of Warcraft.
@@ -121,7 +145,7 @@
         <p>
           The release of WOW was eagerly awaited by many thanks to the notoriety of the Warcraft series as
           well as some effective marketing. Upon release it was met with great success considering that at the
-          time not many people had good active internet connection to be able to consistently play the game.
+          time not many people had a good active internet connection to be able to consistently play the game.
           It also received great reviews and little criticism, a testament to its quality. It was intended to be a
           casual MMORPG contrary to others on the market, planning to attract many new players.
         </p>
@@ -129,21 +153,45 @@
 
         <h2 id="s5">New Records</h2>
         <p>
-          The release of WOW was eagerly awaited by many thanks to the notoriety of the Warcraft series as
-          well as some effective marketing. Upon release it was met with great success considering that at the
-          time not many people had good active internet connection to be able to consistently play the game.
-          It also received great reviews and little criticism, a testament to its quality. It was intended to be a
-          casual MMORPG contrary to others on the market, planning to attract many new players.
+          Only 2 years after its release WOW had reached 3 million monthly subscribers, an unprecedented
+          number at the time, but which would ultimately be dwarfed. The game receives on average an
+          expansion every four years; the first two met with great success, while the others were quite heavily
+          criticised for straying from the original vision of the game. The peak player count was reached during
+          the second expansion <i>Wrath of the Lich King</i> with 12 million subscriptions. After this expansion the
+          player base shrunk, owing to the sub-par expansions and other competing MMO’s. Nowadays the
+          number of subscribers usually hovers around 4 million.
         </p>
         <br>
-
+        <table>
+          <tr>
+            <td><img class="shrink" src="media/wow_chart.jpg" alt="A chart of wow players over time"></td> <!-- source: https://www.reddit.com/r/wow/comments/acqhph/i_estimated_subscriber_numbers_using_google_trend/ -->
+          </tr>
+          <tr>
+            <td class="caption">A chart of WOW subscribers over time</td>
+          </tr>
+        </table>
+        <br>
         <h2 id="s6">Legacy</h2>
         <p>
-          For many people WOW constituted an entry into the MMORPG genre and is what got them
+          For many people, WOW constituted an entry into the MMORPG genre and is what got them
           interested in it in the first place. Even if today it is not as popular as it once was, it still retains a large
           player base and is a constant in any MMO fan’s library, to which they will someday return. World of
           Warcraft was the game that popularised the MMO genre and even brought it to mainstream
-          attention. It certainly pushed the game industry in a more internet orientated direction compared to
+          attention. This was not only thanks to the number of people playing it but also some bad publicity
+          from unfortunate events relating to videogame addiction. Hence the stereotypical WOW player:
+        </p>
+          <br>
+          <table>
+            <tr>
+              <td><img class="shrink" src="media/wow_player.jpg" alt="typical wow player"></td> <!-- source: https://southpark-online.nl/en/clip/the-slaughter -->
+            </tr>
+            <tr>
+              <td class="caption">The typical WOW player according to South Park</td>
+            </tr>
+          </table>
+          <br>
+        <p>
+          It certainly pushed the game industry in a more internet orientated direction compared to
           the LAN days that preceded it. For better or worse it influenced the gaming scene and gaming
           culture in general, completely altering its landscape.
         </p>
