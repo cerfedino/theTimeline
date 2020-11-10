@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generation 8 - Battle Royale</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Arthur Morgan">
+    <!-- put page info here -->
+    <meta name="date" content="2016-07-06"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen8">
+    <meta name="product" content="Battle Royale">
+    <meta name="description" content="The origins of the battle royale genre"> <!-- a short description of the product -->
+    <meta name="picture" content="media/logo.jpg"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen8/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.jpg" );
+        --background-image-right: url( "media/background_right.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #fff;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/logo.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #000;
+
+        /* the audio file that will be played */
+        /*--audio-file: url( "media/.mp3" );*/
+
+        /* the container parameters */
+        --container-background-color: #DCDCDC;
+        --container-text-color: #000;
+        --container-border-color: #FF0000;
+
+        /* the index parameters */
+        --index-background-color: #FF0000;
+        --index-text-color: #000;
+        --index-border-color: #000;
+
+        /* text styles parameters */
+        --link-color-hover: #fff;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #FF0000;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+      .tablez{
+      margin-left: auto;
+      margin-right: auto;
+      border: 5px solid #DCDCDC;
+      background-color: #fff;
+      }
+      .captionz {
+        text-align: center;
+        font-style: italic;
+        font-size: 11pt;
+      }
+      .imagez{
+        position: relative;
+        left: -9px;
+      }
+      .imagez2{
+        position: relative;
+        left: -14px;
+      }
+      .imagez3{
+        position: relative;
+        left: -20px;
+      }
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#int">Introduction</a></li>
+        <li><a href="#gmp">History</a>
+        <ol>
+          <li><a href="#s1">Early mods and games</a></li>
+          <li><a href="#s2">Formation of standalone games</a></li>
+          <li><a href="#s3">Mainstream popularity</a></li>
+        </ol>
+      </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img src="media/logo.png" alt="Banner Image">
+      </div>
+      <div id="content">
+      <h1>Battle Royale</h1>
+      <h2 id="int">Introduction</h2>
+      <table class="tablez" style="float:left">
+      <tr>
+      <td><img class="imagez" src="media/2000.jpeg" alt="Battle Royale Poster" height="265"></td>
+    </tr>
+    <tr>
+      <td class="captionz">Fun for all the family.</td>
+    </tr>
+    </table>
+      <p>
+        <b>Battle royale</b> games are a genre of online multiplayer video games that blends the elements of a <b>survival game</b> like exploration, scavenging and survival with last-man-standing gameplay.
+        Battle royale games can have any amount of players from a few dozens to a hundred. Typically, all players start with minimal, or no equipment and have to scavange and loot to improve their equipment.
+        The goal is to eliminate all other players, while trying to avoid being killed by other players or elements of the map, such as the ever shrinking "<b>safe area</b>".
+        The winner is the last player or team alive.
+      </p>
+      <p>
+        The name for the genre is taken from the 2000 Japanese film <a href="https://en.wikipedia.org/wiki/Battle_Royale_(film)">Battle Royale</a>.
+    </p>
+    <div style=float:right>
+      <h2 id="gmp">History</h2>
+      <p>
+      Elements of the Battle Royale genre have been present in video games for quite a while.
+    </p>
+    <table class="tablez" style="float:left">
+    <tr>
+    <td><img class="imagez2" src="media/bomber.png" alt="Bomberman 1990" height="250"></td>
+  </tr>
+  <tr>
+    <td class="captionz">Bomberman 1990.</td>
+  </tr>
+  </table>
+    <p>
+      In 1990's Bomberman, players would start with the same abilities and could pick up new items throughout the round to become stronger.
+      The game would end when only one player was left.
+    </p>
+    <p>
+      The release of <b>Battle Royale</b>, the 2000 Japanese movie based on a novel with the same name, is the one to have really set the benchmark for the battle royale genre.
+      The main concepts behind of battle royale game can be found within this film:
+      <br><br>
+      The characters are on an <b>island</b>, and only one of them may leave.
+      <br>
+      They have nothing on them.
+      <br>
+      The students are then set loose on the island and <b>they start killing each other</b>.
+      <br>
+      Around the island they may find <b>hidden weapons</b> which increase their chances of surviving.
+      <br>
+      The Battle Royale ultimately ends with <b>only one student alive</b>, who gets to leave the island.
+      <br><br><br>
+    <h4 id="s1">Early mods and games (2012–2016)</h4>
+    <p>
+      After being quite popular in Japan, the battle royale concept made it's may to the US, in the form of <b>The Hunger Games</b> franchise.
+    </p>
+    <p>
+      Not long after the release of the first The Hunger Games film in 2012, a server plug-in was created, called Hunger Games (said server was later renamed Survival Games) was for Minecraft.
+      Survival Games took inspiration from the film (obviously).
+      <br>
+      It's worth mentioning that while Hunger Games is very similiar to Battle Royale, they differ in the way they deal with weapons.
+      Whereas Battle Royale has them scattered around the map, Hunger Games has a main weapons stash in the middle of the map.
+      <br>
+      Like in Battle Royale, the dead stay dead and the winner is the last man standing.
+    </p>
+    <table class="tablez">
+    <tr>
+    <td><img class="imagez3" src="media/Battle_Royale_Minecraft.jpg" alt="Minecraft Battle Royale" height="250"></td>
+    <td><img class="imagez3" src="media/dayz.jpg" alt="DayZ Battle Royale" height="250"></td>
+  </tr>
+  <tr>
+    <td class="captionz">The world's greatest crossover.</td>
+    <td class="captionz">A battle royale mod for the ARMA2 mod, DayZ.</td>
+  </tr>
+  </table>
+    <p>
+      This was the first of many battle royale mods.
+      One of the more popular mods, was one created by Brendan Greene for DayZ (a mod for ARMA 2 itself).
+      Going by PlayerUnknown, Greene decided to stick more closely to the Battle Royale formula of having weapons scattered around the map, to add to the chaos and unpredictability.
+      After briefly working as a consultant for H1Z1: King of the Kill before joining forces with Bluehole to develop astandalone battle royale game.
+      Said game would later be released as PlayerUnknown's Battlegrounds.
+    </p>
+    <h4 id="s2">Formation of standalone games (2017–2018)</h4>
+    <p>
+      So the formative elements of the battle royale genre existed well before PUBG was released, but the genre was mainly defined by the two principal titles through 2017 and 2018:
+      <a href="../gen8_pubg/pubg.html">PlayerUnknown's Battlegrounds</a> and <a href="../gen8_fortnite/Fortnite.html">Fortnite Battle Royale</a>. Both games attracted tens of millions of players in no time, and made them both commercial successes.
+  </p>
+  <table class="tablez">
+  <tr>
+  <td><img class="imagez3" src="media/pubg.gif" alt="PUBG Gameplay" height="250"></td>
+  <td><img class="imagez3" src="media/fortnite.gif" alt="Fortnite Gameplay" height="250"></td>
+</tr>
+<tr>
+  <td class="captionz">PlayerUnkown's Battlegrounds.</td>
+  <td class="captionz">Fortnite.</td>
+</tr>
+</table>
+<p>
+  As previously mentioned PlayerUnknown's Battlegrounds was created by Brendan Greene, and its title is based on his online alias "PlayerUnknown".
+  Fortnite on the other hand had been released previously, as a cooperative survival game, but it was only early access. Seeing the potential of battle royale, they decided to implement their own version.
+  In 2018, Fortnite Battle Royale was rivaling Battlegrounds in player numbers and had surpassed it in revenue. This is attributed to the fact it's free-to-play and supports cross-platform.
+</p>
+<h4 id="s3">Mainstream popularity (2018–present)</h4>
+  <p>
+    After the game's impressive performance on the market, many other games followed with <b>battle royale mechanics</b>.
+    Both Activision and EA included a battle royale mode in their new releases (Call of Duty: Black Ops 4 and Battlefield V respectively).
+    Many other previously released games also added battle royale-inspired game modes in updates, such as Grand Theft Auto Online, Paladins, Dota 2, Battlerite, and Counter-Strike: Global Offensive.
+    In February 2019, EA released the free-to-play Apex Legends.
+  </p>
+  <p>
+    The battle royale concept has also been used in games that aren't shooter games.<br>
+    Tetris 99 has 99 players playing Tetris simultaneously, with the goal being to remain the last player standing.
+  </p>
+  <table class="tablez">
+  <tr>
+  <td><img class="imagez3" src="media/fall.gif" alt="Fall Guys Gameplay" height="250"></td>
+  <td><img class="imagez3" src="media/fall.jpg" alt="Fall Guys Cover" height="250"></td>
+</tr>
+<tr>
+  <td class="captionz">Fall Guys gameplay.</td>
+  <td class="captionz">Much better for the kids.</td>
+</tr>
+</table>
+  <p>
+    The barrage of clones has since slowed down a bit. And with games like <b>Fall Guys</b>, where the battle royale genre is mixed in with the platformer genre, we can see that companies have started to be more creative, which will undoubtedly help battle royale stay around for longer.
+</p>
+    <address>
+      Arthur Morgan
+  </address>
+</div>
+  </div>
+  </div>
+  <!-- Picture sources
+  https://medium.com/orangeandjuicy/the-brains-behind-the-battle-royale-craze-f0d9c7cf910a
+  https://www.empireonline.com/movies/reviews/battle-royale-review/
+  https://medium.com/@andrewprice_22984/battle-royale-2000-review-e55369392d1d
+  https://www.wikiwand.com/en/Bomberman_(1990_video_game)
+  https://gameplayerr.com/game-news/page/14/
+  https://blog.turtlebeach.com/de/wo-geht-es-mit-dem-battle-royale-genre-hin/
+  https://gfycat.com/pl/gifs/search/pubg+gameplay
+  https://www.tumblr.com/tagged/fortnite-gif
+  https://www.gamivo.com/product/fall-guys-ultimate-knockout
+  https://redlight.gg/2020/08/10/fall-guys-review-move-over-fortnite/
+  -->
+</html>

@@ -1,0 +1,22 @@
+Overview:
+A battle royle game is an online multiplayer video game genre that revolves around the gameplay mechanic of multiple players fighting each other in order to be the last man standing. During a round, all players are dropped onto a map with basic equipment, and as the round progresses, the player must scavange and loot resources in order to best their enemies. Encounters are typically forced, as the map is continuosly shrinking.
+
+The name of the genre is taken after the 2000 Japanese film Battle Royale.
+History:
+Elements of the Battle Royale genre have been present in video games for quite a while. In 1990's Bomberman, players would start with the same abilities and could pick up new items throughout the round to become stronger. The game would end when only one player was left.
+
+The release of Battle Royale, the 2000 Japanese movie based on a novel with the same name, is the one to have really set the benchmark for the battle royale genre. The main concepts behind of battle royale game can be found within this film. The characters are on an insland with nothing but their school uniforms and are told that only one of them may survive. The students are then set loose on the island. In order to survive they all start killing each other. As they run around the island they may find hidden weapons which increase their chances of survival. The Battle Royale ultimately ends with only one student alive, who gets to leave the island.
+
+The release of the film led to several new battle royale inspired manga and anime being released in Japan.
+
+After being quite prominent in Japan, the battle royale concept made it's way to the United States, with the release of the Hunger Games books, and then films. 
+
+It's worth noting that there is a key difference between Battle Royale and Hunger Games. Whereas in Battle Royale, the weapons are randomly hidden across the map, in Hunger Games, they're all located in one central location.
+Shortly after the release of the first Hunger Games movie, a Minecraft server with the same name was created. The server's game-mode was meant to replicate that of the Hunger Games, so, multiple players would appear on an island and would have to fight each other until only one player remained.
+
+This was the first of many mods that were designed to replicate Hunger Games One of the more popular mods, was one created by Brendan Greene for DayZ (a mod for ARMA 2 itself). Going by PlayerUnknown, Greene decided to stick more closely to the Battle Royale formula of having weapons scattered around the map. As ARMA moved on, Greene kept working on his mods and eventually started developing his own standalone battle royale game with the Korean company Bluehole. The game was eventually released as PlayerUnknown's Battlegrounds in 2017 and was a big success. Not long after it's release as a beta, Epic Games started working on their own battle royale game, Fortnite (2018). Fortnite was clearly meant to replicate PUBG but it differed in two major aspects. Whereas PUBG went for a more realistic and grounded aesthetic, Fortnite is a more fast-paced and doesn't focus too much on realism. The second aspect was that Fortnite was free-to-play (but had a lot of in game purchase available).
+Throughout 2018, the two games rivaled eachother in player numbers and Fortnite has managed to surpassed PUBG in revenue. NOw Fortnite towers over PUBG.
+ 
+Several of the big publishers, such as Electronic Arts, Activision and Ubisoft saw the success of the two games and the potential of the battle royale genre and immediately decided they wanted to jump in to make some money. EA and Activision added battle royale game modes to Call of Duty: Black Ops 4 (2018) and Battlefield V (2018) respectively. Many games also retroactively added battle royale modes, such as Grand Theft Auto Online (2013), Paladins (2016), Dota 2 (2013) and CS:GO (2012).
+
+Battle royale has also been integrated in games that aren't normally associated with shooter games, like Tetris 99 (2019), Forza Horizon 4 (2018) or Hearthstone (2014).
