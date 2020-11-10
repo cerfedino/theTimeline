@@ -332,31 +332,40 @@ html, body{
     display: none;
   }
 
-  #back-button{
-    /* positioning */
-    left: calc( 5% - 10px );
-
+  .button{
     /* sizing */
     width: 10vw;
     height: 10vw;
   }
 
+  #back-button{
+    /* positioning */
+    left: calc( 5% - 10px );
+  }
+
   #sound-button{
     /* positioning */
     left: calc( 5% - 10px );
-
-    /* sizing */
-    width: 10vw;
-    height: 10vw;
   }
 }
 
 /* NOTE: CHANGE IN THE WINDOW SIZE  */
 
 @media only screen and (max-width: 600px) {
+  /* variables */
+  :root{
+    /* button */
+    --button-size: min( calc( 10vh - 10px ), calc( 45vw - 5px ) );
+    --button-position-top: calc( 95vh - var( --button-size ) );
+
+    /* container */
+    --container-height: calc( 90vh - var( --button-size ) - 10px);
+  }
+
   #container{
     /* sizing */
     width: 90%;
+    height: var( --container-height );
 
     /* positioning */
     position: relative;
@@ -368,13 +377,21 @@ html, body{
     display: none;
   }
 
+  .button{
+    /* sizing */
+    width: var( --button-size );
+    height: var( --button-size );
+  }
+
   #back-button{
-    /* content */
-    display: none;
+    /* positioning */
+    left: 5%;
+    top: var( --button-position-top );
   }
 
   #sound-button{
     /* positioning */
-    display: none;
+    left: calc( 95% - var( --button-size ) );
+    top: var( --button-position-top );
   }
 }
