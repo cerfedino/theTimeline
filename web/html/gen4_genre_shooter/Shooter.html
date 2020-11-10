@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generation 4 - Shooter</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Roberto Ibanez">
+    <!-- put page info here -->
+    <meta name="date" content="1992-05-05"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen4">
+    <meta name="product" content="Shooter Game">
+    <meta name="description" content="Shooter game, video game genre"> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen4/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/bloodleft.jpg" );
+        --background-image-right: url( "media/bloodright.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #FF8000;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/Shooter-Banner.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color:  #00F9F9;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/Laser-gun.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #00F9F9;
+        --container-text-color: #FF8000;
+        --container-border-color: #FF8000;
+
+        /* the index parameters */
+        --index-background-color:  #00F9F9;
+        --index-text-color: #FF8000;
+        --index-border-color: #FF8000;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #88f;
+      }
+
+      /* your style here */
+      .center
+      {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+        
+      }
+      a{
+        text-decoration: none;
+        color: #FF8000;
+        font-weight: bolder;
+        
+      }
+
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Definition</a>
+        </li>
+        <li><a href="#s2">Popular subgenres</a>
+            <ol>
+                <li><a href="#s2.1">Arena Shooter</a></li>
+                <li><a href="#s2.2">FPS</a></li>
+                <li><a href="#s2.3">TPS</a></li>
+                <li><a href="#s2.4">Loot Shooter</a></li>
+
+            </ol>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Shooter Games </h2>
+        <p>
+            Shooter games are a subgenre of action video game, which often test the player's spatial awareness, reflexes, and speed in both isolated single player or networked multiplayer environments. 
+            Shooter games encompass many subgenres that have the commonality of focusing on the actions of the avatar engaging in combat with a weapon against both code-driven NPC enemies or other avatars controlled by other players.
+        </p>
+        <p>
+            Usually this weapon is a firearm or some other long-range weapon, and can be used in combination with other tools such as grenades for indirect offense, armor for additional defense, or accessories such as telescopic sights to modify the behavior of the weapons. 
+            A common resource found in many shooter games is ammunition, armor or health, or upgrades which augment the player character's weapons.
+        </p>
+        <p>Most commonly, the purpose of a shooter game is to shoot opponents and proceed through missions without the player character being killed or dying as a result of the player's actions. 
+            A shooting game is a genre of video game where the focus is almost entirely on the defeat of the character's enemies using the weapons given to the player.
+        </p>
+        <h2 id="s2">Popular Subgenres</h2>
+        <h3 id="s2.1">Arena shooter</h3>
+        <p>
+            Arena shooters are multiplayer shooters that feature fast pace gameplay that emphasizes quick speed and agile movement. 
+            These games will usually feature weapons that don't require to reload with continuous ammo, floaty gravity and jumps, and very fast character movement. 
+            Examples of these include the Quake and Unreal series, more specifically Quake III Arena and Unreal Tournament which first pioneered the genre. 
+            These games are also characterized by their focus on multiplayer only with most titles not even featuring a single player mode. 
+            While the genre hits its peak in popularity in the late 90s and early 2000s, they have become less popular in recent times with other shooter genres rising to prominence with many of the newest arena shooters being released and developed by indie studios like Reflex Arena. 
+        </p>
+        <table class="center">
+            <tr>
+              <td><img src="media/isac.jpg" alt="Arena Shooter Example" class="center"></td>
+            </tr>
+            <tr>
+              <td><center><i>The Binding of Isaac</i></center></td>
+            </tr>
+          </table>
+          <br>
+          <h3 id="s2.2">First-Person Shooter</h3>
+        <p>
+            First-person shooters are characterized by an on-screen view that simulates the in-game character's point of view. While many rail shooters and light-gun shooters also use a first-person perspective, they are generally not included in this <br>
+            Notable examples of the genre include <a href="../gen4_doom/doom.html">Doom</a>, 
+            <a href="../gen8_half_life_alyx/half_life_alyx.html">Half Life</a>, 
+            <a href="../gen7_counter_strike_global_offensive/counter_strike_global_offensive.html">Counter Strike</a>, 
+            <a href="../gen7_battlefield_bad_company/battlefield_bad_company.html">Battlefield</a>, 
+            <a href="../gen7_call_of_duty_modern_warfare2/call_of_duty_modern_warfare2.html">Call of Duty</a> and 
+            <a href="../gen7_halo_2/halo_2_gen7.html">Halo</a>.
+        </p>
+        <table class="center">
+            <tr>
+              <td><img src="media/w.png" alt="First-Person Shooter Example" class="center"></td>
+            </tr>
+            <tr>
+              <td><center><i>Wolfenstein 3D</i></center></td>
+            </tr>
+          </table>
+          <br>
+          <h3 id="s2.3">Third-Person Shooter</h3>
+          <p>
+            Third-person shooters are characterized by a third-person camera view that fully displays the player character in his/her surroundings. <br>
+            Notable examples of the genre include the Tomb Raider series, Syphon Filter, Max Payne, SOCOM, Star Wars: Battlefront, Gears of War, and Splatoon. <br>
+            Third person shooter mechanics are often incorporated into open-world adventure and sandbox games, including the <a href="../gen7_the_elder_scrolls_v:_skyrim/the_elder_scrolls_v:_skyrim_gen7.html">The Elder Scrolls series</a> and the <a href="../gen5_grand_theft_auto/grand_theft_auto.html">Grand Theft Auto franchise</a> .
+          </p>
+          <table class="center">
+            <tr>
+              <td><img src="media/mgs.jpg" alt="Third-Person Shooter Example" class="center"></td>
+            </tr>
+            <tr>
+              <td><center><i>Metal Gear Solid</i></center></td>
+            </tr>
+          </table>
+          <br>
+          <h3 id="s2.4">Loot Shooter</h3>
+          <p>
+            Loot shooters are shooter games where the player's overarching goal is the accumulation of loot; weapons, equipment, armor, accessories and resources. 
+            To achieve this players complete tasks framed as quests, missions or campaigns and are rewarded with better weapons, gear and accessories as a result, with the qualities, attributes and perks of such gear generated randomly following certain rarity scales (also known as loot tables). 
+            The better gear allows players to take on more difficult missions with potentially more powerful rewards, forming the game's compulsion loop. 
+            Loot shooters are inspired by similar loot-based action role-playing games like Diablo. <br>
+            Examples of loot shooters include the Borderlands franchise, Warframe, Destiny and its sequel, Tom Clancy's The Division and its sequel, and Anthem.
+          </p>
+          <table class="center">
+            <tr>
+              <td><img src="media/d2.jpg" alt="Loot Shooter Example" class="center"></td>
+            </tr>
+            <tr>
+              <td><center><i>Destiny 2</i></center></td>
+            </tr>
+          </table>
+      </div>
+    </div>
+  </body>
+</html>
