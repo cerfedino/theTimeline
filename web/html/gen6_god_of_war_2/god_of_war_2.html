@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generation 6 - God of War 2</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Genaro Di Stefano">
+    <!-- put page info here -->
+    <meta name="date" content="2007-13-03"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen6">
+    <meta name="product" content="God of War 2">
+    <meta name="description" content="One of the best hack and slash in history"> <!-- a short description of the product -->
+    <meta name="picture" content="media/GoWGif.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen6/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/GoWLeft.jpg" );
+        --background-image-right: url( "media/GoWRight.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #6e3636;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/GodOfWarTitle.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #a6a2a2;
+
+        /* the audio file that will be played */
+      /*  --audio-file: url( "media/sound.mp3" ); */
+
+        /* the container parameters */
+        --container-background-color: #a6a2a2;
+        --container-text-color: #6e3636;
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #a6a2a2;
+        --index-text-color: #6e3636;
+        --index-border-color: #000;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #6e3636;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Information</a>
+          <ol>
+            <li><a href="#s1.1">About</a></li>
+            <li><a href="#s1.2">Gameplay</a></li>
+          </ol>
+        </li>
+        <li><a href="#s2">Upgrades</a>
+          <ol>
+            <li><a href="#s2.1">Hack and Slash</a></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Information</h2>
+        <h3 id="s1.1">About</h3>
+        <p>
+          God of War 2 (also known as God of War Divine Retribution) is a "hack and slash" game developed by SCE Santa Monica (California). It's the second game in the series, and despite not having a huge year gap with its predcessor, it showed major improvements.   <br>
+          After defeating Ares in the first video game of the series, Kratos, the new god of war, found a new family among spartan warriors, destroying and conquering city after city with them. But the god's anger grew every time this happened, which lead to the moment when Zeus, afraid of ending like Ares, betrayed Kratos, taking his powers away and slaying him afterwards. But this wasn’t the end of our protagonist: while being taken to the Underworld, Gaia gave Kratos an opportunity for revenge, which he accepted, escaping hell.
+        </p> <br>
+        <h3 id="s1.2">Gameplay</h3>
+        <p>
+          Throughout the game, we see Kratos travel to different destinations, killing different mythological creatures on his path to revenge against Zeus. This is something that did not happen until the third game was released, ending the Greek gods era for the series.
+ Kratos' main weapon is a pair of blades attached to chains that are wrapped around the character's wrists and forearms. Called Athena's Blades (also known as the Blades of Athena) in this game, they can be swung offensively in various maneuvers. As the game progresses, Kratos acquires new weapons—the Barbarian Hammer, the Spear of Destiny, and the Blade of Olympus. Each of them changed the way you played the game, because every weapon had a different combat approach and different attacks to use.
+ <img class="middle" src="media/GoWGameplay.jpg" alt="GoW gameplay">
+</h2> </p>
+ <br>
+        <h3 id="s2">Upgrades</h3>
+        <h3 id="s2.1" >Hack and Slash</h3>
+        <p>
+       As mentioned earlier, when compared to the previous game of the series, God of War 2 brought new weapons, making the gameplay more diverse. But that wasn't the only change: God of War Divine Retribution brought new powers, objects and attacks, changing the series and its complexity forever. Winning the best game of the year in 2007, this “hack ans slash” is by many considered one of the best in history, with some of the most violent and bloody fights in the saga, and multiple puzzles to solve mixed with platform stages.
+          </p>
+              </div>
+    </div>
+  </body>
+</html>
