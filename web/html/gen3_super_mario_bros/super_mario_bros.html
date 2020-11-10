@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generation 3 - Super Mario</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Arnaud Fauconnet">
+    <!-- put page info here -->
+    <meta name="date" content="1985-09-11"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen3">
+    <meta name="product" content="Super Mario Bros.">
+    <meta name="description" content="The first episode of an iconic video game series."> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "http://www.goombastomp.com/wp-content/uploads/2016/05/Mario-banner-1.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #1286CE;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/sound.m4a" );
+      }
+      html {
+        background: url( "https://www.desktopbackground.org/download/1920x1080/2015/03/08/913837_15-quality-super-mario-bros-wallpapers-video-games_7680x4320_h.png" );
+        background-size: auto;
+        background-repeat: no-repeat;
+      }
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <!-- <div class="bg" id="bg-left"></div> -->
+    <!-- <div class="bg" id="bg-right"></div> -->
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#intro">Introduction</a> </li>
+        <li><a href="#story">Story</a>
+        <li><a href="#sellings">Selling</a>
+          <ol>
+            <li><a href="#s2.1">Sub section 1</a></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+          <h1>Super Mario Bros.</h1>
+          <h2 id="intro"></h2>
+          <p><i>Super Mario Bros.</i> was an influential and groundbreaking game created
+          created by Nintendo and released on the NES in September 1985 in
+          Japan. It was a game changer for the platformer style game, thanks to
+          it bright, expansive worlds.</p>
+
+          <p>Although the game is often credited as the first scrolling
+          platformer (there were half a dozen earlier), it is the first console
+          original in this genre to feature smooth-scrolling levels, which made
+          it a landmark in home video-gaming.</p>
+
+          <h2 id="story">Story</h2>
+          <p>The story wasn't the part of the game that was the most developed. It
+          is a simple structure that was used in most of the future Mario games,
+          each one with some slight variations:
+          <ol>
+              <li>Bowser kidnaps Princess Peach.</li>
+              <li>Mario must roam the Mushroom Kingdom and defeat Bowser for the
+              last time.</li>
+              <li>Mario saves Peach and gets a kiss</li>
+          </ol></p>
+
+          <h2 id="gameplay">Gameplay</h2>
+          <p>The goal of the game is as Mario, or Luigi in the case of a
+          second player, to go through the Mushroom Kingdom, defeat the enemies
+          to ultimately fight Bowser and save Princess Peach. The main way Mario
+          can defeat enemies is by jumping on top of ("Stomping") them. This
+          actions kills enemies known as Gumbas, and send the turtle soldiers
+          known as Koopas Troopas into their shells, which Mario and Luigi can
+          then kick into other enemies. These shells will conveniently dispatch
+          the enemies they kick into, but on the other side, can bounce back off walls
+          or others vertical obstacles, and come back into our protagonists,
+          hurting them in their way. </p>
+          <p>Mario or Luigi can be hurt if they touch an enemy, but they can
+          encounter objects known for being power-ups:
+          <ol>
+              <li>1-up: causes Mario to gain a life;</li>
+              <li>Super Mushroom: causes mini Mario (also known as "Regular
+                  Mario) to grow (becomes Super Mario);</li>
+              <li>Fire Flower: causes Super Mario to have the ability to shoot
+              fire balls;</li>
+              <li>Starman: causes Mario to be impervious to the touch of enemy
+                  characters and most obstacles.</li>
+          </ol></p>
+          If Super Mario or Fire Mario takes a ht from an enemy, then he reverts
+          back to Regular Mario, and at his turn, if Regular Mario takes a hit
+          then he loses a life and starts again. However, regardless of status,
+          if Mario falls down into a pit, into lava or if the timer runs out
+          then he loses a life and starts again, either from the start of from
+          an invisible checkpoint partway through the level.
+
+          <h2 id="sellings">Selling</h2>
+          <p>The game, at his time, broke a lot of records when we talk about
+          selling. To set some context, here is the top five best selling games, with
+          their respective number of units sold, at the time <i>Super Mario
+          Bros.</i> came out:
+            <ol>
+                <li>Pac Man - 12.000.000 units</li>
+                <li>Space Invaders - 5.750.000 units</li>
+                <li>Frogger - 4.100.000 units</li>
+                <li>Mario Bros. - 3.850.000 units</li>
+                <li>Tetris - 3.200.000 units</li>
+            </ol> 
+          The game such a success that no more than three months after it was
+          released, it enters the top five with 3.800.000 units, taking the
+          place of <i>Tetris</i>. It also stopped <i>Mario Bros.</i> from being
+          sold.</p>
+          <p>Six months after it's release, <i>Super Mario Bros.</i> arrives in
+          second position of best selling game with 6.300.000 units, getting in
+          front of <i>Space Invaders</i> and behind <i>Pac Man</i> which is at 12.500.000.</p>
+          <p>It takes a little less than two years for <i>Super Mario Bros.</i>
+          to become the best selling game of all time (up until August 1987). It
+          passes <i>Pac Man</i> with 14.000.000 units and stay in front, gaining
+          worthy advantage, because two years later, it has doubled it's
+          units.</p> 
+          <p>In March 1993, over seven years after it's release and five of
+          being the best selling video game, <i>Super Mario Bros.</i> looses
+          it's first place and is passed by <i>Tetris</i> with 48.000.000 units
+          sold.</p>
+          <p>In June 2009, the game loose yet again a place in the charts, since
+          it falls behind <i>Wii Sports</i>, in third place, at 48.150.000
+          units.</p>
+          <p>
+          In 2020, <i>Super Mario Bros.</i> is still up on the charts, though
+          not selling a lot, standing with 48.240.000 sales at sixth place,
+          behind <i>Minecraft</i>, <i>Grand Theft Auto V</i>,  <i>Tetris</i>,
+          <i>Wii Sports</i> and <i>PlayerUnkown's Battleground</i>.
+          </p>
+      </div>
+      <footer>
+        <ol>
+          <li><a href="https://zelda.gamepedia.com/The_Legend_of_Zelda">Super Mario Bros. - Source</a></li>
+          <li><a href="https://www.youtube.com/watch?v=PAJ7a4mULXA">Selling - Source 1</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">Selling - Source 2</a></li>
+        </ol>
+      </footer>
+    </div>
+  </body>
+</html>
