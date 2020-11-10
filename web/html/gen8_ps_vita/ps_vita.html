@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Eight generation - PlayStation Vita </title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Federico Soresina">
+    <!-- put page info here -->
+    <meta name="date" content="2012-03-00"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen8">
+    <meta name="product" content="PS_Vita">
+    <meta name="description" content="PlayStation Vita description page"> <!-- a short description of the product -->
+    <meta name="picture" content="media/ps_vita.jpg"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.jpg" );
+        --background-image-right: url( "media/background_right.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #0000ff;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/banner.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #0ff;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/sound.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #fff;
+        --container-text-color: #f0f;
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #ff0;
+        --index-text-color: #00f;
+        --index-border-color: #0ff;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #88f;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol><
+        <li> <a href="#s1"> Introduction </a></li>
+        <li> <a href="#s2"> The hardware </a></li>
+        <li> <a href="#s3"> Software and capabilities </a></li>
+        <li> <a href="#s4"> Market reception </a></li>
+      /ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="sa"> Introduction </h2>
+        <p> The first console that can be identified as an 8th generation member is the PlayStation Vita, a handeld gaming device released by Sony in 2012. Intended to be a successor of PlayStation Portable (PSP) and a competitor of Nintendo 3Ds, although incorporating many interesting technical improvements over the former, it became a commercial flop. </p>
+        
+        <h2 id="s2"> The hardware </h2>
+        <p> The portable console integrates a 5-inch HD touch capacitive display, which supports 10-finger input. Actually, this is not the only input devices; the device incorporates also a traditional control set (sticks, d-pad, keys), to give a better gaming experience than using only the touch screen. Thanks to an acceleromether and a giroscope, the console supports motion control. The device integrates also a touchpad on the back side. </p>
+        <p> Internally, the console is built upon a quad-core Arm processor, which incorporates a PowerVr graphics processing unit. The CPU is able to clock up to 2 GHz, however the actual clocks varies due to power and thermal constraints. This chip is coupled with 512 MB of ram. </p>
+        <p> The device uses proprietary memory cards as storage medium, that exist in various size (from 4 to 64 GB) that are sold separately (eventually, the 4 GB card would be included for free). Later revisions incorporated a small 1 GB internal flash memory. </p>
+        <p> In terms of inputs and outputs, the console supports wi-fi and bluetooth for communication and integrates stereo speakers, a microphone and two cameras. There was also a 3g enabled version of the Vita. </p>
+        <p> The console integrates a rechargeable battery that lasts for 3-5 hours of gaming, depending on the load of the game, and around 5 hours of video playback. </p>
+        
+        <h2 id="s3"> Software and capabilities </h2>
+        <p> The PlayStation Vita's UI is called Live area and it's optimized for touch input. Every application is represented by a circle and selecting a icon gives you many options, including running the app (or game), going to its website, checking for updates, or seeing trophys you might have won in that game. This UI gives social integration via Sony's own online service, the PlayStation Network. </p>
+        <p> As almost all 8th generation devices, PlayStation Vita integrates many multimedia and social functions. It's possible to watch videos, navigate through the Internet, check the E-mails, take photos, manage your Facebook account and much more with the PS Vita. </p>
+        <p> The console integrates well with other Sony entertainment services. For example, the consoles supports multiplayer games via the PlayStation network (PSN) and buy digital copies of games via PlayStation Store. </p>
+        <p> It's possible to stream PlayStation 4 games on the Vita using Sony's Remote Play feature. In other words, while the game is running and being processed on the PS4, the output is sent to the PS Vita. It's even possible to play games in cloud via Sony services, for selected titles only. </p>
+        <p> The console is theoretically backward compatible with PSP games. However, the lack of a UMD (Universal Media Disk) drive in the PS Vita limits this compatibility to titles released on the PlayStation Store and thus downloadable. Even some PS1 games will run on the PS Vita. </p>
+        
+        <h2 id="s4"> Market reception </h2>
+        <p> As already stated, the PS Vita was a commercial flop. This is well represented by the fact that the main competitor, Nintendo 3Ds, which is technically inferior, was preferred to Sony's alternative and Nintendo sold many more units. But why this happened? </p>
+        <p> We have to consider that PS Vita had to compete <b> not only </b> with the Nintendo 3Ds and to replace the PSP. Considering the big number of Vita's multimedia and social features, the <b> actual competitors </b> were smartphones. These devices, despite dropping any gaming-specific feature (like the gamepad controllers) were preferred because they generally integrated high quality screens, were cheaper and more flexible in terms of applications and functionality. From the other side, the number of games developed for smartphones was (and still is) rapidly increasing. This explains why PS Vita failed. </p>
+        <p> From 2014 onwards, Sony shifted is main focus on the PlayStation 4 and slowly abandoned the Vita project. In 2019, Sony stopped PS Vita production. </p>
+       </div>
+    </div>
+  </body>
+</html>
