@@ -55,6 +55,19 @@
       /* .best-div-ever{
         display: none;
       } */
+      center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      figure figcaption {
+        text-align: center;
+      }
+      table, th, td {
+      border: 1px solid black;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      }
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
@@ -90,8 +103,7 @@
       </div>
       <div id="content">
         <h2 id="s1">Overview</h2>
-      <center>
-        <table border="1" style="width:60%">
+        <table class="center">
           <tr>
             <td>Designers</td>
             <td>Bill Pitts and Hugh Tuck</td>
@@ -113,7 +125,6 @@
             <td>Multiplayer</td>
           </tr>
         </table>
-      </center>
         <br>
         <p>
           <b>Galaxy Game</b> is an arcade game created in 1971 by Hugh Tuck and Bill Pitts at Stanford University.
@@ -121,10 +132,10 @@
           The Galaxy Game is a reprogrammed version of <a href="../gen0_spacewar/spacewar.html"><i>Spacewar!</i></a> from 1962. Two human players are controlling two spaceships, engaged in a duel. <br>
         </p>
         <br>
-        <center>
-          <img src="media/arcade.jpg" alt="Galaxy Game - the arcade machine" width="400">
+        <figure>
+          <img src="media/arcade.jpg" alt="Galaxy Game - the arcade machine" width="600" style="display: block; margin-left: auto; margin-right: auto;">
           <figcaption>Arcade machine</figcaption>
-        </center>
+        </figure>
         <h2 id="s2">History</h2>
         <h3 id="s2.1">1960s</h3>
           <p>
@@ -149,10 +160,8 @@
         <br>
         <h2 id="s3">Gameplay</h2>
         <figure>
-          <center>
-            <img src="media/galaxy_gameplay.png" alt="Galaxy Game - mainscreen" width="400">
+            <img src="media/galaxy_gameplay.png" alt="Galaxy Game - mainscreen" width="600" style="display: block; margin-left: auto; margin-right: auto;">
             <figcaption>Mainscreen</figcaption>
-          </center>
         </figure>
           <p>
             The gameplay of the Galaxy Game is very similar to Spacewar!. It involved two monochrome spaceships, called "the needle" and the "wedge". The two players try to destroy each other's spaceships. To succeed, the spaceships fire torpedoes. To increase the challenge, the number of torpedoes is limited. The torpedoes are fired one at a time, and there is a "cool-down period" between each launch. <br>
@@ -162,11 +171,13 @@
           </p>
           <p>The price of the game was ten cents per game or 25 cents per three games. The winner of the match was rewarded with a free game.</p>
           <br>
+          <iframe src="https://www.youtube.com/embed/oQRlq4kO2i0" width="600" height="400" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;">
+          </iframe>
         <h2 id="s4">Sources</h2>
           <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Galaxy_Game">https://en.wikipedia.org/wiki/Galaxy_Game</a></li>
-            <li><a href="https://archive.org/details/arcade_galgame">https://archive.org/details/arcade_galgame</a></li>
-            <li><a href="http://infolab.stanford.edu/pub/voy/museum/galaxy.html">http://infolab.stanford.edu/pub/voy/museum/galaxy.html</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Galaxy_Game">Source 1</a></li>
+            <li><a href="https://archive.org/details/arcade_galgame">Source 2</a></li>
+            <li><a href="http://infolab.stanford.edu/pub/voy/museum/galaxy.html">Source 3</a></li>
           </ul>
         <br>
       </div>
