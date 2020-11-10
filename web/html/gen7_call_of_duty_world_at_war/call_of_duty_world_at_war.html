@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gen6 - Call of duty World at war </title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Ludovica Savoia">
+    <!-- put page info here -->
+    <meta name="date" content="2008-11-11"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen7">
+    <meta name="product" content="Call of duty world at war">
+    <meta name="description" content="It immerses players into the most gritty and chaotic WWII combat ever experienced"> <!-- a short description of the product -->
+    <meta name="picture" content="media/product.png"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen7/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background.jpg" );
+        --background-image-right: url( "media/background.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #C8EBFF99;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/banner2.jpg" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #C8EBFF;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/codsoundtrack.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #C8EBFF;
+        --container-text-color: #234B91;
+        --container-border-color: #234B91;
+
+        /* the index parameters */
+        --index-background-color: #C8EBFF;
+        --index-text-color: #234B91;
+        --index-border-color: #234B91;
+
+        /* text styles parameters */
+        --link-color-hover: #92aacb;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #234B91;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">CALL OF DUTY WORLD AT WAR</a>
+          <ol>
+            <li><a href="#s1.1">General information</a></li>
+            <li><a href="#s1.2">Players</a></li>
+          </ol>
+        </li>
+        <li><a href="#s2">Inside the game</a>
+          <ol>
+            <li><a href="#s2.1">Summary table</a></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">CALL OF DUTY WORLD AT WAR</h2>
+        <h3 id="s1.1"><u>General information</u></h3>
+        <p>
+        Call of Duty: World at War is a first-person shooter game released by <b>Activision</b> on <b>November 13, 2008</b>.
+        The game represents the fifth part of the Call of Duty series and was released for <b>Windows , Mac OS X , Xbox 360 , PlayStation 3 , PlayStation 2 , Nintendo DS and Wii</b>.
+        In a total of 15 single player missions you switch between the <b>Pacific region</b> and the <b>European</b> theater of war.<br>
+        It is told from the perspectives of <b>Marine Raider Private C. Miller, US Navy Petty Officer Locke and Red Army soldier Private Dimitri Petrenko</b>, and is based on several historical battles.
+        Vehicles are in the form of tanks and players can control appear on certain multiplayer maps. The game also contains downloadable content called <b>"map packs"</b>, which can be purchased online.
+        </p>
+        <h3 id="s1.2"><u>Players</u></h3>
+        <p>
+        In the game players band together to survive the most harrowing and climactic battles that led to the demise of the <b>Axis powers</b>on the European and Pacific fronts.
+        The title offers an <b>uncensored experience</b> with <b>unique enemies and combat variety</b>, including Kamikaze fighters, ambush attacks, Banzai charges and cunning cover tactics, as well as explosive <b>on-screen action</b> through the all new <b>four-player cooperative campaign</b>.<br>
+        The addictive competitive multiplayer has also been enhanced with new infantry and vehicle-based action, a higher level cap and more weapons.
+        <b>The co-op campaign</b> allows players to rank up and unlock perks in competitive multiplayer by completing challenges and earning experience points, adding continuous re-playability and team-based gameplay.
+        After completing single player you unlock a 4 player survival mode with <b>Nazi zombies</b>.<br>
+        Originally labeled as a <b>"side game mode"</b>, this mode saw huge success.
+        Due to high demand of this new and exciting game mode three more DLC maps were added upon further progression into the games life cycle.
+        All versions except the <b>Wii</b> feature the minigame Nazi Zombies.<br>
+        This is the first time <b>Nazi Zombies</b> ever appeared in <b>any Call of Duty game</b>. The mode consists of <b>1-4 players</b> fighting an unlimited number of waves of Nazi zombies. Players can work together with other people to kill the zombies in a "co-op" (cooperative) mode either offline with 1-2 players or online with 2-4 players.
+        </p>
+        <h3 id="s2"><u>Inside the game</u></h3>
+        <img src="media/insidethegame.jpeg" class="left" alt="insidethegame" style="width:47%; margin-right:.5%;">
+        <img src="media/inside2.jpg"  class="right" alt="insidethegame" style="width:42%; margin-left:.5%;">
+        <img src="media/inside1.jpg" class="center" alt="insidethegame" style="margin-top:10px;">
+        <h3 id="s2.1"><u>Summary table</u></h3>
+        <table>
+          <tr>
+            <th>Release date</th>
+            <td>November 18, 2008</td>
+          </tr>
+          <tr>
+            <th>Players</th>
+            <td>Single player/Multiplayer</td>
+          </tr>
+          <tr>
+            <th>Genre</th>
+            <td>First-person Shooter</td>
+          </tr>
+          <tr>
+            <th>Publisher</th>
+            <td>Activision</td>
+          </tr>
+          <tr>
+            <th>Platforms</th>
+            <td>Microsoft Windows/PlayStation 2&3/Xbox 360/Wii/ Nintendo DS</td>
+          </tr>
+          <tr>
+            <th>Age rating</th>
+            <td>18 +</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
