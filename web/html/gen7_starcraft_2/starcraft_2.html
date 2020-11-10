@@ -11,7 +11,7 @@
     <meta name="generation" content="gen7">
     <meta name="product" content="Starcraft 2">
     <meta name="description" content="The RTS game that popularized esports"> <!-- a short description of the product -->
-    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="picture" content="media/sc2_zealot.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
@@ -21,8 +21,8 @@
     <style id="user-style">
       :root{
         /* these are the background images (left and right) */
-        --background-image-left: url( "media/background_left.jpg" );
-        --background-image-right: url( "media/background_right.jpg" );
+        --background-image-left: url( "media/sc2_back_left.jpg" );
+        --background-image-right: url( "media/sc2_back_right.jpg" );
         /* this is the fading color between the images */
         --background-fade-color: #000000;
 
@@ -32,7 +32,7 @@
         --banner-color: #000;
 
         /* the audio file that will be played */
-        --audio-file: url( "media/sound.mp3" );
+        --audio-file: url( "media/sc2_theme.mp3" );
 
         /* the container parameters */
         --container-background-color: #0a1c4a;
@@ -48,7 +48,7 @@
         --link-color-hover: #699fb8;
 
         /* content scrollbar */
-        --scrollbar-thumb: #88f;
+        --scrollbar-thumb: #fff;
       }
 
       /* your style here */
@@ -56,7 +56,16 @@
         width: 90%;
         margin: auto;
       }
-      } */
+
+      .caption{
+        text-align: center;
+        font-size: 12pt;
+      }
+
+      table{
+        margin: auto;
+      }
+
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
@@ -81,58 +90,125 @@
     </div>
     <div id="container">
       <div id="banner">
-        <img src="media/sc2_logo.jpg"alt="Banner Image">
+        <img alt="Banner Image">
       </div>
       <div id="content">
         <h2 id="s1">Introduction</h2>
+        <p>
           Starcraft 2 is a real-time strategy (RTS) game made by the game industry giant Blizzard
-          Entertainment which released on July 27, 2010. Games are usually played in a 1v1 format
+          Entertainment which was released on July 27, 2010. Games are usually played in a 1v1 format
           where the objective is to destroy all the other player's (he can however concede before this)
           in typical RTS fashion.
+        </p>
+        <br>
 
         <h2 id="s2">Gameplay</h2>
+        <p>
          Starcraft 2 is an RTS that is played from a top-down view. As is common in the genre the gameplay
          loop consists of gathering resources to be able to build an army to destroy the enemy.
          To do this the player has a choice of three races to play: Terran (human), Protoss, and Zerg;
          each has a unique playstyle that distinguishes them from the others. The Terran play very defensively,
          the Protoss have very cost-efficient units, while the Zerg prefer to overrun the enemy with sheer numbers.
+        </p>
+        <br>
+         <table>
+           <tr>
+             <td><img class="shrink" src="media/sc2_gameplay.jpg" alt="sc2 gameplay"></td>
+           </tr>
+           <tr>
+             <td class="caption">A fight between Protoss and Terran</td>
+           </tr>
+         </table>
+         <br><br>
+         <table>
+           <tr>
+             <td><img class="shrink" src="media/sc2_progame.gif" alt="footage from a professional game"></td> <!-- source: https://giphy.com/gifs/blizzard-ent-TnMLyexfHe9lC  -->
+           </tr>
+           <tr>
+             <td class="caption">A professional game</td>
+           </tr>
+         </table>
+        <br>
 
-         <img class="shrink" src="media/sc2_gameplay.jpg" alt="sc2 gameplay">
+        The game has a very high skill ceiling because to win requires good game knowledge as well as the ability to
+        multitask; which means being able to attack the enemy while building up your economy and base. A measurement often
+        used to gauge a player's skill level is actions-per-minute (APM). Most high-level players play at around 300 APM.
+        <br><br>
+        <table>
+          <tr>
+            <td> <img class="shrink" src="media/sc2_apm.gif" alt="player with high apm"></td> <!-- source: https://www.kotaku.com.au/2014/02/witness-the-fastest-hands-in-esports/ -->
+          </tr>
+          <tr>
+            <td class="caption">The average Starcraft player</td>
+          </tr>
+        </table>
+        <br>
+        Recently a Co-op mode has been introduced where the main focus is no longer PVP but PVE. It draws quite a lot of
+        players and offers a good challenge. As opposed to being limited to three races, in co-op one can choose different
+        commanders, each with their unique attributes.
+        <br><br>
+        <table>
+          <tr>
+            <td><img class="shrink" src="media/sc2_coop.gif" alt="coop commander trailer"></td> <!-- source: https://giphy.com/gifs/blizzard-ent-starcraft-2-protoss-3oz8xJCf7FZofaIO5y -->
+          </tr>
+          <tr>
+            <td class="caption">From the trailer for co-op commander Alarak</td>
+          </tr>
+        </table>
+        <br>
 
         <h2 id="s3">Background</h2>
-          Starcraft 2 is the sequel to <i>Starcraft</i> which released in 1998. Starcraft 1 could be said to be a
+        <p>
+          Starcraft 2 is the sequel to <i>Starcraft</i> which was released in 1998. Starcraft 1 could be said to be a
           monumental game because it effectively started the esports scene; it had major success in south
-          korea where <i>Starcraft</i> became a household name, and where matches were broadcast on live TV.
+          Korea where <i>Starcraft</i> became a household name, and where matches were broadcast on live TV.
           Notoriety was not limited to Asia however, and it also became a favourite of the burgeoning esports
           community at home in the west.
+        </p>
+        <br>
 
         <h2 id="s4">Release</h2>
+        <p>
           Starcraft 2 released a full 12 years after its predecessor and the anticipation for its release was
-          immense, and for the most part if lived up to it. As usual veterans of the previous instalment were
+          immense, and for the most part, it lived up to it. As usual veterans of the previous instalment were
           sceptical at first, but after having tested out the improvements that had been made most of the
           players switched to the sequel. Starcraft 2 however, never really had the same success in Korea as
           the first one, which still to this day has a following in the Korean esports scene. It attracted a much
           larger player base in the west because it was much more accessible to newer players than the
-          original and it had many quality of life improvements which made made the gameplay more engaging.
+          original and it had many quality of life improvements which made the gameplay more engaging.
+        </p>
+        <br>
 
         <h2 id="s5">Esports</h2>
-          Following its release Starcraft 2 attracted the competitive RTS community thanks to its affinity to
-          esports. In fact, it was the game which spearheaded the esports movement being the most viewed
+        <p>
+          Following its release, Starcraft 2 attracted the competitive RTS community thanks to its affinity to
+          esports. In fact, it was the game that spearheaded the esports movement being the most viewed
           game on Twitch when the streaming platform was still in its beginnings. Player counts were highest
           at the start of its life, the hype surrounding the game spurring on people to try it out, but because of
           the difficulty surrounding RTS games in general it was only natural that the number of players would
-          decrease over time. After its initial release, the game received two expansions which were both wellreceived, but which did not increase the player base substantially. It got revitalized in 2017 when it
+          decrease over time. After its initial release, the game received two expansions which were both well-received, but which did not increase the player base substantially. It got revitalized in 2017 when it
           went free-to-play attracting many people who might have been on the fence about getting the
           game. The game has been refined over the years and is currently in a very healthy state in terms of
           gameplay.
-
-          <img class="shrink" src="media/sc2_tournament.jpg" alt="a sc2 tournament">
+        </p>
+        <br>
+        <table>
+          <tr>
+            <td><img class="shrink" src="media/sc2_tournament.jpg" alt="a sc2 tournament"></td> <!-- souce: https://www.eslgaming.com/article/world-championship-starcraft-ii-replays-released-1830 -->
+          </tr>
+          <tr>
+            <td class="caption">A SC2 tournament</td>
+          </tr>
+        </table>
+        <br>
 
         <h2 id="s6">Legacy</h2>
+        <p>
           Starcraft 2 played a vital role in establishing the esports scene and for that gamers owe it a huge
           debt. It has also been the golden standard for modern RTS games to which all others will be
           compared. From now until a hopeful release of Starcraft 3 it will most certainly be a mainstay of the
-          strategy landscape.
+          strategy-gaming landscape.
+        </p>
 
       </div>
     </div>
