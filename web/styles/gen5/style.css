@@ -1,0 +1,60 @@
+:root{
+  /* background */
+  --background-image-left: url( "../../styles/gen5/media/background.jpg" ); /* given to the user */
+  --background-image-right: url( "../../styles/gen5/media/background.jpg" ); /* given to the user */
+  --background-fade-color: #4f100c; /* given to the user */
+
+  /* banner */
+  --banner-image: url( "styles/gen5/media/base_banner.png" );/* absolute path */ /* given to the user */
+  --banner-color: #000; /* given to the user */
+
+  /* audio */
+  --audio-file: url( "styles/gen5/media/sound.mp3" ); /* absolute path */ /* given to the user */
+
+  /* container */
+  --container-background-color: #f2f1bd; /* given to the user */
+  --container-text-color: #000;  /* given to the user */
+  --container-border-color: #f2f1bd; /* given to the user */
+
+  /* index */
+  --index-background-color: #f2f1bd; /* given to the user */
+  --index-text-color: #000;  /* given to the user */
+  --index-border-color: #f2f1bd;
+
+  /* image for the back button */
+  --backbutton-image: url( "../../styles/gen5/media/back.jpg" ); /* relative path */
+  --backbutton-image-hover: url( "../../styles/gen5/media/back_hover.jpg" ); /* relative path */
+
+  /* image for the sound button */
+  --soundbutton-image: url( "../../styles/gen5/media/sound.jpg" ); /* relative path */
+  --soundbutton-image-hover: url( "../../styles/gen5/media/sound_hover.jpg" ); /* relative path */
+  /* image for the cross on the sound button */
+  --soundbutton-cross: url( "../../styles/gen5/media/cross.jpg" ); /* relative path */
+  --soundbutton-cross-hover: url( "../../styles/gen5/media/cross.jpg" ); /* relative path */
+
+  /* text styles */
+  --link-color-hover: #f2c6bd;  /* given to the user */
+
+  /* content scrollbar */
+  --scrollbar-thumb: #000;
+}
+
+#index, #container{
+  border-radius: 5px;
+}
+
+html {
+  font-size: 120%;
+}
+
+.button{
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #f9f8c2;
+  border-style: solid;
+}
+
+@font-face {
+  font-family: page-font;
+  src: url( "../../styles/gen3/media/font.ttf"); /* relative path */
+}
