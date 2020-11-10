@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Generation 0 - Galaxy Game</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Catarina Carvalho Morais">
+    <!-- put page info here -->
+    <meta name="date" content="1971-09-01"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen0">
+    <meta name="product" content="Galaxy Game">
+    <meta name="description" content="Best template ever, long live the CSS LEADERS!!"> <!-- a short description of the product -->
+    <meta name="picture" content="media/galaxy_game.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.png" );
+        --background-image-right: url( "media/background_right.png" );
+        /* this is the fading color between the images */
+        --background-fade-color: #1a0000;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/banner.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #000000;
+
+        /* the audio file that will be played */
+        /*--audio-file: url( "media/sound.mp3" ); */
+
+        /* the container parameters */
+        --container-background-color: #f2f2f2;
+        --container-text-color: #000;
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #000;
+        --index-text-color: #fff;
+        --index-border-color: #000;
+
+        /* text styles parameters */
+        --link-color-hover: #000;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #000;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Overview</a>
+        </li>
+        <li><a href="#s2">History</a>
+          <ol>
+            <li><a href="#s2.1">1960s</a></li>
+            <li><a href="#s2.2">1970s</a></li>
+            <li><a href="#s2.3">Recent years</a></li>
+          </ol>
+        </li>
+        <li><a href="#s3">Gameplay</a>
+        </li>
+        <li><a href="#s4">Sources</a>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Overview</h2>
+      <center>
+        <table border="1" style="width:60%">
+          <tr>
+            <td>Designers</td>
+            <td>Bill Pitts and Hugh Tuck</td>
+          </tr>
+          <tr>
+            <td>Platform</td>
+            <td>Arcade (PDP-11)</td>
+          </tr>
+          <tr>
+            <td>Release</td>
+            <td>September 1971</td>
+          </tr>
+          <tr>
+            <td>Genre</td>
+            <td>Space combat simulation</td>
+          </tr>
+          <tr>
+            <td>Mode</td>
+            <td>Multiplayer</td>
+          </tr>
+        </table>
+      </center>
+        <br>
+        <p>
+          <b>Galaxy Game</b> is an arcade game created in 1971 by Hugh Tuck and Bill Pitts at Stanford University.
+          It was one of the first coin-operated video games. <br>
+          The Galaxy Game is a reprogrammed version of <a href="../gen0_spacewar/spacewar.html"><i>Spacewar!</i></a> from 1962. Two human players are controlling two spaceships, engaged in a duel. <br>
+        </p>
+        <br>
+        <center>
+          <img src="media/arcade.jpg" alt="Galaxy Game - the arcade machine" width="400">
+          <figcaption>Arcade machine</figcaption>
+        </center>
+        <h2 id="s2">History</h2>
+        <h3 id="s2.1">1960s</h3>
+          <p>
+          Between 1966 and 1969, both university students Bill Pitts and Hugh Tuck spent many hours playing the game Spacewar!, a magical game that captivated everyone who played it. <br>
+          However, the time on mainframe computers that supported Spacewar! was charged to users at costs of a hundred dollars an hour. The developers of Spacewar! examined different ways to monetize the game but couldn't find any options due to the computers' high price.<br>
+          Therefore, Spacewar! was usually played only by system programmers during times the mainframe was inactive, like 2 am.<br>
+          During one of their gaming sessions, Tuck pointed out that a coin-operated version of Spacewar! could be very successful.
+          </p>
+        <h3 id="s2.2">1970s</h3>
+          <p>
+            In 1970 the Digital Equipment Corporation launched the PDP-11 minicomputer. Its launch resulted in a more accessible computer with the power to run Spacewar!. The PDP-11 minicomputer sold for about $ 14,000. The price was high compared to most arcade games, which cost about $ 1,000 each at the time. Nevertheless, Pitts and Tuck established the cost to be accessible enough to build a prototype.
+          </p>
+          <p>
+            Bill Pitts was in charge of the programming and hardware, while Hugh Tuck designed the enclosures. The code for the game was based on a version of Spacewar!. The code has then been modified with additional features. Galaxy Game was ready to be released after three and a half months of labor.<br>
+            Only one unit of the Galaxy Game was built, and it was installed at Stanford University in 1971.
+          </p>
+          <p>In 1972, the hardware got improved, allowing the processor to power up to eight consoles. This second version was installed in the Tresidder Union Cafeteria, where it remained until 1979.<br>
+             During that period, the Galaxy Game was popular. Many students gathered around the machines on Friday and Saturday nights. In 1979 the unit was disassembled after being removed from Tresidder due to the display processor's unreliability.
+          </p>
+        <h3 id="s2.3">Recent years</h3>
+          <p>In 1997 the unit was restored. Nowadays, it's part of the collection Computer History Museum in Mountain View, California, as a playable exhibit.</p>
+        <br>
+        <h2 id="s3">Gameplay</h2>
+        <figure>
+          <center>
+            <img src="media/galaxy_gameplay.png" alt="Galaxy Game - mainscreen" width="400">
+            <figcaption>Mainscreen</figcaption>
+          </center>
+        </figure>
+          <p>
+            The gameplay of the Galaxy Game is very similar to Spacewar!. It involved two monochrome spaceships, called "the needle" and the "wedge". The two players try to destroy each other's spaceships. To succeed, the spaceships fire torpedoes. To increase the challenge, the number of torpedoes is limited. The torpedoes are fired one at a time, and there is a "cool-down period" between each launch. <br>
+            Besides firing, players can jump to hyperspace, rotate their ships, and also thrust forward. Both spaceships have a limited fuel consumed over time, and they explode when they run out of fuel.<br>
+            One of the most exciting elements is the pull of a star in the middle of the screen. Both players must avoid falling into it.<br>
+            The game also featured a single-player mode for practicing purposes.<br>
+          </p>
+          <p>The price of the game was ten cents per game or 25 cents per three games. The winner of the match was rewarded with a free game.</p>
+          <br>
+        <h2 id="s4">Sources</h2>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Galaxy_Game">https://en.wikipedia.org/wiki/Galaxy_Game</a></li>
+            <li><a href="https://archive.org/details/arcade_galgame">https://archive.org/details/arcade_galgame</a></li>
+            <li><a href="http://infolab.stanford.edu/pub/voy/museum/galaxy.html">http://infolab.stanford.edu/pub/voy/museum/galaxy.html</a></li>
+          </ul>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
