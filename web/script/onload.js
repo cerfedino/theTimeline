@@ -186,7 +186,7 @@ function setup_back(){
 
   // link the click to the button
   back_button.onclick = () => {
-    document.location.href = "../../index.html#" + product;
+    document.location.href = "../timeline/timeline.html#" + product;
   }
 }
 
