@@ -3,32 +3,38 @@ import os, sys
 import json
 import datetime
 
+# Folder to scan for his subdirectories and html files
+relWebfolder = '/../../'
+absWebfolder = os.path.normpath(os.path.dirname(os.path.abspath(__file__)) + relWebfolder)
 
+relHTMLpath = "/html/"
+absHTMLpath = os.path.normpath(absWebfolder + relHTMLpath)
 
 # Returns an array containing the path to every html file in their *valid* directories
-def listHTMLpages(path, ignoreDirs):
-    dirs = os.listdir(path)
+def listHTMLpages(ignoreDirs):
+    dirs = os.listdir(absHTMLpath)
     htmlFiles = []
     for file in dirs:
-        if os.path.isdir(os.path.join(path, file)) and file not in ignoreDirs:
-            dirPath = os.path.join(path, file)
-            files = os.listdir(dirPath)
+        if os.path.isdir(os.path.join(absHTMLpath, file)) and file not in ignoreDirs:
+            absDirPath = os.path.join(os.path.normpath(absWebfolder+relHTMLpath), file)
+            files = os.listdir(absDirPath)
             for file2 in files:
-                if os.path.isfile(os.path.join(dirPath, file2)) and file2.lower().endswith('.html'):
-                    htmlFilePath = os.path.join(dirPath, file2)
+                if os.path.isfile(os.path.join(absDirPath, file2)) and file2.lower().endswith('.html'):
+                    htmlFilePath = os.path.join(relHTMLpath, file, file2)
                     htmlFiles.append(htmlFilePath)
     return htmlFiles
 
 # Return a dictionary object composed by the selected media tags of the page
 # If a page doesn't have the required meta tags, returns False
-def extractMeta(href,metaToExtract):
-    r = open(href, "r")
+def extractMeta(relHref, metaToExtract):
+    absHref = absWebfolder+relHref
+    r = open(absHref, "r")
     soup = BeautifulSoup(r, "html.parser")
 
     meta = soup.find_all('meta')
 
     currPage = {}
-    currPage["href"] = href
+    currPage["href"] = relHref
 
     for tag in meta:
         if 'name' in tag.attrs.keys() and tag.attrs['name'] in metaToExtract:
@@ -64,12 +70,10 @@ def insertByDate(pages, insertPage):
     pages.append(insertPage)
     return pages
 
+
 def main():
     # Meta tags' names to extract in every page
     metaToExtract = ["author", "date", "generation", "product", "description", "picture"]
-
-    # Folder to scan for his subdirectories and html files
-    folderToScan = os.path.normpath(os.path.dirname(os.path.abspath(__file__))  +'/../../html/')
 
     # Folders to ignore
     foldersToIgnore = ["gen#_TEMPLATE", "timeline"]
@@ -77,14 +81,14 @@ def main():
     generations = {}
     generations['invalid'] = []
 
-    pagesToIndex = listHTMLpages(folderToScan, foldersToIgnore)
+    pagesToIndex = listHTMLpages(foldersToIgnore)
 
-    for href in pagesToIndex:
+    for relHref in pagesToIndex:
 
-        currPage = extractMeta(href,metaToExtract)
+        currPage = extractMeta(relHref,metaToExtract)
 
         if currPage == False:
-            generations['invalid'].append(href)
+            generations['invalid'].append(relHref)
         else:
             currGen = currPage['generation']
             currPage.pop('generation')
