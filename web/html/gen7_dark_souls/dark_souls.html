@@ -9,9 +9,9 @@
     <!-- put page info here -->
     <meta name="date" content="2011-09-22"> <!-- the date the product was launched -->
     <meta name="generation" content="gen7">
-    <meta name="product" content="Dark SoulsE">
+    <meta name="product" content="Dark Souls">
     <meta name="description" content="The most influential ARPG"> <!-- a short description of the product -->
-    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="picture" content="media/ds_art.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
@@ -32,7 +32,7 @@
         --banner-color: #000;
 
         /* the audio file that will be played */
-        --audio-file: url( "media/sound.mp3" );
+        --audio-file: url( "media/ds_theme.mp3" );
 
         /* the container parameters */
         --container-background-color: #000;
@@ -58,7 +58,16 @@
       }
 
       .shrink{
-        width: 100%;
+        width: 90%;
+        margin: auto;
+      }
+
+      .caption{
+        text-align: center;
+        font-size: 12pt;
+      }
+
+      table{
         margin: auto;
       }
     </style>
@@ -75,42 +84,77 @@
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
       <ol>
-        <li><a href="#s1">Section 1</a>
-          <ol>
-            <li><a href="#s1.1">Sub section 1</a></li>
-            <li><a href="#s1.2">Sub section 2</a></li>
-          </ol>
-        </li>
-        <li><a href="#s2">Section 2</a>
-          <ol>
-            <li><a href="#s2.1">Sub section 1</a></li>
-          </ol>
-        </li>
+        <li><a href="#s1">Introduction</a></li>
+        <li><a href="#s2">Gameplay</a></li>
+        <li><a href="#s3">Success</a></li>
+        <li><a href="#s4">Legacy</a></li>
       </ol>
     </div>
     <div id="container">
       <div id="banner">
-        <img  src="media/ds_logo.jpg"alt="Banner Image">
+        <img alt="Banner Image">
       </div>
       <div id="content">
         <h2 id="s1">Introduction</h2>
         <p>
-          Dark Souls is an ARPG (action role-playing-game) developed by FromSoftware and published by
+          Dark Souls is an ARPG (action role-playing game) developed by FromSoftware and published by
           Namco Bandai Games on September 22, 2011 for Playstation 3 and Xbox 360. Later, in 2012, it
           would also receive a PC release. The game is for all intents and purposes the child of lead director
           Hidetaka Miyazaki whose vision and artistic genius in the <i>Souls</i> series have been endlessly lauded.
+          Dark Souls is the first game in the series, followed up by DS2 and DS3, and (set in another universe) BloodBorne.
         </p>
         <br>
 
         <h2 id="s2">Gameplay</h2>
         <p>
-          The game is played in third-person and players are encouraged to explore the world. The game is
-          known for its punishing gameplay: both proficiency at mechanics of the game as well as the lack of
+          The game is played in third-person in a world in which players are encouraged to explore, even though this often means ending up in
+          bad situations:
+        </p>
+          <br>
+          <table>
+            <tr>
+              <td><img class="shrink" src="media/ds_scary.gif" alt=""></td> <!-- source: https://giphy.com/gifs/brave-dark-souls-11drQGvTzxKzwQ -->
+            </tr>
+            <tr>
+              <td class="caption">Nope</td>
+            </tr>
+          </table>
+          <br>
+          <p>
+          The game is known for its punishing gameplay: both proficiency at mechanics of the game as well as the lack of
           knowledge of the game world can lead to death. And in this game death truly is punishing; one loses
-          their “souls” which can be used to level up, meaning that one effectively loses potential levels. When
-          a game is deemed souls-like it usually refers to the combat system being similar to Dark Souls; the reason
-          being that its combat system is very rewarding. It is very interactive, requiring the player to dodge,
-          roll and attack to be able to kill the opponent.
+          their “souls” which can be used to level up, meaning that one effectively loses potential levels. This coupled with
+          a taunting death screen which reads "you died" definitely provokes anger in most beginners; this, however, is only
+          fuel and motivation for the player to keep going and beat the game.
+          </p>
+          <br>
+          <table>
+            <tr>
+              <td><img class="shrink" src="media/ds_died.gif" alt="you died"></td> <!--source: https://tenor.com/view/dead-gif-18865199 -->
+            </tr>
+            <tr>
+              <td class="caption">You died</td>
+            </tr>
+          </table>
+          <br>
+          <p>
+          When a game is deemed souls-like it usually refers to the combat system being similar to Dark Souls: the combat is
+          dynamic, meaning that the player must take into account what the opponent is doing and react accordingly; this also
+          all happens in real-time meaning the battles get very heated. The player has many tools in his arsenal such as magic,
+          weapon attacks, dodges, parries, and rolls.
+          </p>
+        <br>
+        <table>
+          <tr>
+            <td><img class="shrink" src="media/ds_roll.gif" alt=""></td> <!--source: https://www.3djuegos.com/comunidad-foros/tema/23572149/0/gifs-dark-souls/ -->
+          </tr>
+          <tr>
+            <td class="caption">An example of a well-timed roll to dodge an attack</td>
+          </tr>
+        </table>
+        <p>
+        The Dark Souls style of combat has managed to spawn many clones simply by
+        its virtue of being very rewarding, giving players a sense of achievement for vanquishing a foe.
         </p>
         <br>
 
@@ -119,7 +163,7 @@
           Upon its release Dark Souls immediately became a cult classic, having both successes domestically in
           Japan as well as in the west. It was received well by most critics, the only criticisms being the
           difficulty of the game, and after years had gone by it would be hailed as one of the best games of all
-          time. Due to its success the game would later receive two sequels which have only built upon the initial
+          time. Due to its success, the game would later receive two sequels that have only built upon the initial
           success, creating genuinely great games. It has given rise to many imitators who seek to replicate the
           atmosphere and combat of the game, some of whom have come quite close.
         </p>
@@ -129,10 +173,10 @@
         <p>
           Dark souls can be considered as one of the most influential games of its generation, having left a
           legacy that few would be able to match and still continuing to inspire game creators to this day, such
-          as those of: The Surge, The Witcher, God of War, and Destiny. The game is often considered to be to
-          difficult, however this is the reason for its success; the satisfaction of overcoming the struggle of
+          as those of The Surge, The Witcher, God of War, and Destiny. The game is often considered to be too
+          difficult, however, this is the reason for its success; the satisfaction of overcoming the struggle of
           beating enemies in the game is what keeps players coming back. This as well as other elements of its
-          design philosophy have truly come to influence the way games are thought of.
+          design philosophy have truly come to influence the way games are thought of and designed.
         </p>
 
 
