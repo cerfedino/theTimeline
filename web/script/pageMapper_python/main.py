@@ -5,9 +5,9 @@ import datetime
 
 # Folder to scan for his subdirectories and html files
 relWebfolder = '/../../'
-absWebfolder = os.path.normpath(os.path.dirname(os.path.abspath(__file__)) + relWebfolder)
+absWebfolder = os.path.normpath(os.path.dirname(os.path.abspath(__file__)) + relWebfolder) + "/"
 
-relHTMLpath = "/html/"
+relHTMLpath = "html/"
 absHTMLpath = os.path.normpath(absWebfolder + relHTMLpath)
 
 # Returns an array containing the path to every html file in their *valid* directories
