@@ -51,7 +51,7 @@
   /* sizing */
   box-sizing: border-box;
 
-  /* font */
+  /* text */
   font-family: var( --page-font );
 
   /* images */
@@ -184,6 +184,11 @@ html, body{
 
   /* position */
   margin-top: 10px;
+  padding-right: 10px;
+
+  /* text */
+  text-align: justify;
+  text-justify: inter-word;
 }
 /* content elements */
 #content h2, #content h3, #content p{
