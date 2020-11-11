@@ -1,4 +1,5 @@
-let pages = {
+let pages = 
+{
   "-1": {
     "gen#": {
       "pages": [
@@ -59,7 +60,7 @@ let pages = {
         "date": "1958-10-18",
         "description": "A sports video game simulating a game of Tennis",
         "href": "html/gen0_tennis_for_two/tennis_for_two.html",
-        "picture": "html/gen0_tennis_for_two/pic1.gif",
+        "picture": "html/gen0_tennis_for_two/media/pic1.gif",
         "product": "Tennis for Two"
       },
       {
@@ -75,7 +76,7 @@ let pages = {
         "date": "1966-01-01",
         "description": "A shooting gallery game, simutlating a submarine attacking warships",
         "href": "html/gen0_sega_periscope/sega_periscope.html",
-        "picture": "html/gen0_sega_periscope/pic1.jpg",
+        "picture": "html/gen0_sega_periscope/media/pic1.jpg",
         "product": "Sega Periscope"
       },
       {
@@ -83,7 +84,7 @@ let pages = {
         "date": "1967-01-01",
         "description": "The first of several video game test units for interactive games",
         "href": "html/gen0_tv_game_unit_#1/tv_game_unit_#1.html",
-        "picture": "html/gen0_tv_game_unit_#1/pic1.png",
+        "picture": "html/gen0_tv_game_unit_#1/media/pic1.png",
         "product": "TV Game Unit #1"
       },
       {
@@ -134,7 +135,7 @@ let pages = {
         "author": "Samuel Corecco",
         "date": "1974-08-03",
         "description": "A page about the console Pong Home",
-        "href": "html/gen1_pong_Home/TEMPLATE_PONG.html",
+        "href": "html/gen1_pong_Home/pong_home.html",
         "picture": "html/gen1_pong_Home/media/pic1.gif",
         "product": "Pong Home"
       },
@@ -442,8 +443,8 @@ let pages = {
         "author": "Roberto Padovani",
         "date": "2002-05-01",
         "description": "Third chapter of the Elder Scrolls",
-        "href": "html/gen6_the_elder_scrolls_iii_morrowind/the_elder_scrolls_iii_morrowind.html",
-        "picture": "html/gen6_the_elder_scrolls_iii_morrowind/media/tes_3.gif",
+        "href": "html/gen6_the_elder_scrolls_iii:_morrowind/the_elder_scrolls_iii:_morrowind.html",
+        "picture": "html/gen6_the_elder_scrolls_iii:_morrowind/media/tes_3.gif",
         "product": "The Elder Scrolls III: Morrowind"
       },
       {
