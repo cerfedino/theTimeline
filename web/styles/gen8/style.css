@@ -44,7 +44,7 @@
 }
 
 html {
-  font-size: 120%;
+  font-size: 140%;
 }
 
 .button{
@@ -56,5 +56,5 @@ html {
 
 @font-face {
   font-family: page-font;
-  src: url( "../../styles/gen3/media/font.ttf"); /* relative path */
+  src: url( "../../styles/gen8/media/font.ttf"); /* relative path */
 }
