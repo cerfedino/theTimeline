@@ -164,7 +164,7 @@ let pages =
         "date": "1976-08-08",
         "description": "The Fairchild channel F, a direct competitorof the Atari2600",
         "href": "html/gen2_fairchild_channel_f/fairchild_channel_f.html",
-        "picture": "html/gen2_fairchild_channel_f/media/fairchild_channel_f_square.jpg",
+        "picture": "html/gen2_fairchild_channel_f/media/Fairchild_Channel_F_Square.jpeg",
         "product": "FAIRCHILD CHANNEL F"
       },
       {
@@ -256,7 +256,7 @@ let pages =
         "date": "1983-06-15",
         "description": "The rise of platform games in the third generation",
         "href": "html/gen3_genre_platform/genre_platform.html",
-        "picture": "html/gen3_genre_platform/media/placeholder.gif",
+        "picture": "html/gen3_genre_platform/media/mario3.gif",
         "product": "Platform genre"
       },
       {
@@ -272,7 +272,7 @@ let pages =
         "date": "1985-09-11",
         "description": "The first episode of an iconic video game series.",
         "href": "html/gen3_super_mario_bros/super_mario_bros.html",
-        "picture": "html/gen3_super_mario_bros/media/placeholder.gif",
+        "picture": "html/gen3_super_mario_bros/media/super_mario.gif",
         "product": "Super Mario Bros."
       },
       {
@@ -308,7 +308,7 @@ let pages =
         "date": "1964-06-03",
         "description": "Sega Corporation video game developer",
         "href": "html/gen4_sega/sega.html",
-        "picture": "html/gen4_sega/media/placeholder.gif",
+        "picture": "html/gen4_sega/media/sega.gif",
         "product": "Sega"
       },
       {
