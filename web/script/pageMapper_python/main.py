@@ -38,7 +38,10 @@ def extractMeta(relHref, metaToExtract):
 
     for tag in meta:
         if 'name' in tag.attrs.keys() and tag.attrs['name'] in metaToExtract:
-            currPage[tag.attrs['name']] = tag.attrs['content']
+            if tag.attrs['name'] == "picture":
+                currPage[tag.attrs['name']] = os.path.join(os.path.dirname(relHref),tag.attrs['content'])
+            else:
+                currPage[tag.attrs['name']] = tag.attrs['content']
 
     if isPageValid(currPage,metaToExtract):
         return currPage
