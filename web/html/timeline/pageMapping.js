@@ -472,7 +472,7 @@ let pages =
         "date": "2001-11-11",
         "description": "The elder scrolls v page: one of the pioneers of RPGS",
         "href": "html/gen7_the_elder_scrolls_v:_skyrim/the_elder_scrolls_v:_skyrim_gen7.html",
-        "picture": "html/gen7_the_elder_scrolls_v:_skyrim/skyrim.gif",
+        "picture": "html/gen7_the_elder_scrolls_v:_skyrim/media/skyrim.gif",
         "product": "The Elder Scrolls V: Skyrim"
       },
       {
@@ -495,16 +495,8 @@ let pages =
         "author": "Ludovica Savoia",
         "date": "2008-11-11",
         "description": "It immerses players into the most gritty and chaotic WWII combat ever experienced",
-        "href": "html/gen7_call_of_duty_world_at_war/cod_world_at_war.html",
-        "picture": "html/gen7_call_of_duty_world_at_war/media/supermariogif.gif",
-        "product": "COD World at war"
-      },
-      {
-        "author": "Ludovica Savoia",
-        "date": "2008-11-11",
-        "description": "It immerses players into the most gritty and chaotic WWII combat ever experienced",
         "href": "html/gen7_call_of_duty_world_at_war/call_of_duty_world_at_war.html",
-        "picture": "html/gen7_call_of_duty_world_at_war/media/product2.jpg",
+        "picture": "html/gen7_call_of_duty_world_at_war/media/product.png",
         "product": "Call of duty world at war"
       },
       {
@@ -512,7 +504,7 @@ let pages =
         "date": "2009-10-13",
         "description": "second entry to the uncharted franchise",
         "href": "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
-        "picture": "html/gen7_uncharted_2:_among_thieves/media/uncharted2",
+        "picture": "html/gen7_uncharted_2:_among_thieves/media/uncharted2.gif",
         "product": "Uncharted 2: among thieves"
       },
       {
@@ -521,7 +513,7 @@ let pages =
         "description": "Sixth of the Call of Duty series but first as videogame",
         "href": "html/gen7_call_of_duty_modern_warfare2/call_of_duty_modern_warfare2.html",
         "picture": "html/gen7_call_of_duty_modern_warfare2/media/imagegif.gif",
-        "product": "Call of duty modern warfare2"
+        "product": "Call of Duty Modern Warfare2"
       },
       {
         "author": "Albi Geldenhuys",
@@ -560,7 +552,7 @@ let pages =
         "date": "2013-09-17",
         "description": "the pinaccle of open world games",
         "href": "html/gen7_gta_v/gta_v.html",
-        "picture": "html/gen7_gta_v/media/GTA-gif",
+        "picture": "html/gen7_gta_v/media/GTA-gif.gif",
         "product": "GTA V"
       },
       {
