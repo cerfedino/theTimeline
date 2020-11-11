@@ -4,52 +4,47 @@
   src: url( "../gen0/media/font.ttf"); /* relative path */
 }
 
-/* the label (start of the timeline) */
-.gen0{
-  /* font */
-  font-family: gen1-font;
-  font-size: 120%;
-  color: #fff;
-
-  /* background */
-  background-color: #000;
-}
-/* the title in the label */
-.gen0 h1{
-}
-
-/* the timeline */
-#gen0.timeline{
-  /* background */
-  background-color: #000;
-
-  /* font */
+/* ============================================================================= TIMELINE */
+.timelineContainer.gen0{
+  /* text */
   font-family: gen0-font;
   font-size: 120%;
-  color: #fff;
 }
 
-/* the rectangle */
-#gen0 .content{
-  /* border */
-  border-radius: 0;
-  border: 10px solid #fff;
+/* ============================================================================= TIMELINE LABEL */
+.timelineLabel.gen0{
+  /* text */
+  color: #000;
 
   /* background */
+  background-color: #fff;
+}
+.timelineLabel.gen0 h1{
+}
+
+/* ============================================================================= TIMELINE */
+#gen0.timeline {
+  /* background */
   background-color: #000;
+
+  /* text */
+  color: #fff;
+}
+/* The timeline line */
+#gen0.timeline::after {
+  /* background */
+  background-color: #fff;
 }
 
-/* the set of elements for one product */
-#gen0 .container{
+/* ============================================================================= PRODUCT CONTAINER */
+#gen0 .container {
 }
-
-/* the extrusion (arrow) */
+/* The extrusion from the element to the line */
 #gen0 .container::before{
   /* border */
   border-color: #fff;
 }
-
-/* the dot on the line */
+/* The dot on the line */
 #gen0 .container::after{
   /* position */
   top: 22px;
@@ -63,9 +58,86 @@
   border: none;
   border-radius: 0;
 }
-#gen0 .right::after{
+
+/* Left container extrusion */
+#gen0 .container.left::before {
+}
+/* Left container dot on line */
+#gen0 .container.left::after{
+  /* position */
+  right: -10px;
+}
+
+/* Right container extrusion */
+#gen0 .container.right::before {
+}
+/* Right container dot on line */
+#gen0 .container.right::after {
+  /* position */
   left: -10px;
 }
-#gen0 .left::after{
-  right: -10px;
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* the container */
+  #gen0 .container.right, #gen0 .container.left{
+  }
+
+  /* The extrusion */
+  #gen0 .container.right::before, #gen0 .container.left::before {
+  }
+
+  /* The dot on the line */
+  #gen0 .container.left::after, #gen0 .container.right::after {
+    /* position */
+    left: 21px;
+  }
+}
+
+/* ============================================================================= PRODUCT CONTENT */
+#gen0 .content{
+  /* border */
+  border-radius: 0;
+  border: 10px solid #fff;
+
+  /* background */
+  background-color: #000;
+}
+#gen0 .right .content{
+}
+#gen0 .left .content{
+}
+
+/* The picture */
+#gen0 .content .picture{
+}
+#gen0 .right .content .picture{
+}
+#gen0 .left .content .picture{
+}
+
+/* The title */
+#gen0 .content .title{
+}
+/* The date */
+#gen0 .content .date{
+}
+/* The description */
+#gen0 .content .description{
+}
+/* The author */
+#gen0 .content .author{
+}
+#gen0 .content .author::before{
+}
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* The content */
+  #gen0 .left .content, #gen0 .right .content{
+  }
+
+  /* The picture */
+  #gen0 .left .content .picture, .right .content .picture{
+  }
 }

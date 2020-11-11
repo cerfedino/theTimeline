@@ -1,51 +1,49 @@
 /* use external font */
 @font-face {
-  font-family: gen2-font;
-  src: url( "../gen2/media/font.ttf"); /* relative path */
+  font-family: gen3-font;
+  src: url( "../gen3/media/font.ttf"); /* relative path */
 }
 
 /* ============================================================================= TIMELINE */
-.timelineContainer.gen2{
+.timelineContainer.gen3{
   /* text */
-  font-family: gen2-font;
-  font-size: 120%;
+  font-family: gen3-font;
+  /* font-size: 120%; */
 }
 
 /* ============================================================================= TIMELINE LABEL */
-.timelineLabel.gen2{
+.timelineLabel.gen3{
   /* text */
-  color: #000;
+  color: #5d93fd;
 
   /* background */
-  background-color: #ff0;
+  background-color: #f6d016;
 }
-.timelineLabel.gen2 h1{
+.timelineLabel.gen3 h1{
 }
 
 /* ============================================================================= TIMELINE */
-#gen2.timeline {
+#gen3.timeline {
   /* background */
   background-color: #000;
 
   /* text */
-  color: #fff;
+  color: #000;
 }
 /* The timeline line */
-#gen2.timeline::after {
+#gen3.timeline::after {
   /* background */
-  background-color: #ff0;
+  background-color: #f6d016;
 }
 
 /* ============================================================================= PRODUCT CONTAINER */
-#gen2 .container {
+#gen3 .container {
 }
 /* The extrusion from the element to the line */
-#gen2 .container::before{
-  /* border */
-  border-color: #fff;
+#gen3 .container::before{
 }
 /* The dot on the line */
-#gen2 .container::after{
+#gen3 .container::after{
   /* position */
   top: 17px;
   margin: 0;
@@ -59,29 +57,29 @@
   border-radius: 50%;
 
   /* background */
-  background-color: #FFFF00;
+  background-color: #f6d016;
 }
 
 /* Left container extrusion */
-#gen2 .container.left::before {
+#gen3 .container.left::before {
   /* border */
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #2121DE;
+  border-color: transparent transparent transparent #5d93fd;
 }
 /* Left container dot on line */
-#gen2 .container.left::after{
+#gen3 .container.left::after{
   /* position */
   right: -15px;
 }
 
 /* Right container extrusion */
-#gen2 .container.right::before {
+#gen3 .container.right::before {
   /* border */
   border-width: 10px 10px 10px 0;
-  border-color: transparent #2121DE transparent transparent;
+  border-color: transparent #5d93fd transparent transparent;
 }
 /* Right container dot on line */
-#gen2 .container.right::after {
+#gen3 .container.right::after {
   /* position */
   left: -15px;
 }
@@ -89,67 +87,67 @@
 /* Responsive style */
 @media screen and (max-width: 800px) {
   /* the container */
-  #gen2 .container.right, #gen2 .container.left{
+  #gen3 .container.right, #gen3 .container.left{
   }
 
   /* The extrusion */
-  #gen2 .container.right::before, #gen2 .container.left::before {
+  #gen3 .container.right::before, #gen3 .container.left::before {
     /* border */
     border-width: 10px 10px 10px 0;
-    border-color: transparent #2121DE transparent transparent;
+    border-color: transparent #5d93fd transparent transparent;
   }
 
   /* The dot on the line */
-  #gen2 .container.left::after, #gen2 .container.right::after {
+  #gen3 .container.left::after, #gen3 .container.right::after {
     /* position */
     left: 16px;
   }
 }
 
 /* ============================================================================= PRODUCT CONTENT */
-#gen2 .content{
+#gen3 .content{
   /* border */
   border-radius: 5px;
-  border: 3px solid #2121DE;
+  border: 3px solid #5d93fd;
 
   /* background */
-  background-color: #000;
+  background-color: #f6d016;
 }
-#gen2 .right .content{
+#gen3 .right .content{
 }
-#gen2 .left .content{
+#gen3 .left .content{
 }
 
 /* The picture */
-#gen2 .content .picture{
+#gen3 .content .picture{
 }
-#gen2 .right .content .picture{
+#gen3 .right .content .picture{
 }
-#gen2 .left .content .picture{
+#gen3 .left .content .picture{
 }
 
 /* The title */
-#gen2 .content .title{
+#gen3 .content .title{
 }
 /* The date */
-#gen2 .content .date{
+#gen3 .content .date{
 }
 /* The description */
-#gen2 .content .description{
+#gen3 .content .description{
 }
 /* The author */
-#gen2 .content .author{
+#gen3 .content .author{
 }
-#gen2 .content .author::before{
+#gen3 .content .author::before{
 }
 
 /* Responsive style */
 @media screen and (max-width: 800px) {
   /* The content */
-  #gen2 .left .content, #gen2 .right .content{
+  #gen3 .left .content, #gen3 .right .content{
   }
 
   /* The picture */
-  #gen2 .left .content .picture, .right .content .picture{
+  #gen3 .left .content .picture, .right .content .picture{
   }
 }
