@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>gen5 - Playstation</title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Alessandro Artusa">
+    <!-- put page info here -->
+    <meta name="date" content="1995-09-09"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen5">
+    <meta name="product" content="Playstation">
+    <meta name="description" content="Page about Sony home video game console Playstation"> <!-- a short description of the product -->
+    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen5/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.jpg");
+        --background-image-right: url( "media/background_right.jpg");
+        /* this is the fading color between the images */
+        --background-fade-color: #0000ff;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/banner1.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #cecdcb;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/sound.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #cecdcb;
+        --container-text-color: #3D6092;
+        --container-border-color: #3D6092;
+
+        /* the index parameters */
+        --index-background-color: #cecdcb;
+        --index-text-color: #3D6092;
+        --index-border-color: #3D6092;
+
+        /* text styles parameters */
+        --link-color-hover: #dfa508;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #f00;
+      }
+
+
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Playstation</a>
+        </li>
+        <li><a href="#s2">History</a>
+        </li>
+        <li><a href="#s3">Software library</a>
+        </li>
+        <li><a href="#s4">Hardware</a>
+        </li>
+        <li><a href="#s5">Critical reception</a>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Playstation</h2>
+        <p>
+          The PlayStation is a home video game console developed and marketed by Sony Computer Entertainment.<br/>
+          It was the first of the PlayStation lineup of video game consoles. As a fifth generation console, the PlayStation primarily competed with the Nintendo 64 and the Sega Saturn.
+          Development of the console began after a failed venture with Nintendo to create a CD-ROM for their Super Famicom in the early 1990s. Game production for the console was designed to be streamlined and inclusive, enticing the support of many third-party developers. <br/>
+          The PlayStation signalled Sony's rise to power in the video game industry. Its release elicited both critical acclaim and impressive sales: it eventually became the first "computer entertainment platform" to ship over 100 million units, doing so in under a decade.<br/>
+          The PlayStation's use of compact discs (CDs) heralded the game industry's transition from cartridges. Games for the PlayStation continued to sell until Sony ceased production of both the PlayStation and its games on 23 March 2006 – over eleven years after it had been released, and less than a year before the debut of the PlayStation 3.
+          Over 7,918 games were released for the console over its lifespan, with cumulative sales of 962 million units.
+      </p>
+        <h2 id="s2">how it started</h2>
+        <p>
+          The PlayStation was the brainchild of Ken Kutaragi, a Sony executive who managed one of the company's hardware engineering divisions and was later dubbed "The Father of the PlayStation".
+          Kutaragi's interest in working with video games stemmed from seeing his daughter play games on Nintendo's Famicom video game console.
+          The inception of what became the released PlayStation dates back to 1988 with a joint venture between Nintendo and Sony.<br/>
+          Nintendo had already produced floppy disk technology to complement cartridges, in the form of the Family Computer Disk System, and wanted to continue this complementary storage strategy for the Super Nintendo Entertainment System (SNES).
+          Kutaragi convinced Nintendo on using his SPC-700 sound processor for use in the SNES console through an impressive demonstration of the processor's capabilities.<br/>
+          Although Kutaragi was nearly sacked by Sony because he was originally working with Nintendo on the side without Sony's knowledge, Sony president Norio Ohga recognised the potential in Kutaragi's chip and decided to keep him as a protégé.<br/>
+          Since Sony was already being contracted to produce the SPC-700 sound processor for the SNES, Nintendo approached Sony to develop a CD-ROM add-on, tentatively titled the "Play Station" or "SNES-CD". A contract was signed, and work began.<br/>
+          Sony was keen to obtain a foothold in the rapidly expanding video game market. Having been the primary manufacturer of the ill-fated MSX home computer format, Sony had wanted to use its experience in consumer electronics to produce its own video game hardware.<br/>
+          </p>
+        <h2 id="s3">Software library</h2>
+        <p>
+          A total of 7,918 software titles had been released worldwide for the PlayStation; 4,944 in Japan, 1,335 in North America and 1,639 in Europe. After its discontinuation in 2006, the cumulative software shipment was at 962 million units.<br/>
+          Initially, in the United States, PlayStation games were packaged in long cardboard boxes, similar to non-Japanese 3DO and Saturn games. Sony later switched to the jewel case format typically used for audio CDs and Japanese video games, as this format took up less retailer shelf space (which was at a premium due to the large number of PlayStation games being released), and focus testing showed that most consumers preferred this format.
+        </p>
+        <h2 id="s4">Hardware</h2>
+        <p>
+          The main microprocessor is a 32-bit LSI R3000 CPU with a clock rate of 33.86MHz and 30 MIPS. The CPU relies heavily on the VLSI chip to provide the necessary speed to render complex 3D graphics. Sony's custom 16-bit sound chip supports ADPCM sources with up to 24 sound channels and offers a sampling rate of up to 44.1 kHz and MIDI sequencing. The system features 2 MB of main RAM, with an additional 1 MB being allocated to video memory. The PlayStation has a maximum colour depth of 16.7 million true colours with 32 levels of transparency and unlimited colour look-up tables. Its video output, initially provided by a parallel I/O cable (and later a serial I/O used for the PlayStation Link Cable) displays resolutions from 256×224 to 640×480 pixels <br/>
+          he PlayStation utilises a proprietary video compression unit called MDEC, which is integrated into the CPU, allowing for the presentation of full motion video at a higher quality than other consoles of its generation. Unusual for the time, the PlayStation lacks a dedicated 2D graphics processor; 2D elements are instead calculated as polygons by the Geometry Transfer Engine (GTE) so that they can be processed and displayed on screen by the GPU. Whilst running, the GPU can also generate a total of 4,000 sprites and 180,000 polygons per second, in addition to 360,000 per second flat-shaded.<br/>
+          Sony took extra liberties to safeguard both its hardware and software against piracy by implementing regional lockout. Prior to the PlayStation, reproducing copyrighted material for game consoles was restricted to either enthusiasts with exceptional technical ability, or people who had access to CD manufacturing. However, due to the increased availability of cheap CD burners, Sony modified the shape of the first portion of the data track on PlayStation formatted discs: A normal data track follows a smooth spiral path around a disc, whereas the modified portion follows a wavy spiral path. As a result, any discs that did not contain this modification, such as CD-R copies or standard pirated discs, would not boot on the console.
+        </p>
+        <h2 id="s5">Critical reception</h2>
+        <p>
+          The PlayStation was well received at the time of its release. In a 1997 year-end review, a team of five Electronic Gaming Monthly editors gave the PlayStation scores of 9.5, 8.5, 9.0, 9.0, and 9.5 - for all five editors, the highest score they gave to any of the five consoles reviewed in the issue. They lauded the breadth and quality of the games library, saying it had vastly improved over previous years due to Sony dropping its ban on 2D games and RPGs and developers mastering the system's capabilities. They also complimented the low price point of the games, especially as compared to Nintendo 64 releases, and noted that it was the only console on the market that could be relied upon to deliver a solid stream of games for the coming year, primarily due to third party developers almost unanimously favoring it over its competitors.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
