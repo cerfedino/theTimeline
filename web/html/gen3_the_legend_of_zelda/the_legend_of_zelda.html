@@ -29,11 +29,35 @@
         /* this is the title image that will be shown at the top of the page */
         --banner-image: url( "media/banner.png" );
         /* this is the color behind the image (visible only if the image has transparence) */
-        --banner-color: #27ADE2;
+        --banner-color: #2E7122;
 
         /* the audio file that will be played  */
         --audio-file: url( "media/sound.m4a" );
+
+        --index-background-color: #2E7122;
+        --index-text-color: #FAE906;
+        --container-background-color: #2E7122;
+        --container-text-color: #FAE906;
+
       }
+
+      img {
+          width: 75%;
+      }
+
+     .img-container{
+          text-align: center;
+      }
+
+     .text-img{
+         display:table-cell;
+         vertical-align:middle;
+     }
+
+     .text-img#text {
+         width: 75%;
+     }
+
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
@@ -71,67 +95,85 @@
       </div>
       <div id="content">
           <h1>The Hyrule Fantasy: The Legend of Zelda</h1>
-          <h2 id="s1">Introduction</h2>
+          <div class="text-img" id="text">
+              <p>
+              The Legend of Zelda is the first installment of the Zelda series. 
+              The plot revolves around a boy named <b>Link</b>, who becomes the main protagonist of the series.
+              The game came out in 1986 for the Famicom in Japan, and in 1987 in Europe and the US.
+              It has since then been re-released for other consoles, such as the Nintendo GameCube and the Game Boy Advanced.
+              The Japanese version of the game on the Famicom is known as <b>The Hyrule Fantasy: The Legend of Zelda</b>.
+              </p>
 
-          <p>
-          The Legend of Zelda is the first installment of the Zelda series. 
-          The plot revolves around a boy named <b>Link</b>, who becomes the main protagonist of the series.
-          The game came out in 1986 for the Famicom in Japan, and in 1987 in Europe and the US.
-          It has since then been re-released for other consoles, such as the Nintendo GameCube and the Game Boy Advanced.
-          The Japanese version of the game on the Famicom is known as the <b>The Hyrule Fantasy: The Legend of Zelda</b>.
-          </p>
+              <h2 id="s2">Story</h2>
+              <p>
+              <b>Ganon</b>, the Prince of Darkness, has plunged a small kingdom in the 
+              land of <b>Hyrule</b> into chaos. He leads his army into the land for one 
+              objective, to steal the <b>Triforce of Power</b>, one part of a magical
+              artifact that allows bestows great strength. <b>Princess Zelda</b>, who 
+              doesn't want Ganon to continue on his path of destruction, decides to 
+              split his next objective, the <b>Triforce of Wisdom</b> into eight fragments
+              and hides them in secret underground dungeons. Before eventually being 
+              kidnapped by Ganon, she asks Impa, her nursemaid, to find someone strong 
+              and courageous enough to save the kingdom. While walking around the land,
+              trying to complete her task, she gets surrounded by Ganon's henchmen, when 
+              a young man called Link appears and rescues her. Upon hearing Impa's plea,
+              he decides to save Princess Zelda. To do so, he goes out to collect the fragments
+              of the Triforce of Wisdom, to have a chance to defeat Ganon.
+              </p>
+          </div>
+          <div class="img-container text-img">
+              <img
+              src="https://upload.wikimedia.org/wikipedia/en/4/41/Legend_of_zelda_cover_(with_cartridge)_gold.png"
+              alt="cover"/>
+          </div>
 
-          <h2 id="s2">Story</h2>
-          <p>
-          <b>Ganon</b>, the Prince of Darkness, has plunged a small kingdom in the 
-          land of <b>Hyrule</b> into chaos. He lead his army into the land for one 
-          objective, to steal the <b>Triforce of Power</b>, one part of a magical
-          artifact which allows bestows great strength. <b>Princess Zelda</b>, who 
-          doesn't want Ganon to continue on his path of destruction, decides to 
-          split his next objective, the <b>Triforce of Wisdom</b> into eight fragments
-          and hides then in secret underground dungeons. Before eventually being 
-          kidnapped by Ganon, she asks Impa, her nursemaid, to find someone strong 
-          and courageous enough to save the kingdom. While walking around the land,
-          trying to complete her task, she gets surrounded by Ganon's henchmen, when 
-          a young man called Link appears and rescues her. Upon hearing Impa's plea,
-          he decides to save Princess Zelda. To do so, he goes out to collect the fragments
-          of the Triforce of Wisdom, to have a chance to defeat Ganon.
-          </p>
 
           <h2 id="s3">Gameplay</h2>
-          <p>The game itself introduces a new level of gaming, on that
-          includes role-playing, action, adventure and puzzle/logic.</p>
+          <p>The game itself introduces a new level of gaming, that
+          includes role-playing, action, adventure, and puzzle/logic.</p>
           <h3 id="s3.1">Dungeon Exploration</h3>
           <p>
-          In order for Link to enter the dungeons he must battle creatures.
+          For Link to enter the dungeons he must battle creatures.
           The dungeons in <i>The Legend of Zelda</i> are filled with enemies that block
           Link from going forward, which are different from the ones found in the
           <b>Overworld</b>. The objective of Link is to navigate successfully across the
           maze-like collection of rooms that are connected by doors and secret entrances
-          in order to find a fragment of the Triforce of Wisdom. Each dungeon contain
-          items that are useful to fight enemies, collect items or to enter other
+          to find a fragment of the Triforce of Wisdom. Each dungeon contains
+          items that are useful to fight enemies, collect items, or to enter other
           dungeons, so the order of completion of the dungeons becomes natural throughout
           the gameplay.
           </p>
-          <h3 id="s3.2">Overworld Exploration</h3>
-          <p>
-          The ability to complete a task in different ways or with different paths, also 
-          known today as a <i>non-linear gameplay</i> is what differentiates <i>The Legend
-          of Zelda</i> from its contemporaries. Link can freely walk around the Overworld, 
-          finding NPCs (non-player characters), finding or buying items, discover unseen
-          places at any point. Nintendo US thought this freedom of wondering around could be
-          frustrating or overwhelming so they decided to fill the game's manual with many
-          tips and hints to help the player know where to go.
-          </p>
+          <div class="img-container">
+              <img src="https://i.ytimg.com/vi/rFnNbUrUtNg/maxresdefault.jpg"
+              alt="dungeon"/>
+          </div>
+
+          <div class="text-img" id="text">
+              <h3 id="s3.2">Overworld Exploration</h3>
+              <p>
+              The ability to complete a task in different ways or with different paths, also 
+              known today as <i>non-linear gameplay</i> is what differentiates <i>The Legend
+              of Zelda</i> from its contemporaries. Link can freely walk around the Overworld, 
+              finding NPCs (non-player characters), finding or buying items, discover unseen
+              places at any point. Nintendo US thought this freedom of wandering around could be
+              frustrating or overwhelming so they decided to fill the game's manual with many
+              tips and hints to help the player know where to go.
+              </p>
+          </div>
+          <div class="img-container text-img">
+              <img src="http://www.purezc.net/Projects/338_o5n76h.png"
+              alt="overworld"/>
+          </div>
+
           <h3 id="s3.3">Second Quest</h3>
           <p>
           Second Quest, or also known today as <i>New Game +</i>, is the possibility, once
-          finished the game, to replay it with either items you possessed upon completed
-          the first run, or simply replaying the game with harder difficulty. Although
+          finished the game, to replay it with either item you possessed upon completed
+          the first run or simply replaying the game with harder difficulty. Although
           this feature wasn't new at the time, <i>The Legend of Zelda</i>
-          proposed it with entirely new levels, changing items locations and
+          proposed it with entirely new levels, changing items locations, and
           stronger enemies.  The Second Quest is available even if the player
-          didn't finished the game, he only had to enter "ZELDA" as the his
+          didn't finish the game, he only had to enter "ZELDA" as his
           name.
           </p>
           <h2 id="s4">Game information</h2>
@@ -142,14 +184,14 @@
           for the Famicom. The intention behind <i>The Legend of Zelda</i> was
           to bring a sense of adventure, as he has seen in the <i>Indiana Jones</i>
           to a video game, so he started to explore the countryside and the
-          hillsides neighbouring his home to get inspiration for the new
+          hillsides neighboring his home to get inspiration for the new
           fictional world he was about to create.
           </p>
           <h3 id="s4.2">Graphics and Audio</h3>
           <p>
           Due to the technical limitations of the hardware at the time, the
           development team tried to use simple tricks to make the world look
-          larger than what it actually was. One of these was to apply a
+          larger than what it was. One of these was to apply a
           different color palette for enemies, according to the region Link was.
           </p>
           <p>
@@ -159,17 +201,13 @@
           possesses two other background themes: the <i>Standard Dungeon</i>
           tune and the <i>Final Dungeon</i> tune, both of which were re-used in
           other games of the franchise. Iconic sound samples, such as when Link
-          opens a chest, finds a new item or unveils a new path were often used
-          later games of the franchise.
+          opens a chest, finds a new item, or unveils a new path were often used
+          in later games of the franchise.
           </p>
           <hr>
-          <footer>
-              <h2>References</h2>
-              <ol>
-                  <li><a href="https://zelda.gamepedia.com/The_Legend_of_Zelda">The Legend of Zelda - Source 1</a></li>
-                  <li><a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)">The Legend of Zelda - Source 2</a></li>
-              </ol>
-          </footer>
+        <div class="footer">
+          <p>@ Arnaud Fauconnet</p>
+        </div>
       </div>
     </div>
   </body>
