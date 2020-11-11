@@ -24,12 +24,17 @@
             /* --background-image-left: url( "./media/background_left.jpg" );
             --background-image-right: url( "./media/background_right.jpg" );
              this is the fading color between the images */
-            --background-fade-color: rgb(255, 255, 255);
+            background-fade-color: rgb(255, 255, 255);
 
             /* this is the title image that will be shown at the top of the page */
+            --banner-image: url( "media/AtariBanner.png" );
 
             /* this is the color behind the image (visible only if the image has transparence) */
-            banner-color: #000;
+            --banner-color: #000;
+
+            /* the audio file that will be played */
+            --audio-file: url( "media/ost.mp3" );
+
 
             /* the container parameters */
             container-background-color: #fff;
@@ -42,7 +47,7 @@
             index-border-color: #fff;
 
             /* text styles parameters */
-            --link-color-hover: #ff0000;
+            link-color-hover: #ff0000;
 
             /* informations */
             --milestone: "gen2";
@@ -51,7 +56,7 @@
         }
     </style>
     <!-- this is the script file for all the onload operations -->
-    <script src="script/onload.js"></script>
+    <script src="../../script/onload.js"></script>
 </head>
 <body onload="onload();">
 <!-- the backgrounds -->
@@ -59,6 +64,7 @@
 <div class="bg" id="bg-right"></div>
 <!-- the back and the music button -->
 <div class="button" id="back-button"></div>
+<div class="button" id="sound-button"></div>
 <!-- the index of the page, with all the link to the sections -->
 <div id="index">
     <ol>
