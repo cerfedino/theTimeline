@@ -32,7 +32,7 @@
         --banner-color: #4F0B24;
 
         /* the audio file that will be played */
-        --audio-file: url( "media/sound.mp3" );
+        --audio-file: url( "media/sound.m4a" );
 
         /* the container parameters */
         --container-background-color: #4F0B24;
@@ -51,7 +51,24 @@
         --scrollbar-thumb: #88f;
       }
 
-      body {
+      img {
+          width: 75%;
+      }
+
+     .img-container{
+          text-align: center;
+      }
+
+     .text-img{
+         display:table-cell;
+         vertical-align:middle;
+     }
+
+     .text-img#text {
+         width: 75%;
+     }
+
+     body {
           background: url("media/background_left_alt.jpg");
           background-size: cover;
       }
@@ -71,12 +88,24 @@
     <div class="button" id="back-button"></div>
     <div class="button" id="sound-button"></div>
     <!-- the index of the page, with all the link to the sections -->
+
     <div id="index">
       <ol>
         <li><a href="#intro">Introduction</a></li>
-        <li><a href="#story">Story</a></li>
-        <li><a href="#gameplay">Gameplay</a></li>
-        <li><a href="#references">References</a></li>
+        <li><a href="#story">Story</a>
+            <ol>
+                <li><a href="#setting">Setting</a></li>
+                <li><a href="#last_resort">Last resort</a></li>
+                <li><a href="#samus_a_hero">Samus, a hero</a></li>
+            </ol>
+        </li>
+        <li><a href="#gameplay">Gameplay</a>
+            <ol>
+                <li><a href="#mix">A nice mix</a></li>
+                <li><a href="#mechanics">Game mechanics</a></li>
+                <li><a href="#progress_endings">Progress and endings</a></li>
+            </ol>
+        </li>
       </ol>
     </div>
     <div id="container">
@@ -84,87 +113,132 @@
         <img alt="Banner Image">
       </div>
       <div id="content">
-          <p id="intro">Metroid is the first installment of the Metroid Series,
-          both chronologically, and in release order. It was released for the
-          Famicom Disk System in August 1986 and one year later on the Nintendo
-          Entrainment System.</p>
+
+          <div class="text-img" id="text">
+              <p id="intro">Metroid is the <b>first installment</b> of the Metroid Series,
+              both chronologically, and in release order. It was released for the
+              Famicom Disk System in August 1986 and one year later on the Nintendo
+              Entrainment System.</p>
+
           <h2 id="story">Story</h2>
-          <p>On Planet SR388 was discovered a new life form in suspended
-          animation, called "Metroid". The Galactic Federation (a congress
-          composed of representative from several planets in the galaxy) decided
-          to send a research vessel to go and retrieve it. However, as it
-          returned, the vessel was attacked by Space Pirates, who stole the
-          capsule containing the Metroid and took it to their fortress on Planet
-          Zebes.</p>
+          <h3 id="setting">Setting</h3>
 
-          <p>After recognising the potential threat of the Metroids as Space
-          Pirate weapons, they attempt to recuperate it by attacking Zebes, but
-          fail. And so, as a last resort, the Federation hires Samus Aran to
+          <p cite="https://www.metroidwiki.org/wiki/Metroid_(game)">On <b>Planet
+          SR388</b> was discovered <b>a new life form</b> in suspended animation, called
+          "Metroid". The <b>Galactic Federation</b> (a congress composed of a
+          representative from several planets in the galaxy) decided to send a
+          research vessel to go and retrieve it. However, as it returned, the
+          vessel was attacked by <b>Space Pirates</b>, who stole the capsule containing
+          the Metroid and took it to their fortress on <b>Planet Zebes</b>.</p>
+
+          </div>
+          <div class="img-container text-img">
+              <img
+              src="https://static.giantbomb.com/uploads/original/9/93770/2362066-nes_metroid_eu.jpg"
+              alt="metroid jacket"/>
+          </div>
+
+          <h3 id="last_resort">Last resort</h3>
+
+          <p cite="https://www.metroidwiki.org/wiki/Metroid_(game)">After
+          recognizing the potential threat of the Metroids as Space Pirate
+          weapons, they attempt to recuperate it by attacking Zebes but fail.
+          And so, as a last resort, the Federation hires <b>Samus Aran</b> to
           infiltrate the planet and to prevent the Space Pirates from creating
-          more Metroids and to defeat the Pirate leader on Zebes, Mother Brain.</p>
+          more Metroids and to defeat the Pirate leader on Zebes, <b>Mother
+          Brain</b>.</p>
 
-          <p>Samus manages to go through the planet's underworld in search of to
-          high-ranking Space Pirates, Kraid and Ridley, both of whom she
-          eventually locates and destroys. By that time, the main Space Pirate
-          headquarter on Zebes, Tourain, is filled with Metroids. However, Samus
-          dispatches them and confronts Mother Brain, destroying her. In the
-          eventuality of her defeat, Mother Brain programmed a bomb to detonate,
-          Samus manages fortunately to escape before it detonates and takes
-          every last Metroid with it.</p>
+          <h3 id="samus_a_hero">Samus, a hero</h3>
 
-          <h2 id="gampelay">Gameplay</h2>
-          <p>This game is much like a mix between <i>Castlevania</i> and
-          <i>The Legend of Zelda</i>, because it combines the precise platformer
-          elements and the weapon upgrading of <i>Castlevania</i> and the
-          openness of <i>The Legend of Zelda</i>, having the possibility to go
-          around somewhat freely around the planet of Zebes, but still having to
-          upgrade the weapons Samus has in order to access new areas. The weapon
-          with which the player starts with is a weak, short-ranged weapon, but
-          she can improve her abilities by finding various upgrades scattered
-          throughout planet Zebes, such as the Long Beam, to improve her
-          weapon's range and the Morph Ball, to access small tunnels.
+          <p cite="https://www.metroidwiki.org/wiki/Metroid_(game)">Samus
+          manages to go through the planet's underworld in search of two
+          high-ranking Space Pirates, <b>Kraid</b> and <b>Ridley</b>, both of whom she
+          eventually locates and kills. By that time, the main Space Pirate
+          headquarters on Zebes, <b>Tourain</b>, is filled with Metroids. However,
+          Samus dispatches them and confronts Mother Brain, <b>destroying her</b>. In
+          the eventuality of her defeat, <b>Mother Brain programmed a bomb</b> to
+          detonate, Samus manages, fortunately, to escape before it detonates
+          and takes every last Metroid with it.</p>
+
+          <div class="img-container">
+              <img style="width:50%"
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--G9_xkpzn--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/nfckphsfxc73qgdjzl0l.jpg"
+              alt="samus vs mother brain"/>
+          </div>
+
+          <h2 id="gameplay">Gameplay</h2>
+          <h3 id="mix">A nice mix</h3>
+
+          <p cite="https://www.metroidwiki.org/wiki/Metroid_(game)">This game is
+          much like a mix between <i>Castlevania</i> and <i>The Legend of
+          Zelda</i>, because it combines the <b>precise platformer</b> elements and the
+          <b>weapon upgrading</b> of <i>Castlevania</i> and the <b>openness</b> of <i>The Legend
+          of Zelda</i>, having the possibility to go around somewhat freely
+          around the planet of Zebes, but still having to upgrade the weapons Samus
+          has to access new areas. The weapon with which the player starts with is a
+          <b>weak</b>, <b>short-ranged weapon</b>, but she can improve her abilities by finding
+          various upgrades scattered throughout planet Zebes, such as the <b>Long Beam</b>,
+          to improve her weapon's range and the <b>Morph Ball</b>, to access small tunnels.
           </p>
-          <p>
-          In additions to these upgrades, Samus can find energy tanks and
-          missile tanks to carry more health and missiles, which are
-          occasionally dropped after destroying an enemy. In order for the to
-          enter Tourain, Samus' goal, the area is unavailable until she finds
-          and defeats Kraid and Ridley, who are located in hideouts beneath
-          Brinstar and Norfair and serve as the game's boss encounters.
-          </p>
 
-          <p>The original Famicom Disk System version allowed players to save
-          their progress. However, on the NES version, players had to use
-          password to continue where they left off after the game restarted. The
-          password was usually given to the player at the moment of death of
-          Samus. An interesting feature that the game has is it's multiple
-          endings. The endings are not determined by choices made throughout the
-          game (as would be done in modern games), since there are no choices to
-          make, but by the amount of time a player takes to complete the whole
-          game. Depending on time, they will get one of five endings:
+          <h3 id="mechanics">Game mechanics</h3>
+          <div class="text-img" id="text">
+              <p cite="https://www.metroidwiki.org/wiki/Metroid_(game)">
+              In addition to these upgrades, Samus can find <b>energy tanks</b> and
+              <b>missile tanks</b> to carry more health and missiles, which are
+              occasionally dropped <b>after destroying an enemy</b>. For the to
+              enter Tourain, Samus' goal, the area is unavailable until she finds
+              and defeats Kraid and Ridley, who are located in hideouts beneath
+              <b>Brinstar</b> and <b>Norfair</b> and serve as the game's boss encounters.
+              </p>
+          </div>
+          <div class="img-container text-img">
+              <img src="https://s.uvlist.net/l/y2006/05/20845.jpg" alt="gameplay"/>
+          </div>
+
+          <h3 id="progress_endings">Progress and endings</h3>
+
+          <p cite="https://www.metroidwiki.org/wiki/Metroid_(game)">The original
+          Famicom Disk System version allowed players to <b>save their progress</b>.
+          However, on the NES version, players had to use a <b>password</b> to continue
+          where they left off after the game restarted. The password was usually
+          given to the player at the moment of the death of Samus. An
+          interesting feature that the game has is its <b>multiple endings</b>. The
+          endings are not determined by choices made throughout the game (as
+          would be done in modern games), since there are no choices to make,
+          but by <b>the amount of time</b> a player takes <b>to complete the whole game</b>.
+          Depending on time, they will get one of five endings:
+
           <ul>
-              <li>10 or more hours: Samus covers her face and turns back to the player;</li>
-              <li>Under 10 hours: Samus faces the player with one arm raised in the air;</li>
-              <li>Under 5 hours: Samus removes her helmet, revealing her true face;</li>
-              <li>Under 3 hours: Samus removes her Power Suit, and is seen in a
-              leotard;</li>
-              <li>Under 1 hour: Samus removes her Power Suit, and is seen in a
+              <li><b>10 or more hours:</b> Samus covers her face and turns back to the player;</li>
+              <li><b>Under 10 hours</b>: Samus faces the player with one arm raised in the air;</li>
+              <li><b>Under 5 hours</b>: Samus removes her helmet, revealing her true face;</li>
+              <li><b>Under 3 hours</b>: Samus removes her Power Suit and is seen in a leotard;</li>
+              <li><b>Under 1 hour</b>: Samus removes her Power Suit, and is seen in a
                   bikini.</li>
           </ul></p>
-          <p>If the player manages to achieve either of the latter two endings in
-          the NES version, they will be able to restart the game with Samus
-          outside of her Power Suit and all upgrades they previously had
-          (excluding Energy and Missile Tanks). The difference, however, is
-          purely cosmetic and doesn't affect regular gameplay.</p>
 
-          <hr>
-          <footer>
-              <h2 id="references">References</h2>
-              <ol>
-                  <li><a href="https://www.metroidwiki.org/wiki/Metroid_(game)">Metroid - Source</a></li>
-              </ol>
-          </footer>
-      </div>
+          <p cite="https://www.metroidwiki.org/wiki/Metroid_(game)">If the
+          player manages to achieve either of <b>the latter two endings</b> in the NES
+          version, they will be able to restart the game with Samus outside of
+          her Power Suit and <b>all upgrades</b> they previously had (excluding Energy
+          and Missile Tanks). The difference, however, is <b>purely cosmetic</b> and
+          doesn't affect regular gameplay.</p>
+
+          <div class="img-container">
+              <img
+              src="http://thegg.net/wp-content/uploads/2015/09/samus-aran-metroid-1.jpg"
+              alt="endings"/>
+          </div>
+
+            <div class="footer">
+              <p>@ Arnaud Fauconnet</p>
+              <!-- copy, paste and uncomment this to add more info other than the name
+                <p>-</p>
+                <p>Other info if you want</p>
+              -->
+          </div>
+        </div>
     </div>
   </body>
 </html>
