@@ -233,6 +233,20 @@ html, body{
   background: var( --scrollbar-thumb );
 }
 
+/* footer */
+#content .footer{
+  /* size */
+  width: 100%;
+  height: 10px;
+
+  /* border */
+  border-top: 1px solid var( --container-border-color );
+}
+#content .footer p{
+  /* position */
+  float: left;
+  padding-left: 10px;
+}
 
 /* index of the page */
 #index{
