@@ -2,59 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>GENERATION - PRODUCT</title>
+    <title>Generation 7 - xbox 360</title>
 
     <!-- put your name here -->
-    <meta name="author" content="NOME COGNOME">
+    <meta name="author" content="Ntwali">
     <!-- put page info here -->
-    <meta name="date" content="2001-01-12"> <!-- the date the product was launched -->
-    <meta name="generation" content="gen#">
-    <meta name="product" content="TEMPLATE">
-    <meta name="description" content="Best template ever, long live the CSS LEADERS!!"> <!-- a short description of the product -->
+    <meta name="date" content="2005-22-11"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen6">
+    <meta name="product" content="xbox 360">
+    <meta name="description" content="one of the greatest consoles of all time"> <!-- a short description of the product -->
     <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
     <!-- this is the generation style, must be set to the appropriate generation -->
-    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen6/style.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
       :root{
         /* these are the background images (left and right) */
-        --background-image-left: url( "media/background_left.jpg" );
-        --background-image-right: url( "media/background_right.jpg" );
+        --background-image-left: url( "media/bg-left.jpg" );
+        --background-image-right: url( "media/bg-right.jpg" );
+        background-image: url(media/bg.jpg);
         /* this is the fading color between the images */
-        --background-fade-color: #0000ff;
+        --background-fade-color: #000;
 
         /* this is the title image that will be shown at the top of the page */
-        --banner-image: url( "media/banner.png" );
+        --banner-image: url( "media/banner-xbox.png" );
         /* this is the color behind the image (visible only if the image has transparence) */
-        --banner-color: #0ff;
+        --banner-color: #0e7a0d;
 
         /* the audio file that will be played */
         --audio-file: url( "media/sound.mp3" );
 
         /* the container parameters */
-        --container-background-color: #fff;
-        --container-text-color: #f0f;
-        --container-border-color: #000;
+        --container-background-color: #000;
+        --container-text-color: #fff;
+        --container-border-color:#0e7a0d;
 
         /* the index parameters */
-        --index-background-color: #ff0;
-        --index-text-color: #00f;
-        --index-border-color: #0ff;
+        --index-background-color: #0e7a0d;
+        --index-text-color: #000;
+        --index-border-color: #000;
 
         /* text styles parameters */
         --link-color-hover: #f00;
 
         /* content scrollbar */
-        --scrollbar-thumb: #88f;
+        --scrollbar-thumb: #fff;
       }
 
       /* your style here */
-      /* .best-div-ever{
-        display: none;
-      } */
+      .responsiveimg{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        height: auto;
+      } 
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
@@ -69,39 +74,174 @@
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
       <ol>
-        <li><a href="#s1">definition of videogame</a>
+        <li><a href="#s1">Brief description</a>
         </li>
-        <li><a href="#s2">how it started</a>
+        <li><a href="#s2">Features</a>
+          <ol>
+            <li><a href="#s2.1">Hardware specifications</a></li>
+          </ol>
         </li>
+        <li><a href="#s3">Controller</a></li>
+        <li><a href="#s4">Development</a></li>
+        <li><a href="#s5"> Impact</a>
+          <ol>
+            <li><a href="#s5.1">launch</a></li>
+            <li><a href="#s5.2">Reception</a></li>
+            <li><a href="#s5.3">Importance</a></li>
+          </ol>
+        </li>
+        <li><a href="#s6">Red ring of death</a></li>
       </ol>
     </div>
     <div id="container">
       <div id="banner">
-        <img alt="Banner Image">
+        <img src="media/banner-xbox.png" alt="Banner Image">
       </div>
       <div id="content">
-        <h2 id="s1">definition of videogame</h2>
+        <h1> Xbox 360</h1>
+        <h2 id="s1">Brief description</h2>
         <p>
-As can be deduced from the etymology of its name, video game is a game that contrasts the player or players with a video (originally television, computer and other displays later). A video game is therefore a game that can be played thanks to an audiovisual device by electronically manipulating the images produced by a computer program, on a monitor or other display by pressing buttons and which can be based on a predefined or interactive story.
-      </p>
-        <h2 id="s2">how it started</h2>
-        <p>
-
+          The Xbox 360 code name xenon is a seventh generation video game console developed by Microsoft. Released on November 22, 2005, it is the successor to the original Xbox, it is the second console in the Xbox family. 
+          The Xbox 360 competed with Sony's PlayStation 3 and Nintendo's Wii as part of the seventh generation of video game consoles. It was officially unveiled on MTV on May 12, 2005, with detailed launch and
+          game information announced later that month at the 2005 Electronic Entertainment Expo. The Xbox 360's successor, the Xbox One was released on November 22, 2013. On April 20, 2016, Microsoft announced 
+          that it would end the production of Xbox 360 hardware, but thankfully to xbox 360 owners Microsoft would still continue to support the platform. the xbox 360 was a massive hit selling around 84 million units
         </p>
-        <p>
-          The majority of early computer games ran on universities' mainframe computers in the United States and were developed by individuals as a hobby. The limited accessibility of early computer hardware meant that these games were small in number and forgotten by posterity.
+        <br>
+        <h2 id="s2"> Features</h2>
+      
+        <table width="90%">
+          <tr>
+              <td> The Xbox 360 also included a number of new features and add ons such as- the ability to stream music, television and films though Xbox Music, Xbox Video and third-party content services. 
+                New wireless controllers with a number of designs, expanded hard drives and the Kinect sensor. The release of these additional services and peripherals helped the Xbox brand grow from gaming-only to encompassing all multimedia.
+                The Xbox 360 also brings back Xbox Live with a number of improvements and new features. The main unit of the Xbox 360 itself has slight double concavity in matte white or black. The official color of the white model is Arctic Chill.
+                It features a port on the top when vertical (left side when horizontal) to which a custom-housed hard disk drive unit can be attached. the xbox's technical</td>
+              <td width="50%"><img src="media/xbox-360-sfactsheet.png" alt="xbox-fact-sheet" width="100%" height="auto" class="image"></td>
+  
+          </tr>
 
-The history of video games goes as far back as the early 1950s, when academic computer scientists began designing simple games and simulations as part of their research or just for recreation.
-Thus games such as Bertie the Brain in 1950 to play tic tac toe, or Nimrod in 1951 for playing Nim. These systems used either electronic light displays and mainly as demonstration systems at large exhibitions to showcase the power of computers at the time.
-Nearly everyone born within the past fifteen years naturally thinks of screens as both touchable and responsive to touch. But smartphones, tablets, and the other devices those kids have never known a world without will always look like technological marvels to their grandparents’ generation. Growing up in the 1950s as part of one of television’s most enthusiastic viewerships, they experienced the rise of that then-marvelous medium and the various concepts it tried out before settling into convention. Some may even remember happy Saturday mornings with CBS’ Winky Dink and You, the show that they didn’t just watch but actually “interacted” with by breaking out their crayons and drawing on the screen.
+          </table>
+          <h3 id="s2.1"> Hardware specifications</h3>
+           <p> 
+            the xbox's hardware specifications were a great improvement from the original in every aspect the specifications and are as follows.
+           </p>
+           <br>
 
-Back in the 1950s, TV ownership exploded in the United States. In 1949, just 2 percent of American households had a television. But by 1955, TV had invaded a whopping 64 percent of American households. And that gigantic first wave of television ownership brought new ideas about what TV could be. One idea was the first “interactive” TV show, which by today’s standards included some pretty primitive tech. Kids were encouraged to draw right on the TV screen with crayons. The only catch? You were supposed to buy a “magic screen” cover for your TV from the producers of the show.
-The CBS show, titled Winky Dink and You, first aired on Saturday mornings in 1953 and was carried live by about 175 stations around the country during its first year. It became so popular that it was picked up on more stations and played on Sundays as well. And it showed that screen technology didn’t have to be a passive experience—provided you bought the proper supplies, of course.
+           <table>
+             <tr>
+               <td> <strong>dimensions</strong></td>
+               <td> 10.6 x 2.95 x 10.39 inches</td>
+             </tr>
+             <tr>
+               <td> <strong>weight</strong></td>
+               <td>6.39 pounds</td>
+             </tr>
+             <tr>
+              <td> <strong>processing <br> power</strong></td>
+              <td><p>CPU: 3.2-GHz PowerPC Tri-Core Xenon</p>
+                 <p> GPU: 500 MHz ATI Xenos</p></td>
+            </tr>
+            <tr>
+              <td> <strong>Memory</strong></td>
+              <td>512MB DDR3</td>
+            </tr>
+            <tr>
+              <td> <strong>Hard drive</strong></td>
+              <td>Built in,250GB</td>
+            </tr>
+            <tr>
+              <td> <strong>I/O</strong></td>
+              <td>USB 2.0 X 5, AUX</td>
+            </tr>
+            <tr>
+              <td> <strong> Communication</strong></td>
+              <td><p>Ethernet (100BASE-TX), IEEE 802.11 </p> 
+                  <p>b/g/n Wi-Fi</p></td>
+            </tr>
+           </table>
+           <br>
+           <h2 id="s3"> controller</h2>
+           <p>
+            The Xbox 360 controller is the primary game controller for Microsoft's Xbox 360 home video game console that was introduced at E3 2005. The Xbox 360 controller comes in both wired and wireless versions.
+            The Xbox controller is not compatible with the Xbox 360. The wired and wireless versions are also compatible with Microsoft PC operating systems, such as Windows XP, Windows Vista, Windows 7, Windows 8, and Windows 10. 
+            The wireless controllers run on either AA batteries or a rechargeable battery pack. The wired controllers may be connected to any of the USB ports on the console, or to an attached USB hub.
+           </p>
+           <br>
+           <table width="90%">
+            <tr>
+                <td>The Xbox 360 controller received positive reviews when it was released. Before then, as <em>IGN</em> stated, the original Xbox controller was "huge, ugly, cheap, and uncomfortable" and concluded to be an "abomination".
+                  Many of these problems were corrected with Microsoft's releases of the Xbox controller S and then the Xbox 360 controller. IGN credited the Xbox 360 controller for its being one of "the most ergonomically comfortable console controllers around".
+                  It was also praised for its improved button placement, its functioning logo as a button, and Microsoft's choice of bottom-mounting headset ports as opposed to top-mounting them so as to minimize snagged wire problems
+                </td>
+                <td width="50%"><img src="media/xbox-360-controller.jpg" alt="xbox-controller" width="100%" height="auto" class="image"></td>
+    
+            </tr>
+  
+            </table>
+            <br>
+           <h2 id="s4"> Development</h2>
+           <p>
+            Known during development as Xbox Next, Xenon, Xbox 2, Xbox FS or NextBox, the Xbox 360 was conceived in early 2003. In February 2003, planning for the Xenon software platform began, and was headed by Microsoft's Vice President J Allard.
+            That month, Microsoft held an event for 400 developers in Bellevue, Washington to recruit support for the system. Also that month, Peter Moore, former president of Sega of America, joined Microsoft. On August 12, 2003, ATI signed on to produce 
+            the graphic processing unit for the new console, a deal which was publicly announced two days later. Before the launch of the Xbox 360, several Alpha development kits were spotted using Apple's Power Mac G5 hardware. This was because the system's
+            PowerPC 970 processor running the same PowerPC architecture that the Xbox 360 would eventually run under IBM's Xenon processor. The cores of the Xenon processor were developed using a slightly modified version of the PlayStation 3's Cell Processor PPE architecture.
+            According to David Shippy and Mickie Phipps, the IBM employees were "hiding" their work from Sony and Toshiba, IBM's partners in developing the Cell Processor.
+           </p>
+           <br>
+           <h2 id="s5"> Impact</h2>
+           <br>
+           <h3 id="s5.1"> Launch</h3>
+           <p>
+            The Xbox 360 was released on November 22, 2005, in the United States and Canada; December 2, 2005, in Europe and December 10, 2005, in Japan. It was later launched in Mexico, Brazil, Chile, Colombia, Hong Kong, Singapore, South Korea, Taiwan, Australia, New Zealand, South Africa,
+            India, and Russia. In its first year on the market, the system launched in 36 countries, more countries than any other console has launched in a single year at the time.
+           </p>
+           <br>
+           <h3 id="s5.2"> Reception</h3>
+           <p>
+            In 2009, <em>IGN</em> named the Xbox 360 the sixth-greatest video game console of all time, out of a field of 25.
+            Although not the best-selling console of the seventh-generation, the Xbox 360 was deemed by <em>Techradar</em> to be the most influential,
+            by emphasizing digital media distribution and online gaming through Xbox Live, and by popularizing game achievement awards.
+            PC Magazine considered the Xbox 360 the prototype for online gaming as it "proved that online gaming communities could thrive in the console space".
+            the 360 was also praised for it's PC-like architecture that meant that  the early <em>EA sports</em> games ran at 60fps compared to only 30 on PS3.
+            Xbox Live meant every dedicated player had an existing friends list, and Halo meant Microsoft had the killer next-generation exclusive.
+            And when developers demo games on PC now they do it with a 360 controller which is another industry benchmark.
+           </p>
+           <br>
+           <h3 id="s5.3"> Importance</h3>
+           <p>
+            The Xbox 360 sold much better than its predecessor, and although not the best-selling console of the seventh generation, it is regarded as a success since
+            it strengthened Microsoft as a major force in the console market at the expense of well-established rivals. The inexpensive Nintendo Wii did sell the most
+            console units but eventually saw a collapse of third-party software support in its later years, and it has been viewed by some as a fad since the succeeding Wii U had a poor debut in 2012.
+            The PlayStation 3 struggled for a time due to being too expensive and initially lacking quality games, making it far less dominant than its predecessor,
+            the PlayStation 2, and it took until late in the PlayStation 3's lifespan for its sales and games to reach parity with the Xbox 360. <em>Techradar</em> 
+            proclaimed that "Xbox 360 passes the baton as the king of the hill – a position that puts all the more pressure on its successor, Xbox One"
+           </p>
+           <br>
+           <h2 id="s6"> Red ring of death</h2>
+          
+           <table width="90%">
+            <tr>
+                <td>even though the xbox 360 was very succesful their were complications that made Microsoft receive alot of backlash one of the most famous ones being "the red ring of death"
+                  The Red Ring of Death is when three flashing red lights around the Xbox 360 power button instead of the one to four green lights indicating normal operation represent an internal problem that requires service. 
+                  This error was soon nicknamed the "Red Ring of Death", "Red Lights of Death" or "Red Ring of Doom" by users, echoing Windows' Blue Screen of Death error. Warning signs may include freeze-ups, graphical problems
+                  in the middle of gameplay, such as checkerboard or pinstripe patterns on the screen, and sound errors, and the console only responds to pressing the power button to turn it off. These events may happen once or
+                  several times until the hardware failure occurs, or not at all. if it wasn't for Microsoft taking action and refunding the dead xboxs it was estimated by analysts that microsoft's consumer
+                 trust would have never recovered thus completely taking them out of the console gaming industry.
+                </td>
+                <td width="50%"><img src="media/red-ring-of-death.jpg" alt="red ring od death" width="100%" height="auto" class="image"></td>
+    
+            </tr>
+  
+            </table>
+        
+            <div class="footer">
+              <p>@ Ntwali Muhizi</p>
+              
+            
+            </div>
+        
 
-Winky Dink, and Barry, often told them to draw in the missing parts of a picture, or to connect dots that would reveal a coded message.
-E sebbene lo spettacolo sia riuscito a spostare due milioni di schermi magici, le preoccupazioni per i raggi X emanati dai tubi catodici (così come la probabilità che bambini impazienti disegnino direttamente sul vetro) terminarono la sua corsa nel 1957. Ma in un certo senso, la sua eredità vive su: una citazione molto diffusa attribuita a Bill Gates descrive Winky Dink and You "il primo programma televisivo interattivo", e sembra davvero aver aperto la strada a un tipo di contenuto che solo negli ultimi anni ha raggiunto la piena possibilità tecnologica. Chiunque abbia visto i bambini del 21 ° secolo giocare su smartphone e tablet noterà una sorprendente somiglianza con le attività guidate da Winky Dink e Barry.
-
-        </p>
+        
+        
       </div>
     </div>
   </body>

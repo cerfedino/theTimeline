@@ -10,14 +10,6 @@ let pages =
           "href": "html/gen2_utopia/utopia.html",
           "picture": "html/gen2_utopia/media/placeholder.gif",
           "product": "TEMPLATE"
-        },
-        {
-          "author": "NOME COGNOME",
-          "date": "2001-01-12",
-          "description": "Best template ever, long live the CSS LEADERS!!",
-          "href": "html/gen6_xbox_360/xbox_360.html",
-          "picture": "html/gen6_xbox_360/media/placeholder.gif",
-          "product": "TEMPLATE"
         }
       ]
     },
@@ -27,6 +19,7 @@ let pages =
       "html/gen6_wii_sports/wii_sports.html",
       "html/gen8_epic_games/gen8_epic_games.html",
       "html/gen1_pong/TEMPLATE_PONG.html",
+      "html/gen6_xbox_360/xbox_360.html",
       "html/gen8_ps_vita/ps_vita.html",
       "html/gen5_grand_theft_auto/grand_theft_auto.html",
       "html/gen0-brown-box/TEMPLATE.html",
@@ -35,6 +28,7 @@ let pages =
       "html/gen8_rockstar/gen8_rockstar.html",
       "html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html",
       "html/gen1_teslar/TEMPLATE_teslar.html",
+      "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
       "html/gen7_red_dead_redemption/red_dead_redemption.html",
       "html/gen8_wii_u/wii_u.html",
       "html/gen6_god_of_war_2/god_of_war_2.html",
@@ -42,6 +36,7 @@ let pages =
       "html/gen1_tecnology/tecnology.html",
       "html/gen9_consoles/next_gen_consoles.html",
       "html/gen8_game_devellopment/gen8_game_devellopment.html",
+      "html/gen7_gta_v/gta_v.html",
       "html/gen8_valve/gen8_valve.html"
     ]
   },
@@ -449,7 +444,7 @@ let pages =
       },
       {
         "author": "Ntwali Muhizi",
-        "date": "2004-11-09",
+        "date": "2004-09-11",
         "description": "Third  and arguably the best iteration of the halo franchise.. yes third",
         "href": "html/gen6_halo_2/halo_2_gen6.html",
         "picture": "html/gen6_halo_2/media/Halo_2.gif",
@@ -500,14 +495,6 @@ let pages =
         "product": "Call of duty world at war"
       },
       {
-        "author": "Ntwali Muhizi",
-        "date": "2009-10-13",
-        "description": "second entry to the uncharted franchise",
-        "href": "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
-        "picture": "html/gen7_uncharted_2:_among_thieves/media/uncharted2.gif",
-        "product": "Uncharted 2: among thieves"
-      },
-      {
         "author": "Ludovica Savoia",
         "date": "2009-11-10",
         "description": "Sixth of the Call of Duty series but first as videogame",
@@ -546,14 +533,6 @@ let pages =
         "href": "html/gen7_counter_strike_global_offensive/counter_strike_global_offensive.html",
         "picture": "html/gen7_counter_strike_global_offensive/media/cs_bomb.gif",
         "product": "Counter Strike Global Offensive"
-      },
-      {
-        "author": "Ntwali Muhizi",
-        "date": "2013-09-17",
-        "description": "the pinaccle of open world games",
-        "href": "html/gen7_gta_v/gta_v.html",
-        "picture": "html/gen7_gta_v/media/GTA-gif.gif",
-        "product": "GTA V"
       },
       {
         "author": "Genaro Di Stefano",
