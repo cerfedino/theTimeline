@@ -10,28 +10,342 @@ body {
 }
 
 /* STYLING THAT THE TIMELINE AND THE GENERATION BANNER HAVE IN COMMON */
-.generationLabel, .timeline, #fulltimeline{
+.timelineLabel, .timeline, #fulltimeline{
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
-.generationLabel h1{
+
+/*###############################*/
+#fulltimeline{
+  background-color: blue;
+}
+
+/* ============================================================================= TIMELINE */
+.timelineContainer{
+}
+
+/* ============================================================================= TIMELINE LABEL */
+.timelineLabel{
+  /* text */
+  color: #00f;
+  text-align: center;
+
+  /* background */
+  background-color: #fff;
+
+  /* position */
+  position: sticky;
+  z-index: 3;
+  top: 0px;
+
+  /* size */
+  width: 100%;
+}
+.timelineLabel h1{
   /* position */
   margin: 0;
-
-  /* text */
-  text-decoration: underline;
 }
 
+/* ============================================================================= TIMELINE */
 .timeline {
-  margin-bottom: 3%;
-  background-color: inherit; /*Inherits #fulltimeline 's background color*/
+  /* background */
+  background-color: #00f;
+
+  /* content */
   overflow-x: hidden;
 }
-.collapsed{
+/* The timeline line */
+.timeline::after {
+  /* content */
+  content: '';
+
+  /* position */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 0;
+
+  /* size */
+  width: 6px;
+
+  /* background */
+  background-color: #fff;
+}
+.timeline.collapsed{
+  /* display */
   display: none;
 }
-/*###############################*/
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* The timeline line */
+  .timeline::after {
+    /* position */
+    left: 31px;
+  }
+}
+
+/* ============================================================================= PRODUCT CONTAINER */
+.container {
+  /* position */
+  padding: 10px 40px;
+  position: relative;
+
+  /* background */
+  background-color: inherit;
+
+  /* size */
+  width: 50%;
+}
+/* The extrusion from the element to the line */
+.container::before{
+  /* content */
+  content: "";
+
+  /* size */
+  height: 0;
+  width: 0;
+
+  /* position */
+  position: absolute;
+  top: 22px;
+  z-index: 1;
+
+  /* border */
+  border: medium solid white;
+}
+/* The dot on the line */
+.container::after {
+  /* content */
+  content: '';
+
+  /* position */
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+
+  /* size */
+  width: 25px;
+  height: 25px;
+
+  /* background */
+  background-color: white;
+
+  /* border */
+  border: 4px solid #FF9F55;
+  border-radius: 50%;
+
+  /* display */
+  transform: scale( 0 );
+}
+
+/* Left container */
+.container.left {
+  /* position */
+  left: 1px; /* necessary, if 0 it will never shows up */
+
+  /* display */
+  transform: translateX(-100%);
+}
+/* Left container extrusion */
+.container.left::before {
+  /* position */
+  right: 30px;
+
+  /* border */
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+/* Left container dot on line */
+.container.left::after {
+  /* position */
+  right: -16px;
+}
+
+/* Right container */
+.container.right {
+  /* position */
+  left: 50%;
+
+  /* display */
+  transform: translateX(100%);
+}
+/* Right container extrusion */
+.container.right::before {
+  /* position */
+  left: 30px;
+
+  /* border */
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+/* Right container dot on line */
+.container.right::after {
+  /* position */
+  left: -16px;
+}
+
+/* The animation classes */
+/* The animaton of the container */
+.anim-in.container{
+  /* animation */
+  animation: container-anim-in 1.2s ease forwards;
+}
+/* The animation of the dot on the line */
+.anim-in.container::after{
+  /* animation */
+  animation: container-after-anim-in 1.2s ease forwards;
+}
+
+/* The animations */
+@keyframes container-anim-in {
+  /* move to te center by the 60% mark */
+  60% { transform: translateX(0%); }
+  /* stay there forever */
+  100% { transform: translateX(0%); }
+}
+@keyframes container-after-anim-in {
+  /* stay invisible until 70% mark */
+  70% { transform: scale( 0 ); }
+  /* appear */
+  100% { transform: scale( 1 ); }
+}
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+
+  .container.right, .container.left{
+    /* position */
+    left: 0%;
+
+    /* display */
+    transform: translateX(100%);
+  }
+
+  /* .anim-in.left .anim-in.right{ */
+    /* display */
+    /* animation: container-after-anim-in 1.2s ease forwards; */
+  /* } */
+
+  /* Full-width containers */
+  .container {
+    /* size */
+    width: 100%;
+
+    /* position */
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container.right::before, .container.left::before {
+    /* position */
+    left: 60px;
+
+    /* border */
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .container.left::after, .container.right::after {
+    /* position */
+    left: 14px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  /* .container.right .container.left {
+  } */
+}
+
+/* ============================================================================= PRODUCT CONTENT */
+.content {
+  /* position */
+  padding: 10px 10px;
+  position: relative;
+
+  /* background */
+  background-color: #fff;
+
+  /* border */
+  border-radius: 6px;
+}
+.right .content{
+  /* text */
+  text-align: left;
+}
+.left .content{
+  /* text */
+  text-align: right;
+}
+
+/* The picture */
+.content .picture{
+  /* position */
+  margin-bottom: 10px;
+
+  /* size */
+  width: 100px;
+  height: 100px;
+}
+.right .content .picture{
+  /* position */
+  float: left;
+  margin-right: 10px;
+}
+.left .content .picture{
+  /* position */
+  float: right;
+  margin-left: 10px;
+}
+
+/* The title */
+.content .title{
+  /* position */
+  margin: 10px 0;
+}
+/* The date */
+.content .date{
+  /* position */
+  margin: 10px 0;
+}
+/* The description */
+.content .description{
+  /* position */
+  clear: both;
+  margin: 10px 0;
+}
+/* The author */
+.content .author{
+  /* position */
+  margin: 10px 10px;
+}
+.content .author::before{
+  /* content */
+  content: '@ ';
+}
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* The content */
+  .left .content, .right .content{
+    /* text */
+    text-align: left;
+  }
+
+  /* The picture */
+  .left .content .picture, .right .content .picture{
+    /* position */
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+}
+
+/* ============================================================================= NAVBAR */
 #navbar{
   background-color: yellow;
   width: 100%;
@@ -60,7 +374,10 @@ body {
   right: 0px;
   float: right;
 }
-#leftpane,#rightpane{
+#navmenu.collapsed{
+  display: none;
+}
+#leftpane, #rightpane{
   max-height: 100%;
   height: 100%;
 
@@ -75,159 +392,4 @@ ul{
 }
 li.navmenu-entry.gen.active{
   border-bottom: 3px dotted red;
-}
-/* THE GENERATION LABELS */
-.generationLabel{
-  position: sticky;
-  z-index: 3;
-  top: 0px;
-  background-color: yellow;
-
-  width: 50%;
-  text-align: center;
-}
-/*###############################*/
-/* THE TIMELINE'S VERTICAL RULER */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: 0;
-}
-/*###############################*/
-#fulltimeline{
-  background-color: blue;
-}
-
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit; /*Inherits #fulltimeline 's background color*/
-  width: 50%;
-}
-
-/* The extrusion from the element to the line */
-.container::before{
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  border: medium solid white;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  /* left: 1px; */
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  right: 30px;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  left: 30px;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-.left::after {
-  right: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 10px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-.container{
-  opacity: 1;
-}
-.container.left{
-  transform: translateX(-100%);
-}
-.container.right{
-  transform: translateX(100%);
-}
-
-.anim-in.container{
-  animation: anim-in 0.7s ease forwards;
-}
-@keyframes anim-in {
-  to {
-      opacity: 1;
-      transform: translateX(0%);
-  }
-}
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 800px) {
-  .left .right{
-    transform: translateX(100%);
-  }
-
-  /* Place the timelime to the left */
-  .timeline::after {
-      left: 31px;
-  }
-
-  /* Full-width containers */
-  .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-      left: 15px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-      left: 0%;
-  }
 }
