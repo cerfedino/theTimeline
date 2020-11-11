@@ -28,154 +28,398 @@
 </head>
 <body>
 <script>
-    /*PAGE MAPPING USING JSON*/
+// ============================================================================= UTILITIES
+function new_el( type ){
+  return document.createElement( type );
+}
 
-    // // Contains the parsed 'pageMapping.json' file
-    // var JSONobj;
-    // //JSON file 'pageMapping.json' gets loaded into variable 'JSONobj'
-    // function loadJSON() {
-    //     var xobj = new XMLHttpRequest();
-    //     xobj.overrideMimeType("application/json");
-    //     xobj.open('GET', 'pageMapping.json', true);
-    //     xobj.onreadystatechange = function () {
-    //         if (xobj.readyState == 4 && xobj.status == "200") {
-    //             //console.log(xobj.responseText);
-    //             JSONobj = JSON.parse(xobj.responseText);
-    //             delete JSONobj['-1'];
-    //         }
-    //     };
-    //     xobj.send(null);
+
+// all the info are stored in the variable: pages;
+// remove bad content
+delete pages['-1'];
+// debug print the JSONobj
+console.debug(pages);
+
+//CONTENT GENERATION FUNCTIONS
+/// NAVMENU GENERATION
+// Returns the generated navmenu content string
+// function generateNavmenuContent(){
+function generate_navmenu_content(){
+    // let navmenu = "<tr>";
+    let navmenu = new_el('tr');
+
+    //Returns the generated left pane string of the navmenu
+    // let generateLeftPane = function (){
+    function generate_left_pane(){
+        // let leftPane = '<td id="leftpane"> <ul>';
+        let left_pane = new_el('td');
+        left_pane.setAttribute( 'id', 'leftpane');
+
+        let ul = new_el('ul');
+        left_pane.appendChild( ul );
+
+        // For every generation a navmenu generation label is generated
+        Object.keys( pages ).forEach( (gen_name) => {
+            // let genName = el;
+
+            // leftPane += `<li class="navmenu-entry gen" href="${genName}">${genName}</li>`;
+            let li = new_el('li');
+            li.classList.add('navmenu-entry');
+            li.classList.add('gen');
+
+            li.setAttribute( 'href', gen_name );
+            li.innerText = gen_name;
+
+            // leftPane += `<li class="navmenu-entry gen" href="${genName}">${genName}</li>`;
+            ul.appendChild( li );
+            // console.log(genName);
+        });
+
+        // leftPane+='</ul></td>';
+
+        // return leftPane;
+        return left_pane;
+    }
+
+    //Returns the generated right pane string of the navmenu
+    // let generateRightPane = function (){
+    function generate_right_pane(){
+        // let rightPane = '<td id="rightpane">';
+        let right_pane = new_el('td');
+        right_pane.setAttribute( 'id', 'rightpane');
+
+        // For every generation, an unordered list is generated
+        Object.keys( pages ).forEach( (gen_name) => {
+            // let genName = el;
+
+            // rightPane+=`<ul class="${genName}">`;
+            let ul = new_el('ul');
+            ul.classList.add( gen_name );
+
+            right_pane.appendChild(ul);
+
+            // For every page in the generation, a list item is generated
+            pages[ gen_name].pages.forEach(( page ) => {
+                // rightPane+=`<li class="navmenu-entry page" href="${page.href}">${page.product}</li>`;
+
+                let li = new_el('li');
+                li.classList.add( 'navmenu-entry' );
+                li.classList.add( 'page' );
+                li.setAttribute( 'href', page.href );
+                li.innerText = page.product;
+
+                ul.appendChild(li);
+            });
+
+            // rightPane+='</ul>';
+
+        });
+
+        // rightPane+='</td>';
+        // return rightPane;
+        return right_pane;
+    }
+
+    // navmenu+=generateLeftPane();
+    // navmenu+=generateRightPane();
+
+    navmenu.appendChild( generate_left_pane() );
+    navmenu.appendChild( generate_right_pane() );
+
+    // navmenu+="</tr>";
+    console.log(navmenu);
+    return navmenu;
+}
+
+// Regenerates the navmenu content
+function refreshNavmenu(){
+    // First it clears the content of the navmenu
+    $("#navmenu").children().detach();
+    // Then puts the generated navmenu content inside of it
+    // $("#navmenu").append( generateNavmenuContent() );
+    document.getElementById( 'navmenu' ).appendChild( generate_navmenu_content() );
+}
+
+/////////////////////
+/// TIMELINE GENERATION
+// Generates an product container placed either lef or right, depending on the boolean placedLeft input
+// function generateEventContainer(page_jsonobj, placedLeft){
+function generate_product_container(page_jsonobj, place_left){
+  //TODO: This is utterly terrible. My naked grandma looks more attractive than this design.
+
+  let placement;
+  if (place_left){
+    placement = "left";
+  }else{
+    placement = "right";
+  }
+
+  // set the container div
+  let product_container = new_el( 'div' );
+  product_container.classList.add( 'container' );
+  product_container.classList.add( placement );
+  product_container.setAttribute( 'id', page_jsonobj.product );
+
+  // set the content div
+  let content = new_el( 'div' );
+  content.classList.add( 'content' );
+  product_container.appendChild( content );
+
+  // set the contents
+  let picture = new_el( 'img' );
+  picture.setAttribute( 'src', page_jsonobj.picture );
+  picture.classList.add( 'picture' );
+  content.appendChild( picture );
+
+  let title = new_el( 'h2' );
+  title.innerText = page_jsonobj.product;
+  title.classList.add( 'title' );
+  content.appendChild( title );
+
+  let date = new_el( 'h3' );
+  date.innerText = page_jsonobj.date;
+  date.classList.add( 'date' );
+  content.appendChild( date );
+
+  let description = new_el( 'p' );
+  description.innerText = page_jsonobj.description;
+  description.classList.add( 'description' );
+  content.appendChild( description );
+
+  let author = new_el( 'p' );
+  author.innerText = page_jsonobj.author;
+  author.classList.add( 'author' );
+  content.appendChild( author );
+
+
+  // let event_container = `<div class="container ${placement}"" id="${page_jsonobj.product}">
+  //     <div class="content">
+  //         <h2>${page_jsonobj.date}</h2>
+  //         <h4>${page_jsonobj.product}</h4>
+  //         <p>${page_jsonobj.description}</p>
+  //     </div>`
+  //
+  // eventcontainer+=`</div>`;
+  return product_container;
+}
+
+// Generates a timeline of a specific generation
+// function generateTimeline( generation_key ){
+function generate_timeline( gen_name, place_left ){
+
+  // set the timeline container
+  let timeline_container = new_el( 'div' );
+  timeline_container.classList.add( 'timelineContainer' );
+  timeline_container.classList.add( gen_name );
+
+  // set label
+  let label = new_el( 'div' );
+  label.classList.add( 'timelineLabel' );
+  label.classList.add( gen_name );
+  timeline_container.appendChild( label );
+
+  let h1 = new_el( 'h1' );
+  h1.innerText = gen_name.toUpperCase();
+  label.appendChild( h1 );
+
+  // let timeline=`
+  // <div class="generationLabel ${gen_name}">
+  //     <h1>${gen_name}</h1>
+  // </div>`;
+
+  // set the timeline
+  let timeline = new_el( 'div' );
+  timeline.classList.add( 'timeline' );
+  timeline.setAttribute( 'id', gen_name );
+  timeline_container.appendChild( timeline );
+
+  // timeline+=`<div class="timeline" id="${gen_name}">`;
+
+  // set timeline products
+  pages[ gen_name ].pages.forEach(( product ) => {
+    // set product container
+    let product_container = generate_product_container( product, place_left );
+    timeline.appendChild( product_container );
+    place_left = !place_left;
+  });
+
+
+
+  // let placedLeft = true;
+  // pages[gen_name].pages.forEach(function (page,index){
+  //     console.log(page);
+  //     timeline+=generateEventContainer(page, placedLeft);
+  //     placedLeft=!placedLeft;
+  // });
+
+  // timeline+=`</div> <!-- P*******o -->`;
+  // return the container and the left state
+  return [ timeline_container, place_left ];
+  // return timeline;
+}
+
+// Generates the full timeline, composed of the timelines of every generation
+function generate_all_timelines(){
+  // get fulltimeline element
+  let fulltimeline = document.getElementById( 'fulltimeline' );
+
+  // starting side
+  let place_left = false;
+
+  // set all timelines
+  Object.keys( pages ).forEach(( gen_name ) => {
+
+    let result = generate_timeline( gen_name, place_left );
+    place_left = result[1];
+
+    // append timeline
+    fulltimeline.appendChild( result[0] );
+  });
+
+  // let fulltimeline="";
+  // Object.keys(JSONobj).forEach(function (gen,index){
+  //     fulltimeline+=generateTimeline(gen);
+  // });
+  // return fulltimeline;
+}
+
+// Regenerates the full timeline
+function refreshTimeline(){
+  // First it clears the content of the current fulltimeline
+  $("#fulltimeline").children().detach();
+  // Then puts the newly generated fulltimeline content inside of it
+  // $("#fulltimeline").append(generateFullTimeline());
+  generate_all_timelines();
+}
+    //
+    // // Get the content from pageMapping.js
+    // var JSONobj = pages;
+    // // remove bad content
+    // delete JSONobj['-1'];
+    // // debug print the JSONobj
+    // console.debug(JSONobj);
+    //
+    // //CONTENT GENERATION FUNCTIONS
+    // /// NAVMENU GENERATION
+    // // Returns the generated navmenu content string
+    // function generateNavmenuContent(){
+    //     var navmenu = "<tr>";
+    //
+    //     //Returns the generated left pane string of the navmenu
+    //     var generateLeftPane = function (){
+    //         var leftPane = '<td id="leftpane"> <ul>';
+    //
+    //         // For every generation a navmenu generation label is generated
+    //         Object.keys(JSONobj).forEach(function (el,index){
+    //             var genName = el;
+    //
+    //             leftPane+=`<li class="navmenu-entry gen" href="${genName}">${genName}</li>`;
+    //
+    //         });
+    //
+    //         leftPane+='</ul></td>';
+    //         return leftPane;
+    //     }
+    //
+    //     //Returns the generated right pane string of the navmenu
+    //     var generateRightPane = function (){
+    //         var rightPane = '<td id="rightpane">';
+    //
+    //         // For every generation, an unordered list is generated
+    //         Object.keys(JSONobj).forEach(function (el,index){
+    //             var genName = el;
+    //             rightPane+=`<ul class="${genName}">`;
+    //
+    //             // For every page in the generation, a list item is generated
+    //             JSONobj[el].pages.forEach(function (page){
+    //                 rightPane+=`<li class="navmenu-entry page" href="${page.href}">${page.product}</li>`;
+    //             });
+    //
+    //             rightPane+='</ul>';
+    //
+    //         });
+    //
+    //         rightPane+='</td>';
+    //         return rightPane;
+    //     }
+    //
+    //     navmenu+=generateLeftPane();
+    //     navmenu+=generateRightPane();
+    //
+    //     navmenu+="</tr>";
+    //     return navmenu;
     // }
-    // loadJSON();
-
-    // Get the content from pageMapping.js
-    var JSONobj = pages;
-    // remove bad content
-    delete JSONobj['-1'];
-    // debug print the JSONobj
-    console.debug(JSONobj);
-
-    //CONTENT GENERATION FUNCTIONS
-    /// NAVMENU GENERATION
-    // Returns the generated navmenu content string
-    function generateNavmenuContent(){
-        var navmenu = "<tr>";
-
-        //Returns the generated left pane string of the navmenu
-        var generateLeftPane = function (){
-            var leftPane = '<td id="leftpane"> <ul>';
-
-            // For every generation a navmenu generation label is generated
-            Object.keys(JSONobj).forEach(function (el,index){
-                var genName = el;
-
-                leftPane+=`<li class="navmenu-entry gen" href="${genName}">${genName}</li>`;
-
-            });
-
-            leftPane+='</ul></td>';
-            return leftPane;
-        }
-
-        //Returns the generated right pane string of the navmenu
-        var generateRightPane = function (){
-            var rightPane = '<td id="rightpane">';
-
-            // For every generation, an unordered list is generated
-            Object.keys(JSONobj).forEach(function (el,index){
-                var genName = el;
-                rightPane+=`<ul class="${genName}">`;
-
-                // For every page in the generation, a list item is generated
-                JSONobj[el].pages.forEach(function (page){
-                    rightPane+=`<li class="navmenu-entry page" href="${page.href}">${page.product}</li>`;
-                });
-
-                rightPane+='</ul>';
-
-            });
-
-            rightPane+='</td>';
-            return rightPane;
-        }
-
-        navmenu+=generateLeftPane();
-        navmenu+=generateRightPane();
-
-        navmenu+="</tr>";
-        return navmenu;
-    }
-
-    // Regenerates the navmenu content
-    function refreshNavmenu(){
-        // First it clears the content of the navmenu
-        $("#navmenu").children().detach();
-        // Then puts the generated navmenu content inside of it
-        $("#navmenu").append(generateNavmenuContent());
-    }
-
-    /////////////////////
-    /// TIMELINE GENERATION
-    // Generates an event container placed either lef or right, depending on the boolean placedLeft input
-    function generateEventContainer(page_jsonobj, placedLeft){
-        //TODO: This is utterly terrible. My naked grandma looks more attractive than this design.
-
-        var placement;
-        switch (placedLeft){
-            case true:
-                placement= "left";
-                break;
-            default:
-                placement= "right";
-                break;
-        }
-
-        var eventcontainer = `<div class="container ${placement}"" id="${page_jsonobj.product}">
-            <div class="content">
-                <h2>${page_jsonobj.date}</h2>
-                <h4>${page_jsonobj.product}</h4>
-                <p>${page_jsonobj.description}</p>
-            </div>`
-
-        eventcontainer+=`</div>`;
-        return eventcontainer;
-    }
-
-    // Generates a timeline of a specific generation
-    function generateTimeline(generation_key){
-        var timeline=`
-        <div class="generationLabel ${generation_key}">
-            <h1>${generation_key}</h1>
-        </div>`;
-
-        timeline+=`<div class="timeline" id="${generation_key}">`;
-        var placedLeft = true;
-        JSONobj[generation_key].pages.forEach(function (page,index){
-            console.log(page);
-            timeline+=generateEventContainer(page, placedLeft);
-            placedLeft=!placedLeft;
-        });
-
-        timeline+=`</div> <!-- P*******o-->`;
-        return timeline;
-    }
-
-    // Generates the full timeline, composed of the timelines of every generation
-    function generateFullTimeline(){
-        var fulltimeline="";
-        Object.keys(JSONobj).forEach(function (gen,index){
-            fulltimeline+=generateTimeline(gen);
-        });
-        return fulltimeline;
-    }
-
-    // Regenerates the full timeline
-    function refreshTimeline(){
-        // First it clears the content of the current fulltimeline
-        $("#fulltimeline").children().detach();
-        // Then puts the newly generated fulltimeline content inside of it
-        $("#fulltimeline").append(generateFullTimeline());
-    }
+    //
+    // // Regenerates the navmenu content
+    // function refreshNavmenu(){
+    //     // First it clears the content of the navmenu
+    //     $("#navmenu").children().detach();
+    //     // Then puts the generated navmenu content inside of it
+    //     $("#navmenu").append(generateNavmenuContent());
+    // }
+    //
+    // /////////////////////
+    // /// TIMELINE GENERATION
+    // // Generates an event container placed either lef or right, depending on the boolean placedLeft input
+    // function generateEventContainer(page_jsonobj, placedLeft){
+    //     //TODO: This is utterly terrible. My naked grandma looks more attractive than this design.
+    //
+    //     var placement;
+    //     switch (placedLeft){
+    //         case true:
+    //             placement= "left";
+    //             break;
+    //         default:
+    //             placement= "right";
+    //             break;
+    //     }
+    //
+    //     var eventcontainer = `<div class="container ${placement}"" id="${page_jsonobj.product}">
+    //         <div class="content">
+    //             <h2>${page_jsonobj.date}</h2>
+    //             <h4>${page_jsonobj.product}</h4>
+    //             <p>${page_jsonobj.description}</p>
+    //         </div>`
+    //
+    //     eventcontainer+=`</div>`;
+    //     return eventcontainer;
+    // }
+    //
+    // // Generates a timeline of a specific generation
+    // function generateTimeline(generation_key){
+    //     var timeline=`
+    //     <div class="generationLabel ${generation_key}">
+    //         <h1>${generation_key}</h1>
+    //     </div>`;
+    //
+    //     timeline+=`<div class="timeline" id="${generation_key}">`;
+    //     var placedLeft = true;
+    //     JSONobj[generation_key].pages.forEach(function (page,index){
+    //         console.log(page);
+    //         timeline+=generateEventContainer(page, placedLeft);
+    //         placedLeft=!placedLeft;
+    //     });
+    //
+    //     timeline+=`</div> <!-- P*******o-->`;
+    //     return timeline;
+    // }
+    //
+    // // Generates the full timeline, composed of the timelines of every generation
+    // function generateFullTimeline(){
+    //     var fulltimeline="";
+    //     Object.keys(JSONobj).forEach(function (gen,index){
+    //         fulltimeline+=generateTimeline(gen);
+    //     });
+    //     return fulltimeline;
+    // }
+    //
+    // // Regenerates the full timeline
+    // function refreshTimeline(){
+    //     // First it clears the content of the current fulltimeline
+    //     $("#fulltimeline").children().detach();
+    //     // Then puts the newly generated fulltimeline content inside of it
+    //     $("#fulltimeline").append(generateFullTimeline());
+    // }
 </script>
 
 <div id="navbar">
@@ -221,7 +465,7 @@ theTimeline
 <div id="fulltimeline">
 
     <!--EXAMPLE CONTENT. THIS IS LATER OVERWRITTEN BY JAVASCRIPT BASED ON THE JSON FILE-->
-    <div class="generationLabel" >
+    <div class="timelineLabel" >
         gen0
     </div>
     <div class="timeline" id="gen0">
@@ -263,7 +507,7 @@ theTimeline
         </div>
     </div>
 
-    <div class="generationLabel" >
+    <div class="timelineLabel" >
         gen1
     </div>
     <div class="timeline" id="gen1">
@@ -400,7 +644,7 @@ theTimeline
         $(window).scroll(function(){animateVisibleContainers();});
 
         //When a generation label in the timeline gets clicked, it toggles the timeline associated to it
-        $('.generationLabel').click(function(){toggleTimelineCollapse($(this).next());});
+        $('.timelineLabel').click(function(){toggleTimelineCollapse($(this).next());});
 
         // When the navmenu button gets clicked, the navmenu gets toggled
         $('#navmenu-toggle').click(function(){
