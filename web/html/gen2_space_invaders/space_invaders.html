@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>GENERATION - PRODUCT</title>
+    <title>Gen2 - Space invaders</title>
 
     <!-- put your name here -->
     <meta name="author" content="Daniel Gelman">
     <!-- put page info here -->
-    <meta name="date" content="1978-06-01"> <!-- the date the product was launched -->
+    <meta name="date" content="1978-06-01">
+    <!-- the date the product was launched -->
     <meta name="generation" content="gen2">
     <meta name="product" content="Space invaders">
-    <meta name="description" content="Space invaders is a 1978 arcade game"> <!-- a short description of the product -->
-    <meta name="picture" content="media/space_invaders_2.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="description" content="Space invaders is a 1978 arcade game, this game at the time just created a coin deficit! You can try it here for free">
+    <!-- a short description of the product -->
+    <meta name="picture" content="media/space_invaders_2.gif">
+    <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
@@ -19,48 +23,54 @@
     <link rel="stylesheet" id="generation-style" href="../../styles/gen2/style.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
-      :root{
-        /* these are the background images (left and right) */
-        --background-image-left: url( "media/black.jpg" );
-        --background-image-right: url( "media/black.jpg" );
-        /* this is the fading color between the images */
-        --background-fade-color:  rgb(0, 255, 21);
-      
-
-        /* this is the title image that will be shown at the top of the page */
-        --banner-image: url( "media/space_invaders_logo.png" );
-        /* this is the color behind the image (visible only if the image has transparence) */
-        --banner-color: #111;
-
-        /* the audio file that will be played */
-       /* --audio-file: url( "media/sound.mp3" )*/       
-
-        /* the container parameters */
-        --container-background-color: rgb(0, 0, 0);
-        --container-text-color:rgb(255, 255, 255);
-        --container-border-color: rgb(0, 255, 21);
-
-        /* the index parameters */
-        --index-background-color: rgb(0, 0, 0);
-        --index-text-color: rgb(255, 255, 255);
-        --index-border-color: rgb(0, 255, 21);
-
-        /* text styles parameters */
-        --link-color-hover: rgb(0, 255, 21);
-
-        /* content scrollbar */
-        --scrollbar-thumb: rgb(0, 255, 21);
-      }
-
-      /* your style here */
-      /* .best-div-ever{
-        display: none;
-      } */
+         :root {
+            /* these are the background images (left and right) */
+            --background-image-left: url("media/black.jpg");
+            --background-image-right: url("media/black.jpg");
+            /* this is the fading color between the images */
+            --background-fade-color: rgb(0, 255, 21);
+            /* this is the title image that will be shown at the top of the page */
+            --banner-image: url("media/space_invaders_logo.png");
+            /* this is the color behind the image (visible only if the image has transparence) */
+            --banner-color: rgb(0, 0, 0);
+            /* the audio file that will be played */
+            /* --audio-file: url( "media/sound.mp3" )*/
+            /* the container parameters */
+            --container-background-color: rgb(0, 0, 0);
+            --container-text-color: rgb(255, 255, 255);
+            --container-border-color: rgb(0, 255, 21);
+            /* the index parameters */
+            --index-background-color: rgb(0, 0, 0);
+            --index-text-color: rgb(255, 255, 255);
+            --index-border-color: rgb(0, 255, 21);
+            /* text styles parameters */
+            --link-color-hover: rgb(0, 255, 21);
+            /* content scrollbar */
+            --scrollbar-thumb: rgb(0, 255, 21);
+        }
+        
+        .button {
+            border-color: var(--container-border-color);
+        }
+        
+        .game-container {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .game {
+            height: 50vh;
+        }
+        
+        #s3 {
+            text-align: center;
+        }
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
-  </head>
-  <body onload="onload();">
+</head>
+
+<body onload="onload();">
     <!-- the backgrounds -->
     <div class="bg" id="bg-left"></div>
     <div class="bg" id="bg-right"></div>
@@ -69,48 +79,58 @@
     <div class="button" id="sound-button"></div>
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
-      <ol>
-        <li><a href="#s1">Introduction</a>
-          <ol>
-            <li><a href="#s1.1">History and contex</a></li>
-            <li><a href="#s1.2">Gameplay</a></li>
-          </ol>
-        </li>
-        <li><a href="#s2">Success</a>
-          <ol>
-            <li><a href="#s2.1">Market Impact</a></li>
-          </ol>
-        </li><a href="#s3">The game</a></li>
-      </ol>
+        <ol>
+            <li><a href="#s1">Introduction</a>
+                <ol>
+                    <li><a href="#s1.1">History and contex</a></li>
+                    <li><a href="#s1.2">Gameplay</a></li>
+                </ol>
+            </li>
+            <li><a href="#s2">Success</a>
+                <ol>
+                    <li><a href="#s2.1">Market Impact</a></li>
+                </ol>
+            </li><a href="#s3">The game</a></li>
+        </ol>
     </div>
     <div id="container">
-      <div id="banner">
-        <img alt="Banner Image">
-      </div>
-      <div id="content">
-        <h2 id="s1">Introduction</h2>
-        <h3 id="s1.1">History and contex</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          Space Invaders is an arcade game created by Tomohiro Nishikado and released in 1978 by Taito corp. <br>
-          It took one year for Tomohiro Nishikado to design the game and build up the necessary hardware. By the fact that microcomputers were not powerful enough in Japan, Nishikado had to do his own costomization on the hardware and for the development tools. To do so he used the latest microprocessors from the United States. </p>
-        <h3 id="s1.2">Gameplay</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          So what's the game about?  <br>
-          Space Invaders is a fixed shooter game where the player controls a laser weapon by moving it to the left or the right in the lower part of the screen firing the descending aliens.  The goal is to "kill" rows of aliens that move horizontally as they advance toward the bottom. 
+        <div id="banner">
+            <img alt="Banner Image">
+        </div>
+        <div id="content">
+            <h2 id="s1">Introduction</h2>
+            <h3 id="s1.1">History and contex</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                Space Invaders is an arcade game created by Tomohiro Nishikado and released in 1978 by Taito corp. <br> It took one year for Tomohiro Nishikado to design the game and build up the necessary hardware. By the fact that microcomputers were
+                not powerful enough in Japan, Nishikado had to do his own customization on the hardware and for the development tools. To do so he used the latest microprocessors from the United States. </p>
+            <h3 id="s1.2">Gameplay</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                So what's the game about? <br> Space Invaders is a fixed shooter game where the player controls a laser weapon by moving it to the left or the right in the lower part of the screen firing the descending aliens. The goal is to "kill" rows
+                of aliens that move horizontally as they advance toward the bottom. The player's laser gun is protected by some fixed shields. These shields can be destroyed by the aliens or, by mistake, by the player.
+            </p>
+            <p></p>
+            <h2 id="s2">Success</h2>
+            <h3 id="s2.1">Market Impact</h3>
+            The game was a success worldwide, especially in Japan. <br> In fact just in Japan, 100'000 machines were installed by the end of 1978 with a profit of 600 million dollars. Although its graphics are considered very primitive by today's standards,
+            Space Invaders has had a huge impact on society and the video game industry itself. Before the release of Space Invaders, arcade machines were mainly pinball machines: when Taito released the game, no one had ever seen anything like it before.
+            In the early days, the players queued for hours waiting for their turn. The game was so popular in Japan to the point that it caused a 100-yen deficiency and it was necessary to increase the production of the coin.
+            <p> <b></b> <i></i></p>
 
-          The player's laser gun is protected by some fixed shields.  These shields can be destroyed by the aliens or, by mistake, by the player.  
-        </p>
-        <p></p>
-        <h2 id="s2">Success</h2>
-        <h3 id="s2.1">Market Impact</h3>
-        The game was a success worlwide, especially in Japan.  <br>
-        In fact, just in Japan, 100'000 machines were installed by the end of 1978 with a profit of 600 milion dollars. Although its graphics are considered very primitive by today's standards, Space Invaders has had a huge impact on society and the video game industry itself. Before the release of Space Invaders, arcade machines were mainly pinball machines: when Taito released the game, no one had ever seen anything like it before. In the early days, the players queued for hours waiting for their turn.  
-        The game was so popular in Japan to the point that it caused a 100-yen deficiency and it was necessary to increase the production of the coin.
-        <p> <b></b> <i></i></p>
-        <h2 id="s3">The game</h2>
-      </div>
-    </div>
-  </body>
+
+            <!-- Iframe of the game -->
+            <br>
+            <h2 id="s3">The game</h2>
+            <br>
+            <div class="game-container">
+                <iframe class="game" src="https://funhtml5games.com?embed=spaceinvaders" style="width:800px;height:550px;border:none;" frameborder="0" scrolling="no"></iframe>
+
+                <div class="footer">
+                    <p>@ Daniel Gelman</p>
+                </div>
+            </div>
+        </div>
+</body>
+
 </html>

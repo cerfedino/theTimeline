@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>GENERATION - PRODUCT</title>
+    <title>Gen2 - Donkey Kong</title>
 
     <!-- put your name here -->
     <meta name="author" content="Daniel Gelman">
     <!-- put page info here -->
-    <meta name="date" content="1981-07-9"> <!-- the date the product was launched -->
+    <meta name="date" content="1981-07-9">
+    <!-- the date the product was launched -->
     <meta name="generation" content="gen2">
-    <meta name="product" content="TEMPLATE">
-    <meta name="description" content="Donkey Kong is an arcade game released by Nintendo"> <!-- a short description of the product -->
-    <meta name="picture" content="media/donkey_kong_1.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="product" content="Donkey Kong">
+    <meta name="description" content="Donkey Kong is an arcade game released by Nintendo. A debut for Mario and a debut for Donkey, this game is just synonymous with famous. Prove me wrong.">
+    <!-- a short description of the product -->
+    <meta name="picture" content="media/donkey_kong_1.gif">
+    <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
@@ -19,48 +23,55 @@
     <link rel="stylesheet" id="generation-style" href="../../styles/gen2/style.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
-      
-      :root{
-        /* these are the background images (left and right) */
-       --background-image-left: url( "media/black.jpg" );
-        --background-image-right: url( "media/black.jpg" );
-        /* this is the fading color between the images */
-        --background-fade-color: rgba(238, 142, 52, 0.918);
-
-        /* this is the title image that will be shown at the top of the page */
-        --banner-image: url( "media/donkey_kong_logo_2.png" );
-        /* this is the color behind the image (visible only if the image has transparence) */
-        --banner-color: rgb(248, 248, 248);
-
-        /* the audio file that will be played */
-        /* --audio-file: url( "media/sound.mp3" ); */
-
-        /* the container parameters */
-        --container-background-color: rgb(3, 3, 3);
-        --container-text-color: rgb(255, 255, 255);
-        --container-border-color: rgba(238, 142, 52, 0.918);
-
-        /* the index parameters */
-        --index-background-color: rgb(0, 0, 0);
-        --index-text-color: rgb(255, 255, 255);
-        --index-border-color:rgba(238, 142, 52, 0.918);
-
-        /* text styles parameters */
-        --link-color-hover: rgb(255, 21, 0);
-
-        /* content scrollbar */
-        --scrollbar-thumb: rgb(255, 60, 0);
-      }
-
-      /* your style here */
-      /* .best-div-ever{
-        display: none;
-      } */
+         :root {
+            /* these are the background images (left and right) */
+            --background-image-left: url("media/black.jpg");
+            --background-image-right: url("media/black.jpg");
+            /* this is the fading color between the images */
+            --background-fade-color: rgba(238, 142, 52, 0.918);
+            /* this is the title image that will be shown at the top of the page */
+            --banner-image: url("media/donkey_kong_logo.png");
+            /* this is the color behind the image (visible only if the image has transparence) */
+            --banner-color: rgb(0, 0, 0);
+            /* the audio file that will be played */
+            /* --audio-file: url( "media/sound.mp3" ); */
+            /* the container parameters */
+            --container-background-color: rgb(3, 3, 3);
+            --container-text-color: rgb(255, 255, 255);
+            --container-border-color: rgba(238, 142, 52, 0.918);
+            /* the index parameters */
+            --index-background-color: rgb(0, 0, 0);
+            --index-text-color: rgb(255, 255, 255);
+            --index-border-color: rgba(238, 142, 52, 0.918);
+            /* text styles parameters */
+            --link-color-hover: rgb(255, 21, 0);
+            /* content scrollbar */
+            --scrollbar-thumb: rgb(255, 60, 0);
+        }
+        /* your style here */
+        
+        .button {
+            border-color: var(--container-border-color);
+        }
+        
+        .game-container {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .game {
+            height: 50vh;
+        }
+        
+        #s3 {
+            text-align: center;
+        }
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
-  </head>
-  <body onload="onload();">
+</head>
+
+<body onload="onload();">
     <!-- the backgrounds -->
     <div class="bg" id="bg-left"></div>
     <div class="bg" id="bg-right"></div>
@@ -69,54 +80,64 @@
     <div class="button" id="sound-button"></div>
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
-      <ol>
-        <li><a href="#s1">Introduction</a>
-          <ol>
-            <li><a href="#s1.1">History and contex</a></li>
-            <li><a href="#s1.2">Gameplay</a></li>
-          </ol>
-        </li>
-        <li><a href="#s2">Success</a>
-          <ol>
-            <li><a href="#s2.1">Market Impact</a></li>
-          </ol>
-        </li><a href="#s3">The game</a></li>
-      </ol>
+        <ol>
+            <li><a href="#s1">Introduction</a>
+                <ol>
+                    <li><a href="#s1.1">History and contex</a></li>
+                    <li><a href="#s1.2">Gameplay</a></li>
+                </ol>
+            </li>
+            <li><a href="#s2">Success</a>
+                <ol>
+                    <li><a href="#s2.1">Market Impact</a></li>
+                </ol>
+            </li><a href="#s3">The game</a></li>
+        </ol>
     </div>
     <div id="container">
-      <div id="banner">
-        <img alt="Banner Image">
-      </div>
-      <div id="content">
-        <h2 id="s1">Introduction</h2>
-        <h3 id="s1.1">History and contex</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          Donkey Kong is a platform arcade video game developed and produced by Nintendo and released in 1981. It was later converted for many types of computers and consoles, as well as Game & Watch. Famous characters Mario - here called Jumpman - and Donkey Kong appear for the first time.
-        </p>
-        <h3 id="s1.2">Gameplay</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          So what's the game about?  <br>
-          Each level consists mainly of platforms with the appearance of metal beams and ladders. The player can jump to avoid the lethal objects that run across the platforms. 
-          In each screen Jumpman (or Mario) can only use each of the hammers present once to destroy obstacles (except the springs and Donkey Kong). 
-          Once a hammer is picked up, Jumpman automatically and continuously uses it to strike in front of him for a short amount of time, however he cannot climb stairs or jump while the hammer is in hand.
-          THe game has 4 different levels:
-          <ol>
-            <li>Level 1 - Jumpman must be able to climb a crumbling scaffolding, with slightly inclined platforms, while avoiding being hit by the barrels thrown by Donkey. </li>
-            <li>Level 2 - Jumpman has to climb a structure consisting largely of conveyor belts. The main obstacles in this level are the flames that are all over around.</li>
-            <li>Level 3 - Jumpman has to go up and down via some elevators, all this while avoiding the flames and bouncing springs. </li>
-            <li>Level 4 - It is the final level; the flames remain once again the main obstacle. Jumpman must remove the eight "keystones" that support the floor on which Donkey Kong is.</li>
-          </ol>  
-          The levels become progressively more and more difficult thanks to some small variations such as more unpredictable trajectories for barrels and springs, or faster flames.        </p>
-        <p></p>
-        <h2 id="s2">Success</h2>
-        <h3 id="s2.1">Market Impact</h3>
-              Donkey Kong was released in July 1981, by October Nintendo was able to sell 4'000 units a month and by 1982 Nintendo earned 180 milion US dollars. 
-              In 1983 Donkey kong has won the title "Best single-player video game" at the Arcade Awards. The game was particularly popular in the United States and Canada.  
-        <p> <b></b> <i></i></p>
-        <h2 id="s3">The game</h2>
-      </div>
-    </div>
-  </body>
+        <div id="banner">
+            <img alt="Banner Image">
+        </div>
+        <div id="content">
+            <h2 id="s1">Introduction</h2>
+            <h3 id="s1.1">History and contex</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                Donkey Kong is a platform arcade video game developed and produced by Nintendo and released in 1981. It was later converted for many types of computers and consoles, as well as Game & Watch. Famous characters Mario - here called Jumpman - and Donkey Kong
+                appear for the first time.
+            </p>
+            <h3 id="s1.2">Gameplay</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                So what's the game about? <br> Each level consists mainly of platforms with the appearance of metal beams and ladders. The player can jump to avoid the lethal objects that run across the platforms. On each screen Jumpman (or Mario) can
+                only use each of the hammers present once to destroy obstacles (except the springs and Donkey Kong). Once a hammer is picked up, Jumpman automatically and continuously uses it to strike in front of him for a short amount of time, however,
+                he cannot climb stairs or jump while the hammer is in hand. The game has 4 different levels:
+                <ol>
+                    <li>Level 1 - Jumpman must be able to climb a crumbling scaffolding, with slightly inclined platforms, while avoiding being hit by the barrels thrown by Donkey. </li>
+                    <li>Level 2 - Jumpman has to climb a structure consisting largely of conveyor belts. The main obstacles in this level are the flames that are all over around.</li>
+                    <li>Level 3 - Jumpman has to go up and down via some elevators, all this while avoiding the flames and bouncing springs. </li>
+                    <li>Level 4 - It is the final level; the flames remain once again the main obstacle. Jumpman must remove the eight "keystones" that support the floor on which Donkey Kong is.</li>
+                </ol>
+                The levels become progressively more and more difficult thanks to some small variations such as more unpredictable trajectories for barrels and springs, or faster flames. </p>
+            <p></p>
+            <h2 id="s2">Success</h2>
+            <h3 id="s2.1">Market Impact</h3>
+            Donkey Kong was released in July 1981, by October Nintendo was able to sell 4'000 units a month and by 1982 Nintendo earned 180 million US dollars. In 1983 Donkey kong has won the title "Best single-player video game" at the Arcade Awards. The game was
+            particularly popular in the United States and Canada.
+            <p> <b></b> <i></i></p>
+
+            <!-- Iframe of the game -->
+            <br>
+            <h2 id="s3">The game</h2>
+            <br>
+            <div class="game-container">
+                <iframe class="game" src="https://funhtml5games.com?embed=donkeykong" style="width:448px;height:512px;border:none;" frameborder="0" scrolling="no"></iframe>
+
+                <div class="footer">
+                    <p>@ Daniel Gelman</p>
+                </div>
+            </div>
+        </div>
+</body>
+
 </html>

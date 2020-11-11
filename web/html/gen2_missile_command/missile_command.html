@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>GENERATION - PRODUCT</title>
+    <title>Gen2 - Missile Command</title>
 
     <!-- put your name here -->
     <meta name="author" content="Daniel Gelman">
     <!-- put page info here -->
-    <meta name="date" content="1980-07-01"> <!-- the date the product was launched -->
+    <meta name="date" content="1980-07-01">
+    <!-- the date the product was launched -->
     <meta name="generation" content="gen2">
     <meta name="product" content="Missile Command">
-    <meta name="description" content="Missile Command is an arcade Video Game released in 1980"> <!-- a short description of the product -->
-    <meta name="picture" content="media/missile_command.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="description" content="Missile Command is an arcade Video Game released in 1980, not just a game, a piece of history. Come in ! Find out why.">
+    <!-- a short description of the product -->
+    <meta name="picture" content="media/missile_command.gif">
+    <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
@@ -19,47 +23,54 @@
     <link rel="stylesheet" id="generation-style" href="../../styles/gen2/style.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
-      :root{
-       /* these are the background images (left and right) */
-       --background-image-left: url( "media/black.jpg" );
-        --background-image-right: url( "media/black.jpg" );
-        /* this is the fading color between the images */
-        --background-fade-color: rgb(255, 60, 0);
-
-        /* this is the title image that will be shown at the top of the page */
-        --banner-image: url( "media/missile_command.png" );
-        /* this is the color behind the image (visible only if the image has transparence) */
-        --banner-color: rgb(0, 0, 0);
-
-        /* the audio file that will be played */
-        /* --audio-file: url( "media/sound.mp3" ); */
-
-        /* the container parameters */
-        --container-background-color: rgb(3, 3, 3);
-        --container-text-color: rgb(255, 255, 255);
-        --container-border-color: rgb(255, 60, 0);
-
-        /* the index parameters */
-        --index-background-color: rgb(0, 0, 0);
-        --index-text-color: rgb(255, 255, 255);
-        --index-border-color:rgb(255, 60, 0);
-
-        /* text styles parameters */
-        --link-color-hover: rgb(255, 60, 0);
-
-        /* content scrollbar */
-        --scrollbar-thumb: rgb(255, 60, 0);
-      }
-
-      /* your style here */
-      /* .best-div-ever{
-        display: none;
-      } */
+         :root {
+            /* these are the background images (left and right) */
+            --background-image-left: url("media/black.jpg");
+            --background-image-right: url("media/black.jpg");
+            /* this is the fading color between the images */
+            --background-fade-color: rgb(255, 60, 0);
+            /* this is the title image that will be shown at the top of the page */
+            --banner-image: url("media/missile_command.png");
+            /* this is the color behind the image (visible only if the image has transparence) */
+            --banner-color: rgb(0, 0, 0);
+            /* the audio file that will be played */
+            /* --audio-file: url( "media/sound.mp3" ); */
+            /* the container parameters */
+            --container-background-color: rgb(3, 3, 3);
+            --container-text-color: rgb(255, 255, 255);
+            --container-border-color: rgb(255, 60, 0);
+            /* the index parameters */
+            --index-background-color: rgb(0, 0, 0);
+            --index-text-color: rgb(255, 255, 255);
+            --index-border-color: rgb(255, 60, 0);
+            /* text styles parameters */
+            --link-color-hover: rgb(255, 60, 0);
+            /* content scrollbar */
+            --scrollbar-thumb: rgb(255, 60, 0);
+        }
+        
+        .button {
+            border-color: var(--container-border-color);
+        }
+        
+        .game-container {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .game {
+            height: 50vh;
+        }
+        
+        #s3 {
+            text-align: center;
+        }
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
-  </head>
-  <body onload="onload();">
+</head>
+
+<body onload="onload();">
     <!-- the backgrounds -->
     <div class="bg" id="bg-left"></div>
     <div class="bg" id="bg-right"></div>
@@ -68,56 +79,66 @@
     <div class="button" id="sound-button"></div>
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
-      <ol>
-        <li><a href="#s1">Introduction</a>
-          <ol>
-            <li><a href="#s1.1">History and contex</a></li>
-            <li><a href="#s1.2">Gameplay</a></li>
-          </ol>
-        </li>
-        <li><a href="#s2">Success</a>
-          <ol>
-            <li><a href="#s2.1">Market Impact</a></li>
-          </ol>
-        </li><a href="#s3">The game</a></li>
-      </ol>
+        <ol>
+            <li><a href="#s1">Introduction</a>
+                <ol>
+                    <li><a href="#s1.1">History and contex</a></li>
+                    <li><a href="#s1.2">Gameplay</a></li>
+                </ol>
+            </li>
+            <li><a href="#s2">Success</a>
+                <ol>
+                    <li><a href="#s2.1">Market Impact</a></li>
+                </ol>
+            </li><a href="#s3">The game</a></li>
+        </ol>
     </div>
     <div id="container">
-      <div id="banner">
-        <img alt="Banner Image">
-      </div>
-      <div id="content">
-        <h2 id="s1">Introduction</h2>
-        <h3 id="s1.1">History and contex</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          Missile Command, originally titled Armageddon, is an arcade video game developed by Dave Theurer and released in 1980 by Atari, Inc. <br>
-          Theurer spent 6 months realizing the game. 
-          Missile command is considered one of the classics when it comes to video games. The interesting fact about the game is actually the correlation with the Cold War era and how, today, the game is considered part of the American culture when it comes to the 80s. 
-        </p>
-        <h3 id="s1.2">Gameplay</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          So what's the game about?  <br>
-          The goal of the player is to prevent the distruction of different cities from the enemy attacks. The player has to survive several "waves" (256 in total) defending three bases, which have 10 defensive missiles in each city.
-          In the game there are 6 cities: <ol>
-            <li>Eureka</li>
-            <li>San Francisco</li>
-            <li>San Luis Obispo</li>
-            <li>Santa Barbara</li>
-            <li>Los Angeles</li>
-            <li>San Diego</li>
-          </ol>  
-          The game end when all of the 6 cities are destroyed. The player wins if he manages to save the cities for 256 waves. 
-          At each finished level, the ammunition is reloaded, the batteries affected are rebuilt and it is possible to earn extra points depending on the remaining cities and the unused ammunition. A certain ranking (10,000 or 12,000 points) is awarded a "bonus city". 
-        </p>
-        <p></p>
-        <h2 id="s2"></h2>
-        <h3 id="s2.1"></h3>
-               
-        <p> <b></b> <i></i></p>
-        <h2 id="s3">The game</h2>
-      </div>
-    </div>
-  </body>
+        <div id="banner">
+            <img alt="Banner Image">
+        </div>
+        <div id="content">
+            <h2 id="s1">Introduction</h2>
+            <h3 id="s1.1">History and contex</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                Missile Command, originally titled Armageddon, is an arcade video game developed by Dave Theurer and released in 1980 by Atari, Inc. <br> Theurer spent 6 months realizing the game. Missile command is considered one of the classics when
+                it comes to video games. The interesting fact about the game is actually the correlation with the Cold War era and how, today, the game is considered part of the American culture when it comes to the 80s.
+            </p>
+            <h3 id="s1.2">Gameplay</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                So what's the game about? <br> The goal of the player is to prevent the destruction of different cities from the enemy attacks. The player has to survive several "waves" (256 in total) defending three bases, which have 10 defensive missiles
+                in each city. In the game there are 6 cities:
+                <ol>
+                    <li>Eureka</li>
+                    <li>San Francisco</li>
+                    <li>San Luis Obispo</li>
+                    <li>Santa Barbara</li>
+                    <li>Los Angeles</li>
+                    <li>San Diego</li>
+                </ol>
+                The game ends when all of the 6 cities are destroyed. The player wins if he manages to save the cities for 256 waves. At each finished level, the ammunition is reloaded, the batteries affected are rebuilt and it is possible to earn extra points depending
+                on the remaining cities and the unused ammunition. A certain ranking (10,000 or 12,000 points) is awarded a "bonus city".
+            </p>
+            <p></p>
+            <h2 id="s2"></h2>
+            <h3 id="s2.1"></h3>
+
+            <p> <b></b> <i></i></p>
+
+            <!-- Iframe of the game -->
+            <br>
+            <h2 id="s3">The game</h2>
+            <br>
+            <div class="game-container">
+                <iframe clas="game" src=" https://www.compadre.org/osp/EJSS/4209/198.htm" style="width:750px;height:700px;border:red;" frameborder="0"></iframe>
+
+                <div class="footer">
+                    <p>@ Daniel Gelman</p>
+                </div>
+            </div>
+        </div>
+</body>
+
 </html>

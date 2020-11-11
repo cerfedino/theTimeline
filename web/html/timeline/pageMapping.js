@@ -186,7 +186,7 @@ let pages =
       {
         "author": "Daniel Gelman",
         "date": "1978-06-01",
-        "description": "Space invaders is a 1978 arcade game",
+        "description": "Space invaders is a 1978 arcade game, this game at the time just created a coin deficit! You can try it here for free",
         "href": "html/gen2_space_invaders/space_invaders.html",
         "picture": "html/gen2_space_invaders/media/space_invaders_2.gif",
         "product": "Space invaders"
@@ -194,7 +194,7 @@ let pages =
       {
         "author": "Daniel Gelman",
         "date": "1979-01-01",
-        "description": "Adventure is an arcade game created in 1979",
+        "description": "Adventure is an arcade game created in 1979. Did you know that this is game is the inspiration behind the legend of Zelda? Me neither. But I will tell you more!",
         "href": "html/gen2_adventure/adventure.html",
         "picture": "html/gen2_adventure/media/adventure_game.gif",
         "product": "Adventure"
@@ -210,7 +210,7 @@ let pages =
       {
         "author": "Daniel Gelman",
         "date": "1980-07-01",
-        "description": "Missile Command is an arcade Video Game released in 1980",
+        "description": "Missile Command is an arcade Video Game released in 1980, not just a game, a piece of history. Come in ! Find out why.",
         "href": "html/gen2_missile_command/missile_command.html",
         "picture": "html/gen2_missile_command/media/missile_command.gif",
         "product": "Missile Command"
@@ -218,10 +218,10 @@ let pages =
       {
         "author": "Daniel Gelman",
         "date": "1981-07-9",
-        "description": "Donkey Kong is an arcade game released by Nintendo",
+        "description": "Donkey Kong is an arcade game released by Nintendo. A debut for Mario and a debut for Donkey, this game is just synonymous with famous. Prove me wrong.",
         "href": "html/gen2_donkey_kong/donkey_kong.html",
         "picture": "html/gen2_donkey_kong/media/donkey_kong_1.gif",
-        "product": "TEMPLATE"
+        "product": "Donkey Kong"
       },
       {
         "author": "ALESSANDRO CRAVIOGLIO",
@@ -234,7 +234,7 @@ let pages =
       {
         "author": "Daniel Gelman",
         "date": "2001-01-1",
-        "description": "Pac man is an arcade game created in 1980",
+        "description": "Pac man is an arcade game created in 1980, this is an iconic game that deserves to be played even today (be aware ! could be addicting)",
         "href": "html/gen2_pac_man/pac_man.html",
         "picture": "html/gen2_pac_man/media/pac_man.gif",
         "product": "Pac Man"

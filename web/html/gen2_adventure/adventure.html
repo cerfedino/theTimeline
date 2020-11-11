@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>GENERATION - PRODUCT</title>
+    <title>Gen2 - Adventure</title>
 
     <!-- put your name here -->
     <meta name="author" content="Daniel Gelman">
     <!-- put page info here -->
-    <meta name="date" content="1979-01-01"> <!-- the date the product was launched -->
+    <meta name="date" content="1979-01-01">
+    <!-- the date the product was launched -->
     <meta name="generation" content="gen2">
     <meta name="product" content="Adventure">
-    <meta name="description" content="Adventure is an arcade game created in 1979"> <!-- a short description of the product -->
-    <meta name="picture" content="media/adventure_game.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="description" content="Adventure is an arcade game created in 1979. Did you know that this is game is the inspiration behind the legend of Zelda? Me neither. But I will tell you more!">
+    <!-- a short description of the product -->
+    <meta name="picture" content="media/adventure_game.gif">
+    <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
@@ -19,47 +23,54 @@
     <link rel="stylesheet" id="generation-style" href="../../styles/gen2/style.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
-      :root{
-        /* these are the background images (left and right) */
-        --background-image-left: url( "media/black.jpg" );
-        --background-image-right: url( "media/black.jpg" );
-        /* this is the fading color between the images */
-        --background-fade-color: rgb(243, 143, 12);
-
-        /* this is the title image that will be shown at the top of the page */
-        --banner-image: url( "media/adventure_logo_2.jpg" );
-        /* this is the color behind the image (visible only if the image has transparence) */
-        --banner-color: rgb(0, 0, 0);
-
-        /* the audio file that will be played */
-        /* --audio-file: url( "media/sound.mp3" ); */
-
-        /* the container parameters */
-        --container-background-color: rgb(0, 0, 0);
-        --container-text-color:  rgb(255, 255, 255);
-        --container-border-color:rgb(243, 143, 12);
-
-        /* the index parameters */
-        --index-background-color: rgb(0, 0, 0);
-        --index-text-color: rgb(255, 255, 255);
-        --index-border-color:rgb(243, 143, 12);
-
-        /* text styles parameters */
-        --link-color-hover: rgb(243, 143, 12);
-
-        /* content scrollbar */
-        --scrollbar-thumb: rgb(243, 143, 12);
-      }
-
-      /* your style here */
-      /* .best-div-ever{
-        display: none;
-      } */
+         :root {
+            /* these are the background images (left and right) */
+            --background-image-left: url("media/black.jpg");
+            --background-image-right: url("media/black.jpg");
+            /* this is the fading color between the images */
+            --background-fade-color: rgb(243, 143, 12);
+            /* this is the title image that will be shown at the top of the page */
+            --banner-image: url("media/adventure_logo_2.jpg");
+            /* this is the color behind the image (visible only if the image has transparence) */
+            --banner-color: rgb(0, 0, 0);
+            /* the audio file that will be played */
+            /* --audio-file: url( "media/sound.mp3" ); */
+            /* the container parameters */
+            --container-background-color: rgb(0, 0, 0);
+            --container-text-color: rgb(255, 255, 255);
+            --container-border-color: rgb(243, 143, 12);
+            /* the index parameters */
+            --index-background-color: rgb(0, 0, 0);
+            --index-text-color: rgb(255, 255, 255);
+            --index-border-color: rgb(243, 143, 12);
+            /* text styles parameters */
+            --link-color-hover: rgb(243, 143, 12);
+            /* content scrollbar */
+            --scrollbar-thumb: rgb(243, 143, 12);
+        }
+        
+        .button {
+            border-color: var(--container-border-color);
+        }
+        
+        .game-container {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .game {
+            height: 50vh;
+        }
+        
+        #s3 {
+            text-align: center;
+        }
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
-  </head>
-  <body onload="onload();">
+</head>
+
+<body onload="onload();">
     <!-- the backgrounds -->
     <div class="bg" id="bg-left"></div>
     <div class="bg" id="bg-right"></div>
@@ -68,56 +79,65 @@
     <div class="button" id="sound-button"></div>
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
-      <ol>
-        <li><a href="#s1">Introduction</a>
-          <ol>
-            <li><a href="#s1.1">History and contex</a></li>
-            <li><a href="#s1.2">Gameplay</a></li>
-          </ol>
-        </li>
-        <li><a href="#s2">Success</a>
-          <ol>
-            <li><a href="#s2.1">Market Impact</a></li>
-          </ol>
-        </li><a href="#s3">The game</a></li>
-      </ol>
+        <ol>
+            <li><a href="#s1">Introduction</a>
+                <ol>
+                    <li><a href="#s1.1">History and contex</a></li>
+                    <li><a href="#s1.2">Gameplay</a></li>
+                </ol>
+            </li>
+            <li><a href="#s2">Success</a>
+                <ol>
+                    <li><a href="#s2.1">Market Impact</a></li>
+                </ol>
+            </li><a href="#s3">The game</a></li>
+        </ol>
     </div>
     <div id="container">
-      <div id="banner">
-        <img alt="Banner Image">
-      </div>
-      <div id="content">
-        <h2 id="s1">Introduction</h2>
-        <h3 id="s1.1">History and contex</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          Adventure is a video game developed by Warren Robinett for the Atari 2600 and released in 1980 by Atari, Inc. <br>
-          Robinett spent one year coding and designing the game. <i>Adventure</i> is considered the first adventure-action game in history of video games, as well as the first game having an easter egg in it.
-          
-        </p>
-        <h3 id="s1.2">Gameplay</h3>
-        <p> <b></b> <i></i></p>
-        <p>
-          So what's the game about?  <br>
-          The goal is to find a magic chalice and to bring it to the golden castle. The player in the game is a square which explores a world of castles, labyrinths and rooms.
-          The player has to find different objects that are necessary to complete the game. Those objects are a sword, 3 keys and a magnet. 
-          In the game there are 3 dragons: <ol>
-            <li>Yorgie (yellow dragon)</li>
-            <li>Grundie (green dragon)</li>
-            <li>Rhindle (red dragon)</li>
-          </ol>  
-          Those dragon can and have to be killed using the sword. 
-        </p>
-        <p></p>
-        <h2 id="s2">Success</h2>
-        <h3 id="s2.1">Market Impact</h3>
-        The game sold over 1 milion copies becoming the 7th best seller game for the Atari 2600 console. <br>
-        Adventure was considered an innovative and original game at the time, especially for the ambientation (castles, swords, labyrints, etc.). In fact the game was sort of an inspiration for future generation games like the legend of Zelda and Final Fantasy.
-        Another new concept was, as written in the introduction, the easter egg. Robinnet, without telling anyone, embedded the sentence "created by Warren Robinett" in one of the rooms of the game. 
-        The reason behind that massage was because Atari removed the credit of developers from the game to prevent competitors to recruit them.    
-        <p> <b></b> <i></i></p>
-        <h2 id="s3">The game</h2>
-      </div>
-    </div>
-  </body>
+        <div id="banner">
+            <img alt="Banner Image">
+        </div>
+        <div id="content">
+            <h2 id="s1">Introduction</h2>
+            <h3 id="s1.1">History and contex</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                Adventure is a video game developed by Warren Robinett for the Atari 2600 and released in 1980 by Atari, Inc. Robinett spent one-year coding and designing the game. Adventure is considered the first adventure-action game in the history of video games,
+                as well as the first game having an easter egg in it.
+
+            </p>
+            <h3 id="s1.2">Gameplay</h3>
+            <p> <b></b> <i></i></p>
+            <p>
+                So what's the game about? <br> The goal is to find a magic chalice and to bring it to the golden castle. The player in the game is a square that explores a world of castles, labyrinths and rooms. The player has to find different objects
+                that are necessary to complete the game. Those objects are a sword, 3 keys and a magnet. In the game there are 3 dragons:
+                <ol>
+                    <li>Yorgie (yellow dragon)</li>
+                    <li>Grundie (green dragon)</li>
+                    <li>Rhindle (red dragon)</li>
+                </ol>
+                Those dragon can and have to be killed using the sword.
+            </p>
+            <p></p>
+            <h2 id="s2">Success</h2>
+            <h3 id="s2.1">Market Impact</h3>
+            The game sold over 1 milion copies becoming the 7th best-seller game for the Atari 2600 console. Adventure was considered an innovative and original game at the time, especially for the setting (castles, swords, labyrinths, etc.). In fact, the game was
+            sort of an inspiration for future generation games like the legend of Zelda and Final Fantasy. Another new concept was, as written in the introduction, the Easter egg. Robinnet, without telling anyone, embedded the sentence "created by Warren
+            Robinett" in one of the rooms of the game. The reason behind that massage was because Atari removed the credit of developers from the game to prevent competitors to recruit them.
+            <p> <b></b> <i></i></p>
+
+            <!-- Iframe of the game -->
+            <br>
+            <h2 id="s3">The game</h2>
+            <br>
+            <div class="game-container">
+                <img class="game" src="media/adventure_game_website.gif" alt="gameplay gif">
+
+                <div class="footer">
+                    <p>@ Daniel Gelman</p>
+                </div>
+            </div>
+        </div>
+</body>
+
 </html>
