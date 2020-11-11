@@ -42,11 +42,22 @@
         /* the audio file that will be played */
         --audio-file: url( "media/sound.m4a" );
       }
+      img {
+          width: 75%;
+      }
 
-      /* your style here */
-      /* .best-div-ever{
-        display: none;
-      } */
+     .img-container{
+          text-align: center;
+      }
+
+     .text-img{
+         display:table-cell;
+         vertical-align:middle;
+     }
+
+     .text-img#text {
+         width: 75%;
+     }
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
@@ -74,49 +85,68 @@
     </div>
     <div id="container">
       <div id="banner">
-        <img alt="Banner Image">
+        <img alt="Banner Image" style="width:auto">
       </div>
       <div id="content">
-          <p id="intro"><i>Castlevania</i>, known in Japan as <i><b>Akumajō Dracula</b></i>
-          (lit. "Devil's Castle Dracula") is the first game of the same series
-          name. It's about a vampire hunter, who's name is Simon Belmont, who
-          goes after the vampire Count Dracula, because of an old feud between
-          Simon's ancestor and the vampire, with a whip brimming with holy power
-          from his father.</p>
-
-          <h2 id="story">Story</h2>
-          <p>In 1591, Christopher Belmond, a vampire hunter, vanquished Count
-          Dracula with the holy whip named Vampire Killer. The land of
-          Transylvania enjoyed the victory and prospered for one hundred years.
-          However, as it occurs every hundred years, the power of Jesus is
-          weakened, so that's why, during the Easter celebration of 1691, the
-          heart of men turned black as they yarned for chaos and destruction.
-          For this reason, they sought to revive Count Dracula so he may spread
-          chaos and ruination throughout the world, and they succeeded.
-          </p>
+          <div class="text-img" id="text">
+              <p id="intro"><i>Castlevania</i>, known in Japan as <i><b>Akumajō Dracula</b></i>
+              (lit. "Devil's Castle Dracula") is the first game of the same series
+              name. It's about a <b>vampire hunter</b>, who's name is <b>Simon Belmont</b>, who
+              goes after the vampire <b>Count Dracula</b>, because of an old feud between
+              Simon's ancestor and the vampire, with a whip brimming with <b>holy power
+              from his father</b>.</p>
+              
+              <h2 id="story">Story</h2>
+              <p>In 1591, Christopher Belmond, a vampire hunter, vanquished Count
+              Dracula with the holy whip named <b>Vampire Killer</b>. The land of
+              <b>Transylvania</b> enjoyed the victory and prospered for one hundred years.
+              However, as it occurs <b>every hundred years</b>, the power of Jesus is
+              weakened, so that's why, during the Easter celebration of 1691, the
+              heart of men turned black as they yarned for chaos and destruction.
+              For this reason, they sought to <b>revive Count Dracula</b> so he may spread
+              chaos and ruination throughout the world, and they succeeded.
+              </p>
+          </div>
+          <div class="text-img img-container">
+              <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Castlevania_1_cover.png/220px-Castlevania_1_cover.png"
+              alt="cover"/>
+          </div>
           <p>Simon Belmont, the descendant of Christopher Belmont and present
-          bearer of the Vampire Killer whip, came to knowledge that Count
+          bearer of the Vampire Killer whip, came to the knowledge that Count
           Dracula was revived and knew it was his duty to slay the vampire, even
-          though it was known that Dracula grown in power with each
-          resurrection. Simon proved himself a mighty vampire hunter by
+          though it was known that <b>Dracula grew in power with each
+          resurrection</b>. Simon proved himself a mighty vampire hunter by
           withstanding the monsters and traps of Dracula's castle, and in then,
           although thoroughly injured, was able to slay Count Dracula.</p>
 
           <h2 id="gameplay">Gameplay</h2>
-          <h3 id="stages">Stages</h3>
-          <p>
-          <i>Castlevania</i> is an action platformer that emphasizes precision
-          and timing. There are six linear stages with a boss at the end of
-          each stage. Throughout the stages are present enemies that are
-          typically taken from horror literature, lore and film. These try to
-          take advantage of the environment, as their attacks usually inflicts
-          knock back, they attempt to push Simon down pits and other traps, that
-          cause instant defeat. As the player progresses further into the game,
-          the enemies grow stronger and deal more damage, eventually to the
-          point where they can defeat Simon in only four hits.</p>
-          <p>Completing a stage rewards players point, the quicker the player
-          clears the stage, the more points are earned. When a certain number is
-          gained, the player gains extra lives.</p>
+
+          <div class="text-img" id="text">
+              <h3 id="stages">Stages</h3>
+              <p>
+              <i>Castlevania</i> is an action platformer that emphasizes <b>precision</b>
+              and <b>timing</b>. There are six linear stages with a boss at the end of
+              each stage. Throughout the stages are present enemies that are
+              typically taken from horror literature, lore, and film. These try to
+              take advantage of the environment, as their attacks usually inflict
+              <b>knockback</b>, they attempt to push Simon down <b>pits</b> and other traps, that
+              cause <b>instant defeat</b>. As the player progresses further into the game,
+              <b>the enemies grow stronger</b> and deal more damage, eventually to the
+              point where they can defeat Simon in only four hits.</p>
+          </div>
+          <div class="img-container text-img">
+              <img src="http://media-cache-ec0.pinimg.com/736x/71/89/ba/7189ba63dabbc68413892c4199530b05.jpg"
+              alt="stage"/>
+          </div>
+          <p>Completing a stage rewards players point, the <b>quicker</b> the player
+          clears the stage, the <b>more points</b> are earned. When a certain number is
+          gained, the player <b>gains extra lives</b>.</p>
+
+          <div class="img-container">
+              <img src="https://i.ytimg.com/vi/heRcpqTRceE/maxresdefault.jpg"
+              alt="stage"/>
+          </div>
 
           <h3 id="weapons">Weapons</h3>
           <p>Simon has multiple weapons at his disposition:
@@ -126,19 +156,26 @@
               <li>Stopwatch (sub-weapon).</li>
           </ol>
           </p>
-          <p>The whip deals damage over a shot distance in front of the character,
-          both the strength and the length can be upgraded with items that can
-          be found by striking candelabras or killing certain enemies.</p>
-          <p>The boomerang is thrown straight ahead and crosses the length of
-          the screen before returning to the point where it was thrown.</p>
-          <p>The stopwatch halts enemy movement over a short period of time.</p>
-          <p>Both sub-weapons cost hearts to use and only one can be carried at
+
+          <p>The whip deals damage over a short distance in front of the
+          character, both the <b>strength</b> and the <b>length</b> can be
+          <b>upgraded</b> with items that can be found by striking candelabras
+          or killing certain enemies.</p>
+
+          <p>The boomerang is thrown straight ahead and <b>crosses the length of
+          the screen</b> before returning to the point where it was thrown.</p>
+          <p>The stopwatch <b>halts enemy movement</b> over a short period of time.</p>
+          <p>Both sub-weapons <b>cost hearts</b> to use and <b>only one</b> can be carried at
           a time by Simon.</p>
 
           <h3 id="second_quest">Second Quest</h3>
-          After beating the game, players return to the first stage while
-          retaining their weapons and scores. They can attempt to complete the
-          game once again but they will face stronger enemies.
+          <p>After beating the game, players return to the first stage while
+             retaining their weapons and scores. They can attempt to complete the
+             game once again but they will face <b>stronger enemies</b>.</p>
+          
+        <div class="footer">
+          <p>@Arnaud Fauconnet</p>
+        </div>
       </div>
     </div>
   </body>
