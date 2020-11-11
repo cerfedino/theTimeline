@@ -368,7 +368,7 @@ let pages =
         "date": "1992-10-8",
         "description": "Mortal Kombat, Fighting Game",
         "href": "html/gen5_mortal_kombat/Mortal_Kombat.html",
-        "picture": "html/gen5_mortal_kombat/media/placeholder.gif",
+        "picture": "html/gen5_mortal_kombat/media/ga.gif",
         "product": "Mortal Kombat"
       },
       {
@@ -392,7 +392,7 @@ let pages =
         "date": "1996-03-22",
         "description": "Resident Evil, horror video game",
         "href": "html/gen5_resident_evil/Resident_Evil.html",
-        "picture": "html/gen5_resident_evil/media/placeholder.gif",
+        "picture": "html/gen5_resident_evil/media/RE.gif",
         "product": "Resident Evil"
       },
       {
@@ -444,7 +444,7 @@ let pages =
         "date": "2002-05-01",
         "description": "Third chapter of the Elder Scrolls",
         "href": "html/gen6_the_elder_scrolls_iii:_morrowind/the_elder_scrolls_iii:_morrowind.html",
-        "picture": "html/gen6_the_elder_scrolls_iii:_morrowind/media/tes_3.gif",
+        "picture": "html/gen6_the_elder_scrolls_iii:_morrowind/media/tes3.gif",
         "product": "The Elder Scrolls III: Morrowind"
       },
       {
@@ -460,7 +460,7 @@ let pages =
         "date": "2004-11-23",
         "description": "The first big MMORPG",
         "href": "html/gen6_world_of_warcraft/world_of_warcraft.html",
-        "picture": "html/gen6_world_of_warcraft/media/wow_lich.gif",
+        "picture": "html/gen6_world_of_warcraft/media/wow.gif",
         "product": "World of Warcraft"
       }
     ]
