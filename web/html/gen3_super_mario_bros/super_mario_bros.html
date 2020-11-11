@@ -25,14 +25,32 @@
         /* this is the color behind the image (visible only if the image has transparence) */
         --banner-color: #1286CE;
 
+        --container-text-color: #4a75ca;
+        --index-text-color: #4a75ca;
+
         /* the audio file that will be played */
         --audio-file: url( "media/sound.m4a" );
       }
       html {
         background: url( "https://www.desktopbackground.org/download/1920x1080/2015/03/08/913837_15-quality-super-mario-bros-wallpapers-video-games_7680x4320_h.png" );
-        background-size: auto;
-        background-repeat: no-repeat;
+        background-size: cover;
       }
+      img {
+          width: 50%;
+      }
+     .img-container{
+          text-align: center;
+      }
+
+     .text-img{
+         display:table-cell;
+         vertical-align:middle;
+     }
+
+     .text-img#text {
+         width: 75%;
+     }
+
     </style>
     <!-- this is the script file for all the onload operations -->
     <script src="../../script/onload.js"></script>
@@ -51,7 +69,12 @@
         <li><a href="#story">Story</a>
         <li><a href="#sellings">Selling</a>
           <ol>
-            <li><a href="#s2.1">Sub section 1</a></li>
+            <li><a href="#three_months">Three months after release</a></li>
+            <li><a href="#second_position">Second position</a></li>
+            <li><a href="#first_place">First place</a></li>
+            <li><a href="#downwards_hill">Downwards hill</a></li>
+            <li><a href="#back_to_third_place">Back to third place</a></li>
+            <li><a href="#today">Today</a></li>
           </ol>
         </li>
       </ol>
@@ -63,101 +86,148 @@
       <div id="content">
           <h1>Super Mario Bros.</h1>
           <h2 id="intro"></h2>
-          <p><i>Super Mario Bros.</i> was an influential and groundbreaking game created
-          created by Nintendo and released on the NES in September 1985 in
-          Japan. It was a game changer for the platformer style game, thanks to
-          it bright, expansive worlds.</p>
+          <div class="text-img" id="text">
 
-          <p>Although the game is often credited as the first scrolling
+          <p cite="https://zelda.gamepedia.com/The_Legend_of_Zelda"><i>Super
+              Mario Bros.</i> was an influential and groundbreaking game
+          created by Nintendo and released on the NES in September 1985 in
+          Japan. It was a <b>game-changer for the platformer style game</b>,
+          thanks to its bright, expansive worlds.</p>
+
+          <p cite="https://zelda.gamepedia.com/The_Legend_of_Zelda">Although the game is often credited as the first scrolling
           platformer (there were half a dozen earlier), it is the first console
           original in this genre to feature smooth-scrolling levels, which made
-          it a landmark in home video-gaming.</p>
-
+          it a landmark in home video-gaming.</p></div>
+          <div class="img-container text-img">
+              <img
+                  src="https://www.mariowiki.com/images/thumb/a/a9/SMB_Boxart.png/1200px-SMB_Boxart.png"
+                  alt="Super Mario Bros Cover"/>
+          </div>
+          <div class="img-container"> <img
+              src="http://vignette2.wikia.nocookie.net/logopedia/images/c/cf/Super-mario-bros-logo.jpg/revision/latest?cb=20160216211236"
+              alt="Super Mario Bros. player select screen"
+              cite="http://vignette2.wikia.nocookie.net/logopedia/images/c/cf/Super-mario-bros-logo.jpg/revision/latest?cb=20160216211236"
+              />
+          </div>
           <h2 id="story">Story</h2>
-          <p>The story wasn't the part of the game that was the most developed. It
-          is a simple structure that was used in most of the future Mario games,
+          <div class="text-img" id="text">
+              
+          <p cite="https://zelda.gamepedia.com/The_Legend_of_Zelda">The story wasn't the part of the game that was the most developed. It
+          is a <b>simple structure</b> that was used in most of the future Mario games,
           each one with some slight variations:
           <ol>
               <li>Bowser kidnaps Princess Peach;</li>
               <li>Mario must roam the Mushroom Kingdom and defeat Bowser for the
               last time;</li>
               <li>Mario saves Peach and gets a kiss.</li>
-          </ol></p>
+          </ol></p></div>
+          <div class="img-container text-img">
+              <img src="http://cdn.lowgif.com/full/3a0fc1954758dcdc-1-up-mario-peach-nintendo-the-true-factory-of-dreams-and-fun.gif"
+              alt="Peach kissing Mario"/>
+          </div>
 
           <h2 id="gameplay">Gameplay</h2>
-          <p>The goal of the game is as Mario, or Luigi in the case of a
-          second player, to go through the Mushroom Kingdom, defeat the enemies
-          to ultimately fight Bowser and save Princess Peach. The main way Mario
+          <p cite="https://zelda.gamepedia.com/The_Legend_of_Zelda">The goal of the game is as Mario, or Luigi in the case of a
+          second player, to go through the <b>Mushroom Kingdom</b>, defeat the enemies
+          to ultimately fight <b>Bowser</b> and save <b>Princess Peach</b>. The main way Mario
           can defeat enemies is by jumping on top of ("Stomping") them. This
-          actions kills enemies known as Gumbas, and send the turtle soldiers
-          known as Koopas Troopas into their shells, which Mario and Luigi can
+          action kills enemies known as <b>Gumbas</b>, and send the turtle soldiers
+          known as <b>Koopas Troopas</b> into their shells, which Mario and Luigi can
           then kick into other enemies. These shells will conveniently dispatch
-          the enemies they kick into, but on the other side, can bounce back off walls
+          the enemies they kick into, but on the other side, can <b>bounce back off walls</b>
           or others vertical obstacles, and come back into our protagonists,
-          hurting them in their way. </p>
-          <p>Mario or Luigi can be hurt if they touch an enemy, but they can
-          encounter objects known for being power-ups:
-          <ol>
-              <li>1-up: causes Mario to gain a life;</li>
-              <li>Super Mushroom: causes mini Mario (also known as "Regular
-                  Mario) to grow (becomes Super Mario);</li>
-              <li>Fire Flower: causes Super Mario to have the ability to shoot
-              fire balls;</li>
-              <li>Starman: causes Mario to be impervious to the touch of enemy
-                  characters and most obstacles.</li>
-          </ol></p>
-          If Super Mario or Fire Mario takes a ht from an enemy, then he reverts
-          back to Regular Mario, and at his turn, if Regular Mario takes a hit
-          then he loses a life and starts again. However, regardless of status,
-          if Mario falls down into a pit, into lava or if the timer runs out
-          then he loses a life and starts again, either from the start of from
-          an invisible checkpoint partway through the level.
+          <b>hurting them</b> in their way. </p>
+          <p cite="https://zelda.gamepedia.com/The_Legend_of_Zelda">Mario or Luigi can be hurt if they touch an enemy, but they can
+          encounter objects known for being power-ups:</p>
+          <div class="text-img">
+              <ol>
+                  <li><b>1-up</b>: causes Mario to gain a life;</li>
+                  <li><b>Super Mushroom</b>: causes mini Mario (also known as "Regular
+                      Mario") to grow (becomes Super Mario);</li>
+                  <li><b>Fire Flower</b>: causes Super Mario to have the ability to shoot
+                      fireballs;</li>
+                  <li><b>Starman</b>: causes Mario to be impervious to the touch of enemy
+                      characters and most obstacles.</li>
+              </ol>
+          </div>
+          <div class="img-container text-img">
+              <img style="border:none" src="https://i.pinimg.com/originals/89/88/5f/89885f5afec93f80cf5c6cf95debbdee.gif"
+                  alt="Mario's forms"/>
+          </div>
+          <p cite="https://zelda.gamepedia.com/The_Legend_of_Zelda">If Super
+          Mario or Fire Mario takes a hit from an enemy, then he reverts to
+          Regular Mario, and at his turn, if Regular Mario takes a hit then he
+          loses a life and starts again. However, regardless of status, if Mario
+          <b>falls down into a pit</b>, into <b>lava</b>, or if <b>the timer runs
+          out</b> then he loses a life and <b>starts again</b>, either from the
+          start off from an invisible checkpoint partway through the level.</p>
 
           <h2 id="sellings">Selling</h2>
-          <p>The game, at his time, broke a lot of records when we talk about
-          selling. To set some context, here is the top five best selling games, with
+          <p cite="https://www.youtube.com/watch?v=PAJ7a4mULXA
+          https://en.wikipedia.org/wiki/List_of_best-selling_video_games">The
+          game, at his time, <b>broke a lot of records</b> when we talk about selling.
+          To set some context, here are the top five best selling games, with
           their respective number of units sold, at the time <i>Super Mario
           Bros.</i> came out:
             <ol>
-                <li>Pac Man - 12.000.000 units</li>
-                <li>Space Invaders - 5.750.000 units</li>
-                <li>Frogger - 4.100.000 units</li>
-                <li>Mario Bros. - 3.850.000 units</li>
-                <li>Tetris - 3.200.000 units</li>
+                <li><i>Pac Man</i> - 12.000.000 units</li>
+                <li><i>Space Invaders</i> - 5.750.000 units</li>
+                <li><i>Frogger</i> - 4.100.000 units</li>
+                <li><i>Mario Bros.</i> - 3.850.000 units</li>
+                <li><i>Tetris</i> - 3.200.000 units</li>
             </ol> 
+
+          <h3 id="three_months">Three months after release</h3>
           The game such a success that no more than three months after it was
-          released, it enters the top five with 3.800.000 units, taking the
-          place of <i>Tetris</i>. It also stopped <i>Mario Bros.</i> from being
+          released, it enters the top five with <b>3.800.000 units</b>, taking the
+          place of <i>Tetris</i>. It also progressively stopped <i>Mario
+              Bros.</i> from being sold.</p>
+
+
+          <h3 id="second_position">Second position</h3>
+
+          <p cite="https://www.youtube.com/watch?v=PAJ7a4mULXA
+          https://en.wikipedia.org/wiki/List_of_best-selling_video_games">Six
+          months after its release, <i>Super Mario Bros.</i> arrives in the second
+          position of the best selling game with <b>6.300.000 units</b>, getting in
+          front of <i>Space Invaders</i> and behind <i>Pac Man</i> which is at
+          12.500.000.</p>
+
+          <h3 id="first_place">First place</h3>
+
+          <p cite="https://www.youtube.com/watch?v=PAJ7a4mULXA
+          https://en.wikipedia.org/wiki/List_of_best-selling_video_games">It
+          takes a little <b>less than two years</b> for <i>Super Mario Bros.</i>
+          to become the <b>best selling</b> game of <b>all time</b> (up until
+          August 1987). It passes <i>Pac Man</i> with <b>14.000.000 units</b>
+          and stays in front, gaining a worthy advantage, because two years later,
+          it has <b>doubled its units</b>.</p> 
+
+          <h3 id="downwards_hill">Downwards hill</h3>
+          <p cite="https://www.youtube.com/watch?v=PAJ7a4mULXA
+          https://en.wikipedia.org/wiki/List_of_best-selling_video_games">In
+          March 1993, over <b>seven years</b> after it's release and five of
+          being the best selling video game, <i>Super Mario Bros.</i> loses
+          its first place and is passed by <i>Tetris</i> with <b>48.000.000 units</b>
           sold.</p>
-          <p>Six months after it's release, <i>Super Mario Bros.</i> arrives in
-          second position of best selling game with 6.300.000 units, getting in
-          front of <i>Space Invaders</i> and behind <i>Pac Man</i> which is at 12.500.000.</p>
-          <p>It takes a little less than two years for <i>Super Mario Bros.</i>
-          to become the best selling game of all time (up until August 1987). It
-          passes <i>Pac Man</i> with 14.000.000 units and stay in front, gaining
-          worthy advantage, because two years later, it has doubled it's
-          units.</p> 
-          <p>In March 1993, over seven years after it's release and five of
-          being the best selling video game, <i>Super Mario Bros.</i> looses
-          it's first place and is passed by <i>Tetris</i> with 48.000.000 units
-          sold.</p>
-          <p>In June 2009, the game loose yet again a place in the charts, since
-          it falls behind <i>Wii Sports</i>, in third place, at 48.150.000
-          units.</p>
-          <p>
-          In 2020, <i>Super Mario Bros.</i> is still up on the charts, though
-          not selling a lot, standing with 48.240.000 sales at sixth place,
-          behind <i>Minecraft</i>, <i>Grand Theft Auto V</i>,  <i>Tetris</i>,
-          <i>Wii Sports</i> and <i>PlayerUnkown's Battleground</i>.
+
+          <h3 id="back_to_third_place">Back to third place</h3> <p
+          cite="https://www.youtube.com/watch?v=PAJ7a4mULXA
+          https://en.wikipedia.org/wiki/List_of_best-selling_video_games">In
+          June 2009, after <b>25 years of existence</b>, the game loses yet
+          again a place in the charts, since it falls behind <i>Wii Sports</i>,
+          in third place, at <b>48.150.000 units</b>.</p>
+
+          <h3 id="today">Today</h3>
+
+          <p cite="https://www.youtube.com/watch?v=PAJ7a4mULXA
+          https://en.wikipedia.org/wiki/List_of_best-selling_video_games"> In
+          2020, <i>Super Mario Bros.</i> is still up on the charts, though
+          not selling a lot, standing with <b>48.240.000 sales</b> in
+          <b>sixth place</b>, behind <i>Minecraft</i>, <i>Grand Theft
+          Auto V</i>, <i>Tetris</i>, <i>Wii Sports</i>, and <i>PlayerUnknown's
+          Battleground</i>.
           </p>
-          <hr>
-          <footer>
-              <ol>
-                  <li><a href="https://zelda.gamepedia.com/The_Legend_of_Zelda">Super Mario Bros. - Source</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=PAJ7a4mULXA">Selling - Source 1</a></li>
-                  <li><a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">Selling - Source 2</a></li>
-              </ol>
-          </footer>
       </div>
     </div>
   </body>
