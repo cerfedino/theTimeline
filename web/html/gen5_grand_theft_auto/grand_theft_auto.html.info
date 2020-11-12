@@ -1,5 +1,0 @@
-Error: Element “img” is missing required attribute “src”.
-From line 96, column 9; to line 96, column 32 in resource file: pub/web/html/gen5_grand_theft_auto/grand_theft_auto.html
-Error: No “p” element in scope but a “p” end tag seen.
-From line 155, column 9; to line 155, column 12 in resource file: pub/web/html/gen5_grand_theft_auto/grand_theft_auto.html
-Document checking completed.

@@ -1,7 +1,0 @@
-Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.
-From line 152, column 9; to line 152, column 193 in resource file: pub/web/html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html
-Error: Bad value “media/treasure ocations.jpg” for attribute “src” on element “img”: Illegal character in path segment: space is not allowed.
-From line 161, column 9; to line 161, column 117 in resource file: pub/web/html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html
-Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.
-From line 173, column 11; to line 173, column 220 in resource file: pub/web/html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html
-Document checking completed.

@@ -1,5 +1,0 @@
-Error: Element “img” is missing required attribute “src”.
-From line 96, column 9; to line 96, column 32 in resource file: pub/web/html/gen5_nintendo_64/nintendo_64.html
-Error: No “p” element in scope but a “p” end tag seen.
-From line 161, column 9; to line 161, column 12 in resource file: pub/web/html/gen5_nintendo_64/nintendo_64.html
-Document checking completed.

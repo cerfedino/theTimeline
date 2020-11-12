@@ -1,9 +1,0 @@
-Error: Element “ol” not allowed as child of element “ol” in this context. (Suppressing further errors from this subtree.)
-From line 79, column 11; to line 79, column 14 in resource file: pub/web/html/gen7_battlefield_bad_company/battlefield_bad_company.html
-Error: Element “img” is missing required attribute “src”.
-From line 86, column 9; to line 86, column 32 in resource file: pub/web/html/gen7_battlefield_bad_company/battlefield_bad_company.html
-Error: Duplicate ID “s2.1”.
-From line 123, column 9; to line 123, column 22 in resource file: pub/web/html/gen7_battlefield_bad_company/battlefield_bad_company.html
-Warning: The first occurrence of ID “s2.1” was here.
-From line 119, column 9; to line 119, column 22 in resource file: pub/web/html/gen7_battlefield_bad_company/battlefield_bad_company.html
-Document checking completed.

@@ -1,7 +1,0 @@
-Error: Element “img” is missing required attribute “src”.
-From line 93, column 11; to line 93, column 53 in resource file: pub/web/html/gen3_the_legend_of_zelda/the_legend_of_zelda.html
-Error: Duplicate ID “text”.
-From line 150, column 11; to line 150, column 42 in resource file: pub/web/html/gen3_the_legend_of_zelda/the_legend_of_zelda.html
-Warning: The first occurrence of ID “text” was here.
-From line 97, column 11; to line 97, column 42 in resource file: pub/web/html/gen3_the_legend_of_zelda/the_legend_of_zelda.html
-Document checking completed.

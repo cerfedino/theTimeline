@@ -1,7 +1,0 @@
-Error: Element “img” is missing required attribute “src”.
-From line 87, column 9; to line 87, column 32 in resource file: pub/web/html/gen5_resident_evil/Resident_Evil.html
-Error: Bad value “100%” for attribute “width” on element “iframe”: Expected a digit but saw “%” instead.
-From line 148, column 9; to line 148, column 92 in resource file: pub/web/html/gen5_resident_evil/Resident_Evil.html
-Error: Bad value “500px” for attribute “height” on element “iframe”: Expected a digit but saw “p” instead.
-From line 148, column 9; to line 148, column 92 in resource file: pub/web/html/gen5_resident_evil/Resident_Evil.html
-Document checking completed.

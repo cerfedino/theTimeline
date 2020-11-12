@@ -1,9 +1,0 @@
-Error: Element “img” is missing required attribute “src”.
-From line 87, column 9; to line 87, column 51 in resource file: pub/web/html/gen3_castlevania/castlevania.html
-Error: Duplicate ID “text”.
-From line 124, column 11; to line 124, column 42 in resource file: pub/web/html/gen3_castlevania/castlevania.html
-Warning: The first occurrence of ID “text” was here.
-From line 90, column 11; to line 90, column 42 in resource file: pub/web/html/gen3_castlevania/castlevania.html
-Error: No “p” element in scope but a “p” end tag seen.
-From line 157, column 11; to line 157, column 14 in resource file: pub/web/html/gen3_castlevania/castlevania.html
-Document checking completed.
