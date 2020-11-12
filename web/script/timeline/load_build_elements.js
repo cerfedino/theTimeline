@@ -26,68 +26,64 @@ delete pages['-1'];
 console.debug(pages);
 
 // ============================================================================= NAVMENU CONTENT GENERATION
-function generate_navmenu_content(){
+//Returns the generated left pane of the navmenu
+function generate_left_pane(){
 
-    let navmenu = new_el('tr');
+  let left_pane = new_el('div');
+  left_pane.setAttribute( 'id', 'leftpane');
 
-    //Returns the generated left pane of the navmenu
-    function generate_left_pane(){
+  let ul = new_el('div');
+  left_pane.appendChild( ul );
 
-      let left_pane = new_el('td');
-      left_pane.setAttribute( 'id', 'leftpane');
+  // For every generation a navmenu generation label is generated
+  Object.keys( pages ).forEach( (gen_name) => {
 
-      let ul = new_el('ul');
-      left_pane.appendChild( ul );
+    let li = new_el('div');
+    li.classList.add('navmenu-entry');
+    li.classList.add('gen');
+    li.setAttribute( 'href', gen_name );
+    ul.appendChild( li );
 
-      // For every generation a navmenu generation label is generated
-      Object.keys( pages ).forEach( (gen_name) => {
+    let p = new_el('p');
+    p.innerText = gen_name;
+    li.appendChild( p );
+  });
 
-        let li = new_el('li');
-        li.classList.add('navmenu-entry');
-        li.classList.add('gen');
-        li.setAttribute( 'href', gen_name );
-        li.innerText = gen_name;
-        ul.appendChild( li );
-      });
+  return left_pane;
+}
 
-      return left_pane;
-    }
+//Returns the generated right pane of the navmenU
+function generate_right_pane(){
 
-    //Returns the generated right pane of the navmenU
-    function generate_right_pane(){
+  let right_pane = new_el('div');
+  right_pane.setAttribute( 'id', 'rightpane');
 
-      let right_pane = new_el('td');
-      right_pane.setAttribute( 'id', 'rightpane');
+  // For every generation, an unordered list is generated
+  Object.keys( pages ).forEach( (gen_name) => {
 
-      // For every generation, an unordered list is generated
-      Object.keys( pages ).forEach( (gen_name) => {
+    let ul = new_el('div');
+    ul.classList.add( gen_name );
 
-        let ul = new_el('ul');
-        ul.classList.add( gen_name );
+    right_pane.appendChild(ul);
 
-        right_pane.appendChild(ul);
+    // For every page in the generation, a list item is generated
+    pages[ gen_name ].pages.forEach(( page ) => {
 
-        // For every page in the generation, a list item is generated
-        pages[ gen_name].pages.forEach(( page ) => {
+      let li = new_el('div');
+      li.classList.add( 'navmenu-entry' );
+      li.classList.add( 'page' );
+      li.setAttribute( 'href', page.href );
+      ul.appendChild( li );
 
-          let li = new_el('li');
-          li.classList.add( 'navmenu-entry' );
-          li.classList.add( 'page' );
-          li.setAttribute( 'href', page.href );
-          li.innerText = page.product;
+      let p = new_el('p');
+      p.innerText = page.product;;
+      li.appendChild( p );
 
-          ul.appendChild(li);
-        });
-      });
+      ul.appendChild(li);
+    });
+  });
 
-      return right_pane;
-    }
-
-    navmenu.appendChild( generate_left_pane() );
-    navmenu.appendChild( generate_right_pane() );
-
-    console.debug(navmenu);
-    return navmenu;
+  return right_pane;
 }
 
 // Regenerates the navmenu content
@@ -96,7 +92,8 @@ function refreshNavmenu(){
     // First it clears the content of the navmenu
     remove_all_child( navmenu );
     // Then puts the generated navmenu content inside of it
-    navmenu.appendChild( generate_navmenu_content() );
+    navmenu.appendChild( generate_left_pane() );
+    navmenu.appendChild( generate_right_pane() );
 }
 
 // ============================================================================= TIMELINE
@@ -120,7 +117,7 @@ function generate_product_container(page_jsonobj, place_left){
   let content = new_el( 'div' );
   content.classList.add( 'content' );
   content.addEventListener( 'click', () => {
-    window.location.href = page_jsonobj.href;
+    window.location.href = encodeURIComponent( page_jsonobj.href.replaceAll( '/', 'AQWSAQWS') ).replaceAll( 'AQWSAQWS', '/');
   });
   product_container.appendChild( content );
 
