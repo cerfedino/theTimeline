@@ -14,33 +14,16 @@ let pages =
       ]
     },
     "invalid": [
-      "html/gen8_nintendo_switch/nintendo_switch.html",
       "html/gen1_crash_videogame_1977/videogame_crash_1977.html",
-      "html/gen6_wii_sports/wii_sports.html",
-      "html/gen8_epic_games/gen8_epic_games.html",
-      "html/gen1_pong/TEMPLATE_PONG.html",
       "html/gen6_xbox_360/xbox_360.html",
-      "html/gen8_ps_vita/ps_vita.html",
-      "html/gen5_grand_theft_auto/grand_theft_auto.html",
-      "html/gen0-brown-box/TEMPLATE.html",
       "html/gen0_oxo/oxo.html",
-      "html/gen1_tv_game nintendo/TEMPLATE_tvgamenintendo.html",
-      "html/gen8_rockstar/gen8_rockstar.html",
-      "html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html",
-      "html/gen1_teslar/TEMPLATE_teslar.html",
       "html/gen3_megaman_2/megaman_2.html",
       "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
-      "html/gen7_red_dead_redemption/red_dead_redemption.html",
-      "html/gen8_wii_u/wii_u.html",
-      "html/gen6_god_of_war_2/god_of_war_2.html",
       "html/gen0_brown_box/brown_box.html",
       "html/gen1_tecnology/tecnology.html",
-      "html/gen9_consoles/next_gen_consoles.html",
-      "html/gen8_game_devellopment/gen8_game_devellopment.html",
       "html/gen7_gta_v/gta_v.html",
       "html/homepage/homepage.html",
-      "html/gen3_metal_gear/metal_gear.html",
-      "html/gen8_valve/gen8_valve.html"
+      "html/gen3_metal_gear/metal_gear.html"
     ]
   },
   "gen0": {
@@ -131,6 +114,14 @@ let pages =
       },
       {
         "author": "Samuel Corecco",
+        "date": "1972-11-29",
+        "description": "A page about Pong game",
+        "href": "html/gen1_pong/TEMPLATE_PONG.html",
+        "picture": "html/gen1_pong/media/pic1.gif",
+        "product": "Pong"
+      },
+      {
+        "author": "Samuel Corecco",
         "date": "1974-08-03",
         "description": "A page about the console Pong Home",
         "href": "html/gen1_pong_Home/pong_home.html",
@@ -146,12 +137,28 @@ let pages =
         "product": "TV Tennis Electrotennis"
       },
       {
+        "author": "Samuel Corecco",
+        "date": "1976-01-01",
+        "description": "A page about the coleco Teslar series",
+        "href": "html/gen1_teslar/TEMPLATE_teslar.html",
+        "picture": "html/gen1_teslar/media/pic1.gif",
+        "product": "coleco teslar"
+      },
+      {
         "author": "Enrico Benedettini",
         "date": "1976-01-01",
         "description": "The first handheld consoles ever.",
         "href": "html/gen1_handheld_systems/handheld_systems.html",
         "picture": "html/gen1_handheld_systems/media/handheld-systems.gif",
         "product": "Handheld Systems"
+      },
+      {
+        "author": "Samuel Corecco",
+        "date": "1977-06-01",
+        "description": "A page about the Nintendo Color TV-Gameseries",
+        "href": "html/gen1_tv_game nintendo/TEMPLATE_tvgamenintendo.html",
+        "picture": "html/gen1_tv_game nintendo/media/pic1.gif",
+        "product": "Nintendo Color TV-Gameseries"
       }
     ]
   },
@@ -402,6 +409,14 @@ let pages =
         "product": "Nintendo 64"
       },
       {
+        "author": "Marco Vescio",
+        "date": "1997-10-21",
+        "description": "A webpage about GTA",
+        "href": "html/gen5_grand_theft_auto/grand_theft_auto.html",
+        "picture": "html/gen5_grand_theft_auto/media/placeholder.gif",
+        "product": "Grand Theft Auto"
+      },
+      {
         "author": "Alessandro Artusa",
         "date": "1998-05-08",
         "description": "Page of the first Gran Turismo made in 1997 by Polys Entertainment",
@@ -460,6 +475,22 @@ let pages =
         "href": "html/gen6_world_of_warcraft/world_of_warcraft.html",
         "picture": "html/gen6_world_of_warcraft/media/wow.gif",
         "product": "World of Warcraft"
+      },
+      {
+        "author": "Genaro Di Stefano",
+        "date": "2006-11-16",
+        "description": "Wii Sports, an innovative sports game",
+        "href": "html/gen6_wii_sports/wii_sports.html",
+        "picture": "html/gen6_wii_sports/media/WiiCover.jpg",
+        "product": "Wii Sports"
+      },
+      {
+        "author": "Genaro Di Stefano",
+        "date": "2007-03-13",
+        "description": "One of the best hack and slash in history",
+        "href": "html/gen6_god_of_war_2/god_of_war_2.html",
+        "picture": "html/gen6_god_of_war_2/media/GoWGif.gif",
+        "product": "God of War 2"
       }
     ]
   },
@@ -504,6 +535,14 @@ let pages =
         "href": "html/gen7_call_of_duty_modern_warfare2/call_of_duty_modern_warfare2.html",
         "picture": "html/gen7_call_of_duty_modern_warfare2/media/imagegif.gif",
         "product": "Call of Duty Modern Warfare2"
+      },
+      {
+        "author": "Genaro Di Stefano",
+        "date": "2010-05-18",
+        "description": "A realistic wild west game",
+        "href": "html/gen7_red_dead_redemption/red_dead_redemption.html",
+        "picture": "html/gen7_red_dead_redemption/media/RDR.gif",
+        "product": "Red Dead Redemption"
       },
       {
         "author": "Albi Geldenhuys",
@@ -567,6 +606,22 @@ let pages =
       },
       {
         "author": "Federico Soresina",
+        "date": "2012-03-01",
+        "description": "PlayStation Vita description page",
+        "href": "html/gen8_ps_vita/ps_vita.html",
+        "picture": "html/gen8_ps_vita/media/ps_vita.jpg",
+        "product": "PS_Vita"
+      },
+      {
+        "author": "Federico Soresina",
+        "date": "2012-11-01",
+        "description": "Wii-U page description",
+        "href": "html/gen8_wii_u/wii_u.html",
+        "picture": "html/gen8_wii_u/wii_u.jpg",
+        "product": "Wii-U"
+      },
+      {
+        "author": "Federico Soresina",
         "date": "2013-11-15",
         "description": "PlayStation 4 description page",
         "href": "html/gen8_ps4/ps4.html",
@@ -596,6 +651,14 @@ let pages =
         "href": "html/gen8_pokemon_go/pokemon_go.html",
         "picture": "html/gen8_pokemon_go/media/placeholder.gif",
         "product": "Pokemon Go"
+      },
+      {
+        "author": "Federico Soresina",
+        "date": "2017-03-03",
+        "description": "Nintendo Switch description page",
+        "href": "html/gen8_nintendo_switch/nintendo_switch.html",
+        "picture": "html/gen8_nintendo_switch/media/nintendo_switch.jpg",
+        "product": "Nintendo Switch"
       },
       {
         "author": "Alessandro Cagnani",
