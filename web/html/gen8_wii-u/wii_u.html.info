@@ -1,0 +1,9 @@
+Error: Element “img” is missing required attribute “src”.
+From line 79, column 9; to line 79, column 32 in resource file: pub/web/html/gen8_wii_u/wii_u.html
+Error: No “p” element in scope but a “p” end tag seen.
+From line 97, column 11; to line 97, column 14 in resource file: pub/web/html/gen8_wii_u/wii_u.html
+Error: End tag for  “body” seen, but there were unclosed elements.
+From line 116, column 3; to line 116, column 9 in resource file: pub/web/html/gen8_wii_u/wii_u.html
+Error: Unclosed element “div”.
+From line 77, column 5; to line 77, column 24 in resource file: pub/web/html/gen8_wii_u/wii_u.html
+Document checking completed.
