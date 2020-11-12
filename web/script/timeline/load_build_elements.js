@@ -121,7 +121,7 @@ function generate_product_container(page_jsonobj, place_left){
   let product_container = new_el( 'div' );
   product_container.classList.add( 'container' );
   product_container.classList.add( placement );
-  product_container.setAttribute( 'id', normalize_text( page_jsonobj.product ) );
+  product_container.setAttribute( 'id', normalize_url( normalize_text( page_jsonobj.product ) ) );
 
   // set the content div
   let content = new_el( 'div' );
