@@ -64,6 +64,16 @@ function extract_content( str, start, end ){
 //   return s;
 // }
 
+// normalize the text ' ' to '_' remove accents ...
+function normalize_text( text ){
+  // to lowercase and replace ' ' with '_'
+  text = text.toLowerCase().replaceAll( ' ', '_' );
+  // replace accented letters with normal ones
+  text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  return text;
+}
+
 // ============================================================================= META
 let generation = null;
 let product = null;
@@ -80,16 +90,12 @@ function setup_meta(){
         author = els[i].content;
         break;
       case "generation":
-        // to lowercase and replace ' ' with '_'
-        generation = els[i].content.toLowerCase().replaceAll( ' ', '_' );
-        // replace accented letters with normal ones
-        generation = generation.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        // normalize text
+        generation = normalize_text( els[i].content );
         break
       case "product":
-        // to lowercase and replace ' ' with '_'
-        product = els[i].content.toLowerCase().replaceAll( ' ', '_' );
-        // replace accented letters with normal ones
-        product = product.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        // normalize text
+        product = normalize_text( els[i].content );
         break;
     }
   }
