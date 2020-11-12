@@ -96,7 +96,7 @@ div.slide-right div.inner {
 /* Animation */
 @keyframes slide-right {
   from {
-    margin-left: -1820%;
+    margin-left: -1790%;
   }
 
   to {
