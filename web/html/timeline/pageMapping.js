@@ -337,7 +337,7 @@ let pages =
         "date": "1992-05-05",
         "description": "Shooter game, video game genre",
         "href": "html/gen4_genre_shooter/genre_shooter.html",
-        "picture": "html/gen4_genre_shooter/media/placeholder.gif",
+        "picture": "html/gen4_genre_shooter/media/g.gif",
         "product": "Genre Shooter"
       },
       {
