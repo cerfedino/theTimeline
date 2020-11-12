@@ -29,8 +29,8 @@
   --soundbutton-image: url( "../../styles/gen8/media/sound.png" ); /* relative path */
   --soundbutton-image-hover: url( "../../styles/gen8/media/sound_hover.png" ); /* relative path */
   /* image for the cross on the sound button */
-  --soundbutton-cross: url( "../../styles/gen8/media/cross.jpg" ); /* relative path */
-  --soundbutton-cross-hover: url( "../../styles/gen8/media/cross_hover.jpg" ); /* relative path */
+  --soundbutton-cross: url( "../../styles/gen8/media/cross.png" ); /* relative path */
+  --soundbutton-cross-hover: url( "../../styles/gen8/media/cross_hover.png" ); /* relative path */
 
   /* text styles */
   --link-color-hover: #fffff8;  /* given to the user */
