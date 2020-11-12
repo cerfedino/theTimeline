@@ -178,6 +178,7 @@ html, body{
 #content {
   /* scrollbar */
   overflow-y: auto;
+  overflow-x: hidden;
 
   /* sizing */
   height: calc( 100% - 155px);
