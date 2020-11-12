@@ -32,6 +32,13 @@
   z-index: 2;
   padding: 0 10px;
 }
+#navbar-title:hover{
+  /* background */
+  background-color: var( --navbar-text-color );
+
+  /* text */
+  color: var( --navbar-bg-color );
+}
 #navbar-title h1{
   /* position */
   margin: 0;
