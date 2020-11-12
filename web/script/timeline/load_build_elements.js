@@ -9,6 +9,16 @@ function remove_all_child( parent ) {
     }
 }
 
+// normalize the text ' ' to '_' remove accents ...
+function normalize_text( text ){
+  // to lowercase and replace ' ' with '_'
+  text = text.toLowerCase().replaceAll( ' ', '_' );
+  // replace accented letters with normal ones
+  text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  return text;
+}
+
 // all the info are stored in the variable: pages;
 // remove bad content
 delete pages['-1'];
@@ -76,7 +86,7 @@ function generate_navmenu_content(){
     navmenu.appendChild( generate_left_pane() );
     navmenu.appendChild( generate_right_pane() );
 
-    console.log(navmenu);
+    console.debug(navmenu);
     return navmenu;
 }
 
@@ -104,7 +114,7 @@ function generate_product_container(page_jsonobj, place_left){
   let product_container = new_el( 'div' );
   product_container.classList.add( 'container' );
   product_container.classList.add( placement );
-  product_container.setAttribute( 'id', page_jsonobj.product );
+  product_container.setAttribute( 'id', normalize_text( page_jsonobj.product ) );
 
   // set the content div
   let content = new_el( 'div' );
