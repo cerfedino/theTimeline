@@ -117,7 +117,7 @@ let setupHandlers = function(){
   $( '.timelineLabel' ).click(function(){toggleTimelineCollapse($(this).next());});
 
   // When the navmenu button gets clicked, the navmenu gets toggled
-  $( '#navmenu-toggle' ).click(function(){
+  $( '#navbar-button' ).click(function(){
     console.debug( 'navmenu-toggle Click registered' );
     $( '#navmenu' ).toggleClass( 'collapsed' );
   });
