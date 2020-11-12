@@ -89,14 +89,14 @@ div.slide-right {
   overflow:hidden;
 }
 div.slide-right div.inner {
-  animation: slide-right 320s;
+  animation: slide-right 300s infinite;
   height: 100vh;
 }
 
 /* Animation */
 @keyframes slide-right {
   from {
-    margin-left: -1920%;
+    margin-left: -1820%;
   }
 
   to {
