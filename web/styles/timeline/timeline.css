@@ -24,7 +24,7 @@
   background-color: #fff;
 
   /* position */
-  position: sticky;
+  position: relative;
   z-index: 1;
   top: 0px;
 

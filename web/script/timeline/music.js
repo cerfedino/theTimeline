@@ -19,17 +19,11 @@ let first_played = false;
 function setup_audio(){
   // get the audio button element
   music_button = document.getElementById( 'music-button' );
-
   // // get the audio images
   music_image = get_css_variable( '--music-button-image' );
   music_cross = get_css_variable( '--music-button-cross' );
-
   // we get the raw audio variable from css { url("dir/file") }
   let raw_music_file = 'html/timeline/media/music1.wav'
-
-  // let raw_music_file = get_css_variable( '--audio-file' );
-  // we extract only the path
-  // raw_music_file = raw_music_file.split('"')[1];
 
   // we create the audio object from that file
   audio = new Audio( raw_music_file );
