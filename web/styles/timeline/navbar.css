@@ -97,7 +97,7 @@
   width: max( 49vw, 300px );
 
   /* border */
-  border: solid 3px white;
+  border: solid 3px var( --navbar-bg-color ); /*inverded*/
 
   /* position */
   position: absolute;
@@ -133,7 +133,7 @@
   text-align: right;
 
   /* border */
-  border-right: solid 3px white;
+  border-right: 3px solid var( --navbar-bg-color );/*inverded*/
 }
 #navmenu .navmenu-entry.gen{
   /* position */
@@ -150,10 +150,15 @@
 #rightpane{
   /* size */
   width: calc( 100% - 70px );
-  max-height: calc( 100vh - 50px - 6px);
+  max-height: calc( 100vh - 50px - 3px);
 
   /* position */
   float: left;
+  position: relative;
+  left: -3px;
+
+  /* border */
+  border-left: solid 3px var( --navbar-bg-color );/*inverded*/
 }
 #navmenu .navmenu-entry.page{
   /* position */
