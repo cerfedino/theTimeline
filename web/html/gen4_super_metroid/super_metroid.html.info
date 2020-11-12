@@ -1,0 +1,5 @@
+Error: Element “img” is missing required attribute “src”.
+From line 83, column 9; to line 83, column 32 in resource file: pub/web/html/gen4_super_metroid/super_metroid.html
+Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 146, column 9; to line 146, column 218 in resource file: pub/web/html/gen4_super_metroid/super_metroid.html
+Document checking completed.

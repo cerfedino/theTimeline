@@ -1,0 +1,53 @@
+Error: Element “img” is missing required attribute “src”.
+From line 86, column 9; to line 86, column 32 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: End tag “p” seen, but there were open elements.
+From line 95, column 9; to line 95, column 12 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Unclosed element “b”.
+From line 91, column 64; to line 91, column 66 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Unclosed element “b”.
+From line 91, column 46; to line 91, column 48 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “center” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 97, column 9; to line 97, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 97, column 9; to line 97, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “h2” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 102, column 9; to line 102, column 20 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “p” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 103, column 9; to line 103, column 11 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “center” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 111, column 9; to line 111, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 111, column 9; to line 111, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “p” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 116, column 9; to line 116, column 11 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “center” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 122, column 9; to line 122, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 122, column 9; to line 122, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “h2” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 127, column 9; to line 127, column 20 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “p” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 128, column 9; to line 128, column 11 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “center” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 138, column 9; to line 138, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 138, column 9; to line 138, column 16 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: No space between attributes.
+From line 142, column 9; to line 142, column 80 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 142, column 9; to line 142, column 294 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “scrolling” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 142, column 9; to line 142, column 294 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “marginheight” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 142, column 9; to line 142, column 294 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: The “marginwidth” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 142, column 9; to line 142, column 294 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: Element “div” not allowed as child of element “b” in this context. (Suppressing further errors from this subtree.)
+From line 145, column 9; to line 145, column 28 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: End tag “div” seen, but there were open elements.
+From line 152, column 7; to line 152, column 12 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: End tag “div” seen, but there were open elements.
+From line 153, column 5; to line 153, column 10 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Error: End tag for  “body” seen, but there were unclosed elements.
+From line 154, column 3; to line 154, column 9 in resource file: pub/web/html/gen0_tennis_for_two/tennis_for_two.html
+Document checking completed.

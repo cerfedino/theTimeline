@@ -1,0 +1,19 @@
+Error: End tag “li” seen, but there were open elements.
+From line 91, column 46; to line 91, column 50 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Error: Unclosed element “a”.
+From line 91, column 17; to line 91, column 32 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Error: Element “a” not allowed as child of element “ol” in this context. (Suppressing further errors from this subtree.)
+At line 91, column 51 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Error: End tag “ol” seen, but there were open elements.
+From line 92, column 11; to line 92, column 15 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Error: End tag “li” seen, but there were open elements.
+From line 93, column 9; to line 93, column 13 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Error: Element “a” not allowed as child of element “ol” in this context. (Suppressing further errors from this subtree.)
+At line 93, column 14 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Error: Start tag “a” seen but an element of the same type was already open.
+From line 94, column 13; to line 94, column 26 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Error: End tag “a” violates nesting rules.
+From line 94, column 13; to line 94, column 26 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Fatal Error: Cannot recover after last error. Any further errors will be ignored.
+From line 94, column 13; to line 94, column 26 in resource file: pub/web/html/gen6_halo_2/halo_2_gen6.html
+Document checking completed.

@@ -1,0 +1,9 @@
+Error: Element “img” is missing required attribute “src”.
+From line 101, column 9; to line 101, column 32 in resource file: pub/web/html/gen0_bertie_the_brain/bertie_the_brain.html
+Error: Bad value “60%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 136, column 11; to line 136, column 150 in resource file: pub/web/html/gen0_bertie_the_brain/bertie_the_brain.html
+Error: Bad value “60%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 147, column 13; to line 147, column 152 in resource file: pub/web/html/gen0_bertie_the_brain/bertie_the_brain.html
+Error: Bad value “40%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 165, column 15; to line 165, column 150 in resource file: pub/web/html/gen0_bertie_the_brain/bertie_the_brain.html
+Document checking completed.

@@ -1,0 +1,19 @@
+Error: Element “a” not allowed as child of element “ol” in this context. (Suppressing further errors from this subtree.)
+From line 93, column 18; to line 93, column 31 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: No “li” element in scope but a “li” end tag seen.
+From line 93, column 44; to line 93, column 48 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: Element “img” is missing required attribute “src”.
+From line 98, column 13; to line 98, column 36 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: No “p” element in scope but a “p” end tag seen.
+From line 130, column 13; to line 130, column 16 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: Attribute “display” not allowed on element “iframe” at this point.
+From line 144, column 17; to line 144, column 175 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 144, column 17; to line 144, column 175 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: The “scrolling” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 144, column 17; to line 144, column 175 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: End tag for  “body” seen, but there were unclosed elements.
+From line 151, column 1; to line 151, column 7 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Error: Unclosed element “div”.
+From line 96, column 5; to line 96, column 24 in resource file: pub/web/html/gen2_pac_man/pac_man.html
+Document checking completed.

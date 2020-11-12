@@ -1,0 +1,13 @@
+Error: CSS: “margin”: only “0” can be a “unit”. You must put a unit after your number.
+At line 91, column 17 in resource file: pub/web/html/gen3_megaman_2/megaman_2.html
+Error: Element “img” is missing required attribute “src”.
+From line 130, column 7; to line 130, column 31 in resource file: pub/web/html/gen3_megaman_2/megaman_2.html
+Error: Element “figcaption” not allowed as child of element “div” in this context. (Suppressing further errors from this subtree.)
+From line 139, column 11; to line 139, column 22 in resource file: pub/web/html/gen3_megaman_2/megaman_2.html
+Error: Element “figcaption” not allowed as child of element “div” in this context. (Suppressing further errors from this subtree.)
+From line 175, column 9; to line 175, column 20 in resource file: pub/web/html/gen3_megaman_2/megaman_2.html
+Error: Bad value “80%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 192, column 9; to line 192, column 95 in resource file: pub/web/html/gen3_megaman_2/megaman_2.html
+Error: Element “figcaption” not allowed as child of element “div” in this context. (Suppressing further errors from this subtree.)
+From line 193, column 9; to line 193, column 20 in resource file: pub/web/html/gen3_megaman_2/megaman_2.html
+Document checking completed.

@@ -1,0 +1,5 @@
+Error: Element “img” is missing required attribute “src”.
+From line 86, column 9; to line 86, column 32 in resource file: pub/web/html/gen6_god_of_war_2/god_of_war_2.html
+Error: Stray end tag “h2”.
+From line 100, column 1; to line 100, column 5 in resource file: pub/web/html/gen6_god_of_war_2/god_of_war_2.html
+Document checking completed.

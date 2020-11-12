@@ -1,0 +1,11 @@
+Error: Element “img” is missing required attribute “src”.
+From line 105, column 9; to line 105, column 32 in resource file: pub/web/html/gen0_galaxy_game/galaxy_game.html
+Error: Bad value “60%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 139, column 11; to line 139, column 152 in resource file: pub/web/html/gen0_galaxy_game/galaxy_game.html
+Error: Bad value “60%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 166, column 13; to line 166, column 155 in resource file: pub/web/html/gen0_galaxy_game/galaxy_game.html
+Error: Bad value “60%” for attribute “width” on element “iframe”: Expected a digit but saw “%” instead.
+From line 177, column 11; to line 177, column 170 in resource file: pub/web/html/gen0_galaxy_game/galaxy_game.html
+Error: Bad value “60%” for attribute “height” on element “iframe”: Expected a digit but saw “%” instead.
+From line 177, column 11; to line 177, column 170 in resource file: pub/web/html/gen0_galaxy_game/galaxy_game.html
+Document checking completed.

@@ -1,0 +1,25 @@
+Error: The “width” attribute on the “table” element is obsolete. Use CSS instead.
+From line 111, column 9; to line 111, column 27 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: The “width” attribute on the “td” element is obsolete. Use CSS instead.
+From line 116, column 177; to line 117, column 30 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 117, column 31; to line 117, column 134 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: Bad value “auto” for attribute “height” on element “img”: Expected a digit but saw “a” instead.
+From line 117, column 31; to line 117, column 134 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: The “width” attribute on the “table” element is obsolete. Use CSS instead.
+From line 168, column 12; to line 168, column 30 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: The “width” attribute on the “td” element is obsolete. Use CSS instead.
+From line 173, column 22; to line 174, column 32 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 174, column 33; to line 174, column 136 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: Bad value “auto” for attribute “height” on element “img”: Expected a digit but saw “a” instead.
+From line 174, column 33; to line 174, column 136 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: The “width” attribute on the “table” element is obsolete. Use CSS instead.
+From line 220, column 12; to line 220, column 30 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: The “width” attribute on the “td” element is obsolete. Use CSS instead.
+From line 228, column 22; to line 229, column 32 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 229, column 33; to line 229, column 136 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Error: Bad value “auto” for attribute “height” on element “img”: Expected a digit but saw “a” instead.
+From line 229, column 33; to line 229, column 136 in resource file: pub/web/html/gen6_xbox_360/xbox_360.html
+Document checking completed.

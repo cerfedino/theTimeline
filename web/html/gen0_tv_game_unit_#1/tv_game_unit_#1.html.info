@@ -1,0 +1,19 @@
+Error: Element “img” is missing required attribute “src”.
+From line 79, column 9; to line 79, column 32 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 89, column 9; to line 89, column 16 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Error: Bad value “300px” for attribute “width” on element “img”: Expected a digit but saw “p” instead.
+From line 90, column 9; to line 90, column 73 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Error: Element “figcaption” not allowed as child of element “center” in this context. (Suppressing further errors from this subtree.)
+From line 91, column 9; to line 91, column 20 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Error: Duplicate ID “s1”.
+From line 94, column 9; to line 94, column 20 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Warning: The first occurrence of ID “s1” was here.
+From line 82, column 9; to line 82, column 20 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 100, column 9; to line 100, column 16 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Error: Bad value “300px” for attribute “width” on element “img”: Expected a digit but saw “p” instead.
+From line 101, column 9; to line 101, column 65 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Error: Element “figcaption” not allowed as child of element “center” in this context. (Suppressing further errors from this subtree.)
+From line 102, column 9; to line 102, column 20 in resource file: pub/web/html/gen0_tv_game_unit_%231/tv_game_unit_%231.html
+Document checking completed.

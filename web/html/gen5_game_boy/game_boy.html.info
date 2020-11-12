@@ -1,0 +1,3 @@
+Error: Element “img” is missing required attribute “src”.
+From line 100, column 9; to line 100, column 32 in resource file: pub/web/html/gen5_game_boy/game_boy.html
+Document checking completed.

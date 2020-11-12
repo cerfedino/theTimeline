@@ -1,0 +1,9 @@
+Error: CSS: “image-rendering”: “optimize-contrast” is not a “image-rendering” value.
+From line 63, column 20; to line 63, column 36 in resource file: pub/web/styles/base/style.css
+Error: CSS: “--button-position-top”: Cannot invoke "org.w3c.css.values.CssValue.getRawType()" because "this.val1" is null.
+At line 373, column 62 in resource file: pub/web/styles/base/style.css
+Error: CSS: “--container-height”: Cannot invoke "org.w3c.css.values.CssValue.getRawType()" because "this.val1" is null.
+At line 376, column 65 in resource file: pub/web/styles/base/style.css
+Error: CSS: “left”: Cannot invoke "org.w3c.css.values.CssValue.getRawType()" because "this.val1" is null.
+At line 408, column 44 in resource file: pub/web/styles/base/style.css
+Document checking completed.

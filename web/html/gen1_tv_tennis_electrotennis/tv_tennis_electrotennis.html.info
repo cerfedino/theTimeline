@@ -1,0 +1,5 @@
+Error: Bad value “100%” for attribute “height” on element “iframe”: Expected a digit but saw “%” instead.
+From line 99, column 9; to line 99, column 219 in resource file: pub/web/html/gen1_tv_tennis_electrotennis/tv_tennis_electrotennis.html
+Error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.
+From line 99, column 9; to line 99, column 219 in resource file: pub/web/html/gen1_tv_tennis_electrotennis/tv_tennis_electrotennis.html
+Document checking completed.

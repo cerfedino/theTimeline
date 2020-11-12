@@ -1,0 +1,7 @@
+Error: Element “hl” not allowed as child of element “div” in this context. (Suppressing further errors from this subtree.)
+From line 205, column 9; to line 205, column 12 in resource file: pub/web/html/gen3_genre_action_adventure/genre_action_adventure.html
+Error: End tag “div” seen, but there were open elements.
+From line 217, column 7; to line 217, column 12 in resource file: pub/web/html/gen3_genre_action_adventure/genre_action_adventure.html
+Error: Unclosed element “hl”.
+From line 205, column 9; to line 205, column 12 in resource file: pub/web/html/gen3_genre_action_adventure/genre_action_adventure.html
+Document checking completed.

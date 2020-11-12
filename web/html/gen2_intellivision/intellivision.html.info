@@ -1,0 +1,43 @@
+Error: CSS: “container-background-color”: Property “container-background-color” doesn't exist.
+From line 37, column 41; to line 37, column 44 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: CSS: “container-text-color”: Property “container-text-color” doesn't exist.
+From line 38, column 35; to line 38, column 38 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: CSS: “container-border-color”: Property “container-border-color” doesn't exist.
+From line 39, column 37; to line 39, column 40 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: CSS: “index-background-color”: Property “index-background-color” doesn't exist.
+From line 42, column 37; to line 42, column 40 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: CSS: “index-text-color”: Property “index-text-color” doesn't exist.
+From line 43, column 31; to line 43, column 34 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: CSS: “index-border-color”: Property “index-border-color” doesn't exist.
+From line 44, column 33; to line 44, column 36 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Attribute “cite” not allowed on element “img” at this point.
+From line 86, column 9; to line 87, column 84 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 86, column 9; to line 87, column 84 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: The “width” attribute on the “table” element is obsolete. Use CSS instead.
+From line 92, column 9; to line 92, column 27 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: “td” start tag in table body.
+From line 92, column 28; to line 93, column 16 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: The “width” attribute on the “td” element is obsolete. Use CSS instead.
+From line 98, column 18; to line 99, column 28 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Attribute “cite” not allowed on element “img” at this point.
+From line 100, column 17; to line 101, column 107 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 100, column 17; to line 101, column 107 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Bad value “auto” for attribute “height” on element “img”: Expected a digit but saw “a” instead.
+From line 100, column 17; to line 101, column 107 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: No “p” element in scope but a “p” end tag seen.
+From line 115, column 9; to line 115, column 12 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Attribute “cite” not allowed on element “img” at this point.
+From line 123, column 21; to line 124, column 106 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Bad value “10%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 123, column 21; to line 124, column 106 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Bad value “auto” for attribute “height” on element “img”: Expected a digit but saw “a” instead.
+From line 123, column 21; to line 124, column 106 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Attribute “cite” not allowed on element “img” at this point.
+From line 138, column 9; to line 139, column 104 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Bad value “15%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 138, column 9; to line 139, column 104 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Error: Bad value “auto” for attribute “height” on element “img”: Expected a digit but saw “a” instead.
+From line 138, column 9; to line 139, column 104 in resource file: pub/web/html/gen2_intellivision/intellivision.html
+Document checking completed.

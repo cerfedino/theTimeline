@@ -1,0 +1,41 @@
+Error: CSS: “container-background-color”: Property “container-background-color” doesn't exist.
+From line 37, column 37; to line 37, column 40 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: CSS: “container-text-color”: Property “container-text-color” doesn't exist.
+From line 38, column 31; to line 38, column 34 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: CSS: “container-border-color”: Property “container-border-color” doesn't exist.
+From line 39, column 33; to line 39, column 36 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: CSS: “index-background-color”: Property “index-background-color” doesn't exist.
+From line 42, column 33; to line 42, column 36 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: CSS: “index-text-color”: Property “index-text-color” doesn't exist.
+From line 43, column 27; to line 43, column 30 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: CSS: “index-border-color”: Property “index-border-color” doesn't exist.
+From line 44, column 29; to line 44, column 32 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Attribute “cite” not allowed on element “img” at this point.
+From line 81, column 9; to line 82, column 83 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 81, column 9; to line 82, column 83 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: The “width” attribute on the “table” element is obsolete. Use CSS instead.
+From line 87, column 9; to line 87, column 27 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: The “width” attribute on the “td” element is obsolete. Use CSS instead.
+From line 93, column 18; to line 94, column 26 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Attribute “cite” not allowed on element “img” at this point.
+From line 94, column 27; to line 95, column 121 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 94, column 27; to line 95, column 121 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Bad value “250px” for attribute “height” on element “img”: Expected a digit but saw “p” instead.
+From line 94, column 27; to line 95, column 121 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: No “p” element in scope but a “p” end tag seen.
+From line 114, column 9; to line 114, column 12 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: The “width” attribute on the “table” element is obsolete. Use CSS instead.
+From line 117, column 11; to line 117, column 29 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: The “width” attribute on the “td” element is obsolete. Use CSS instead.
+From line 118, column 17; to line 119, column 30 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Attribute “cite” not allowed on element “img” at this point.
+From line 119, column 31; to line 120, column 118 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 119, column 31; to line 120, column 118 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: Bad value “250px” for attribute “height” on element “img”: Expected a digit but saw “p” instead.
+From line 119, column 31; to line 120, column 118 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Error: The “width” attribute on the “td” element is obsolete. Use CSS instead.
+From line 121, column 20; to line 122, column 31 in resource file: pub/web/html/gen2_fairchild_channel_f/fairchild_channel_f.html
+Document checking completed.

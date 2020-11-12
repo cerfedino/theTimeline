@@ -1,0 +1,3 @@
+Error: Element “img” is missing required attribute “src”.
+From line 91, column 9; to line 91, column 32 in resource file: pub/web/html/gen6_world_of_warcraft/world_of_warcraft.html
+Document checking completed.

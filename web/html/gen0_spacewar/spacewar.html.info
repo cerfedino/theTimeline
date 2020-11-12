@@ -1,0 +1,33 @@
+Error: Element “img” is missing required attribute “src”.
+From line 81, column 9; to line 81, column 32 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 91, column 9; to line 91, column 16 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Bad value “300px” for attribute “width” on element “img”: Expected a digit but saw “p” instead.
+From line 92, column 9; to line 92, column 73 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Element “figcaption” not allowed as child of element “center” in this context. (Suppressing further errors from this subtree.)
+From line 93, column 9; to line 93, column 20 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 104, column 9; to line 104, column 16 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Bad value “300px” for attribute “width” on element “img”: Expected a digit but saw “p” instead.
+From line 105, column 9; to line 105, column 74 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Element “figcaption” not allowed as child of element “center” in this context. (Suppressing further errors from this subtree.)
+From line 106, column 9; to line 106, column 20 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 117, column 9; to line 117, column 16 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Bad value “300px” for attribute “width” on element “img”: Expected a digit but saw “p” instead.
+From line 118, column 9; to line 118, column 89 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Element “figcaption” not allowed as child of element “center” in this context. (Suppressing further errors from this subtree.)
+From line 119, column 9; to line 119, column 20 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 131, column 9; to line 131, column 16 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Bad value “300px” for attribute “width” on element “img”: Expected a digit but saw “p” instead.
+From line 132, column 9; to line 132, column 76 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Element “figcaption” not allowed as child of element “center” in this context. (Suppressing further errors from this subtree.)
+From line 133, column 9; to line 133, column 20 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 147, column 9; to line 147, column 16 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Bad value “300px” for attribute “width” on element “img”: Expected a digit but saw “p” instead.
+From line 148, column 9; to line 148, column 75 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Error: Element “figcaption” not allowed as child of element “center” in this context. (Suppressing further errors from this subtree.)
+From line 149, column 9; to line 149, column 20 in resource file: pub/web/html/gen0_spacewar/spacewar.html
+Document checking completed.

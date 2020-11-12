@@ -1,0 +1,11 @@
+Error: Element “img” is missing required attribute “src”.
+From line 101, column 9; to line 101, column 32 in resource file: pub/web/html/gen4_genre_shooter/genre_shooter.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 130, column 19; to line 130, column 26 in resource file: pub/web/html/gen4_genre_shooter/genre_shooter.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 149, column 19; to line 149, column 26 in resource file: pub/web/html/gen4_genre_shooter/genre_shooter.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 164, column 19; to line 164, column 26 in resource file: pub/web/html/gen4_genre_shooter/genre_shooter.html
+Error: The “center” element is obsolete. Use CSS instead.
+From line 181, column 19; to line 181, column 26 in resource file: pub/web/html/gen4_genre_shooter/genre_shooter.html
+Document checking completed.

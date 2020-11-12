@@ -1,0 +1,3 @@
+Error: Element “img” is missing required attribute “src”.
+From line 88, column 9; to line 88, column 32 in resource file: pub/web/html/gen5_mortal_kombat/Mortal_Kombat.html
+Document checking completed.

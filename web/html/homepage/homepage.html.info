@@ -1,0 +1,173 @@
+Error: Saw “<” when expecting an attribute name. Probable cause: Missing “>” immediately before.
+From line 5, column 5; to line 7, column 5 in resource file: pub/web/html/homepage/homepage.html
+Warning: Attribute “<!--” is not serializable as XML 1.0.
+From line 5, column 5; to line 7, column 23 in resource file: pub/web/html/homepage/homepage.html
+Warning: Attribute “--” is not serializable as XML 1.0.
+From line 5, column 5; to line 7, column 23 in resource file: pub/web/html/homepage/homepage.html
+Error: Attribute “<!--” not allowed on element “meta” at this point.
+From line 5, column 5; to line 7, column 23 in resource file: pub/web/html/homepage/homepage.html
+Error: Attribute “stylesheet” not allowed on element “meta” at this point.
+From line 5, column 5; to line 7, column 23 in resource file: pub/web/html/homepage/homepage.html
+Error: Attribute “--” not allowed on element “meta” at this point.
+From line 5, column 5; to line 7, column 23 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 23, column 11; to line 23, column 90 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 24, column 11; to line 24, column 76 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 25, column 11; to line 25, column 80 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 26, column 11; to line 26, column 72 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 27, column 11; to line 27, column 80 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 28, column 11; to line 28, column 96 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 29, column 11; to line 29, column 81 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 30, column 11; to line 30, column 86 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 31, column 11; to line 31, column 84 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 32, column 11; to line 32, column 81 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 33, column 11; to line 33, column 77 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 34, column 11; to line 34, column 83 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 35, column 11; to line 35, column 98 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 36, column 11; to line 36, column 87 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 37, column 11; to line 37, column 88 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 38, column 11; to line 38, column 84 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 39, column 11; to line 39, column 86 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 40, column 11; to line 40, column 78 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 41, column 11; to line 41, column 78 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 42, column 11; to line 42, column 83 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 43, column 11; to line 43, column 82 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 44, column 11; to line 44, column 109 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 45, column 11; to line 45, column 108 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 46, column 11; to line 46, column 100 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 47, column 11; to line 47, column 96 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 48, column 11; to line 48, column 84 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 49, column 11; to line 49, column 108 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 50, column 11; to line 50, column 99 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 51, column 11; to line 51, column 79 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 52, column 11; to line 52, column 89 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 53, column 11; to line 53, column 90 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 54, column 11; to line 54, column 94 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 55, column 11; to line 55, column 84 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 56, column 11; to line 56, column 86 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 57, column 11; to line 57, column 88 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 58, column 11; to line 58, column 98 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 59, column 11; to line 59, column 90 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 60, column 11; to line 60, column 94 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 61, column 11; to line 61, column 94 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 62, column 11; to line 62, column 82 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 63, column 11; to line 63, column 92 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 64, column 11; to line 64, column 90 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 65, column 11; to line 65, column 77 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 66, column 11; to line 66, column 81 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 67, column 11; to line 67, column 86 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 68, column 11; to line 68, column 81 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 69, column 11; to line 69, column 101 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 70, column 11; to line 70, column 93 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 71, column 11; to line 71, column 88 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 72, column 11; to line 72, column 90 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 73, column 11; to line 73, column 87 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 74, column 11; to line 74, column 103 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 75, column 11; to line 75, column 88 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 76, column 11; to line 76, column 66 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 77, column 11; to line 77, column 100 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 78, column 11; to line 78, column 105 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 79, column 11; to line 79, column 87 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 80, column 11; to line 80, column 93 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 81, column 11; to line 81, column 90 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 82, column 11; to line 82, column 101 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 83, column 11; to line 83, column 95 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 84, column 11; to line 84, column 89 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 85, column 11; to line 85, column 89 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 86, column 11; to line 86, column 109 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “../gen1_tv_game \nintento/media/IMG4.png” for attribute “src” on element “img”: Illegal character in path segment: space is not allowed.
+From line 87, column 11; to line 87, column 87 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 87, column 11; to line 87, column 87 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 88, column 11; to line 88, column 76 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 89, column 11; to line 89, column 74 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 90, column 11; to line 90, column 100 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 91, column 11; to line 91, column 98 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 92, column 11; to line 92, column 98 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 93, column 11; to line 93, column 81 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 94, column 11; to line 94, column 97 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 95, column 11; to line 95, column 85 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 96, column 11; to line 96, column 86 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 97, column 11; to line 97, column 82 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 98, column 11; to line 98, column 89 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 99, column 11; to line 99, column 79 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 100, column 11; to line 100, column 114 in resource file: pub/web/html/homepage/homepage.html
+Error: Bad value “100%” for attribute “height” on element “img”: Expected a digit but saw “%” instead.
+From line 101, column 11; to line 101, column 99 in resource file: pub/web/html/homepage/homepage.html
+Document checking completed.

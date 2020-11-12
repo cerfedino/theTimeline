@@ -1,0 +1,25 @@
+Error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+From line 43, column 1; to line 43, column 18 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: The “border” attribute on the “table” element is obsolete. Use CSS instead.
+From line 50, column 1; to line 50, column 18 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: End tag “h2” seen, but there were open elements.
+From line 92, column 54; to line 92, column 58 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: End tag “h3” seen, but there were open elements.
+From line 101, column 20; to line 101, column 24 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+From line 102, column 1; to line 102, column 19 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: End tag “h3” seen, but there were open elements.
+From line 111, column 22; to line 111, column 26 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+From line 112, column 1; to line 112, column 19 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: End tag “h3” seen, but there were open elements.
+From line 125, column 17; to line 125, column 21 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+From line 126, column 1; to line 126, column 19 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: End tag “h3” seen, but there were open elements.
+From line 137, column 26; to line 137, column 30 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Error: Stray start tag “address”.
+From line 147, column 1; to line 147, column 9 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Warning: This document appears to be written in English. Consider adding “lang="en"” (or variant) to the “html” start tag.
+From line 0, column 16; to line 1, column 6 in resource file: pub/web/html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html
+Document checking completed.

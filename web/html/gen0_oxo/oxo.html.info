@@ -1,0 +1,9 @@
+Error: No “li” element in scope but a “li” end tag seen.
+From line 73, column 9; to line 73, column 13 in resource file: pub/web/html/gen0_oxo/oxo.html
+Error: End tag “div” seen, but there were open elements.
+From line 75, column 5; to line 75, column 10 in resource file: pub/web/html/gen0_oxo/oxo.html
+Error: Unclosed element “ol”.
+From line 70, column 7; to line 70, column 10 in resource file: pub/web/html/gen0_oxo/oxo.html
+Error: Element “img” is missing required attribute “src”.
+From line 78, column 9; to line 78, column 32 in resource file: pub/web/html/gen0_oxo/oxo.html
+Document checking completed.

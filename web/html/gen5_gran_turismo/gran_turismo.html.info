@@ -1,0 +1,5 @@
+Error: Bad value “../../stylespura, la invidio/gen5/style.css” for attribute “href” on element “link”: Illegal character in path segment: space is not allowed.
+From line 18, column 5; to line 18, column 100 in resource file: pub/web/html/gen5_gran_turismo/gran_turismo.html
+Error: Element “img” is missing required attribute “src”.
+From line 79, column 9; to line 79, column 32 in resource file: pub/web/html/gen5_gran_turismo/gran_turismo.html
+Document checking completed.

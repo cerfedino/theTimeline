@@ -1,0 +1,11 @@
+Error: Element “img” is missing required attribute “src”.
+From line 109, column 9; to line 109, column 32 in resource file: pub/web/html/gen0_computer_space/computer_space.html
+Error: Bad value “40%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 151, column 11; to line 151, column 154 in resource file: pub/web/html/gen0_computer_space/computer_space.html
+Error: Bad value “60%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.
+From line 198, column 15; to line 198, column 152 in resource file: pub/web/html/gen0_computer_space/computer_space.html
+Error: Bad value “60%” for attribute “width” on element “iframe”: Expected a digit but saw “%” instead.
+From line 211, column 11; to line 211, column 170 in resource file: pub/web/html/gen0_computer_space/computer_space.html
+Error: Bad value “60%” for attribute “height” on element “iframe”: Expected a digit but saw “%” instead.
+From line 211, column 11; to line 211, column 170 in resource file: pub/web/html/gen0_computer_space/computer_space.html
+Document checking completed.
