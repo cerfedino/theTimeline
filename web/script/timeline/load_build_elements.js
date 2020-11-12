@@ -15,10 +15,18 @@ function normalize_text( text ){
   text = text.toLowerCase().replaceAll( ' ', '_' );
   // replace accented letters with normal ones
   text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  // remove ':'
-  text = text.replaceAll( ':', '' );
+
+  text = text.replaceAll( '#', '' );
 
   return text;
+}
+
+function normalize_url( url ){
+  url = url.replaceAll( '/', 'AQWSAQWS')
+  url = encodeURIComponent( url );
+  url = url.replaceAll( 'AQWSAQWS', '/');
+
+  return url;
 }
 
 // all the info are stored in the variable: pages;
@@ -119,13 +127,13 @@ function generate_product_container(page_jsonobj, place_left){
   let content = new_el( 'div' );
   content.classList.add( 'content' );
   content.addEventListener( 'click', () => {
-    window.location.href = encodeURIComponent( page_jsonobj.href.replaceAll( '/', 'AQWSAQWS') ).replaceAll( 'AQWSAQWS', '/');
+    window.location.href = normalize_url( page_jsonobj.href );
   });
   product_container.appendChild( content );
 
   // set the contents
   let picture = new_el( 'img' );
-  picture.setAttribute( 'src', page_jsonobj.picture );
+  picture.setAttribute( 'src', normalize_url( page_jsonobj.picture ) );
   picture.classList.add( 'picture' );
   content.appendChild( picture );
 
