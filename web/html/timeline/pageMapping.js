@@ -28,6 +28,7 @@ let pages =
       "html/gen8_rockstar/gen8_rockstar.html",
       "html/gen9_futur_gaming_industry/gen9_futur_gaming_industry.html",
       "html/gen1_teslar/TEMPLATE_teslar.html",
+      "html/gen3_megaman_2/megaman_2.html",
       "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
       "html/gen7_red_dead_redemption/red_dead_redemption.html",
       "html/gen8_wii_u/wii_u.html",
@@ -37,6 +38,8 @@ let pages =
       "html/gen9_consoles/next_gen_consoles.html",
       "html/gen8_game_devellopment/gen8_game_devellopment.html",
       "html/gen7_gta_v/gta_v.html",
+      "html/homepage/homepage.html",
+      "html/gen3_metal_gear/metal_gear.html",
       "html/gen8_valve/gen8_valve.html"
     ]
   },
