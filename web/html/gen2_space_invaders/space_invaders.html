@@ -29,8 +29,6 @@
             --background-image-right: url("media/black.jpg");
             /* this is the fading color between the images */
             --background-fade-color: rgb(0, 255, 21);
-            /* this is the title image that will be shown at the top of the page */
-            --banner-image: url("media/space_invaders_logo.png");
             /* this is the color behind the image (visible only if the image has transparence) */
             --banner-color: rgb(0, 0, 0);
             /* the audio file that will be played */
@@ -48,20 +46,20 @@
             /* content scrollbar */
             --scrollbar-thumb: rgb(0, 255, 21);
         }
-        
+
         .button {
             border-color: var(--container-border-color);
         }
-        
+
         .game-container {
             width: 100%;
             text-align: center;
         }
-        
+
         .game {
             height: 50vh;
         }
-        
+
         #s3 {
             text-align: center;
         }
@@ -95,7 +93,7 @@
     </div>
     <div id="container">
         <div id="banner">
-            <img alt="Banner Image">
+            <img src="media/space_invaders_logo.png" alt="Banner Image">
         </div>
         <div id="content">
             <h2 id="s1">Introduction</h2>
@@ -118,14 +116,11 @@
             In the early days, the players queued for hours waiting for their turn. The game was so popular in Japan to the point that it caused a 100-yen deficiency and it was necessary to increase the production of the coin.
             <p> <b></b> <i></i></p>
 
-
-            <!-- Iframe of the game -->
             <br>
             <h2 id="s3">The game</h2>
             <br>
             <div class="game-container">
                 <iframe class="game" src="https://funhtml5games.com?embed=spaceinvaders" style="width:800px;height:550px;border:none;" frameborder="0" scrolling="no"></iframe>
-
                 <div class="footer">
                     <p>@ Daniel Gelman</p>
                 </div>
