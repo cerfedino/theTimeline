@@ -26,11 +26,11 @@
   --backbutton-image-hover: url( "../../styles/gen5/media/back_hover.jpg" ); /* relative path */
 
   /* image for the sound button */
-  --soundbutton-image: url( "../../styles/gen5/media/sound.jpg" ); /* relative path */
-  --soundbutton-image-hover: url( "../../styles/gen5/media/sound_hover.jpg" ); /* relative path */
+  --soundbutton-image: url( "../../styles/gen5/media/sound.png" ); /* relative path */
+  --soundbutton-image-hover: url( "../../styles/gen5/media/sound_hover.png" ); /* relative path */
   /* image for the cross on the sound button */
-  --soundbutton-cross: url( "../../styles/gen5/media/cross.jpg" ); /* relative path */
-  --soundbutton-cross-hover: url( "../../styles/gen5/media/cross.jpg" ); /* relative path */
+  --soundbutton-cross: url( "../../styles/gen5/media/cross.png" ); /* relative path */
+  --soundbutton-cross-hover: url( "../../styles/gen5/media/cross_hover.png" ); /* relative path */
 
   /* text styles */
   --link-color-hover: #f2c6bd;  /* given to the user */
