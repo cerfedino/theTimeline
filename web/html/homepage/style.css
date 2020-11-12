@@ -1,3 +1,14 @@
+@media screen and (max-width: 1500px){
+  #timeline_box {
+    display: none;
+  }
+}
+@media screen and (max-height: 650px){
+  #timeline_box {
+    display: none;
+  }
+}
+
 *{
   /* sizing */
   box-sizing: border-box;
@@ -37,6 +48,7 @@ html, body{
   transform: translate(-50%, -50%);
   border: 5px solid black;
   padding: 10px;
+  text-align: center;
 
   /* font */
   font-family: page-font;
@@ -55,6 +67,7 @@ html, body{
   transform: translate(-50%, -50%);
   border: 5px solid black;
   padding: 10px;
+  text-align: center;
 
   /* font */
   font-family: page-font;
@@ -64,20 +77,23 @@ html, body{
   background-color: white;
 }
 
+/* Font */
 @font-face {
   font-family: page-font;
   src: url( "media/font.ttf"); /* relative path */
 }
 
+/* Image div */
 div.slide-right {
   width:220%;
   overflow:hidden;
 }
 div.slide-right div.inner {
-  animation: slide-right 200s;
+  animation: slide-right 320s;
   height: 100vh;
 }
 
+/* Animation */
 @keyframes slide-right {
   from {
     margin-left: -1920%;
@@ -86,4 +102,18 @@ div.slide-right div.inner {
   to {
     margin-left: 1000%;
   }
+}
+
+/* link properties */
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active{
+  color: black;
 }
