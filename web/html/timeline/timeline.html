@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/timeline/base.css">
     <link rel="stylesheet" href="styles/timeline/timeline.css">
     <link rel="stylesheet" href="styles/timeline/navbar.css">
+    <link rel="stylesheet" href="styles/timeline/music.css">
+
     <link rel="stylesheet" href="styles/timeline/gen0.css">
     <link rel="stylesheet" href="styles/timeline/gen1.css">
     <link rel="stylesheet" href="styles/timeline/gen2.css">
@@ -21,6 +23,21 @@
     <link rel="stylesheet" href="styles/timeline/gen7.css">
     <link rel="stylesheet" href="styles/timeline/gen8.css">
     <link rel="stylesheet" href="styles/timeline/gen9.css">
+    <!-- this variables will change when a generation sticks -->
+    <style id="style-variables">
+      :root{
+        /* image for the music button */
+        --music-button-image: url( "../../styles/gen0/media/sound.png" ); /* relative to the music.css */
+        --music-button-image-hover: url( "../../styles/gen0/media/sound_hover.png" ); /* relative to the music.css */
+        /* image for the cross on the music button */
+        --music-button-cross: url( "../../styles/gen0/media/cross.png" ); /* relative to the music.css */
+        --music-button-cross-hover: url( "../../styles/gen0/media/cross_hover.png" ); /* relative to the music.css */
+
+        --navbar-font-family: gen0-font;
+        --navbar-bg-color: var( --gen0-primary-color );
+        --navbar-text-color: var( --gen0-secondary-color );
+      }
+    </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="script/jquery.visible.js"></script>
@@ -31,7 +48,8 @@
     <script type="text/javascript"  src="script/timeline/load_build_elements.js"></script>
     <!-- dynamic/events functions -->
     <script type="text/javascript"  src="script/timeline/set_events.js"></script>
-
+    <!-- audio/music functions -->
+    <script type="text/javascript"  src="script/timeline/music.js"></script>
     <meta http-equiv='pragma' content='no-cache'>
   </head>
   <body>
@@ -40,9 +58,14 @@
     <div id="navbar-title">
       <h1>The Timeline</h1>
     </div>
-    <div id="navbar-button">
-      <h1 id="navmenu-toggle">Menu</h1>
-      <table id="navmenu" class="collapsed"></table>
+    <div class="buttons">
+      <!-- audio button -->
+      <div id="music-button"></div>
+      <!-- menu button -->
+      <div id="navbar-button">
+        <h1 id="navmenu-toggle">Menu</h1>
+      </div>
+      <div id="navmenu" class=""></div>
     </div>
 
     <!-- timeline stuff -->
