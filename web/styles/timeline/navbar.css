@@ -13,6 +13,7 @@
   z-index: 0;
 }
 
+/* ==========================================================================--- TITLE */
 #navbar-title{
   /* background */
   background-color: #fff;
@@ -45,6 +46,7 @@
   }
 }
 
+/* ==========================================================================--- MENU BUTTON */
 #navbar-button{
   /* background */
   background-color: #fff;
@@ -70,6 +72,7 @@
   color: #fff;
 }
 
+/* ==========================================================================--- NAVMENU TEXT */
 #navmenu-toggle{
   /* position */
   margin: 0;
@@ -78,6 +81,8 @@
   text-align: right;
   line-height: 50px;
 }
+
+/* ==========================================================================--- NAVMENU CONTENT */
 #navmenu{
   background-color: magenta;
   width: 30%;
