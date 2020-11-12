@@ -123,7 +123,7 @@
 
 #leftpane{
   /* size */
-  width: 50px;
+  width: 70px;
   height: 100%;
 
   /* position */
@@ -149,7 +149,7 @@
 
 #rightpane{
   /* size */
-  width: calc( 100% - 50px );
+  width: calc( 100% - 70px );
   max-height: calc( 100vh - 50px - 6px);
 
   /* position */
