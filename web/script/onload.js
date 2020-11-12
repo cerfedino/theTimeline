@@ -1,5 +1,3 @@
-// // TODO: nothing for now
-
 let root = null;
 let dummy_element = null;
 
@@ -14,8 +12,6 @@ function onload(){
   setup_back();
 
   setup_banner();
-
-  // setup_index();
 
   setup_variables();
 }
@@ -54,15 +50,6 @@ function extract_content( str, start, end ){
   return res;
 }
 
-// escape special characters in string
-// function html_encode( s ){
-//   // put the string in the element
-//   dummy_element.innerText = dummy_element.textContent = s;
-//   // get the string from the element
-//   s = dummy_element.innerHTML;
-//   // console.log(dummy_element.innerText, dummy_element.innerHTML);
-//   return s;
-// }
 
 // normalize the text ' ' to '_' remove accents ...
 function normalize_text( text ){
@@ -70,6 +57,8 @@ function normalize_text( text ){
   text = text.toLowerCase().replaceAll( ' ', '_' );
   // replace accented letters with normal ones
   text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  // remove ':'
+  text = text.replaceAll( ':', '' );
 
   return text;
 }
@@ -248,45 +237,6 @@ function setup_banner(){
   // set element src attribute
   banner_element.setAttribute("src", banner_image)
 }
-
-// ============================================================================= INDEX
-// let index_element = null;
-//
-// function setup_index(){
-//   // get the index element
-//   index_element = get_element( 'index' );
-//
-//   // recursively fix all the links
-//   set_index_link( index_element );
-// }
-//
-// // this is the recursive function that fix the links in every child of the index element
-// // if the element is an 'a' element, fix it
-// // if not, call the function for each of its children
-// function set_index_link( el ){
-//   // if 'a' elements
-//   if( el.nodeName == 'A') {
-//     // get the old link
-//     let link = el.getAttribute('href');
-//     // fix the link
-//     link = 'html/' + encodeURIComponent( generation + '_' + product ) +
-//             '/' + encodeURIComponent( product ) + '.html' + link;
-//     // put the link back
-//     el.setAttribute( 'href', link );
-//     // fix the target
-//     el.setAttribute( 'target', '_parent' );
-//     // console.log( "yes", link );
-//   }else{
-//     // console.log( "no", el );
-//     // get all the children
-//     let children = el.children;
-//     // cycle for every children
-//     for (let i = 0; i < children.length; i++) {
-//       // call the function for the children in ith position
-//       set_index_link( children[i] );
-//     }
-//   }
-// }
 
 // ============================================================================= CSS VARIABLES
 let variables_to_fix = [

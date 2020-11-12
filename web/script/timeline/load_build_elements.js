@@ -15,6 +15,8 @@ function normalize_text( text ){
   text = text.toLowerCase().replaceAll( ' ', '_' );
   // replace accented letters with normal ones
   text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  // remove ':'
+  text = text.replaceAll( ':', '' );
 
   return text;
 }

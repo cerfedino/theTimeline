@@ -93,12 +93,12 @@ let switchNavmenuToGenX = function(genX){
 
 // update the navbar with the generations style, called by the sticky event
 function update_navbar_gen( gen_n ){
-  console.log( gen_n );
+
   if(!isNaN( gen_n )){
     // update the style with the gen number
     let style = document.getElementById( 'style-variables' );
     let vars = style.innerText;
-    console.log( vars );
+    // console.log( vars );
     vars = vars.replaceAll( /(gen\d)/g , 'gen' + gen_n );
     style.innerText = vars;
 
