@@ -614,7 +614,7 @@ let pages =
         "date": "2013-09-17",
         "description": "the pinnacle of open world games",
         "href": "html/gen7_gta_v/gta_v.html",
-        "picture": "html/gen7_gta_v/media/GTA-gif",
+        "picture": "html/gen7_gta_v/media/GTA-gif.gif",
         "product": "GTA V"
       },
       {
@@ -650,7 +650,7 @@ let pages =
         "date": "2012-11-01",
         "description": "Wii-U page description",
         "href": "html/gen8_wii-u/wii-u.html",
-        "picture": "html/gen8_wii-u/wii_u.jpg",
+        "picture": "html/gen8_wii-u/media/wii_u.jpg",
         "product": "Wii-U"
       },
       {
