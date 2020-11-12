@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Metal Gear</title>
+    <link rel="shortcut icon" href="media/metal_gear.ico">
+    <!-- put your name here -->
+    <meta name="author" content="Gerald Prendi">
+    <!-- put page info here -->
+    <meta name="date" content="1987.7.13"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen3">
+    <meta name="product" content="Metal Gear">
+    <meta name="description" content="Metal Gear : an early ancestor of stealth games"> <!-- a short description of the product -->
+    <meta name="picture" content="media/metal_gear.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen3/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.png" );
+        --background-image-right: url( "media/background_right.png" );
+        /* this is the fading color between the images */
+        --background-fade-color: #0000ff;
+
+        /* this is the title image that will be shown at the top of the page */
+        --banner-image: url( "media/banner.png" );
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #006400;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/metal_gear_soundtrack.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #fff;
+        --container-text-color: #006400;
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #fff;
+        --index-text-color: #006400;
+        --index-border-color: #006400;
+
+        /* text styles parameters */
+        --link-color-hover: #49f4ea;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #88f;
+      }
+
+      /* author defined css */
+
+      /* Base css modification, modified to match the theme of the html */
+      #banner img {
+        width: 60%;
+        height: 30%;
+      }
+
+
+      #banner {
+        scroll-behavior: smooth;
+        /* border: 2px solid #fff; */
+        border-radius: 8px;
+        box-shadow: 10px 8px 12px #8db596;
+      }
+
+      /* image positioning and customization */
+
+      .img {
+        margin: 1%;
+        color: lightgray;
+      }
+      .img img{
+        max-width: 800px;
+      }
+      .right {
+        float: right;
+        margin-right: 20px;
+        margin-left: 8px;
+      }
+
+      .left {
+        float: left;
+        margin-right: 8px;
+        margin-left: 20px;
+      }
+
+      .left img {
+        width: 80%;
+      }
+
+      .center {
+        margin: 5 0;
+        text-align: center;
+      }
+
+      /* section formatting */
+      .section {
+        padding: 4%;
+      }
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Introduction</a>
+
+        </li>
+        <li><a href="#s2">Plot</a>
+
+        </li>
+        <li><a href="#s3">Gameplay</a>
+
+        </li>
+        <li><a href="#s4">Legacy</a>
+        </li>
+      </ol>
+    </div>
+
+    <div id="container">
+      <div id="banner">
+        <img alt="Banner Image2">
+      </div>
+
+      <div id="content">
+        <div class="section">
+          <h2 id="s1">Introduction</h2>
+          <div class="img left">
+            <img src="media/metal_gear_original.jpg" style=" max-width: 300px; margin: 2%;" alt="Metal Gear: The origianal" />
+            <figcaption>The original Metal Gear</figcaption>
+          </div>
+          <p>
+            Metal Gear is an overhead military action-adventure stealth video game originally released in 1987 by Konami for the MSX2 computer in Japan and parts of Europe.
+            Considered to be the progenitor of the stealth game genre, it was the first video game to be fully developed by Hideo Kojima, <br />
+            Players control Solid Snake, an operative of the special forces unit FOXHOUND, who goes on a solo infiltration mission into the fortified state of Outer Heaven to destroy Metal Gear,
+             a bipedal walking tank capable of launching nuclear missiles from anywhere in the world, as well as rescue a number of fellow agents who have been captured by the enemy.
+              The game was a major international success, with the NES version selling 1 million units in the United States.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 id="s2">Plot</h2>
+          <p>
+            Near the end of the 20th century, the West discovers that a weapon of mass destruction is being constructed inside Outer Heaven, a fortified state founded by a "legendary mercenary" 200 km north of Galzburg, South Africa.
+             The special forces unit FOXHOUND sends top agent Gray Fox to infiltrate the fortress, assess the situation and neutralize the threat.
+             FOXHOUND loses contact with Gray Fox a few days later, with his last transmission being "METAL GEAR..." To discover what happened to Gray Fox, FOXHOUND commander Big Boss sends his newest recruit, Solid Snake, into the area in an operation codenamed Intrude N313.<br  />
+            Upon insertion into Outer Heaven, Snake makes contact with local resistance members Schneider, Diane, and Jennifer. Using all of his skills and the equipment he procures on site, he manages to rescue Fox.
+            Fox explains that Metal Gear is the codename of a nuclear-equipped bipedal walking tank, which can engage in all forms of combat and launch nuclear weapons from any location. Outer Heaven plans to use Metal Gear to impose itself as the new world superpower.
+
+          </p>
+        </div>
+
+        <div class="section">
+        <h2 id="s3">GamePlay</h2>
+
+        <p>
+          The player controls a military operative codenamed Solid Snake, whose objective is to infiltrate the enemy's base while avoiding visual contact and direct confrontation with patrolling guards. If the player is seen, the game enters the "Alert Mode."
+          In this situation, Snake must escape from enemy's sight in order to resume infiltration. The method of escaping varies depending on the circumstances behind discovery:
+          If Snake is seen and only a single exclamation mark appears over an enemy's head, only the enemies in the player's present screen will attack and Snake can escape by simply moving to an adjacent screen.
+          However, if two exclamation marks appear over the enemy (or the player triggers an alarm by being spotted by a camera, infrared sensor or by creating a loud noise through an explosion or an unsuppressed gunshot),
+          reinforcements from off-screen will appear as well. Snake can only escape by eliminating all incoming enemies, going outdoors, entering an elevator, or entering a boss battle. </p>
+
+        <p><br />
+          <strong>!Important!</strong><br />
+          <ol>
+          <li>
+            Snake starts his mission unarmed, but can arm himself with numerous firearms and explosives that can be obtained throughout the enemy's stronghold. <br /></li>
+          <li>
+          Each weapon has limited ammunition or supplies and can only be replenished by obtaining ammunition caches or additional supplies.<br /></li>
+          <li>
+          A suppressor can also be obtained that allows the player to fire the handgun and submachine gun without making a noise.<br /></li>
+        </ol>
+        </p>
+        <div class="img center">
+          <img src="media/metal_gear_gameplay.gif" alt="Metal Gear Gameplay" />
+          <figcaption>Metal Gear Gameplay</figcaption>
+        </div>
+          </div>
+
+          <div class="section">
+
+
+        <h2 id="s4">Legacy</h2>
+        <p>
+          The MSX2 version of Metal Gear was ranked on MSX Magazine's top 20 best selling MSX games in Japan for five months, debuting at no. 4 on the October 1987 issue and peaking at no. 3 the following month.
+           The Games Machine gave a positive review of this version, giving the game a 79% global note. They praised the graphics and the size of the game area, underlining the fact that it ensured "that the action and suspense never wanes".
+            They also wrote that the game was rapidly addictive, and that "the urge to get further into the game is quite strong". They concluded positively on the quality of the game, saying that :
+            <blockquote>"If this standard of Konami software is maintained then maybe more people will think hard about joining the other 200,000 MSX owners".</blockquote>
+        </p>
+        <div class="img center">
+          <img src="media/metal_gear_legacy.png" width="80%" alt="Metal Gear Legacy Start" />
+          <figcaption>Metal Gear LEGACY:<br /> Where a wonderful journey began</figcaption>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
