@@ -80,13 +80,13 @@ function setup_meta(){
         author = els[i].content;
         break;
       case "generation":
-        // replace ' ' with '_'
+        // to lowercase and replace ' ' with '_'
         generation = els[i].content.toLowerCase().replaceAll( ' ', '_' );
         // replace accented letters with normal ones
         generation = generation.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
         break
       case "product":
-        // replace ' ' with '_'
+        // to lowercase and replace ' ' with '_'
         product = els[i].content.toLowerCase().replaceAll( ' ', '_' );
         // replace accented letters with normal ones
         product = product.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
