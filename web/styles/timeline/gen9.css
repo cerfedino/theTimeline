@@ -1,3 +1,9 @@
+/* set variables */
+:root{
+  --gen9-primary-color: #f5e6df;
+  --gen9-secondary-color: #05040a;
+}
+
 /* use external font */
 @font-face {
   font-family: gen9-font;
@@ -18,6 +24,9 @@
 
   /* background */
   background-color: #f5e6df;
+
+  /* border */
+  border-bottom: 3px solid #f5e6df;
 }
 .timelineLabel.gen9 h1{
 }
@@ -29,6 +38,9 @@
 
   /* text */
   color: #f5e6df;
+
+  /* border */
+  border-color: #f5e6df;
 }
 /* The timeline line */
 #gen9.timeline::after {

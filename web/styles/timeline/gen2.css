@@ -1,3 +1,9 @@
+/* set variables */
+:root{
+  --gen2-primary-color: #fe0;
+  --gen2-secondary-color: #000;
+}
+
 /* use external font */
 @font-face {
   font-family: gen2-font;
@@ -17,7 +23,10 @@
   color: #000;
 
   /* background */
-  background-color: #ff0;
+  background-color: #fe0;
+
+  /* border */
+  border-bottom: 3px solid #fe0;
 }
 .timelineLabel.gen2 h1{
 }
@@ -29,11 +38,14 @@
 
   /* text */
   color: #fff;
+
+  /* border */
+  border-color: #fe0;
 }
 /* The timeline line */
 #gen2.timeline::after {
   /* background */
-  background-color: #ff0;
+  background-color: #fe0;
 }
 
 /* ============================================================================= PRODUCT CONTAINER */
@@ -59,7 +71,7 @@
   border-radius: 50%;
 
   /* background */
-  background-color: #FFFF00;
+  background-color: #fe0;
 }
 
 /* Left container extrusion */

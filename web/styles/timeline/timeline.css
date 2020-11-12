@@ -7,7 +7,7 @@
 }
 
 #fulltimeline{
-  background-color: blue;
+  background-color: #000;
 }
 
 /* ============================================================================= TIMELINE */
@@ -29,8 +29,12 @@
   top: 0px;
 
   /* size */
+  box-sizing: content-box;
   width: 100%;
   height: 50px;
+
+  /* border */
+  border-bottom: 3px solid #fff;
 }
 .timelineLabel h1{
   /* position */
@@ -48,6 +52,10 @@
 
   /* content */
   overflow-x: hidden;
+
+  /* border */
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
 }
 /* The timeline line */
 .timeline::after {

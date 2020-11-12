@@ -1,7 +1,7 @@
 /* ============================================================================= NAVBAR */
 #navbar{
   /* background */
-  background-color: yellow;
+  background-color: var( --navbar-bg-color );
 
   /* size */
   width: 100%;
@@ -16,10 +16,11 @@
 /* ==========================================================================--- TITLE */
 #navbar-title{
   /* background */
-  background-color: #fff;
+  background-color: var( --navbar-bg-color );
 
   /* text */
-  color: #000;
+  color: var( --navbar-text-color );
+  font-family: var( --navbar-font-family );
 
   /* size */
   height: 50px;
@@ -47,13 +48,7 @@
 }
 
 /* ==========================================================================--- MENU BUTTON */
-#navbar-button{
-  /* background */
-  background-color: #fff;
-
-  /* text */
-  color: #000;
-
+.buttons{
   /* size */
   height: 50px;
 
@@ -62,14 +57,26 @@
   top: 0;
   right: 0;
   z-index: 2;
+}
+
+#navbar-button{
+  /* background */
+  background-color: var( --navbar-bg-color );
+
+  /* text */
+  color: var( --navbar-text-color );
+  font-family: var( --navbar-font-family );
+
+  /* position */
+  float: left;
   padding: 0 10px;
 }
 #navbar-button:hover{
   /* background */
-  background-color: #000;
+  background-color: var( --navbar-text-color ); /*inverted*/
 
   /* text */
-  color: #fff;
+  color: var( --navbar-bg-color ); /*inverted*/
 }
 
 /* ==========================================================================--- NAVMENU TEXT */
@@ -78,43 +85,85 @@
   margin: 0;
 
   /* content */
-  text-align: right;
   line-height: 50px;
 }
 
 /* ==========================================================================--- NAVMENU CONTENT */
 #navmenu{
-  background-color: magenta;
-  width: 30%;
-  height: 50%;
+  /* background */
+  background-color: var( --navbar-text-color ); /*inverded*/
+
+  /* size */
+  width: max( 49vw, 300px );
+
+  /* border */
   border: solid 3px white;
+
+  /* position */
   position: absolute;
   z-index: 1;
   top: 50px;
   right: 0px;
-  float: right;
+
+  /* text */
+  color: var( --navbar-bg-color );/*inverded*/
+  font-family: var( --navbar-font-family );
 }
 #navmenu.collapsed{
   /* display */
   display: none;
 }
-#leftpane, #rightpane{
+#navbar-button:hover #navmenu{
+  /* text */
+  color: var( --navbar-bg-color );/*inverded*/
+}
+#navmenu p{
+  margin: 0;
+}
+
+#leftpane{
   /* size */
-  max-height: 100%;
+  width: 50px;
   height: 100%;
 
   /* position */
-  vertical-align: top;
-}
-#leftpane{
+  float: left;
+
+  /* content */
+  text-align: right;
+
   /* border */
   border-right: solid 3px white;
 }
-#navmenu ul{
-  /* content */
-  list-style-type: none;
+#navmenu .navmenu-entry.gen{
+  /* position */
+  padding-right: 5px;
 }
-#navmenu li.navmenu-entry.gen.active{
-  /* border */
-  border-bottom: 3px dotted red;
+#navmenu .navmenu-entry.gen.active{
+  /* text */
+  color: var( --navbar-text-color );/*inverded*//*inverded*/
+
+  /* background */
+  background-color: var( --navbar-bg-color );/*inverded*//*inverded*/
+}
+
+#rightpane{
+  /* size */
+  width: calc( 100% - 50px );
+  max-height: calc( 100vh - 50px - 6px);
+
+  /* position */
+  float: left;
+}
+#navmenu .navmenu-entry.page{
+  /* position */
+  padding-left: 5px;
+}
+
+#navmenu .navmenu-entry:hover{
+  /* text */
+  color: var( --navbar-text-color );/*inverded*//*inverded*/
+
+  /* background */
+  background-color: var( --navbar-bg-color );/*inverded*//*inverded*/
 }

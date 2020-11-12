@@ -1,3 +1,9 @@
+/* set variables */
+:root{
+  --gen6-primary-color: #fff;
+  --gen6-secondary-color: #3f3e3a;
+}
+
 /* use external font */
 @font-face {
   font-family: gen6-font;
@@ -18,6 +24,9 @@
 
   /* background */
   background-color: #fff;
+
+  /* border */
+  border-bottom: 3px solid #fff;
 }
 .timelineLabel.gen6 h1{
 }
@@ -29,6 +38,9 @@
 
   /* text */
   color: #fff;
+
+  /* border */
+  border-color: #fff;
 }
 /* The timeline line */
 #gen6.timeline::after {
