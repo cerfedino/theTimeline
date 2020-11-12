@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>tecnology </title>
+
+    <!-- put your name here -->
+    <meta name="author" content="Vladimir Nicolo Benincasa">
+    <!-- put page info here -->
+    <meta name="date" content="1973-04-10"> <!-- the date the product was launched -->
+    <meta name="generation" content="gen1">
+    <meta name="product" content="Technolgy">
+    <meta name="description" content="General overview of the first generation technology, what are the character of this generation)"> <!-- a short description of the product -->
+    <meta name="picture" content="media/technology.png"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+
+    <!-- this is the base style, necessary in every product page -->
+    <link rel="stylesheet" href="../../styles/base/style.css">
+    <!-- this is the generation style, must be set to the appropriate generation -->
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen1/style.css">
+    <!-- this is the user style, here you shoud set variables and add your css (optional) -->
+    <style id="user-style">
+      :root{
+        /* these are the background images (left and right) */
+        --background-image-left: url( "media/background_left.jpg" );
+        --background-image-right: url( "media/background_right.jpg" );
+        /* this is the fading color between the images */
+        --background-fade-color: #0000ff;
+
+        /* this is the color behind the image (visible only if the image has transparence) */
+        --banner-color: #0ff;
+
+        /* the audio file that will be played */
+        --audio-file: url( "media/sound.mp3" );
+
+        /* the container parameters */
+        --container-background-color: #fff;
+        --container-text-color: #f0f;
+        --container-border-color: #000;
+
+        /* the index parameters */
+        --index-background-color: #ff0;
+        --index-text-color: #00f;
+        --index-border-color: #0ff;
+
+        /* text styles parameters */
+        --link-color-hover: #f00;
+
+        /* content scrollbar */
+        --scrollbar-thumb: #88f;
+      }
+
+      /* your style here */
+      /* .best-div-ever{
+        display: none;
+      } */
+    </style>
+    <!-- this is the script file for all the onload operations -->
+    <script src="../../script/onload.js"></script>
+  </head>
+  <body onload="onload();">
+    <!-- the backgrounds -->
+    <div class="bg" id="bg-left"></div>
+    <div class="bg" id="bg-right"></div>
+    <!-- the back and the music button -->
+    <div class="button" id="back-button"></div>
+    <div class="button" id="sound-button"></div>
+    <!-- the index of the page, with all the link to the sections -->
+    <div id="index">
+      <ol>
+        <li><a href="#s1">Tecnology</a>
+        </li>
+      </ol>
+    </div>
+    <div id="container">
+      <div id="banner">
+        <img src="media/technology.png" alt="Banner Image">
+      </div>
+      <div id="content">
+        <h2 id="s1">Tecnology</h2>
+        <p>
+          The first generation of video game consoles began in 1972 with the Magnavox Odyssey (which began development in 1968 by Ralph Baer under the code name “The Brown Box”), until 1977, when “pong”-style console manufacturers left the market en masse due to the video game crash of 1977 and when microprocessor-based consoles were introduced. In Japan, the generation continued until 1980 with the Color TV-Game series.
+
+The characteristics of all  first generation of video game consoles coincide in the use of a very basic electronics,in which the main protagonists are transistors and diodes, in the most primitive cases, and simple chips in the most advanced.   As for the color systems, they start from black and white in the first video consoles and the use of color graphics in the later ones. We found video consoles that have the controls integrated in the main panel and others that have separate controls by cable. As for the appearance, we can find some with wood finish, other plastic with neutral colors and also with a color finish. Some video consoles have accessories such as guns or light guns.
+
+The first generation of consoles did not contain a microprocessor and were based on custom codeless state machine computers consisting of discrete logic circuits comprising each element of the game itself. Over the generation, technology steadily improved and later consoles of the generation moved the bulk of the circuitry to custom integrated circuits such as Atari's custom Pong chips and General Instruments' AY-3-8500 series.
+
+Graphical capabilities were limited throughout the generation, often supported with physical accessories and screen overlays, but saw some improvement towards the end of the generation. While the Odyssey could only display 3 square dots in black and white, as the generation progressed, consoles started being able to display color as well as more complex shapes and text. Early consoles such as the Odyssey and TV Tennis Electrotennis required players to keep track of scores manually but later, many introduced score counters on the display to assist players in score tracking. Audio capabilities were slow to improve over the generation, starting with the Odyssey, which had no audio, and later moving on to consoles which had buzzers that could produce a small range of beeps and buzzes.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
