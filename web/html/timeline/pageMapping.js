@@ -85,7 +85,7 @@ let pages =
         "date": "1972-03-02",
         "description": "Brown Box - prototype of the firs console",
         "href": "html/gen0_brown_box/brown_box.html",
-        "picture": "html/gen0_brown_box/media/placeholder.gif",
+        "picture": "html/gen0_brown_box/media/brown-box.png",
         "product": "brown box"
       }
     ]
