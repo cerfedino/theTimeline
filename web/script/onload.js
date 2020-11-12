@@ -57,8 +57,8 @@ function normalize_text( text ){
   text = text.toLowerCase().replaceAll( ' ', '_' );
   // replace accented letters with normal ones
   text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  // remove ':'
-  text = text.replaceAll( ':', '' );
+
+  text = text.replaceAll( '#', '' );
 
   return text;
 }
@@ -219,24 +219,24 @@ function setup_back(){
 
   // link the click to the button
   back_button.onclick = () => {
-    document.location.href = "../timeline/timeline.html#" + product;
+    document.location.href = "../timeline/timeline.html#" + encodeURIComponent( product) ;
   }
 }
 
 // ============================================================================= BANNER
-let banner_element = null;
-let banner_image = null;
-
-function setup_banner(){
-  // get the banner image element
-  banner_element = get_element( 'banner' ).firstElementChild;
-  // get the banner image
-  banner_image = get_css_variable( '--banner-image' );
-  banner_image = banner_image.split('"')[1];
-
-  // set element src attribute
-  banner_element.setAttribute("src", banner_image)
-}
+// let banner_element = null;
+// let banner_image = null;
+//
+// function setup_banner(){
+//   // get the banner image element
+//   banner_element = get_element( 'banner' ).firstElementChild;
+//   // get the banner image
+//   banner_image = get_css_variable( '--banner-image' );
+//   banner_image = banner_image.split('"')[1];
+//
+//   // set element src attribute
+//   banner_element.setAttribute("src", banner_image)
+// }
 
 // ============================================================================= CSS VARIABLES
 let variables_to_fix = [
