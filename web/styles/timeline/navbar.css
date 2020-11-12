@@ -1,0 +1,115 @@
+/* ============================================================================= NAVBAR */
+#navbar{
+  /* background */
+  background-color: yellow;
+
+  /* size */
+  width: 100%;
+  height: 50px;
+
+  /* position */
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+
+#navbar-title{
+  /* background */
+  background-color: #fff;
+
+  /* text */
+  color: #000;
+
+  /* size */
+  height: 50px;
+
+  /* position */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 10px;
+}
+#navbar-title h1{
+  /* position */
+  margin: 0;
+
+  /* content */
+  text-align: left;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar-title{
+    display: none;
+  }
+}
+
+#navbar-button{
+  /* background */
+  background-color: #fff;
+
+  /* text */
+  color: #000;
+
+  /* size */
+  height: 50px;
+
+  /* position */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 10px;
+}
+#navbar-button:hover{
+  /* background */
+  background-color: #000;
+
+  /* text */
+  color: #fff;
+}
+
+#navmenu-toggle{
+  /* position */
+  margin: 0;
+
+  /* content */
+  text-align: right;
+  line-height: 50px;
+}
+#navmenu{
+  background-color: magenta;
+  width: 30%;
+  height: 50%;
+  border: solid 3px white;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 0px;
+  float: right;
+}
+#navmenu.collapsed{
+  /* display */
+  display: none;
+}
+#leftpane, #rightpane{
+  /* size */
+  max-height: 100%;
+  height: 100%;
+
+  /* position */
+  vertical-align: top;
+}
+#leftpane{
+  /* border */
+  border-right: solid 3px white;
+}
+#navmenu ul{
+  /* content */
+  list-style-type: none;
+}
+#navmenu li.navmenu-entry.gen.active{
+  /* border */
+  border-bottom: 3px dotted red;
+}
