@@ -91,6 +91,18 @@ let switchNavmenuToGenX = function(genX){
     });
 }
 
+// update the navbar with the generations style, called by the sticky event
+function update_navbar_gen( gen_n ){
+  console.log( gen_n );
+  if(!isNaN( gen_n )){
+    let style = document.getElementById( 'style-variables' );
+    let vars = style.innerText;
+    console.log( vars );
+    vars = vars.replaceAll( /(gen\d)/g , 'gen' + gen_n );
+    style.innerText = vars;
+  }
+}
+
 // ============================================================================= HANDLERS
 // Sets up all he event listeners
 let setupHandlers = function(){
@@ -113,9 +125,6 @@ let setupHandlers = function(){
     collapseTimeline($(this).attr( 'href' ), false);
     // The page scrolls to the timeline
     scroll_to( '#' + $(this).attr( 'href' ) );
-    // $( 'html, body' ).animate({
-    //     scrollTop: ($( '#'+$(this).attr( 'href' )).offset().top - 50)
-    // },500);
   });
 
   //When a generation label in the navmenu gets hovered, the game list gets switched
@@ -136,76 +145,14 @@ let setupHandlers = function(){
     scroll_to( window.location.hash );
   });
 
-  // setup the observer that check if an element sticked
-  // const observer = new IntersectionObserver(
-  //   ([e]) => {
-  //     // if( e.intersectionRatio == 1){
-  //       console.log(e.target.classList[1], e.intersectionRatio, e);
-  //       const targetInfo = record.boundingClientRect;
-  //       const stickyTarget = record.target.parentElement.querySelector('.sticky');
-  //       const rootBoundsInfo = record.rootBounds;
-  //       // e.target.classList.toggle('isSticky', e.intersectionRatio < 1)
-  //     // }
-  //   }, {
-  //     threshold: [0.5],
-  //     root: document.getElementById('navbar-button')
-  //   }
-  // );
-  // $( '.timelineLabel' ).each( ( index, element ) => {
-  //   observer.observe( element );
-  // })
-  //
-  // document.getElementsByClassName('generationLabel').for;
-  // document.addEventListener('sticky-change', e => { console.log(e);});
-
-  // document.addEventListener('sticky-change', e => {
-  //   console.log(e);
-    // const header = e.detail.target;  // header became sticky or stopped sticking.
-    // const sticking = e.detail.stuck; // true when header is sticky.
-    // header.classList.toggle('shadow', sticking); // add drop shadow when sticking.
-    //
-    // document.querySelector('.who-is-sticking').textContent = header.textContent;
-  // });
-
+  $(".timelineLabel").stick_in_parent()
+    .on("sticky_kit:stick", function(e) {
+      update_navbar_gen( e.target.classList[1].substring(3) );
+    })
+    .on("sticky_kit:unstick", function(e) {
+      update_navbar_gen( e.target.classList[1].substring(3) - 1 );
+  });
 }
-
-// function observeHeaders(container) {
-//   const observer = new IntersectionObserver((records, observer) => {
-//     for (const record of records) {
-//       const targetInfo = record.boundingClientRect;
-//       const stickyTarget = record.target.parentElement.querySelector('.sticky');
-//       const rootBoundsInfo = record.rootBounds;
-//
-//       // Started sticking.
-//       if (targetInfo.bottom < rootBoundsInfo.top) {
-//         fireEvent(true, stickyTarget);
-//       }
-//
-//       // Stopped sticking.
-//       if (targetInfo.bottom >= rootBoundsInfo.top &&
-//           targetInfo.bottom < rootBoundsInfo.bottom) {
-//        fireEvent(false, stickyTarget);
-//       }
-//     }
-//   }, {threshold: [0], root: container});
-//
-//   // Add the top sentinels to each section and attach an observer.
-//   const sentinels = addSentinels(container, 'sticky_sentinel--top');
-//   sentinels.forEach(el => observer.observe(el));
-// }
-//
-// function addSentinels(container, className) {
-//   return Array.from(container.getElementsByClassName('.sticky')).map(el => {
-//     const sentinel = document.createElement('div');
-//     sentinel.classList.add('sticky_sentinel', className);
-//     return el.parentElement.appendChild(sentinel);
-//   });
-// }
-//
-// function fireEvent(stuck, target) {
-//   const e = new CustomEvent('sticky-change', {detail: {stuck, target}});
-//   document.dispatchEvent(e);
-// }
 
 $(document).ready(function(){
   //The navmenu gets generated based on the contents of 'pageMapping.json'
