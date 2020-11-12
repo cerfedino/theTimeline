@@ -65,7 +65,7 @@
 /* Left container dot on line */
 #gen0 .container.left::after{
   /* position */
-  right: -10px;
+  right: -9px;
 }
 
 /* Right container extrusion */
@@ -110,6 +110,8 @@
 
 /* The picture */
 #gen0 .content .picture{
+  /* border */
+  border-radius: 0;
 }
 #gen0 .right .content .picture{
 }
@@ -138,6 +140,6 @@
   }
 
   /* The picture */
-  #gen0 .left .content .picture, .right .content .picture{
+  #gen0 .left .content .picture, #gen0 .right .content .picture{
   }
 }

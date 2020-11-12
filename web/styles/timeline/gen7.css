@@ -1,0 +1,180 @@
+/* use external font */
+@font-face {
+  font-family: gen7-font;
+  src: url( "../gen7/media/font.ttf"); /* relative path */
+}
+
+/* ============================================================================= TIMELINE */
+.timelineContainer.gen7{
+  /* text */
+  font-family: gen7-font;
+  font-size: 110%;
+}
+
+/* ============================================================================= TIMELINE LABEL */
+.timelineLabel.gen7{
+  /* text */
+  color: #010112;
+
+  /* background */
+  background-color: #fff;
+}
+.timelineLabel.gen7 h1{
+}
+
+/* ============================================================================= TIMELINE */
+#gen7.timeline {
+  /* background */
+  background-color: #000;
+
+  /* text */
+  color: #fff;
+}
+/* The timeline line */
+#gen7.timeline::after {
+  /* background */
+  background-color: #fff;
+}
+
+/* ============================================================================= PRODUCT CONTAINER */
+#gen7 .container {
+}
+/* The extrusion from the element to the line */
+#gen7 .container::before{
+}
+/* The dot on the line */
+#gen7 .container::after{
+  /* position */
+  top: 17px;
+  margin: 0;
+
+  /* size */
+  height: 30px;
+  width: 30px;
+
+  /* border */
+  border: none;
+
+  /* background */
+  background-color: #fff;
+
+  /* transform */
+  transform: inherit rotateZ(45deg);
+}
+
+/* Left container extrusion */
+#gen7 .container.left::before {
+  /* border */
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+/* Left container dot on line */
+#gen7 .container.left::after{
+  /* position */
+  right: -14px;
+}
+
+/* Right container extrusion */
+#gen7 .container.right::before {
+  /* border */
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+/* Right container dot on line */
+#gen7 .container.right::after {
+  /* position */
+  left: -15px;
+}
+
+/* The animation classes */
+/* The animaton of the container */
+#gen7 .anim-in.container{
+  /* animation */
+  animation: container-anim-in-gen7 1.2s ease forwards;
+}
+/* The animation of the dot on the line */
+#gen7 .anim-in.container::after{
+  /* animation */
+  animation: container-after-anim-in-gen7 1.2s ease forwards;
+}
+
+/* The animations */
+@keyframes container-anim-in-gen7 {
+  /* move to te center by the 60% mark */
+  60% { transform: translateX(0%); }
+  /* stay there forever */
+  100% { transform: translateX(0%); }
+}
+@keyframes container-after-anim-in-gen7 {
+  /* stay invisible until 70% mark */
+  70% { transform: scale( 0 ) rotateZ( 45deg ); }
+  /* appear */
+  100% { transform: scale( 1 ) rotateZ( 45deg ); }
+}
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* the container */
+  #gen7 .container.right, #gen7 .container.left{
+  }
+
+  /* The extrusion */
+  #gen7 .container.right::before, #gen7 .container.left::before {
+    /* border */
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  /* The dot on the line */
+  #gen7 .container.left::after, #gen7 .container.right::after {
+    /* position */
+    left: 16px;
+  }
+}
+
+/* ============================================================================= PRODUCT CONTENT */
+#gen7 .content{
+  /* border */
+  border-color: #fff;
+
+  /* background */
+  background-color: #010112;
+}
+#gen7 .right .content{
+}
+#gen7 .left .content{
+}
+
+/* The picture */
+#gen7 .content .picture{
+}
+#gen7 .right .content .picture{
+}
+#gen7 .left .content .picture{
+}
+
+/* The title */
+#gen7 .content .title{
+}
+/* The date */
+#gen7 .content .date{
+}
+/* The description */
+#gen7 .content .description{
+}
+/* The author */
+#gen7 .content .author{
+}
+#gen7 .content .author::before{
+}
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* The content */
+  #gen7 .left .content, #gen7 .right .content{
+  }
+
+  /* The picture */
+  #gen7 .left .content .picture, #gen7 .right .content .picture{
+  }
+}

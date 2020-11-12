@@ -8,7 +8,123 @@ body {
   width: 100%;
   margin: 0;
 }
+/* ============================================================================= NAVBAR */
+#navbar{
+  /* background */
+  background-color: yellow;
 
+  /* size */
+  width: 100%;
+  height: 50px;
+
+  /* position */
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+
+#navbar-title{
+  /* background */
+  background-color: #fff;
+
+  /* text */
+  color: #000;
+
+  /* size */
+  height: 50px;
+
+  /* position */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 10px;
+}
+#navbar-title h1{
+  /* position */
+  margin: 0;
+
+  /* content */
+  text-align: left;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar-title{
+    display: none;
+  }
+}
+
+#navbar-button{
+  /* background */
+  background-color: #fff;
+
+  /* text */
+  color: #000;
+
+  /* size */
+  height: 50px;
+
+  /* position */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 10px;
+}
+#navbar-button:hover{
+  /* background */
+  background-color: #000;
+
+  /* text */
+  color: #fff;
+}
+
+#navmenu-toggle{
+  /* position */
+  margin: 0;
+
+  /* content */
+  text-align: right;
+  line-height: 50px;
+}
+#navmenu{
+  background-color: magenta;
+  width: 30%;
+  height: 50%;
+  border: solid 3px white;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 0px;
+  float: right;
+}
+#navmenu.collapsed{
+  /* display */
+  display: none;
+}
+#leftpane, #rightpane{
+  /* size */
+  max-height: 100%;
+  height: 100%;
+
+  /* position */
+  vertical-align: top;
+}
+#leftpane{
+  /* border */
+  border-right: solid 3px white;
+}
+#navmenu ul{
+  /* content */
+  list-style-type: none;
+}
+#navmenu li.navmenu-entry.gen.active{
+  /* border */
+  border-bottom: 3px dotted red;
+}
+
+/* ============================================================================= */
 /* STYLING THAT THE TIMELINE AND THE GENERATION BANNER HAVE IN COMMON */
 .timelineLabel, .timeline, #fulltimeline{
   max-width: 1200px;
@@ -36,15 +152,20 @@ body {
 
   /* position */
   position: sticky;
-  z-index: 3;
+  z-index: 1;
   top: 0px;
 
   /* size */
   width: 100%;
+  height: 50px;
 }
 .timelineLabel h1{
   /* position */
   margin: 0;
+
+  /* text */
+  line-height: 50px;
+  text-align: center;
 }
 
 /* ============================================================================= TIMELINE */
@@ -76,7 +197,9 @@ body {
 }
 .timeline.collapsed{
   /* display */
-  display: none;
+  /* display: none; */
+  height: 0px;
+  transition: height 1s linear;
 }
 
 /* Responsive style */
@@ -136,7 +259,7 @@ body {
 
   /* border */
   border: 4px solid #FF9F55;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 
   /* display */
   transform: scale( 0 );
@@ -272,7 +395,9 @@ body {
   background-color: #fff;
 
   /* border */
-  border-radius: 6px;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
 }
 .right .content{
   /* text */
@@ -291,16 +416,27 @@ body {
   /* size */
   width: 100px;
   height: 100px;
+
+  /* border */
+  border-width: inherit;
+  border-style: inherit;
+  border-color: inherit;
 }
 .right .content .picture{
   /* position */
   float: left;
   margin-right: 10px;
+
+  /* border */
+  border-radius: 5px 0 0 0;
 }
 .left .content .picture{
   /* position */
   float: right;
   margin-left: 10px;
+
+  /* border */
+  border-radius: 0 5px 0 0;
 }
 
 /* The title */
@@ -322,7 +458,7 @@ body {
 /* The author */
 .content .author{
   /* position */
-  margin: 10px 10px;
+  margin: 10px 10px 0 10px;
 }
 .content .author::before{
   /* content */
@@ -343,53 +479,4 @@ body {
     float: left;
     margin: 0 10px 10px 0;
   }
-}
-
-/* ============================================================================= NAVBAR */
-#navbar{
-  background-color: yellow;
-  width: 100%;
-  height: 10%;
-
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-#navmenu-toggle{
-  background-color: purple;
-  color: white;
-
-  display: block;
-  float: right;
-}
-#navmenu{
-  background-color: magenta;
-
-  width: 30%;
-  height: 50%;
-  border: solid 3px white;
-  position: absolute;
-  z-index: 1;
-  top: 50px;
-  right: 0px;
-  float: right;
-}
-#navmenu.collapsed{
-  display: none;
-}
-#leftpane, #rightpane{
-  max-height: 100%;
-  height: 100%;
-
-  vertical-align: top;
-}
-#leftpane{
-
-  border-right: solid 3px white;
-}
-ul{
-  list-style-type:none;
-}
-li.navmenu-entry.gen.active{
-  border-bottom: 3px dotted red;
 }

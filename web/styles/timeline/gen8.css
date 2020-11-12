@@ -1,0 +1,180 @@
+/* use external font */
+@font-face {
+  font-family: gen8-font;
+  src: url( "../gen8/media/font.ttf"); /* relative path */
+}
+
+/* ============================================================================= TIMELINE */
+.timelineContainer.gen8{
+  /* text */
+  font-family: gen8-font;
+  font-size: 110%;
+}
+
+/* ============================================================================= TIMELINE LABEL */
+.timelineLabel.gen8{
+  /* text */
+  color: #05040a;
+
+  /* background */
+  background-color: #f5e6df;
+}
+.timelineLabel.gen8 h1{
+}
+
+/* ============================================================================= TIMELINE */
+#gen8.timeline {
+  /* background */
+  background-color: #000;
+
+  /* text */
+  color: #f5e6df;
+}
+/* The timeline line */
+#gen8.timeline::after {
+  /* background */
+  background-color: #f5e6df;
+}
+
+/* ============================================================================= PRODUCT CONTAINER */
+#gen8 .container {
+}
+/* The extrusion from the element to the line */
+#gen8 .container::before{
+}
+/* The dot on the line */
+#gen8 .container::after{
+  /* position */
+  top: 17px;
+  margin: 0;
+
+  /* size */
+  height: 30px;
+  width: 30px;
+
+  /* border */
+  border: none;
+
+  /* background */
+  background-color: #f5e6df;
+
+  /* transform */
+  transform: inherit rotateZ(45deg);
+}
+
+/* Left container extrusion */
+#gen8 .container.left::before {
+  /* border */
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #f5e6df;
+}
+/* Left container dot on line */
+#gen8 .container.left::after{
+  /* position */
+  right: -14px;
+}
+
+/* Right container extrusion */
+#gen8 .container.right::before {
+  /* border */
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f5e6df transparent transparent;
+}
+/* Right container dot on line */
+#gen8 .container.right::after {
+  /* position */
+  left: -15px;
+}
+
+/* The animation classes */
+/* The animaton of the container */
+#gen8 .anim-in.container{
+  /* animation */
+  animation: container-anim-in-gen8 1.2s ease forwards;
+}
+/* The animation of the dot on the line */
+#gen8 .anim-in.container::after{
+  /* animation */
+  animation: container-after-anim-in-gen8 1.2s ease forwards;
+}
+
+/* The animations */
+@keyframes container-anim-in-gen8 {
+  /* move to te center by the 60% mark */
+  60% { transform: translateX(0%); }
+  /* stay there forever */
+  100% { transform: translateX(0%); }
+}
+@keyframes container-after-anim-in-gen8 {
+  /* stay invisible until 70% mark */
+  70% { transform: scale( 0 ) rotateZ( -135deg ); }
+  /* appear */
+  100% { transform: scale( 1 ) rotateZ( 45deg ); }
+}
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* the container */
+  #gen8 .container.right, #gen8 .container.left{
+  }
+
+  /* The extrusion */
+  #gen8 .container.right::before, #gen8 .container.left::before {
+    /* border */
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f5e6df transparent transparent;
+  }
+
+  /* The dot on the line */
+  #gen8 .container.left::after, #gen8 .container.right::after {
+    /* position */
+    left: 16px;
+  }
+}
+
+/* ============================================================================= PRODUCT CONTENT */
+#gen8 .content{
+  /* border */
+  border-color: #f5e6df;
+
+  /* background */
+  background-color: #05040a;
+}
+#gen8 .right .content{
+}
+#gen8 .left .content{
+}
+
+/* The picture */
+#gen8 .content .picture{
+}
+#gen8 .right .content .picture{
+}
+#gen8 .left .content .picture{
+}
+
+/* The title */
+#gen8 .content .title{
+}
+/* The date */
+#gen8 .content .date{
+}
+/* The description */
+#gen8 .content .description{
+}
+/* The author */
+#gen8 .content .author{
+}
+#gen8 .content .author::before{
+}
+
+/* Responsive style */
+@media screen and (max-width: 800px) {
+  /* The content */
+  #gen8 .left .content, #gen8 .right .content{
+  }
+
+  /* The picture */
+  #gen8 .left .content .picture, #gen8 .right .content .picture{
+  }
+}

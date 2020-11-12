@@ -71,7 +71,7 @@
 /* Left container dot on line */
 #gen2 .container.left::after{
   /* position */
-  right: -15px;
+  right: -14px;
 }
 
 /* Right container extrusion */
@@ -150,6 +150,6 @@
   }
 
   /* The picture */
-  #gen2 .left .content .picture, .right .content .picture{
+  #gen2 .left .content .picture, #gen2 .right .content .picture{
   }
 }
