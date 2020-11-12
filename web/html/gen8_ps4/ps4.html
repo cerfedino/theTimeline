@@ -11,44 +11,42 @@
     <meta name="generation" content="gen8">
     <meta name="product" content="PS4">
     <meta name="description" content="PlayStation 4 description page"> <!-- a short description of the product -->
-    <meta name="picture" content="media/placeholder.gif"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
+    <meta name="picture" content="media/bg-left.jpg"> <!-- a square gif representing the product (if you are not able to edit the gif, ask someone in your group or the CSS Leaders to edit it for you) -->
 
     <!-- this is the base style, necessary in every product page -->
     <link rel="stylesheet" href="../../styles/base/style.css">
     <!-- this is the generation style, must be set to the appropriate generation -->
-    <link rel="stylesheet" id="generation-style" href="../../styles/gen0/style.css">
+    <link rel="stylesheet" id="generation-style" href="../../styles/gen8/style.css">
     <!-- this is the user style, here you shoud set variables and add your css (optional) -->
     <style id="user-style">
       :root{
         /* these are the background images (left and right) */
-        --background-image-left: url( "media/background_left.jpg" );
-        --background-image-right: url( "media/background_right.jpg" );
+        --background-image-left: url( "media/bg-left.jpg" );
+        --background-image-right: url( "media/bg-right.jpg" );
         /* this is the fading color between the images */
         --background-fade-color: #0000ff;
 
-        /* this is the title image that will be shown at the top of the page */
-        --banner-image: url( "media/banner.png" );
         /* this is the color behind the image (visible only if the image has transparence) */
-        --banner-color: #0ff;
+        --banner-color: white;
 
         /* the audio file that will be played */
         --audio-file: url( "media/sound.mp3" );
 
         /* the container parameters */
         --container-background-color: #fff;
-        --container-text-color: #f0f;
+        --container-text-color: black;
         --container-border-color: #000;
 
         /* the index parameters */
-        --index-background-color: #ff0;
-        --index-text-color: #00f;
+        --index-background-color: white;
+        --index-text-color: black;
         --index-border-color: #0ff;
 
         /* text styles parameters */
-        --link-color-hover: #f00;
+        --link-color-hover: #0ff;
 
         /* content scrollbar */
-        --scrollbar-thumb: #88f;
+        --scrollbar-thumb: #0ff;
       }
 
       /* your style here */
@@ -68,7 +66,7 @@
     <div class="button" id="sound-button"></div>
     <!-- the index of the page, with all the link to the sections -->
     <div id="index">
-      <ol> 
+      <ol>
       <li> <a href="#s1"> Introduction </a></li>
       <li> <a href="#s2"> The hardware </a></li>
       <li> <a href="#s3"> Input devices </a></li>
@@ -78,12 +76,16 @@
     </div>
     <div id="container">
       <div id="banner">
-        <img alt="Banner Image">
+        <img src="media/ps4_banner.png" alt="Banner Image">
       </div>
       <div id="content">
         <h2 id="s1"> Introduction </h2>
         <p> The third 8th generation console to be launched was the PlayStation 4, released by Sony in November 2013. Intended to be the successor of PlayStation 3 released 7 years before, it gained much more success than its predecessor and became the most sold console for many months, even beating its strongest competitor, Xbox One. Moving from the very complex Cell architecture of the predecessor made the console more actractive for developers, while the renowned gamepad, support for new standard and social features was a very welcome update. </p>
-        
+        <br>
+        <div style="text-align: center">
+        <img src="media/ps4.jpg" alt="ps4 img">
+        </div>
+        <br>
         <h2 id="s2"> The hardware </h2>
         <p> As already stated, the PS4 drops the IBM Cell Processor used in the PS3, in favour of a simpler, x86-based CPU. Specifically, the device integrates a semi-custom AMD Octa core chip based on the power efficient Jaguar microarchitecture, running at 1.6 GHz. There is also a low-power co-processor to handle background tasks. </p>
         <p> This is the first time Sony used a PC-like architecture on their console, unlike Microsoft, whose first Xbox was based on an Intel processor. This was a welcome change from the developer perspective, because PS4 and PC games were theoretically compatible, requiring much less effort to port games on the PS4. The big disadvantage for users is that PS4 drops any kind of backward compatibility with PS3, because emulating a Cell microprocessor would have required a huge CPU load with consequent low performances. </p>
@@ -92,14 +94,14 @@
         <p> The console integrates 8 GB of GDDR5 ram, shared between processor and graphics. This is one of the reason the performance of PS4 is superior to the Xbox One, which implements much slower DDR3 ram. </p>
         <p> Internal storage is based on replaceable hard-disk drives. Sony ships the PS4 with 500 GB, 1 TB and 2 TB drives, although the user can even install a solid state drive there. The optical drive supports DVD and Blu-ray disks, but not CDs. Storage is expandable with external USB media, although this requires a firmware upgrade. </p>
         <p> The console supports Wifi, Ethernet and Bluetooth for communication. It integrates 4 USB ports, a HDMI output port and an S/PDIF audio output connector. There is also a proprietary connector for using the PlayStation Camera, a motion control device. </p>
-        
+
         <h2 id="se"> Input devices </h2>
         <p> The main controller for the PS4 is called DualShock 4. Based on the design of the DualShock 3, it improves on it under many aspects, including grips, ease of use of keys, better motion detection and concave sticks. Sony also added the share button, which permits to access the in-game social functions of the device. </p>
         <p> However its biggest news is the integration of a 2-input touchpad, that can be pressed as well. This is a feature that is actually unique to the PS4 and competitors didn't implement it. </p>
         <p> The controller is powered via a rechargeable battery and connects only via bluetoothto the console. Later a wireless adapter was released to allow the use of the pad on PCs. PS4 doesn't support DualShock 3 or any PS3 controller, with the exception of the PlayStation Move. </p>
         <p> The PlayStation Camera is another input device. It's a motion sensor and camera which allows to do deep motion detection and to record videos in the console. It allows also to log on with face recognition and integrates a microphone for video chats. </p>
         <p> The PS4 has native support for PlayStation VR virtual reality device, which requires PS Camera to be connected too. </p>
-        
+
         <h2 id="s4"> Software and capabilities</h2>
         <p> The PlayStation 4 operating system is called Orbis OS and it's based upon a fork of the very popular FreeBSD open source operating system. The UI, called PlayStation Dynamic Menu, is completely customizable. It shows player infos, notifications and other details, in addition to unlocked trophys. The UI is even controllable via voice recognition, if a microphone or PS Camera is present.</p>
         <p> Unlike Xbox One, the device doesn't require an internet connection to work. However, more functionalities are available if an Internet connection is present. Specifically, PS4 integrates a modern web browser, based on WebKit (the same engine of Chrome and Safari), enabling a high quality and modern web experience. </p>
@@ -107,11 +109,11 @@
         <p> The PS4 supports local content playback: DVD and Blu-ray movies are supported, as well as music and video files, via the Media player app. However, CDs are not playable anymore. </p>
         <p> Mobile devices, such as smartphones and tablets, can be used as secondary screen for the PS4 or to wake up the console from the rest mode. PS4 can also stream gameplay to a Soni Xperia smartphone or PS Vita, creating a similar experience to Wii-U with its secondary screen in the gamepad. </p>
         <p> As already said, PS4 drops compatibility with PS3 games, although a cloud-gaming service, PlayStation Now, allows to play older titles. </p>
-        
+
         <h2 id="s5"> Derivatives </h2>
         <p> In 2016, two major revisions of the PS4 were released: the first, which is still dubbed PS4 and nicknamed PS4 Slim, is essentially a PS4, but 40% smaller, with USB 3.1 ports and without the S/PDIF port. </p>
         <p> The most interesting revision, however, is called PS4 Pro. Released in 2016 too, this device features an overclocked processor (2.13 GHz) and a completely new AMD GPU (4.2 TFlops of theoretical power) which allows to play games at 4K resolution. This is a higher end version of PS4 and it's not intendet to replace the previous one. </p>
-        
+
         <h2 id="s6"> Market reception </h2>
         <p> The PS4 was very-well received, with positive reviews and excellent sales. The non-mandatory online connection encouraged many players to buy the Sony console rather than the Xbox One. </p>
         <p> Initially, Sony had manufacturing problems which caused low volumes and high manufacturing costs. However, the situation has become better since 2014. For many months, PS4 sales were superior to Xbox One numbers, at least until Microsoft released the Xbox OneS and Xbox OneX. </p>
