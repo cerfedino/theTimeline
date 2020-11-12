@@ -89,10 +89,12 @@
     }
 
     .center {
-      margin: 5 0;
+      margin: 5px 0;
       text-align: center;
     }
-
+    #image_legacy{
+      width: 80%;
+    }
     /* section formatting */
     .section {
       padding: 3%;
@@ -128,7 +130,7 @@
 
   <div id="container">
     <div id="banner">
-      <img alt="Banner Image2">
+      <img src="media/my_banner-exp.png" alt="Banner Image2">
     </div>
 
     <div id="content">
@@ -136,8 +138,12 @@
       <div class="section">
         <h2 id="s1">Introduction</h2>
         <div class="img right">
+          <figure>
+
+
           <img src="media/megaman_2_s1.jpg" alt="MegaMan 2 original game box" />
           <figcaption>The original MegaMan 2 game box</figcaption>
+              </figure>
         </div>
         <p>
           Mega Man 2 (MegaMan II) is an action game developed and published by Capcom for the Nintendo Entertainment System.
@@ -172,8 +178,10 @@
         Mega Man receives a special item. These items create platforms that allow Mega Man to access areas that he otherwise could not.
       </p>
       <div class="img center">
+        <figure>
         <img src="media/megaman2_gameplay.gif" alt="MegaMan 2 Gameplay" />
         <figcaption>Mega Man 2 Gameplay: Metal Man Section</figcaption>
+      </figure>
       </div>
         </div>
 
@@ -190,8 +198,12 @@
         <strong><em>It was the first in the series to include an opening cinematic</em></strong>
       </p>
       <div class="img center">
-        <img src="media/megaman_2_legacy.jpeg" width="80%" alt="MegaMan 2 original game box" />
+        <figure>
+
+        <img src="media/megaman_2_legacy.jpeg" id="image_legacy" alt="MegaMan 2 original game box" />
         <figcaption>Megaman 2 Characters and Legacy</figcaption>
+
+      </figure>
       </div>
       </div>
 
