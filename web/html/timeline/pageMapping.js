@@ -1,28 +1,16 @@
 let pages = 
 {
   "-1": {
-    "gen#": {
-      "pages": [
-        {
-          "author": "NOME COGNOME",
-          "date": "2001-01-12",
-          "description": "Best template ever, long live the CSS LEADERS!!",
-          "href": "html/gen2_utopia/utopia.html",
-          "picture": "html/gen2_utopia/media/placeholder.gif",
-          "product": "TEMPLATE"
-        }
-      ]
-    },
     "invalid": [
-      "html/gen1_crash_videogame_1977/videogame_crash_1977.html",
+      "html/gen8_nintendo_switch/nintendo_switch.html",
+      "html/index/index.html",
       "html/gen6_xbox_360/xbox_360.html",
-      "html/gen0_oxo/oxo.html",
+      "html/gen8_ps_vita/ps_vita.html",
+      "html/gen8_wii-u/wii-u.html",
       "html/gen3_megaman_2/megaman_2.html",
+      "html/gen9_next-gen_consoles/next-gen_consoles.html",
       "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
-      "html/gen0_brown_box/brown_box.html",
-      "html/gen1_tecnology/tecnology.html",
       "html/gen7_gta_v/gta_v.html",
-      "html/homepage/homepage.html",
       "html/gen3_metal_gear/metal_gear.html"
     ]
   },
@@ -35,6 +23,14 @@ let pages =
         "href": "html/gen0_bertie_the_brain/bertie_the_brain.html",
         "picture": "html/gen0_bertie_the_brain/media/bertie_the_brain.gif",
         "product": "Bertie the Brain"
+      },
+      {
+        "author": "Vladimir Nicolo Benincasa",
+        "date": "1952-05-05",
+        "description": "Interactive visual game",
+        "href": "html/gen0_oxo/oxo.html",
+        "picture": "html/gen0_oxo/media/banner.png",
+        "product": "OXO"
       },
       {
         "author": "Anton Tanev",
@@ -83,6 +79,14 @@ let pages =
         "href": "html/gen0_computer_space/computer_space.html",
         "picture": "html/gen0_computer_space/media/computer_space.gif",
         "product": "Computer Space"
+      },
+      {
+        "author": "Vladimir Nicolo Benincasa",
+        "date": "1972-03-02",
+        "description": "Brown Box - prototype of the firs console",
+        "href": "html/gen0_brown_box/brown_box.html",
+        "picture": "html/gen0_brown_box/media/placeholder.gif",
+        "product": "brown box"
       }
     ]
   },
@@ -153,6 +157,14 @@ let pages =
         "product": "Handheld Systems"
       },
       {
+        "author": "Vladimir Nicolo Benincasa",
+        "date": "1977-05-01",
+        "description": "Video Game crash of 1977 (end of the first generation)",
+        "href": "html/gen1_crash_videogame_1977/videogame_crash_1977.html",
+        "picture": "html/gen1_crash_videogame_1977/media/vgcrash1977.png",
+        "product": "Video Game crash 1977 "
+      },
+      {
         "author": "Samuel Corecco",
         "date": "1977-06-01",
         "description": "A page about the Nintendo Color TV-Gameseries",
@@ -165,7 +177,7 @@ let pages =
   "gen2": {
     "pages": [
       {
-        "author": "ALESSANDRO CRAVIOGLIO",
+        "author": "Alessandro Cravioglio",
         "date": "1976-08-08",
         "description": "The Fairchild channel F, a direct competitorof the Atari2600",
         "href": "html/gen2_fairchild_channel_f/fairchild_channel_f.html",
@@ -181,7 +193,7 @@ let pages =
         "product": "Shoot'em up genre"
       },
       {
-        "author": "ALESSANDRO CRAVIOGLIO",
+        "author": "Alessandro Cravioglio",
         "date": "1977-09-11",
         "description": "The Atari 2600 is one of the most influential console of the world",
         "href": "html/gen2_atari_2600/atari_2600.html",
@@ -205,7 +217,7 @@ let pages =
         "product": "Adventure"
       },
       {
-        "author": "ALESSANDRO CRAVIOGLIO",
+        "author": "Alessandro Cravioglio",
         "date": "1979-05-01",
         "description": "The Mattel Intellivision, a very innovative console for its time",
         "href": "html/gen2_intellivision/intellivision.html",
@@ -229,7 +241,7 @@ let pages =
         "product": "Donkey Kong"
       },
       {
-        "author": "ALESSANDRO CRAVIOGLIO",
+        "author": "Alessandro Cravioglio",
         "date": "1983-12-12",
         "description": "The Videogames Crash is the event that ended the second generation",
         "href": "html/gen2_videogames_crash_1983/videogame_crash_1983.html",
@@ -335,7 +347,7 @@ let pages =
       {
         "author": "Roberto Ibanez",
         "date": "1992-05-05",
-        "description": "Shooter game, video game genre",
+        "description": "Shooter games become mainstream",
         "href": "html/gen4_genre_shooter/genre_shooter.html",
         "picture": "html/gen4_genre_shooter/media/g.gif",
         "product": "Genre Shooter"
@@ -433,7 +445,7 @@ let pages =
         "product": "Metal Gear Solid"
       },
       {
-        "author": "MARCO VESCIO",
+        "author": "Marco Vescio",
         "date": "2000-04-27",
         "description": "A webpage about Majora's Mask",
         "href": "html/gen5_majoras_mask/majoras_mask.html",
@@ -597,39 +609,15 @@ let pages =
   "gen8": {
     "pages": [
       {
-        "author": "Name Surname",
-        "date": "2001-01-12",
-        "description": "Best template ever, long live the CSS LEADERS!!",
-        "href": "html/gen8_niantic/niantic.html",
-        "picture": "html/gen8_niantic/media/placeholder.gif",
-        "product": "Niantic"
-      },
-      {
-        "author": "Federico Soresina",
-        "date": "2012-03-01",
-        "description": "PlayStation Vita description page",
-        "href": "html/gen8_ps_vita/ps_vita.html",
-        "picture": "html/gen8_ps_vita/media/ps_vita.jpg",
-        "product": "PS_Vita"
-      },
-      {
-        "author": "Federico Soresina",
-        "date": "2012-11-01",
-        "description": "Wii-U page description",
-        "href": "html/gen8_wii_u/wii_u.html",
-        "picture": "html/gen8_wii_u/wii_u.jpg",
-        "product": "Wii-U"
-      },
-      {
         "author": "Federico Soresina",
         "date": "2013-11-15",
         "description": "PlayStation 4 description page",
         "href": "html/gen8_ps4/ps4.html",
-        "picture": "html/gen8_ps4/media/placeholder.gif",
+        "picture": "html/gen8_ps4/media/bg-left.jpg",
         "product": "PS4"
       },
       {
-        "author": "NOME Federico Soresina",
+        "author": "Federico Soresina",
         "date": "2013-12-22",
         "description": "Xbox One description page",
         "href": "html/gen8_xbox_one/xbox_one.html",
@@ -651,14 +639,6 @@ let pages =
         "href": "html/gen8_pokemon_go/pokemon_go.html",
         "picture": "html/gen8_pokemon_go/media/placeholder.gif",
         "product": "Pokemon Go"
-      },
-      {
-        "author": "Federico Soresina",
-        "date": "2017-03-03",
-        "description": "Nintendo Switch description page",
-        "href": "html/gen8_nintendo_switch/nintendo_switch.html",
-        "picture": "html/gen8_nintendo_switch/media/nintendo_switch.jpg",
-        "product": "Nintendo Switch"
       },
       {
         "author": "Alessandro Cagnani",

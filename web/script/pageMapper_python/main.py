@@ -101,10 +101,16 @@ def main():
 
             generations[currGen]['pages'] = insertByDate(generations[currGen]['pages'], currPage)
 
+    generations['-1'] = {}
+    if 'gen#' in generations:
+        generations['-1']['gen#'] = generations['gen#']
+        generations.pop('gen#')
+    if 'invalid' in generations:
+        generations['-1']['invalid'] = generations['invalid']
+        generations.pop('invalid')
 
-    generations['-1'] = {'gen#' : generations['gen#'], 'invalid':generations['invalid']}
-    generations.pop('gen#')
-    generations.pop('invalid')
+
+
     generations = json.dumps(generations, sort_keys=True, indent=2)
 
     #print(json.dumps(generations, indent=2))
