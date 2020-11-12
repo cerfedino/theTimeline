@@ -11,7 +11,7 @@ function onload(){
 
   setup_back();
 
-  setup_banner();
+  // setup_banner();
 
   setup_variables();
 }
