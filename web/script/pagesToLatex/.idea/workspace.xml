@@ -22,7 +22,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../find-broken-links" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,37 +45,70 @@
       <screen x="0" y="540" width="1920" height="1080" />
     </state>
     <state x="-1" y="692" width="1076" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604908693336" />
-    <state x="215" y="836" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604914063052">
-      <screen x="0" y="540" width="1920" height="1080" />
+    <state x="214" y="272" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605193349323">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="214" y="272" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1605193349323" />
     <state x="215" y="836" key="#com.intellij.fileTypes.FileTypeChooser/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914063052" />
-    <state x="213" y="735" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604922103354">
+    <state x="211" y="687" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605004044510">
       <screen x="0" y="540" width="1920" height="1080" />
     </state>
-    <state x="213" y="735" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604922103354" />
+    <state x="211" y="687" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1605004044510" />
     <state x="321" y="757" key="FileChooserDialogImpl" timestamp="1604925711687">
       <screen x="0" y="540" width="1920" height="1080" />
     </state>
     <state x="321" y="757" key="FileChooserDialogImpl/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604925711687" />
-    <state width="935" height="288" key="GridCell.Tab.0.bottom" timestamp="1604914818132">
-      <screen x="0" y="540" width="1920" height="1080" />
+    <state width="935" height="592" key="GridCell.Tab.0.bottom" timestamp="1605046498861">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="288" key="GridCell.Tab.0.bottom/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818132" />
-    <state width="935" height="288" key="GridCell.Tab.0.center" timestamp="1604914818132">
-      <screen x="0" y="540" width="1920" height="1080" />
+    <state width="935" height="592" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498861" />
+    <state width="935" height="477" key="GridCell.Tab.0.bottom/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1605003462402" />
+    <state width="935" height="592" key="GridCell.Tab.0.center" timestamp="1605046498860">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="288" key="GridCell.Tab.0.center/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818132" />
-    <state width="935" height="288" key="GridCell.Tab.0.left" timestamp="1604914818132">
-      <screen x="0" y="540" width="1920" height="1080" />
+    <state width="935" height="592" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498860" />
+    <state width="935" height="477" key="GridCell.Tab.0.center/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1605003462402" />
+    <state width="935" height="592" key="GridCell.Tab.0.left" timestamp="1605046498859">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="288" key="GridCell.Tab.0.left/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818131" />
-    <state width="935" height="288" key="GridCell.Tab.0.right" timestamp="1604914818132">
-      <screen x="0" y="540" width="1920" height="1080" />
+    <state width="935" height="592" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498859" />
+    <state width="935" height="477" key="GridCell.Tab.0.left/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1605003462402" />
+    <state width="935" height="592" key="GridCell.Tab.0.right" timestamp="1605046498861">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="935" height="288" key="GridCell.Tab.0.right/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604914818132" />
+    <state width="935" height="592" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498861" />
+    <state width="935" height="477" key="GridCell.Tab.0.right/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1605003462402" />
+    <state width="935" height="592" key="GridCell.Tab.1.bottom" timestamp="1605046498861">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="935" height="592" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498861" />
+    <state width="935" height="592" key="GridCell.Tab.1.center" timestamp="1605046498861">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="935" height="592" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498861" />
+    <state width="935" height="592" key="GridCell.Tab.1.left" timestamp="1605046498861">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="935" height="592" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498861" />
+    <state width="935" height="592" key="GridCell.Tab.1.right" timestamp="1605046498861">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="935" height="592" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605046498861" />
+    <state x="65" y="240" key="IDE.errors.dialog" timestamp="1605199043483">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="65" y="240" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605199043483" />
     <state x="96" y="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604911915178">
       <screen x="0" y="540" width="1920" height="1080" />
     </state>
     <state x="96" y="695" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.540.1920.1080/361.0.960.540@0.540.1920.1080" timestamp="1604911915178" />
+    <state x="1280" y="298" width="315" height="449" key="refactoring.ChangeSignatureDialog" timestamp="1605181709330">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1280" y="298" width="315" height="449" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605181709330" />
+    <state x="143" y="221" width="672" height="678" key="search.everywhere.popup" timestamp="1605041060751">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="143" y="221" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605041060751" />
   </component>
 </project>
