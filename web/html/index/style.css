@@ -1,4 +1,4 @@
-@media screen and (max-width: 1500px){
+/* @media screen and (max-width: 1500px){
   #timeline_box {
     display: none;
   }
@@ -7,7 +7,7 @@
   #timeline_box {
     display: none;
   }
-}
+} */
 
 *{
   /* sizing */
@@ -44,7 +44,7 @@ html, body{
   /* positioning */
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 35%;
   transform: translate(-50%, -50%);
   border: 5px solid black;
   padding: 10px;
@@ -63,7 +63,7 @@ html, body{
   /* positioning */
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: 60%;
   transform: translate(-50%, -50%);
   border: 5px solid black;
   padding: 10px;
