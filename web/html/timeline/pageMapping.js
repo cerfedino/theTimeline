@@ -1,11 +1,7 @@
 let pages = 
 {
   "-1": {
-    "invalid": [
-      "html/gen6_xbox_360/xbox_360.html",
-      "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
-      "html/gen7_gta_v/gta_v.html"
-    ]
+    "invalid": []
   },
   "gen0": {
     "pages": [
@@ -414,7 +410,7 @@ let pages =
         "product": "pokemon red blue"
       },
       {
-        "author": "ROBERTO IBANEZ",
+        "author": "Roberto Ibanez",
         "date": "1996-03-22",
         "description": "Resident Evil, horror video game",
         "href": "html/gen5_resident_evil/Resident_Evil.html",
@@ -498,6 +494,14 @@ let pages =
         "product": "World of Warcraft"
       },
       {
+        "author": "Ntwali",
+        "date": "2005-11-22",
+        "description": "one of the greatest consoles of all time",
+        "href": "html/gen6_xbox_360/xbox_360.html",
+        "picture": "html/gen6_xbox_360/media/red-ring-of-death.jpg",
+        "product": "xbox 360"
+      },
+      {
         "author": "Genaro Di Stefano",
         "date": "2006-11-16",
         "description": "Wii Sports, an innovative sports game",
@@ -550,6 +554,14 @@ let pages =
         "product": "Call of duty world at war"
       },
       {
+        "author": "Ntwali Muhizi",
+        "date": "2009-10-13",
+        "description": "second entry to the uncharted franchise",
+        "href": "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
+        "picture": "html/gen7_uncharted_2:_among_thieves/media/uncharted2.gif",
+        "product": "Uncharted 2: among thieves"
+      },
+      {
         "author": "Ludovica Savoia",
         "date": "2009-11-10",
         "description": "Sixth of the Call of Duty series but first as videogame",
@@ -596,6 +608,14 @@ let pages =
         "href": "html/gen7_counter_strike_global_offensive/counter_strike_global_offensive.html",
         "picture": "html/gen7_counter_strike_global_offensive/media/cs_bomb.gif",
         "product": "Counter Strike Global Offensive"
+      },
+      {
+        "author": "Ntwali Muhizi",
+        "date": "2013-09-17",
+        "description": "the pinnacle of open world games",
+        "href": "html/gen7_gta_v/gta_v.html",
+        "picture": "html/gen7_gta_v/media/GTA-gif",
+        "product": "GTA V"
       },
       {
         "author": "Genaro Di Stefano",
