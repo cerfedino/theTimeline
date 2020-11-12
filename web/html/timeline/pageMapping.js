@@ -2,16 +2,9 @@ let pages =
 {
   "-1": {
     "invalid": [
-      "html/gen8_nintendo_switch/nintendo_switch.html",
-      "html/index/index.html",
       "html/gen6_xbox_360/xbox_360.html",
-      "html/gen8_ps_vita/ps_vita.html",
-      "html/gen8_wii-u/wii-u.html",
-      "html/gen3_megaman_2/megaman_2.html",
-      "html/gen9_next-gen_consoles/next-gen_consoles.html",
       "html/gen7_uncharted_2:_among_thieves/uncharted_2:_among_thieves.html",
-      "html/gen7_gta_v/gta_v.html",
-      "html/gen3_metal_gear/metal_gear.html"
+      "html/gen7_gta_v/gta_v.html"
     ]
   },
   "gen0": {
@@ -162,7 +155,7 @@ let pages =
         "description": "Video Game crash of 1977 (end of the first generation)",
         "href": "html/gen1_crash_videogame_1977/videogame_crash_1977.html",
         "picture": "html/gen1_crash_videogame_1977/media/vgcrash1977.png",
-        "product": "Video Game crash 1977 "
+        "product": "Video Game crash 1977"
       },
       {
         "author": "Samuel Corecco",
@@ -315,6 +308,22 @@ let pages =
         "href": "html/gen3_castlevania/castlevania.html",
         "picture": "html/gen3_castlevania/media/placeholder.jpg",
         "product": "Castelvania"
+      },
+      {
+        "author": "Gerald Prendi",
+        "date": "1987-7-13",
+        "description": "Metal Gear : an early ancestor of stealth games",
+        "href": "html/gen3_metal_gear/metal_gear.html",
+        "picture": "html/gen3_metal_gear/media/metal_gear.gif",
+        "product": "Metal Gear"
+      },
+      {
+        "author": "Gerald Prendi",
+        "date": "1988-12-24",
+        "description": "An action game designed for Nintendo Entertainment System(NES), a worldwide success",
+        "href": "html/gen3_megaman_2/megaman_2.html",
+        "picture": "html/gen3_megaman_2/media/megaman2.gif",
+        "product": "MegaMan 2"
       }
     ]
   },
@@ -610,6 +619,22 @@ let pages =
     "pages": [
       {
         "author": "Federico Soresina",
+        "date": "2012-03-01",
+        "description": "PlayStation Vita description page",
+        "href": "html/gen8_ps_vita/ps_vita.html",
+        "picture": "html/gen8_ps_vita/media/ps_vita.jpg",
+        "product": "PS_Vita"
+      },
+      {
+        "author": "Federico Soresina",
+        "date": "2012-11-01",
+        "description": "Wii-U page description",
+        "href": "html/gen8_wii-u/wii-u.html",
+        "picture": "html/gen8_wii-u/wii_u.jpg",
+        "product": "Wii-U"
+      },
+      {
+        "author": "Federico Soresina",
         "date": "2013-11-15",
         "description": "PlayStation 4 description page",
         "href": "html/gen8_ps4/ps4.html",
@@ -641,6 +666,14 @@ let pages =
         "product": "Pokemon Go"
       },
       {
+        "author": "Federico Soresina",
+        "date": "2017-03-01",
+        "description": "Nintendo Switch description page",
+        "href": "html/gen8_nintendo_switch/nintendo_switch.html",
+        "picture": "html/gen8_nintendo_switch/media/nintendo_switch.jpg",
+        "product": "Nintendo Switch"
+      },
+      {
         "author": "Alessandro Cagnani",
         "date": "2017-07-25",
         "description": "One of the most influent games of the 8th gen",
@@ -663,6 +696,18 @@ let pages =
         "href": "html/gen8_half_life_alyx/half_life_alyx.html",
         "picture": "html/gen8_half_life_alyx/media/placeholder.png",
         "product": "Half Life Alyx"
+      }
+    ]
+  },
+  "gen9": {
+    "pages": [
+      {
+        "author": "Federico Soresina",
+        "date": "2020-11-12",
+        "description": "next-generation console description page",
+        "href": "html/gen9_next-gen_consoles/next-gen_consoles.html",
+        "picture": "html/gen9_next-gen_consoles/media/banner.png",
+        "product": "Next-gen consoles"
       }
     ]
   }
