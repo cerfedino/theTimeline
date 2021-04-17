@@ -2,8 +2,8 @@ How to use the scripts
 
 # How to use the scripts
 ### Install requirements
-every script has his own requirements.txt file.
-Instally each scripts dependencies by doing
+Every script has its own requirements.txt file.
+Install each scripts dependencies by doing
 ```bash
 pip3 install -r requirements.txt
 ```
@@ -22,7 +22,7 @@ The scripts outputs the JSON in stdout
 python3 web/scripts/pageMapper_python/main.py | python3 find-broken-links/main.py
 ```
 
-## Pages-to-latek script
+## Pages-to-latex script
 ```bash
-python3 web/scripts/pageMapper_python/main.py | python3 pagesToLatek/main.py
+python3 web/scripts/pageMapper_python/main.py | python3 pagesToLatex/main.py
 ```
