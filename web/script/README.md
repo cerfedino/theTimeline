@@ -1,7 +1,12 @@
 How to use the scripts
 
 # How to use the scripts
-
+### Install requirements
+every script has his own requirements.txt file.
+Instally each scripts dependencies by doing
+```bash
+pip3 install -r requirements.txt
+```
 ## Page Mapper script
 This script compiles a JSON list that contains every page sorted by generation.
 Under element '-1' are present the invalid pages (aka pages that
